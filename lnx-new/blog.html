@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Linux Support</title>
+    <link rel="stylesheet" href="less/style.css">
+</head>
+<body>
+    <div class="wrpr wrpr-other">
+        <div class="popup-wrapper popupBg">
+            <div class="popup">
+                <form action="">
+                <h1>Request help now</h1>
+                <div class="popup-close">&times;</div>
+                <div class="popup-contact">
+                    <div>
+                        <label for="contNum">Contact Number:</label>
+                        <input required id="contNum" type="text" placeholder="Enter a phone number">
+                    </div>
+                    <div class="popup-icons">
+                        <label>How to contact you:</label>
+                        <div class="social-icons">
+                            <i class="social-icons-item"><img src="images/icon-telegram.svg" alt=""><img src="images/icon-telegram-BW.svg" alt=""></i>
+                            <i class="social-icons-item"><img src="images/icon-whatsapp.svg" alt=""><img src="images/icon-whatsapp-BW.svg" alt=""></i>
+                            <i class="social-icons-item"><img src="images/icon-viber.svg" alt=""><img src="images/icon-viber-BW.svg" alt=""></i>
+                            <i class="social-icons-item"><img src="images/skype-icon.svg" alt=""><img src="images/skype-icon-grey.svg" alt=""></i>
+                            <i class="social-icons-item"><img src="images/icon-email.svg" alt=""><img src="images/icon-email-BW.svg" alt=""></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-block">
+                <label>Choose the package:</label>
+                  <div class="popup-plans">
+                        <div class="popup-plans-plan"><img src="images/plan1.png" alt=""><h3>Monthly Help</h3></div>
+                        <div class="popup-plans-plan"><img src="images/plan2.png" alt=""><h3>Corporate support</h3></div>
+                        <div class="popup-plans-plan"><img src="images/plan3.png" alt=""><h3>One time help</h3></div>
+                  </div>
+                </div>
+                <div class="popup-block">
+                    <label for="problem">Your problem:</label>
+                    <textarea required id="problem" placeholder="Your problem"></textarea>
+                </div>
+                <div class="popup-foot">
+                    <p>Total cost :<span class="totalPrice">$ 99.99</span><span class="totalPrice">$ 19.99</span><span class="totalPrice">$ 9.99</span></p>
+                    <!-- <button>Go</button> -->
+                    <input type="submit" value="Go">
+                </div>
+            </form>
+            </div>
+        </div>
+        <div class="popup-wrapper sigBg">
+            <div class="popup popup-login">
+                <h1>Sign up</h1>
+                <div class="popup-close">&times;</div>
+                <form action="">
+                    <label for="name">Name:</label>
+                    <input required type="text" id="name" placeholder="Enter your name">
+                    <label for="e-mail">E-mail:</label>
+                    <input required type="text" id="e-mail" placeholder="Enter your e-mail">
+                    <label for="password">Password:</label>
+                    <input required type="text" id="password" placeholder="Enter your password">
+                    <label for="reppassword">Repeat password:</label>
+                    <input required type="text" id="reppassword" placeholder="Repeat your password">
+                    <input class="button" type="submit" value="Sign up">
+                </form>
+                <p class="or">or use account</p>
+                <div class="popup-social">
+                    <button class="fb"><img src="images/facebook.png" alt="">Facebook</button>
+                    <button class="gg"><img src="images/google-plus.png" alt="">Google</button>
+                </div>
+                <p class="popup-link">Already have an account? <span class="logIn">Log in</span></p>
+            </div>
+        </div>
+        <div class="popup-wrapper logBg">
+            <div class="popup popup-login">
+                <h1>Log in</h1>
+                <div class="popup-close">&times;</div>
+                <form action="">
+                    <label for="e-mail">E-mail:</label>
+                    <input required type="text" id="e-mail" placeholder="Enter your e-mail">
+                    <label for="password">Password:</label>
+                    <input required type="text" id="password" placeholder="Enter your password">
+                    <a href="#" class="popup-forgot">Forgot your password?</a>
+                    <input class="button" type="submit" value="Sign up">
+                </form>
+                <p class="or">or use account</p>
+                <div class="popup-social">
+                    <button class="fb"><img src="images/facebook.png" alt="">Facebook</button>
+                    <button class="gg"><img src="images/google-plus.png" alt="">Google</button>
+                </div>
+                <p class="popup-link">Don't have an account? <span class="signUp">Sign up</span></p>
+            </div>
+        </div>
+        <div class="popup-wrapper passBg">
+            <div class="popup popup-recovery">
+                <h1>Password recovery</h1>
+                <div class="popup-close">&times;</div>
+                <p>Dont worry. Resetting your password is easy, just tell us the email adress your registered the <a href="#">Linux support.</a></p>
+                <form action="">
+                    <label for="recEm">E-mail:</label>
+                    <input type="text" name="" id="recEm" placeholder="Enter your e-mail">
+                    <input type="submit" value="Send">
+                </form>
+                <p class="popup-link">Remmember your password? <span class="logIn">Sign in</span></p>
+            </div>
+        </div>
+        <div class="popup-wrapper passBgSent">
+            <div class="popup popup-recovery">
+                <h1>Password recovery</h1>
+                <div class="popup-close">&times;</div>
+                <p>We have sent a rest password email to <a href="#">example@gmail.com.</a> Please click the reset password link to set your new password.</p>
+                <p>Didn’t recive the email yet? Please check your spam folder, or <a href="#">resend</a> the mail.</p>
+            </div>
+        </div>
+        <div class="popup-wrapper passBgSent2">
+            <div class="popup popup-recovery">
+                <h1>Password recovery</h1>
+                <div class="popup-close">&times;</div>
+                <p>E-mail <a href="#">example@gmail.com</a> is not tied to any of the accounts for Linux support.com </p>
+                <p>Please try <a href="#">again.</a></p>
+            </div>
+        </div>
+        <div class="popup-wrapper passBgRec">
+            <div class="popup popup-recovery">
+                <h1>Password recovery</h1>
+                <div class="popup-close">&times;</div>
+                <form action="">
+                    <label for="recEm">Please press a new password:</label>
+                    <input type="text" name="" id="recEm1" placeholder="Enter your e-mail">
+                    <label for="recEm">Confirm password:</label>
+                    <input type="text" name="" id="recEm2" placeholder="Confirm  password ">
+                    <input type="submit" value="Send">
+                </form>
+                <p class="popup-link">Remmember your password? <span class="logIn">Sign in</span></p>
+            </div>
+        </div>
+        <div class="cntnt">
+            <div class="header">
+                <div class="header-container">
+                    <a tabindex="0" class="header-logo" onclick="return clickHandler()" href="index.html"><span class="header-logo-bold">LINUX</span>Support</a>
+                    <div class="header-right">
+                        <a tabindex="0" style="color: #fff; text-decoration: none" href="tel:+38 (096) 45-56-789" class="header-right-phone">+38 (096) 45-56-789</a>
+                        <div class="header-right-lang-wrapper">
+                            <div tabindex="0" class="header-right-lang-wrapper-lang" id="lang" style="outline: none">EN</div>
+                            <div class="ru">RU</div>
+                        </div>
+                        <a tabindex="0" style="color: #fff; text-decoration: block" href="tel:+38 (096) 45-56-789" class="header-right-phone-mobile"></a>
+                        <button style="display: block" tabindex="0" class="header-right-button logIn">Login <span>for customers</span></button>
+
+                        <!-- Logined -->
+                        <div tabindex="0" style="display: none" class="header-right-user"><a style="text-decoration: none; color: #fff" href="personal-account.html">Amanda</a><div class="header-right-logout"></div></div>
+                        <!-- Logined -->
+
+
+                        <a style="display: none" class="header-right-button-mobile logIn"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
+            <div class="navigation">
+                <a href="index.html">Home</a>
+                <div>></div>
+                <p>The Knowledge Base</p>
+            </div>
+            <div class="blog">
+                <div class="main">
+                    <div class="blog-flex">
+                        <div>
+                            <h1>Blog</h1>
+                            <h2>The Knowledge Base</h2>
+                        </div>
+                        <div class="input-search">
+                            <input type="text" placeholder="Search">
+                            <button><img src="images/glass-hov.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-items">
+                    <div class="main-blog-item blog-items-item">
+                        <div class="main-blog-item-img">
+                            <img src="images/test-item2.png" alt="">
+                        </div>
+                        <h6 class="date">22 jan 19</h6>
+                        <h3>SharePoint and Office 365 Learning Resources</h3>
+                        <p>The major difference between SharePoint 2019 and its predecessor is that it... will include some of the major UI improvements already available in SharePoint Online. One of its core components are the Modern Team Sites.</p>
+                        <button>Learn more<img src="images/arrow-right-hov.png" alt=""></button>
+                    </div>
+                    <div class="main-blog-item blog-items-item">
+                        <div class="main-blog-item-img">
+                            <img src="images/test-item2.png" alt="">
+                        </div>
+                        <h6 class="date">22 jan 19</h6>
+                        <h3>SharePoint and Office 365 Learning Resources</h3>
+                        <p>The major difference between SharePoint 2019 and its predecessor is that it... will include some of the major UI improvements already available in SharePoint Online. One of its core components are the Modern Team Sites.</p>
+                        <button>Learn more<img src="images/arrow-right-hov.png" alt=""></button>
+                    </div>
+                    <div class="main-blog-item blog-items-item">
+                            <div class="main-blog-item-img">
+                            <img src="images/test-item2.png" alt="">
+                        </div>
+                        <h6 class="date">22 jan 19</h6>
+                        <h3>SharePoint and Office 365 Learning Resources</h3>
+                        <p>The major difference between SharePoint 2019 and its predecessor is that it... will include some of the major UI improvements already available in SharePoint Online. One of its core components are the Modern Team Sites.</p>
+                        <button>Learn more<img src="images/arrow-right-hov.png" alt=""></button>
+                    </div>
+                    <div class="main-blog-item blog-items-item">
+                        <div class="main-blog-item-img">
+                            <img src="images/test-item2.png" alt="">
+                        </div>
+                        <h6 class="date">22 jan 19</h6>
+                        <h3>SharePoint and Office 365 Learning Resources</h3>
+                        <p>The major difference between SharePoint 2019 and its predecessor is that it... will include some of the major UI improvements already available in SharePoint Online. One of its core components are the Modern Team Sites.</p>
+                        <button>Learn more<img src="images/arrow-right-hov.png" alt=""></button>
+                    </div>
+                    <div class="main-blog-item blog-items-item">
+                        <div class="main-blog-item-img">
+                            <img src="images/test-item2.png" alt="">
+                        </div>
+                        <h6 class="date">22 jan 19</h6>
+                        <h3>SharePoint and Office 365 Learning Resources</h3>
+                        <p>The major difference between SharePoint 2019 and its predecessor is that it... will include some of the major UI improvements already available in SharePoint Online. One of its core components are the Modern Team Sites.</p>
+                        <button>Learn more<img src="images/arrow-right-hov.png" alt=""></button>
+                    </div>
+                    <div class="main-blog-item blog-items-item">
+                            <div class="main-blog-item-img">
+                            <img src="images/test-item2.png" alt="">
+                        </div>
+                        <h6 class="date">22 jan 19</h6>
+                        <h3>SharePoint and Office 365 Learning Resources</h3>
+                        <p>The major difference between SharePoint 2019 and its predecessor is that it... will include some of the major UI improvements already available in SharePoint Online. One of its core components are the Modern Team Sites.</p>
+                        <button>Learn more<img src="images/arrow-right-hov.png" alt=""></button>
+                    </div>
+                    <div class="main-blog-item blog-items-item">
+                        <div class="main-blog-item-img">
+                            <img src="images/test-item2.png" alt="">
+                        </div>
+                        <h6 class="date">22 jan 19</h6>
+                        <h3>SharePoint and Office 365 Learning Resources</h3>
+                        <p>The major difference between SharePoint 2019 and its predecessor is that it... will include some of the major UI improvements already available in SharePoint Online. One of its core components are the Modern Team Sites.</p>
+                        <button>Learn more<img src="images/arrow-right-hov.png" alt=""></button>
+                    </div>
+                    <div class="main-blog-item blog-items-item">
+                        <div class="main-blog-item-img">
+                            <img src="images/test-item2.png" alt="">
+                        </div>
+                        <h6 class="date">22 jan 19</h6>
+                        <h3>SharePoint and Office 365 Learning Resources</h3>
+                        <p>The major difference between SharePoint 2019 and its predecessor is that it... will include some of the major UI improvements already available in SharePoint Online. One of its core components are the Modern Team Sites.</p>
+                        <button>Learn more<img src="images/arrow-right-hov.png" alt=""></button>
+                    </div>
+                    <div class="main-blog-item blog-items-item">
+                            <div class="main-blog-item-img">
+                            <img src="images/test-item2.png" alt="">
+                        </div>
+                        <h6 class="date">22 jan 19</h6>
+                        <h3>SharePoint and Office 365 Learning Resources</h3>
+                        <p>The major difference between SharePoint 2019 and its predecessor is that it... will include some of the major UI improvements already available in SharePoint Online. One of its core components are the Modern Team Sites.</p>
+                        <button>Learn more<img src="images/arrow-right-hov.png" alt=""></button>
+                    </div>
+                    <div class="main-blog-item blog-items-item">
+                        <div class="main-blog-item-img">
+                            <img src="images/test-item2.png" alt="">
+                        </div>
+                        <h6 class="date">22 jan 19</h6>
+                        <h3>SharePoint and Office 365 Learning Resources</h3>
+                        <p>The major difference between SharePoint 2019 and its predecessor is that it... will include some of the major UI improvements already available in SharePoint Online. One of its core components are the Modern Team Sites.</p>
+                        <button>Learn more<img src="images/arrow-right-hov.png" alt=""></button>
+                    </div>
+                    <div class="main-blog-item blog-items-item">
+                        <div class="main-blog-item-img">
+                            <img src="images/test-item2.png" alt="">
+                        </div>
+                        <h6 class="date">22 jan 19</h6>
+                        <h3>SharePoint and Office 365 Learning Resources</h3>
+                        <p>The major difference between SharePoint 2019 and its predecessor is that it... will include some of the major UI improvements already available in SharePoint Online. One of its core components are the Modern Team Sites.</p>
+                        <button>Learn more<img src="images/arrow-right-hov.png" alt=""></button>
+                    </div>
+                    <div class="main-blog-item blog-items-item">
+                            <div class="main-blog-item-img">
+                            <img src="images/test-item2.png" alt="">
+                        </div>
+                        <h6 class="date">22 jan 19</h6>
+                        <h3>SharePoint and Office 365 Learning Resources</h3>
+                        <p>The major difference between SharePoint 2019 and its predecessor is that it... will include some of the major UI improvements already available in SharePoint Online. One of its core components are the Modern Team Sites.</p>
+                        <button>Learn more<img src="images/arrow-right-hov.png" alt=""></button>
+                    </div>
+                    <div class="main-blog-item blog-items-item">
+                        <div class="main-blog-item-img">
+                            <img src="images/test-item2.png" alt="">
+                        </div>
+                        <h6 class="date">22 jan 19</h6>
+                        <h3>SharePoint and Office 365 Learning Resources</h3>
+                        <p>The major difference between SharePoint 2019 and its predecessor is that it... will include some of the major UI improvements already available in SharePoint Online. One of its core components are the Modern Team Sites.</p>
+                        <button>Learn more<img src="images/arrow-right-hov.png" alt=""></button>
+                    </div>
+                    <div class="main-blog-item blog-items-item">
+                        <div class="main-blog-item-img">
+                            <img src="images/test-item2.png" alt="">
+                        </div>
+                        <h6 class="date">22 jan 19</h6>
+                        <h3>SharePoint and Office 365 Learning Resources</h3>
+                        <p>The major difference between SharePoint 2019 and its predecessor is that it... will include some of the major UI improvements already available in SharePoint Online. One of its core components are the Modern Team Sites.</p>
+                        <button>Learn more<img src="images/arrow-right-hov.png" alt=""></button>
+                    </div>
+                    <div class="main-blog-item blog-items-item">
+                            <div class="main-blog-item-img">
+                            <img src="images/test-item2.png" alt="">
+                        </div>
+                        <h6 class="date">22 jan 19</h6>
+                        <h3>SharePoint and Office 365 Learning Resources</h3>
+                        <p>The major difference between SharePoint 2019 and its predecessor is that it... will include some of the major UI improvements already available in SharePoint Online. One of its core components are the Modern Team Sites.</p>
+                        <button>Learn more<img src="images/arrow-right-hov.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="blog-nav">
+                    <div class="blog-nav-items">
+                        <div class="prev"></div>
+                        <div class="blog-nav-items-item">1</div>
+                        <div class="blog-nav-items-item">2</div>
+                        <div class="blog-nav-items-item">3</div>
+                        <div class="blog-nav-items-item blog-nav-items-item-current">4</div>
+                        <div class="blog-nav-items-item">5</div>
+                        <div class="blog-nav-items-item">6</div>
+                        <div class="next"></div>
+                    </div>
+                    <div class="blog-nav-line"></div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+        <div class="ft">
+            <div class="main-foot">
+                <div class="main-foot-container">
+                    <div class="main-foot-left">
+                        <h1>Get in touch</h1>
+                        <h2>Ready to get support?</h2>
+                        <div class="main-foot-left-links">
+                            <div>
+                                <a href="#"><img src="images/insta-white.png" alt=""></a>
+                                <a href="#"><img src="images/twitter-white.png" alt=""></a>
+                                <a href="#"><img src="images/facebook-white.png" alt=""></a>
+                            </div>
+                            <a href="#" class="em">email@email.com</a>
+                            <a href="#" class="tel">+38 (096) 45-56-789</a>
+                        </div>
+                    </div>
+                    <div class="main-foot-right">
+                        <button class="button button-fill button-scale showForm">Get support now</button>
+                        <div class="circles">
+                            <div class="circles-circle1"></div>
+                            <div class="circles-circle2"></div>
+                            <div class="circles-circle3"></div>
+                        </div>
+                    </div>
+                    <img class="ubuntu" src="images/ubuntu.svg" alt="">
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-container">
+                    <p>© 2015-2018 Linux support. All right reserved.</p>
+                    <p>Created  and developed by <a href="https://www.metaproject.pro/">MetaProject</a></p>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:" id="return-to-top">&uarr;</a>
+    </div>
+    <script src='script/jquery-3.3.1.min.js'></script>
+    <script src='script/detect.min.js'></script>
+    <script src="script/functions.js"></script>
+    <script src="script/script.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>

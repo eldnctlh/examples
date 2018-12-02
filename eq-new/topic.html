@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="jodit-3.1.95/build/jodit.min.css">
+    <link rel="stylesheet" href="slick-master/slick/slick.css">
+    <link rel="stylesheet" href="slick-master/slick/slick-theme.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="popupBg">
+        <div class="popup">
+            <button class="popup-close button-blue button-blue-close">&times;</button>
+            <div class="h2 popup-title-primary">You are <span class="blue">not logged in</span> or do not have access to this page.<h2 class="popup-title-primary"> This could happen for one of several reasons:</h2></div>
+            <h2 class="popup-title-mobile">You are <span class="blue">not logged in</span> or do not have access to this page. This could happen for one of several reasons:</h2>
+            <p>1. You are not authorized on the site. Enter your username and password and try again.<br>
+            2. You do not have enough rights to access this page. You may be trying to access administrator functions or other privileged functions.<br>
+            3. It is possible that the administrator has disabled your account, or you are not activated on the site.<br><br>
+            To view this page you need to <span class="blue buttonRegister">Register</span> or <span class="blue buttonLogin">Login</span>
+            </p>
+        </div>
+    </div>
+    <div class="header" style="position: relative; z-index: 1;">
+        <div class="header-container">
+            <div class="header-logo header-logo1">
+                <div class="header-logo-head header-logo1-head">EQTRADING, INC.</div>
+                <div class="header-logo-foot header-logo1-foot">OUTSOURCE <span class="dot">&#183;</span> CONNECT WITH CONFIDENCE</div>
+            </div>
+            <div class="header-menu">
+                <a href="#" class="header-menu-item">HOME</a>
+                <a href="#" class="header-menu-item">BRANDS</a>
+                <a href="#" class="header-menu-item">COMPIANCE</a>
+                <a href="#" class="header-menu-item">MARKETPLACE</a>
+                <a href="#" class="header-menu-item">BRAND NEWS</a>
+            </div>
+            <div class="header-menu mobile">
+                <div class="mobile-busket"></div>
+                <div class="mobile-open">
+                    <div class="mobile-menu-open">
+                        <a href="#" class="header-menu-item mobile-item">HOME</a>
+                        <a href="#" class="header-menu-item">BRANDS</a>
+                        <a href="#" class="header-menu-item">COMPIANCE</a>
+                        <a href="#" class="header-menu-item">MARKETPLACE</a>
+                        <a href="#" class="header-menu-item">BRAND NEWS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="eq-main">
+        <img src="images/factory.png" alt="">
+        <div class="eq-main-container more-top">
+            <h2 class="eq-main-title"><span class="blue">Forum</span> manufacturing</h2>
+            <ul>
+                <li>
+                    <h3>001</h3>
+                    <p>Forums</p>
+                </li>
+                <li>
+                    <h3>001</h3>
+                    <p>Topics</p>
+                </li>
+                <li>
+                    <h3>001</h3>
+                    <p>Posts</p>
+                </li>
+                <li>
+                    <h3>001</h3>
+                    <p>Online</p>
+                </li>
+                <li>
+                    <h3>001</h3>
+                    <p>Members</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="forum-add none">
+            <div class="forum-add-left">
+                <h2>Add <span class="blue">your</span> topic</h2>
+                <button class="button-blue button-blue-close forum-add-left-close">&times;</button>
+                <input class="forum-add-left-title" type="text" placeholder="Enter tittle here">
+                <div id="editor"></div>
+                <!-- <div class="forum-add-left-file">
+                    <div>
+                        <p>Attach file:</p>
+                        <input id="file" type="file">
+                    </div>
+                    <p>Maximum allowed file size is 10 MB</p>
+                </div> -->
+                <div class="forum-add-left-file">
+                    <div class="forum-add-left-file-inner">
+                        <p>Attach file:</p>
+                        <div class="file-upload">
+                            <label>
+                                <input type="file" name="file">
+                                <span>+ Add file</span>
+                            </label>
+                        </div>
+                        <input type="text" id="filename" class="filename" placeholder="No file selected" disabled>
+                    </div>
+                    <p class="max">Maximum allowed file size is 10 MB</p>
+                </div> 
+                <label for="tags">Topic Tags (Separate tags using a comma)</label>
+                <input type="text" id="tags" placeholder="Start typing tags here (maximum 5 tags and allowed)">
+                <div class="forum-add-left-foot">
+                    <div>
+                        <label class="check-container">
+                            <input type="checkbox" id="check1m">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="check1m">Subscribe to this topic</label>
+                    </div>
+                    <button class="button-blue button-blue-fill">Add Topic</button>
+                </div>
+            </div>
+            <div class="forum-add-right">
+                <h3>Most <span class="blue">popular</span> tags</h3>
+                <div class="forum-add-right-tags">
+                    <div class="button-blue forum-add-right-tags-tag">Amazon</div>
+                    <div class="button-blue forum-add-right-tags-tag">Apple</div>
+                    <div class="button-blue forum-add-right-tags-tag">Sony</div>
+                    <div class="button-blue forum-add-right-tags-tag">Tesla</div>
+                    <div class="button-blue forum-add-right-tags-tag">Samsung</div>
+                    <div class="button-blue forum-add-right-tags-tag">LG</div>
+                    <div class="button-blue forum-add-right-tags-tag">Ebay</div>
+                    <div class="button-blue forum-add-right-tags-tag">Sony</div>
+                    <div class="button-blue forum-add-right-tags-tag">Manufactures</div>
+                    <div class="button-blue forum-add-right-tags-tag">Samsung</div>
+                    <div class="button-blue forum-add-right-tags-tag">LG</div>
+                    <div class="button-blue forum-add-right-tags-tag">Ebay</div>
+                    <div class="button-blue forum-add-right-tags-tag">Sony</div>
+                    <div class="button-blue forum-add-right-tags-tag">Manufactures</div>
+                </div>
+                <button class="forum-add-right-tags-button">See more</button>
+            </div>
+        </div>
+        <div class="forum-list">
+            <div class="forum-list-head">
+                <div>
+                    <label for="select">Sort by:</label>
+                    <select id="select">
+                        <option value="most">Most popular</option>
+                        <option value="most">Most popular</option>
+                        <option value="most">Most popular</option>
+                    </select>
+                </div>
+                <div>
+                    <div>
+                        <input type="text" class="button-blue topic-search" placeholder="Search">
+                        <button class="button-search"></button>
+                    </div>
+                    <button class="button-blue callPopup">Subscribe</button>
+                    <button class="button-blue callAddTopic">Add topic</button>
+                </div>
+            </div>
+            <div class="forum-list-items">
+                <div class="forum-list-items-head">
+                    <div class="forum-list-item-left">
+                        <h2>Topic title</h2>
+                    </div>
+                    <div class="forum-list-item-center">
+                        <h2>Posts</h2>
+                    </div>
+                    <div class="forum-list-item-right">
+                        <h2>Views</h2>
+                    </div>
+                </div>
+                <div class="forum-list-item">
+                    <div class="forum-list-item-wrapper">
+                        <div class="forum-list-item-left">
+                            <a class="forum-list-item-title" href="#"><img src="images/download1.png" alt="">Development Solutions for Startups and Enterprises</a>
+                        </div>
+                        <div class="forum-list-item-center">
+                            <p class="full-lh">2</p>
+                        </div>
+                        <div class="forum-list-item-right">
+                            <p class="full-lh">8</p>
+                        </div>
+                    </div>
+                    <div class="forum-list-item-wrapper">
+                        <div class="forum-list-item-left flex-show">
+                            <button class="flex-show-button">First post anb replies<img src="images/arrow-down-hov.png" alt=""></button>
+                            <p>Last post by <span class="blue">John Dou</span> <span class="grey">1 min ago</span></p>
+                        </div>
+                    </div>
+                    <div class="forum-list-item-wrapper wrapper-hidden">
+                        <div class="forum-list-item-left">
+                           <div class="forum-list-item-left-text forum-list-item-left-text-padding">
+                                <img src="images/clip.png" alt="">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum mollitia sint odit eligendi tempora quas. Eius nisi fuga nihil magnam, quos unde maiores eaque, iure ipsum enim reiciendis sint tempore?
+                           </div>
+                           <div class="forum-list-item-left-text forum-list-item-left-text-padding">
+                                <img src="images/message.png" alt="">
+                                Comment lSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...
+                           </div>
+                        </div>
+                        <div class="forum-list-item-center posAbs">
+                            <div class="forum-list-item-left-text">23 oct 2022</div>
+                            <div class="forum-list-item-left-text">1 min ago </div>
+                        </div>
+                        <div class="forum-list-item-right">
+                            <div class="forum-list-item-left-text">by Anna Black</div>
+                            <div class="forum-list-item-left-text">by John Dou</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="forum-list-item">
+                    <div class="forum-list-item-wrapper">
+                        <div class="forum-list-item-left">
+                            <a class="forum-list-item-title" href="#"><img src="images/icon-paper.png" alt="">Super Mega Team</a>
+                        </div>
+                        <div class="forum-list-item-center">
+                            <p class="full-lh">2</p>
+                        </div>
+                        <div class="forum-list-item-right">
+                            <p class="full-lh">8</p>
+                        </div>
+                    </div>
+                    <div class="forum-list-item-wrapper">
+                        <div class="forum-list-item-left flex-show">
+                            <button class="flex-show-button">First post anb replies<img src="images/arrow-down-hov.png" alt=""></button>
+                            <p>Last post by <span class="blue">John Dou</span> <span class="grey">1 min ago</span></p>
+                        </div>
+                    </div>
+                    <div class="forum-list-item-wrapper wrapper-hidden">
+                        <div class="forum-list-item-left">
+                            <div class="forum-list-item-left-text forum-list-item-left-text-padding">
+                                <img src="images/clip.png" alt="">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum mollitia sint odit eligendi tempora quas. Eius nisi fuga nihil magnam, quos unde maiores eaque, iure ipsum enim reiciendis sint tempore?
+                            </div>
+                            <div class="forum-list-item-left-text forum-list-item-left-text-padding">
+                                <img src="images/message.png" alt="">
+                                Comment lSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...
+                            </div>
+                        </div>
+                        <div class="forum-list-item-center posAbs">
+                            <div class="forum-list-item-left-text">23 oct 2022</div>
+                            <div class="forum-list-item-left-text">1 min ago </div>
+                        </div>
+                        <div class="forum-list-item-right">
+                            <div class="forum-list-item-left-text">by Anna Black</div>
+                            <div class="forum-list-item-left-text">by John Dou</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="forum-list-item">
+                    <div class="forum-list-item-wrapper">
+                        <div class="forum-list-item-left">
+                            <a class="forum-list-item-title" href="#"><img src="images/icon-active.png" alt="">Hear from some of our satisfied clients from across the globe.</a>
+                        </div>
+                        <div class="forum-list-item-center">
+                            <p class="full-lh">2</p>
+                        </div>
+                        <div class="forum-list-item-right">
+                            <p class="full-lh">8</p>
+                        </div>
+                    </div>
+                    <div class="forum-list-item-wrapper">
+                        <div class="forum-list-item-left flex-show">
+                            <button class="flex-show-button">First post anb replies<img src="images/arrow-down-hov.png" alt=""></button>
+                            <p>Last post by <span class="blue">John Dou</span> <span class="grey">1 min ago</span></p>
+                        </div>
+                    </div>
+                    <div class="forum-list-item-wrapper wrapper-hidden">
+                        <div class="forum-list-item-left">
+                            <div class="forum-list-item-left-text forum-list-item-left-text-padding">
+                                <img src="images/clip.png" alt="">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum mollitia sint odit eligendi tempora quas. Eius nisi fuga nihil magnam, quos unde maiores eaque, iure ipsum enim reiciendis sint tempore?
+                            </div>
+                            <div class="forum-list-item-left-text forum-list-item-left-text-padding">
+                                <img src="images/message.png" alt="">
+                                Comment lSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...
+                            </div>
+                        </div>
+                        <div class="forum-list-item-center posAbs">
+                            <div class="forum-list-item-left-text">23 oct 2022</div>
+                            <div class="forum-list-item-left-text">1 min ago </div>
+                        </div>
+                        <div class="forum-list-item-right">
+                            <div class="forum-list-item-left-text">by Anna Black</div>
+                            <div class="forum-list-item-left-text">by John Dou</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="forum-list-item">
+                    <div class="forum-list-item-wrapper">
+                        <div class="forum-list-item-left">
+                            <a class="forum-list-item-title" href="#"><img src="images/icon-document.png" alt="">We have 516 highly qualified specialists with experience in development.</a>
+                        </div>
+                        <div class="forum-list-item-center">
+                            <p class="full-lh">2</p>
+                        </div>
+                        <div class="forum-list-item-right">
+                            <p class="full-lh">8</p>
+                        </div>
+                    </div>
+                    <div class="forum-list-item-wrapper">
+                        <div class="forum-list-item-left flex-show">
+                            <button class="flex-show-button">First post anb replies<img src="images/arrow-down-hov.png" alt=""></button>
+                            <p>Last post by <span class="blue">John Dou</span> <span class="grey">1 min ago</span></p>
+                        </div>
+                    </div>
+                    <div class="forum-list-item-wrapper wrapper-hidden">
+                        <div class="forum-list-item-left">
+                            <div class="forum-list-item-left-text forum-list-item-left-text-padding">
+                                <img src="images/clip.png" alt="">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum mollitia sint odit eligendi tempora quas. Eius nisi fuga nihil magnam, quos unde maiores eaque, iure ipsum enim reiciendis sint tempore?
+                            </div>
+                            <div class="forum-list-item-left-text forum-list-item-left-text-padding">
+                                <img src="images/message.png" alt="">
+                                Comment lSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...
+                            </div>
+                        </div>
+                        <div class="forum-list-item-center posAbs">
+                            <div class="forum-list-item-left-text">23 oct 2022</div>
+                            <div class="forum-list-item-left-text">1 min ago </div>
+                        </div>
+                        <div class="forum-list-item-right">
+                            <div class="forum-list-item-left-text">by Anna Black</div>
+                            <div class="forum-list-item-left-text">by John Dou</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="forum-list-item">
+                    <div class="forum-list-item-wrapper">
+                        <div class="forum-list-item-left">
+                            <a class="forum-list-item-title" href="#"><img src="images/icon-hot.png" alt="">Case Studies</a>
+                        </div>
+                        <div class="forum-list-item-center">
+                            <p class="full-lh">2</p>
+                        </div>
+                        <div class="forum-list-item-right">
+                            <p class="full-lh">8</p>
+                        </div>
+                    </div>
+                    <div class="forum-list-item-wrapper">
+                        <div class="forum-list-item-left flex-show">
+                            <button class="flex-show-button">First post anb replies<img src="images/arrow-down-hov.png" alt=""></button>
+                            <p>Last post by <span class="blue">John Dou</span> <span class="grey">1 min ago</span></p>
+                        </div>
+                    </div>
+                    <div class="forum-list-item-wrapper wrapper-hidden">
+                        <div class="forum-list-item-left">
+                            <div class="forum-list-item-left-text forum-list-item-left-text-padding">
+                                <img src="images/clip.png" alt="">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum mollitia sint odit eligendi tempora quas. Eius nisi fuga nihil magnam, quos unde maiores eaque, iure ipsum enim reiciendis sint tempore?
+                            </div>
+                            <div class="forum-list-item-left-text forum-list-item-left-text-padding">
+                                <img src="images/message.png" alt="">
+                                Comment lSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...
+                            </div>
+                        </div>
+                        <div class="forum-list-item-center posAbs">
+                            <div class="forum-list-item-left-text">23 oct 2022</div>
+                            <div class="forum-list-item-left-text">1 min ago </div>
+                        </div>
+                        <div class="forum-list-item-right">
+                            <div class="forum-list-item-left-text">by Anna Black</div>
+                            <div class="forum-list-item-left-text">by John Dou</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="forum-list-item">
+                    <div class="forum-list-item-wrapper">
+                        <div class="forum-list-item-left">
+                            <a class="forum-list-item-title" href="#"><img src="images/download1.png" alt="">Development Solutions for Startups and Enterprises</a>
+                        </div>
+                        <div class="forum-list-item-center">
+                            <p class="full-lh">2</p>
+                        </div>
+                        <div class="forum-list-item-right">
+                            <p class="full-lh">8</p>
+                        </div>
+                    </div>
+                    <div class="forum-list-item-wrapper">
+                        <div class="forum-list-item-left flex-show">
+                            <button class="flex-show-button">First post anb replies<img src="images/arrow-down-hov.png" alt=""></button>
+                            <p>Last post by <span class="blue">John Dou</span> <span class="grey">1 min ago</span></p>
+                        </div>
+                    </div>
+                    <div class="forum-list-item-wrapper wrapper-hidden">
+                        <div class="forum-list-item-left">
+                            <div class="forum-list-item-left-text forum-list-item-left-text-padding">
+                                <img src="images/clip.png" alt="">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum mollitia sint odit eligendi tempora quas. Eius nisi fuga nihil magnam, quos unde maiores eaque, iure ipsum enim reiciendis sint tempore?
+                            </div>
+                            <div class="forum-list-item-left-text forum-list-item-left-text-padding">
+                                <img src="images/message.png" alt="">
+                                Comment lSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...
+                            </div>
+                        </div>
+                        <div class="forum-list-item-center posAbs">
+                            <div class="forum-list-item-left-text">23 oct 2022</div>
+                            <div class="forum-list-item-left-text">1 min ago </div>
+                        </div>
+                        <div class="forum-list-item-right">
+                            <div class="forum-list-item-left-text">by Anna Black</div>
+                            <div class="forum-list-item-left-text">by John Dou</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="forum-list-item">
+                    <div class="forum-list-item-wrapper">
+                        <div class="forum-list-item-left">
+                            <a class="forum-list-item-title" href="#"><img src="images/icon-paper.png" alt="">Super Mega Team</a>
+                        </div>
+                        <div class="forum-list-item-center">
+                            <p class="full-lh">2</p>
+                        </div>
+                        <div class="forum-list-item-right">
+                            <p class="full-lh">8</p>
+                        </div>
+                    </div>
+                    <div class="forum-list-item-wrapper">
+                        <div class="forum-list-item-left flex-show">
+                            <button class="flex-show-button">First post anb replies<img src="images/arrow-down-hov.png" alt=""></button>
+                            <p>Last post by <span class="blue">John Dou</span> <span class="grey">1 min ago</span></p>
+                        </div>
+                    </div>
+                    <div class="forum-list-item-wrapper wrapper-hidden">
+                        <div class="forum-list-item-left">
+                            <div class="forum-list-item-left-text forum-list-item-left-text-padding">
+                                <img src="images/clip.png" alt="">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum mollitia sint odit eligendi tempora quas. Eius nisi fuga nihil magnam, quos unde maiores eaque, iure ipsum enim reiciendis sint tempore?
+                            </div>
+                            <div class="forum-list-item-left-text forum-list-item-left-text-padding">
+                                <img src="images/message.png" alt="">
+                                Comment lSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...
+                            </div>
+                        </div>
+                        <div class="forum-list-item-center posAbs">
+                            <div class="forum-list-item-left-text">23 oct 2022</div>
+                            <div class="forum-list-item-left-text">1 min ago </div>
+                        </div>
+                        <div class="forum-list-item-right">
+                            <div class="forum-list-item-left-text">by Anna Black</div>
+                            <div class="forum-list-item-left-text">by John Dou</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="forum-list-item">
+                    <div class="forum-list-item-wrapper">
+                        <div class="forum-list-item-left">
+                            <a class="forum-list-item-title" href="#"><img src="images/icon-active.png" alt="">Hear from some of our satisfied clients from across the globe.</a>
+                        </div>
+                        <div class="forum-list-item-center">
+                            <p class="full-lh">2</p>
+                        </div>
+                        <div class="forum-list-item-right">
+                            <p class="full-lh">8</p>
+                        </div>
+                    </div>
+                    <div class="forum-list-item-wrapper">
+                        <div class="forum-list-item-left flex-show">
+                            <button class="flex-show-button">First post anb replies<img src="images/arrow-down-hov.png" alt=""></button>
+                            <p>Last post by <span class="blue">John Dou</span> <span class="grey">1 min ago</span></p>
+                        </div>
+                    </div>
+                    <div class="forum-list-item-wrapper wrapper-hidden">
+                        <div class="forum-list-item-left">
+                            <div class="forum-list-item-left-text forum-list-item-left-text-padding">
+                                <img src="images/clip.png" alt="">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum mollitia sint odit eligendi tempora quas. Eius nisi fuga nihil magnam, quos unde maiores eaque, iure ipsum enim reiciendis sint tempore?
+                            </div>
+                            <div class="forum-list-item-left-text forum-list-item-left-text-padding">
+                                <img src="images/message.png" alt="">
+                                Comment lSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...
+                            </div>
+                        </div>
+                        <div class="forum-list-item-center posAbs">
+                            <div class="forum-list-item-left-text">23 oct 2022</div>
+                            <div class="forum-list-item-left-text">1 min ago </div>
+                        </div>
+                        <div class="forum-list-item-right">
+                            <div class="forum-list-item-left-text">by Anna Black</div>
+                            <div class="forum-list-item-left-text">by John Dou</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="forum-list-item">
+                    <div class="forum-list-item-wrapper">
+                        <div class="forum-list-item-left">
+                            <a class="forum-list-item-title" href="#"><img src="images/icon-document.png" alt="">We have 516 highly qualified specialists with experience in development.</a>
+                        </div>
+                        <div class="forum-list-item-center">
+                            <p class="full-lh">2</p>
+                        </div>
+                        <div class="forum-list-item-right">
+                            <p class="full-lh">8</p>
+                        </div>
+                    </div>
+                    <div class="forum-list-item-wrapper">
+                        <div class="forum-list-item-left flex-show">
+                            <button class="flex-show-button">First post anb replies<img src="images/arrow-down-hov.png" alt=""></button>
+                            <p>Last post by <span class="blue">John Dou</span> <span class="grey">1 min ago</span></p>
+                        </div>
+                    </div>
+                    <div class="forum-list-item-wrapper wrapper-hidden">
+                        <div class="forum-list-item-left">
+                            <div class="forum-list-item-left-text forum-list-item-left-text-padding">
+                                <img src="images/clip.png" alt="">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum mollitia sint odit eligendi tempora quas. Eius nisi fuga nihil magnam, quos unde maiores eaque, iure ipsum enim reiciendis sint tempore?
+                            </div>
+                            <div class="forum-list-item-left-text forum-list-item-left-text-padding">
+                                <img src="images/message.png" alt="">
+                                Comment lSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...
+                            </div>
+                        </div>
+                        <div class="forum-list-item-center posAbs">
+                            <div class="forum-list-item-left-text">23 oct 2022</div>
+                            <div class="forum-list-item-left-text">1 min ago </div>
+                        </div>
+                        <div class="forum-list-item-right">
+                            <div class="forum-list-item-left-text">by Anna Black</div>
+                            <div class="forum-list-item-left-text">by John Dou</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="forum-list-item">
+                    <div class="forum-list-item-wrapper">
+                        <div class="forum-list-item-left">
+                            <a class="forum-list-item-title" href="#"><img src="images/icon-hot.png" alt="">Case Studies</a>
+                        </div>
+                        <div class="forum-list-item-center">
+                            <p class="full-lh">2</p>
+                        </div>
+                        <div class="forum-list-item-right">
+                            <p class="full-lh">8</p>
+                        </div>
+                    </div>
+                    <div class="forum-list-item-wrapper">
+                        <div class="forum-list-item-left flex-show">
+                            <button class="flex-show-button">First post anb replies<img src="images/arrow-down-hov.png" alt=""></button>
+                            <p>Last post by <span class="blue">John Dou</span> <span class="grey">1 min ago</span></p>
+                        </div>
+                    </div>
+                    <div class="forum-list-item-wrapper wrapper-hidden">
+                        <div class="forum-list-item-left">
+                            <div class="forum-list-item-left-text forum-list-item-left-text-padding">
+                                <img src="images/clip.png" alt="">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum mollitia sint odit eligendi tempora quas. Eius nisi fuga nihil magnam, quos unde maiores eaque, iure ipsum enim reiciendis sint tempore?
+                            </div>
+                            <div class="forum-list-item-left-text forum-list-item-left-text-padding">
+                                <img src="images/message.png" alt="">
+                                Comment lSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...
+                            </div>
+                        </div>
+                        <div class="forum-list-item-center posAbs">
+                            <div class="forum-list-item-left-text">23 oct 2022</div>
+                            <div class="forum-list-item-left-text">1 min ago </div>
+                        </div>
+                        <div class="forum-list-item-right">
+                            <div class="forum-list-item-left-text">by Anna Black</div>
+                            <div class="forum-list-item-left-text">by John Dou</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="forum-list-nav">
+                <div></div>
+                <div>
+                    <button class="button-blue"><img src="images/arrow-left.png" alt=""></button>
+                    <button class="button-blue">6</button>
+                    <button class="button-blue">7</button>
+                    <button class="button-blue">8</button>
+                    <button class="button-blue"><img src="images/arrow-right.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+        <div class="forum-adds">
+            <div class="forum-adds-slider">
+                <img class="forum-adds-slider-prev" alt="" src="images/prev.png">
+                <div class="forum-adds-slider-items">
+                    <div class="forum-adds-slider-item">
+                        <div>
+                            <img class="adds-primary" src="images/oralb.png" alt="">
+                            <img src="images/oralb-mobile.png" alt="" class="adds-mobile">
+                        </div>
+                    </div> 
+                    <div class="forum-adds-slider-item">
+                        <div>
+                            <img class="adds-primary" src="images/oralb.png" alt="">
+                            <img src="images/oralb-mobile.png" alt="" class="adds-mobile">
+                        </div>
+                    </div> 
+                    <div class="forum-adds-slider-item">
+                        <div>
+                            <img class="adds-primary" src="images/oralb.png" alt="">
+                            <img src="images/oralb-mobile.png" alt="" class="adds-mobile">
+                        </div>
+                    </div> 
+                </div>
+                <img class="forum-adds-slider-next" src="images/next.png" alt="">
+                <div class="forum-adds-slider-dots"></div>
+            </div>
+        </div>
+    </div>
+    <div class="services-propose">
+        <div class="services-propose-container">
+            <div class="services-propose-text">ACCESS <span class="blue">NEW</span> MARKETS NOW</div>
+            <button class="services-propose-button">START A PROJECT NOW</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="header-logo footer-logo">
+                <div class="header-logo-head footer-logo-head">EQTRADING, INC.</div>
+                <div class="header-logo-foot footer-logo-foot">OUTSOURCE <span class="dot">&#183;</span> CONNECT WITH CONFIDENCE</div>
+            </div>
+            <div class="footer-menu">
+                <div class="footer-menu-list">
+                    <a href="#" class="footer-menu-list-item blue">SERVICES</a>
+                    <a href="#" class="footer-menu-list-item">MARKETING</a>
+                    <a href="#" class="footer-menu-list-item">ASK A BROKER</a>
+                    <a href="#" class="footer-menu-list-item">PRICING</a>
+                    <a href="#" class="footer-menu-list-item">ABOUT US</a>
+                    <a href="#" class="footer-menu-list-item">CONTACT US</a>
+                    <a href="#" class="footer-menu-list-item">BLOG</a>
+                </div>
+                <div class="footer-menu-social">
+                    <a href="#" class="footer-menu-social-item"></a>
+                    <a href="#" class="footer-menu-social-item"></a>
+                    <a href="#" class="footer-menu-social-item"></a>
+                    <a href="#" class="footer-menu-social-item"></a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="footer-menu-copyright">COPYRIGHTING BY eq TRIDING 2018</div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <!-- <script src="script/jquery-ui-1.9.2.custom.min.js"></script> -->
+    <script src="jodit-3.1.95/build/jodit.min.js"></script>
+    <script src="slick-master/slick/slick.min.js"></script>
+    <script src="script/topic.js"></script>
+</body>
+</html>

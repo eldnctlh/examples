@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Linux Admin</title>
+    <link rel="stylesheet" href="less/style.css">
+    <link rel="stylesheet" href="less/jquery-ui-1.9.2.custom.min.css">
+    <link rel="stylesheet" href="jquery-nice-select-1.1.0/css/nice-select.css">
+</head>
+<div class="admin-popup-bg">
+    <div class="admin-popup">
+        <div class="admin-popup-close">&times;</div>
+        <div class="admin-popup-title">Add computer</div>
+        <input type="text" id="admin-popup-input">
+        <div class="admin-popup-list">
+            <div class="admin-popup-list-item">#1120/1 <button class="admin-popup-list-item-button">add</button></div>
+            <div class="admin-popup-list-item">#1120/2 <button class="admin-popup-list-item-button">add</button></div>
+            <div class="admin-popup-list-item">#1120/3 <button class="admin-popup-list-item-button">add</button></div>
+            <div class="admin-popup-list-item">#1120/4 <button class="admin-popup-list-item-button">add</button></div>
+            <div class="admin-popup-list-item">#1120/5 <button class="admin-popup-list-item-button">add</button></div>
+        </div>
+        <button class="admin-popup-add">Add</button>
+    </div>
+</div>
+<div class="admin-popup-comment-bg">
+    <div class="admin-popup-comment">
+        <div class="admin-popup-close">&times;</div>
+        <div class="admin-popup-comment-title">Add comment</div>
+        <div class="admin-popup-comment-list">
+            <div class="admin-popup-comment-list-item"><span class="admin-popup-comment-list-item-author">Manager1:&nbsp</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis cum cupiditate natus nam. Placeat maxime, non molestiae deleniti pariatur libero dolore repellat. Excepturi nostrum dolore libero distinctio eius perspiciatis voluptatem?</div>
+            <div class="admin-popup-comment-list-item"><span class="admin-popup-comment-list-item-author">Manager1:&nbsp</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis cupiditate sint blanditiis ducimus quaerat inventore optio quisquam, nam labore perspiciatis accusamus natus. Velit reiciendis tempore nobis vel quos eum facilis.</div>
+            <div class="admin-popup-comment-list-item"><span class="admin-popup-comment-list-item-author">Manager1:&nbsp</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, veniam. Quasi rem explicabo quas libero! Explicabo, ducimus tempora ex quas, est asperiores reprehenderit eligendi earum doloremque eveniet eum mollitia molestias?</div>
+            <div class="admin-popup-comment-list-item"><span class="admin-popup-comment-list-item-author">Manager1:&nbsp</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, veniam. Quasi rem explicabo quas libero! Explicabo, ducimus tempora ex quas, est asperiores reprehenderit eligendi earum doloremque eveniet eum mollitia molestias?</div>
+            <div class="admin-popup-comment-list-item"><span class="admin-popup-comment-list-item-author">Manager1:&nbsp</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, veniam. Quasi rem explicabo quas libero! Explicabo, ducimus tempora ex quas, est asperiores reprehenderit eligendi earum doloremque eveniet eum mollitia molestias?</div>
+            <div class="admin-popup-comment-list-item"><span class="admin-popup-comment-list-item-author">Manager1:&nbsp</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, veniam. Quasi rem explicabo quas libero! Explicabo, ducimus tempora ex quas, est asperiores reprehenderit eligendi earum doloremque eveniet eum mollitia molestias?</div>
+            <div class="admin-popup-comment-list-item"><span class="admin-popup-comment-list-item-author">Manager1:&nbsp</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, veniam. Quasi rem explicabo quas libero! Explicabo, ducimus tempora ex quas, est asperiores reprehenderit eligendi earum doloremque eveniet eum mollitia molestias?</div>
+        </div>
+        <textarea placeholder="type new comment" id="admin-popup-comment-input" name="" id="" cols="30" rows="10"></textarea>
+        <button class="admin-popup-comment-add">Add</button>
+    </div>
+</div>
+<div class="admin-popup-suborder-bg">
+    <div class="admin-popup-suborder">
+        <div class="admin-popup-close">&times;</div>
+        <div class="admin-popup-suborder-title">Add comment</div>
+        <textarea placeholder="type new suborder" id="admin-popup-suborder-input" name="" id="" cols="30" rows="10"></textarea>
+        <button class="admin-popup-suborder-add">Add</button>
+        <button class="admin-popup-suborder-add sub-cancel">Cancel</button>
+    </div>
+</div>
+<body class="admin-body other" style="background-color: #f3f5ff">
+    <div class="admin">
+        <div class="sidebar-wrapper">
+            <div class="admin-sidebar">
+                <a href="index.html" class="admin-sidebar-logo"></a>
+                <a style="text-decoration: none" href="admin.html" class="admin-sidebar-item admin-sidebar-active">Orders<div class="admin-sidebar-item-notification">1</div></a>
+                <a style="text-decoration: none" href="admin-archive.html" class="admin-sidebar-item">Archive</a>
+                <a style="text-decoration: none" href="admin-clients.html" class="admin-sidebar-item">Clients</a>
+                <a style="text-decoration: none" href="admin-managers.html" class="admin-sidebar-item">Managers</a>
+                <a style="text-decoration: none" href="admin-blog.html" class="admin-sidebar-item">Blog</a>
+                <a style="text-decoration: none" href="admin-notes.html" class="admin-sidebar-item">Notes</a>
+                <a style="text-decoration: none" href="admin-custom.html" class="admin-sidebar-item">Custom Field</a>
+            </div>
+        </div>
+        <div class="admin-main">
+                <div class="admin-main-head">
+                    <div class="admin-main-head-name">Manager 1
+                        <div class="admin-main-head-name-icon"></div>
+                    </div>
+                </div>
+            <div class="admin-main-item">
+                <div class="admin-main-item-head">Orders</div>
+                <div class="admin-main-item-orders">
+                    <div class="admin-main-item-orders-container">
+                        <div class="admin-main-item-orders-header">
+                            <div class="admin-main-item-orders-header-search-wrapper">
+                                <input type="text" class="admin-main-item-orders-header-search" placeholder="Search order ID / client">
+                                <button tabindex="-1" class="admin-main-item-orders-header-search-button"></button>
+                            </div>
+                            <div class="admin-main-item-orders-header-right">
+                                <input type="text" id="datepicker" placeholder="From" class="admin-main-item-orders-header-date">
+                                <span class="admin-main-item-orders-header-date-between">-</span>
+                                <input type="text" id="datepicker2" placeholder="To" class="admin-main-item-orders-header-date">
+                                <div class="select-wrapper">
+                                    <div class="admin-select-placeholder">Status:</div>
+                                    <select class="admin-main-item-orders-header-select">
+                                        <option value="" selected="selected">All</option>
+                                        <option value="">Not all</option>
+                                        <option value="">Lorem</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="admin-main-item-orders-content">
+                            <div class="admin-main-item-orders-content-header">
+                                <div class="admin-main-item-orders-content-header-item">ID</div>
+                                <div class="admin-main-item-orders-content-header-item">Date</div>
+                                <div class="admin-main-item-orders-content-header-item">Client</div>
+                                <div class="admin-main-item-orders-content-header-item">Phone</div>
+                                <div class="admin-main-item-orders-content-header-item">Plan</div>
+                                <div class="admin-main-item-orders-content-header-item">Status</div>
+                                <div class="admin-main-item-orders-content-header-item">Manager</div>
+                            </div>
+                            <div class="admin-main-item-orders-content-item-cont">
+                                <div style="position: relative;" class="admin-main-item-orders-content-item">
+                                    <div class="admin-main-item-orders-content-item-item">#1120</div>
+                                    <div class="admin-main-item-orders-content-item-item">29.05.2018</div>
+                                    <div class="admin-main-item-orders-content-item-item">Amanda</div>
+                                    <div class="admin-main-item-orders-content-item-item admin-phone">
+                                        <div class="admin-phone-item">123-456-789</div>
+                                        <img class="admin-phone-item" src="images/icon-whatsapp.png" width="17px" height="17px">
+                                        <img class="admin-phone-item" src="images/icon-viber.png" width="17px" height="17px">
+                                    </div>
+                                    <div class="admin-main-item-orders-content-item-item">Corporate Monthly Support</div>
+                                    <button class="admin-main-item-orders-content-item-item admin-item-status">Waiting for processing</button>
+                                    <div class="admin-main-item-orders-content-item-item">Manager 1 </div>
+                                    <div class="admin-main-item-orders-content-item-item admin-item-icons">
+                                        <div class="admin-item-icons-icon addComputer"></div>
+                                        <!-- <div class="admin-item-icons-icon addComment"></div> -->
+                                        <!-- <div class="admin-item-icons-icon"></div> -->
+                                    </div>
+
+                                    <div class="showHistory" style="position: absolute; bottom: -5px; right: 10px; cursor: pointer;">Additional &darr;</div>
+                                    <button class="addSubOrder" style="position: absolute; top: 10px; right: 10px; cursor: pointer;">Add Suborder</button>
+                                </div>
+                                <div class="admin-main-item-orders-content-item-cont-inner">
+                                    <div class="admin-main-item-orders-content-item-cont-inner-title">Additional Information</div>
+                                    <div class="admin-main-item-orders-content-item-cont-inner-item item-hdr">
+                                        <div>Id</div>
+                                        <div style="width: 300px">Status</div>
+                                        <!-- <div></div>
+                                        <div></div> -->
+                                        <div style="width: 500px">Comments</div>
+                                        <div>Manager</div>
+                                    </div>
+                                    <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                        <div>#1120/1</div>
+                                        <div style="width: 317px">
+                                            <select name="" id="">
+                                                <option value="">Waiting for processing</option>
+                                                <option value="">Processed</option>
+                                            </select>
+                                        </div>
+                                        <!-- <div></div>
+                                        <div></div> -->
+                                        <div style="width: 500px; margin-left: 70px"><div><button class="addComment" style="width: 150px;  height: 30px; font-family: SourceRegular; background-color: transparent;border:1px solid #ccc;cursor:pointer">Watch comments</button></div></div>
+                                        <div style="margin-left: 60px">
+                                            <select name="" id="">
+                                                <option value="">Manager1</option>
+                                                <option value="">Manager2</option>
+                                                <option value="">Manager3</option>
+                                                <option value="">Manager4</option>
+                                                <option value="">Manager5</option>
+                                            </select>
+                                        </div>
+                                        <div style="display: flex">
+                                            <div class="admin-main-item-orders-content-item-item admin-item-button">Take it</div>
+                                            <button class="admin-main-item-orders-content-item-cont-inner-item-button">Save</button>
+                                        </div>
+                                    </div>
+                                    <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                        <div>#1120/2</div>
+                                        <div style="width: 317px">
+                                            <select name="" id="">
+                                                <option value="">Waiting for processing</option>
+                                                <option value="">Processed</option>
+                                            </select>
+                                        </div>
+                                        <!-- <div></div>
+                                        <div></div> -->
+                                        <div style="width: 500px; margin-left: 70px"><div><button class="addComment" style="width: 150px;  height: 30px; font-family: SourceRegular; background-color: transparent;border:1px solid #ccc;cursor:pointer">Watch comments</button></div></div>
+                                        <div style="margin-left: 60px">
+                                            <select name="" id="">
+                                                <option value="">Manager1</option>
+                                                <option value="">Manager2</option>
+                                                <option value="">Manager3</option>
+                                                <option value="">Manager4</option>
+                                                <option value="">Manager5</option>
+                                            </select>
+                                        </div>
+                                        <div style="display: flex">
+                                            <div class="admin-main-item-orders-content-item-item admin-item-button">Take it</div>
+                                            <button class="admin-main-item-orders-content-item-cont-inner-item-button">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="admin-main-item-orders-content-item-cont">
+                                <div style="position: relative;" class="admin-main-item-orders-content-item">
+                                    <div class="admin-main-item-orders-content-item-item">#1119</div>
+                                    <div class="admin-main-item-orders-content-item-item">25.05.2018</div>
+                                    <div class="admin-main-item-orders-content-item-item">Sandra</div>
+                                    <div class="admin-main-item-orders-content-item-item admin-phone">
+                                        <div class="admin-phone-item">123-456-789</div>
+                                        <img class="admin-phone-item" src="images/icon-whatsapp.png" width="17px" height="17px">
+                                        <img class="admin-phone-item" src="images/icon-viber.png" width="17px" height="17px">
+                                    </div>
+                                    <div class="admin-main-item-orders-content-item-item">Monthly Support</div>
+                                    <button class="admin-main-item-orders-content-item-item item-processed admin-item-status">Processed</button>
+                                    <div class="admin-main-item-orders-content-item-item">Manager 1</div>
+                                    <div class="admin-main-item-orders-content-item-item admin-item-icons">
+                                        <div class="admin-item-icons-icon addComputer"></div>
+                                        <!-- <div class="admin-item-icons-icon addComment"></div> -->
+                                        <!-- <div class="admin-item-icons-icon"></div> -->
+                                    </div>
+                                    <div class="showHistory" style="position: absolute; bottom: -5px; right: 10px; cursor: pointer;">Additional &darr;</div>
+                                    <button class="addSubOrder" style="position: absolute; top: 10px; right: 10px; cursor: pointer;">Add Suborder</button>
+                                </div>
+                                <div class="admin-main-item-orders-content-item-cont-inner">
+                                        <div class="admin-main-item-orders-content-item-cont-inner-title">Additional Information</div>
+                                        <div class="admin-main-item-orders-content-item-cont-inner-item item-hdr">
+                                            <div>Id</div>
+                                            <div style="width: 300px">Status</div>
+                                            <!-- <div></div>
+                                            <div></div> -->
+                                            <div style="width: 500px">Comments</div>
+                                            <div>Manager</div>
+                                        </div>
+                                        <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                            <div>#1120/1</div>
+                                            <div style="width: 317px">
+                                                <select name="" id="">
+                                                    <option value="">Waiting for processing</option>
+                                                    <option value="">Processed</option>
+                                                </select>
+                                            </div>
+                                            <!-- <div></div>
+                                            <div></div> -->
+                                            <div style="width: 500px; margin-left: 70px"><div><button class="addComment" style="width: 150px;  height: 30px; font-family: SourceRegular; background-color: transparent;border:1px solid #ccc;cursor:pointer">Watch comments</button></div></div>
+                                            <div style="margin-left: 60px">
+                                                <select name="" id="">
+                                                    <option value="">Manager1</option>
+                                                    <option value="">Manager2</option>
+                                                    <option value="">Manager3</option>
+                                                    <option value="">Manager4</option>
+                                                    <option value="">Manager5</option>
+                                                </select>
+                                            </div>
+                                            <div style="display: flex">
+                                                <div class="admin-main-item-orders-content-item-item admin-item-button">Take it</div>
+                                                <button class="admin-main-item-orders-content-item-cont-inner-item-button">Save</button>
+                                            </div>
+                                        </div>
+                                        <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                            <div>#1120/2</div>
+                                            <div style="width: 317px">
+                                                <select name="" id="">
+                                                    <option value="">Waiting for processing</option>
+                                                    <option value="">Processed</option>
+                                                </select>
+                                            </div>
+                                            <!-- <div></div>
+                                            <div></div> -->
+                                            <div style="width: 500px; margin-left: 70px"><div><button class="addComment" style="width: 150px;  height: 30px; font-family: SourceRegular; background-color: transparent;border:1px solid #ccc;cursor:pointer">Watch comments</button></div></div>
+                                            <div style="margin-left: 60px">
+                                                <select name="" id="">
+                                                    <option value="">Manager1</option>
+                                                    <option value="">Manager2</option>
+                                                    <option value="">Manager3</option>
+                                                    <option value="">Manager4</option>
+                                                    <option value="">Manager5</option>
+                                                </select>
+                                            </div>
+                                            <div style="display: flex">
+                                                <div class="admin-main-item-orders-content-item-item admin-item-button">Take it</div>
+                                                <button class="admin-main-item-orders-content-item-cont-inner-item-button">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                
+                            </div>
+                                <div class="admin-main-item-orders-content-item-cont">
+                                    <div style="position: relative;" class="admin-main-item-orders-content-item">
+                                        <div class="admin-main-item-orders-content-item-item">#1118</div>
+                                        <div class="admin-main-item-orders-content-item-item">29.05.2018</div>
+                                        <div class="admin-main-item-orders-content-item-item">Ashley</div>
+                                        <div class="admin-main-item-orders-content-item-item admin-phone">
+                                            <div class="admin-phone-item">123-456-789</div>
+                                            <img class="admin-phone-item" src="images/icon-whatsapp.png" width="17px" height="17px">
+                                            <img class="admin-phone-item" src="images/icon-viber.png" width="17px" height="17px">
+                                        </div>
+                                        <div class="admin-main-item-orders-content-item-item">One Time Help</div>
+                                        <button class="admin-main-item-orders-content-item-item item-processed admin-item-status">Processed</button>
+                                        <div class="admin-main-item-orders-content-item-item">Manager 2</div>
+                                        <!-- <div class="admin-main-item-orders-content-item-item"></div> -->
+                                        <div class="admin-main-item-orders-content-item-item admin-item-icons">
+                                                <div class="admin-item-icons-icon addComputer"></div>
+                                                <!-- <div class="admin-item-icons-icon addComment"></div> -->
+                                                <!-- <div class="admin-item-icons-icon"></div> -->
+                                            </div>
+                                        <div class="showHistory" style="position: absolute; bottom: -5px; right: 10px; cursor: pointer;">Additional &darr;</div>
+                                        <button class="addSubOrder" style="position: absolute; top: 10px; right: 10px; cursor: pointer;">Add Suborder</button>
+                                    </div>
+
+                                </div>
+                                <div class="admin-main-item-orders-content-item-cont">
+                                <div style="position: relative;" class="admin-main-item-orders-content-item">
+                                    <div class="admin-main-item-orders-content-item-item">#1119</div>
+                                    <div class="admin-main-item-orders-content-item-item">25.05.2018</div>
+                                    <div class="admin-main-item-orders-content-item-item">Sandra</div>
+                                    <div class="admin-main-item-orders-content-item-item admin-phone">
+                                        <div class="admin-phone-item">123-456-789</div>
+                                        <img class="admin-phone-item" src="images/icon-whatsapp.png" width="17px" height="17px">
+                                        <img class="admin-phone-item" src="images/icon-viber.png" width="17px" height="17px">
+                                    </div>
+                                    <div class="admin-main-item-orders-content-item-item">Monthly Support</div>
+                                    <button class="admin-main-item-orders-content-item-item item-processed admin-item-status">Processed</button>
+                                    <div class="admin-main-item-orders-content-item-item">Manager 1</div>
+                                    <div class="admin-main-item-orders-content-item-item admin-item-icons">
+                                        <div class="admin-item-icons-icon addComputer"></div>
+                                        <!-- <div class="admin-item-icons-icon addComment"></div> -->
+                                        <!-- <div class="admin-item-icons-icon"></div> -->
+                                    </div>
+                                    <div class="showHistory" style="position: absolute; bottom: -5px; right: 10px; cursor: pointer;">Additional &darr;</div>
+                                    <button class="addSubOrder" style="position: absolute; top: 10px; right: 10px; cursor: pointer;">Add Suborder</button>
+                                </div>
+                                <div class="admin-main-item-orders-content-item-cont-inner">
+                                        <div class="admin-main-item-orders-content-item-cont-inner-title">Additional Information</div>
+                                        <div class="admin-main-item-orders-content-item-cont-inner-item item-hdr">
+                                            <!-- <div>Id</div> -->
+                                            <div style="width: 300px">Status</div>
+                                            <!-- <div></div>
+                                            <div></div> -->
+                                            <div style="width: 500px">Comments</div>
+                                            <div>Manager</div>
+                                        </div>
+                                        <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                            <!-- <div>#1120/1</div> -->
+                                            <div style="width: 317px">
+                                                <select name="" id="">
+                                                    <option value="">Waiting for processing</option>
+                                                    <option value="">Processed</option>
+                                                </select>
+                                            </div>
+                                            <!-- <div></div>
+                                            <div></div> -->
+                                            <div style="width: 500px; margin-left: 70px"><div><button class="addComment" style="width: 150px;  height: 30px; font-family: SourceRegular; background-color: transparent;border:1px solid #ccc;cursor:pointer">Watch comments</button></div></div>
+                                            <div style="margin-left: 60px">
+                                                <select name="" id="">
+                                                    <option value="">Manager1</option>
+                                                    <option value="">Manager2</option>
+                                                    <option value="">Manager3</option>
+                                                    <option value="">Manager4</option>
+                                                    <option value="">Manager5</option>
+                                                </select>
+                                            </div>
+                                            <div style="display: flex">
+                                                <div class="admin-main-item-orders-content-item-item admin-item-button">Take it</div>
+                                                <button class="admin-main-item-orders-content-item-cont-inner-item-button">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="admin-main-item-orders-content-item-cont-inner">
+                                        <div class="admin-main-item-orders-content-item-cont-inner-title">Additional Information</div>
+                                        <div class="admin-main-item-orders-content-item-cont-inner-item item-hdr">
+                                            <div>Id</div>
+                                            <div style="width: 300px">Status</div>
+                                            <!-- <div></div>
+                                            <div></div> -->
+                                            <div style="width: 500px">Comments</div>
+                                            <div>Manager</div>
+                                        </div>
+                                        <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                            <div>#1120/1</div>
+                                            <div style="width: 317px">
+                                                <select name="" id="">
+                                                    <option value="">Waiting for processing</option>
+                                                    <option value="">Processed</option>
+                                                </select>
+                                            </div>
+                                            <!-- <div></div>
+                                            <div></div> -->
+                                            <div style="width: 500px; margin-left: 70px"><div><button class="addComment" style="width: 150px;  height: 30px; font-family: SourceRegular; background-color: transparent;border:1px solid #ccc;cursor:pointer">Watch comments</button></div></div>
+                                            <div style="margin-left: 60px">
+                                                <select name="" id="">
+                                                    <option value="">Manager1</option>
+                                                    <option value="">Manager2</option>
+                                                    <option value="">Manager3</option>
+                                                    <option value="">Manager4</option>
+                                                    <option value="">Manager5</option>
+                                                </select>
+                                            </div>
+                                            <div style="display: flex">
+                                                <div class="admin-main-item-orders-content-item-item admin-item-button">Take it</div>
+                                                <button class="admin-main-item-orders-content-item-cont-inner-item-button">Save</button>
+                                            </div>
+                                        </div>
+                                        <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                            <div>#1120/2</div>
+                                            <div style="width: 317px">
+                                                <select name="" id="">
+                                                    <option value="">Waiting for processing</option>
+                                                    <option value="">Processed</option>
+                                                </select>
+                                            </div>
+                                            <!-- <div></div>
+                                            <div></div> -->
+                                            <div style="width: 500px; margin-left: 70px"><div><button class="addComment" style="width: 150px;  height: 30px; font-family: SourceRegular; background-color: transparent;border:1px solid #ccc;cursor:pointer">Watch comments</button></div></div>
+                                            <div style="margin-left: 60px">
+                                                <select name="" id="">
+                                                    <option value="">Manager1</option>
+                                                    <option value="">Manager2</option>
+                                                    <option value="">Manager3</option>
+                                                    <option value="">Manager4</option>
+                                                    <option value="">Manager5</option>
+                                                </select>
+                                            </div>
+                                            <div style="display: flex">
+                                                <div class="admin-main-item-orders-content-item-item admin-item-button">Take it</div>
+                                                <button class="admin-main-item-orders-content-item-cont-inner-item-button">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="admin-main-item-orders-content-item-cont">
+                                    <div style="position: relative;" class="admin-main-item-orders-content-item">
+                                        <div class="admin-main-item-orders-content-item-item">#1119</div>
+                                        <div class="admin-main-item-orders-content-item-item">25.05.2018</div>
+                                        <div class="admin-main-item-orders-content-item-item">Sandra</div>
+                                        <div class="admin-main-item-orders-content-item-item admin-phone">
+                                            <div class="admin-phone-item">123-456-789</div>
+                                            <img class="admin-phone-item" src="images/icon-whatsapp.png" width="17px" height="17px">
+                                            <img class="admin-phone-item" src="images/icon-viber.png" width="17px" height="17px">
+                                        </div>
+                                        <div class="admin-main-item-orders-content-item-item">Monthly Support</div>
+                                        <button class="admin-main-item-orders-content-item-item item-processed admin-item-status">Processed</button>
+                                        <div class="admin-main-item-orders-content-item-item">Manager 1</div>
+                                        <div class="admin-main-item-orders-content-item-item admin-item-icons">
+                                            <div class="admin-item-icons-icon addComputer"></div>
+                                            <!-- <div class="admin-item-icons-icon addComment"></div> -->
+                                            <!-- <div class="admin-item-icons-icon"></div> -->
+                                        </div>
+                                        <div class="showHistory" style="position: absolute; bottom: -5px; right: 10px; cursor: pointer;">Additional &darr;</div>
+                                        <button class="addSubOrder" style="position: absolute; top: 10px; right: 10px; cursor: pointer;">Add Suborder</button>
+                                    </div>
+                                    <div class="admin-main-item-orders-content-item-cont-inner">
+                                            <div class="admin-main-item-orders-content-item-cont-inner-title">Additional Information</div>
+                                            <div class="admin-main-item-orders-content-item-cont-inner-item item-hdr">
+                                                <!-- <div>Id</div> -->
+                                                <div style="width: 300px">Status</div>
+                                                <!-- <div></div>
+                                                <div></div> -->
+                                                <div style="width: 500px">Comments</div>
+                                                <div>Manager</div>
+                                            </div>
+                                            <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                                <!-- <div>#1120/1</div> -->
+                                                <div style="width: 317px">
+                                                    <select name="" id="">
+                                                        <option value="">Waiting for processing</option>
+                                                        <option value="">Processed</option>
+                                                    </select>
+                                                </div>
+                                                <!-- <div></div>
+                                                <div></div> -->
+                                                <div style="width: 500px; margin-left: 70px"><div><button class="addComment" style="width: 150px;  height: 30px; font-family: SourceRegular; background-color: transparent;border:1px solid #ccc;cursor:pointer">Watch comments</button></div></div>
+                                                <div style="margin-left: 60px">
+                                                    <select name="" id="">
+                                                        <option value="">Manager1</option>
+                                                        <option value="">Manager2</option>
+                                                        <option value="">Manager3</option>
+                                                        <option value="">Manager4</option>
+                                                        <option value="">Manager5</option>
+                                                    </select>
+                                                </div>
+                                                <div style="display: flex">
+                                                    <div class="admin-main-item-orders-content-item-item admin-item-button">Take it</div>
+                                                    <button class="admin-main-item-orders-content-item-cont-inner-item-button">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="admin-main-item-orders-content-item-cont-inner">
+                                            <div class="admin-main-item-orders-content-item-cont-inner-title">Additional Information</div>
+                                            <div class="admin-main-item-orders-content-item-cont-inner-item item-hdr">
+                                                <div>Id</div>
+                                                <div style="width: 300px">Status</div>
+                                                <!-- <div></div>
+                                                <div></div> -->
+                                                <div style="width: 500px">Comments</div>
+                                                <div>Manager</div>
+                                            </div>
+                                            <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                                <div>#1120/1</div>
+                                                <div style="width: 317px">
+                                                    <select name="" id="">
+                                                        <option value="">Waiting for processing</option>
+                                                        <option value="">Processed</option>
+                                                    </select>
+                                                </div>
+                                                <!-- <div></div>
+                                                <div></div> -->
+                                                <div style="width: 500px; margin-left: 70px"><div><button class="addComment" style="width: 150px;  height: 30px; font-family: SourceRegular; background-color: transparent;border:1px solid #ccc;cursor:pointer">Watch comments</button></div></div>
+                                                <div style="margin-left: 60px">
+                                                    <select name="" id="">
+                                                        <option value="">Manager1</option>
+                                                        <option value="">Manager2</option>
+                                                        <option value="">Manager3</option>
+                                                        <option value="">Manager4</option>
+                                                        <option value="">Manager5</option>
+                                                    </select>
+                                                </div>
+                                                <div style="display: flex">
+                                                    <div class="admin-main-item-orders-content-item-item admin-item-button">Take it</div>
+                                                    <button class="admin-main-item-orders-content-item-cont-inner-item-button">Save</button>
+                                                </div>
+                                            </div>
+                                            <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                                <div>#1120/2</div>
+                                                <div style="width: 317px">
+                                                    <select name="" id="">
+                                                        <option value="">Waiting for processing</option>
+                                                        <option value="">Processed</option>
+                                                    </select>
+                                                </div>
+                                                <!-- <div></div>
+                                                <div></div> -->
+                                                <div style="width: 500px; margin-left: 70px"><div><button class="addComment" style="width: 150px;  height: 30px; font-family: SourceRegular; background-color: transparent;border:1px solid #ccc;cursor:pointer">Watch comments</button></div></div>
+                                                <div style="margin-left: 60px">
+                                                    <select name="" id="">
+                                                        <option value="">Manager1</option>
+                                                        <option value="">Manager2</option>
+                                                        <option value="">Manager3</option>
+                                                        <option value="">Manager4</option>
+                                                        <option value="">Manager5</option>
+                                                    </select>
+                                                </div>
+                                                <div style="display: flex">
+                                                    <div class="admin-main-item-orders-content-item-item admin-item-button">Take it</div>
+                                                    <button class="admin-main-item-orders-content-item-cont-inner-item-button">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="admin-main-item-orders-slider">
+                            <div class="admin-main-item-orders-slider-item-arrow">&#10094;</div>
+                            <div class="admin-main-item-orders-slider-item">1</div>
+                            <div class="admin-main-item-orders-slider-item admin-slider-active">2</div>
+                            <div class="admin-main-item-orders-slider-item">3</div>
+                            <div class="admin-main-item-orders-slider-item-dots">...</div>
+                            <div class="admin-main-item-orders-slider-item">6</div>
+                            <div class="admin-main-item-orders-slider-item-arrow">&#10095;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="script/admin.js"></script>
+    <script src="jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('select').niceSelect();
+        });
+        var arrshowHistory = document.querySelectorAll('.showHistory');
+        var showHistory = Array.prototype.slice.call(arrshowHistory);
+        showHistory.forEach(function(e, i){
+            e.addEventListener('click', function(){
+                document.querySelectorAll('.admin-main-item-orders-content-item-cont-inner')[i].classList.toggle('block');
+            })
+        })
+        Array.prototype.slice.call(document.querySelectorAll('.admin-popup-close')).forEach(function(e){
+            e.addEventListener('click', function(){
+                this.parentNode.parentNode.classList.remove('block')
+            })
+        })
+        
+    </script>
+</body>
+</html>

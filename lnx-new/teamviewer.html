@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Linux TeamViewer</title>
+    <link rel="stylesheet" href="less/style.css">
+</head>
+<body style="opacity:0;transition: opacity .2s;">
+    <div class="other">
+            <div class="popup-bg">
+                <div class="popup">
+                    <div class="popup-close"></div>
+                    <div class="popup-container">
+                        <div class="popup-title">Request help now</div>
+                        <div class="popup-labels">
+                            <div class="head-main-right-text">Name:</div>
+                            <div class="head-main-right-text">Contact Number:</div>
+                        </div>
+                        <form action="" method="POST">
+                            <div class="popup-inputs">
+                                <input required placeholder='Enter your name' type="text" id="input1" class="head-main-right-input inputp">
+                                <input required placeholder='Enter a phone number' type="text" id="input2" class="head-main-right-input inputp">
+                            </div>
+                            <div class="head-main-right-icons popup-icons">
+                                <div tabindex="0" class="head-main-right-icons-icon tl" title="Telegram"></div>
+                                <div tabindex="0" class="head-main-right-icons-icon wh" title="Whatsapp"></div>
+                                <div tabindex="0" class="head-main-right-icons-icon vb" title="Viber"></div>
+                                <div tabindex="0" class="head-main-right-icons-icon sk" title="Skype"></div>
+                                <div tabindex="0" class="head-main-right-icons-icon em" title="Email"></div>
+                                <div tabindex="0" class="head-main-right-icons-icon cl" title="Call"></div>
+                            </div>
+                            <div class="popup-plans-title">Choose your plan:</div>
+                            <div class="popup-plans">
+                                <div tabindex="0" class="popup-plans-plan plan-hover"><div class="popup-plans-plan-text">One Time Help<br />$4.99</div></div>
+                                <div tabindex="0" class="popup-plans-plan"><div class="popup-plans-plan-text">Monthly Help<br />$19.99</div></div>
+                                <div tabindex="0" class="popup-plans-plan"><div class="popup-plans-plan-text">Corporate monthly support<br />$99.99</div></div>
+                            </div>
+                            <div class="popup-input-title">Your problem:</div>
+                            <textarea placeholder="Describe your problem here" class="popup-input"></textarea>
+                            <input style="display: block; border: none" type="submit" tabindex="0" class="popup-button" value="Send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <div class="signin-bg" id="signInBg">
+            <div class="signin">
+                <div class="signin-close" id="signInClose"></div>
+                <div class="signin-container">
+                    <div class="signin-title">Sign up</div>
+                    <form action="" method="POST">
+                        <div class="signin-label">Name:</div>
+                        <input required type="text" class="signin-input" placeholder="Enter your name">
+                        <div class="signin-label">Email:</div>
+                        <input required type="text" class="signin-input at" placeholder="Enter your email">
+                        <div class="signin-label">Password:</div>
+                        <input required type="password" class="signin-input locked" placeholder="Enter your password">
+                        <div class="signin-label">Repeat password:</div>
+                        <input required type="password" class="signin-input locked" placeholder="Repeat your password">
+                        <input style="display: block; border: none" type="submit" tabindex="0" class="signin-button" value="Sign Up">
+                    </form>
+                    <div class="signin-or">&nbsp;or use account&nbsp;</div>
+                    <div class="signin-buttons">
+                        <div class="signin-buttons-button">Facebook</div>
+                        <div class="signin-buttons-button">Google</div>
+                    </div>
+                    <div class="signin-last">Do you have an account?<a class="logIn">Log in</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="signin-bg" id="logInBg">
+                <div class="signin">
+                    <div class="signin-close" id="logInClose"></div>
+                    <div class="signin-container">
+                        <div class="signin-title">Log in</div>
+                        <form action="" method="POST">
+                            <div class="signin-label">Email:</div>
+                            <input required type="text" class="signin-input at" placeholder="Enter your email">
+                            <div class="signin-label">Password:</div>
+                            <input required type="password" class="signin-input locked" placeholder="Enter your password">
+                            <div class="signin-forgot">Forgot your password?</div>
+                            <input type="submit" style="display: block; border: none" class="signin-button" value="Log In">
+                        </form>
+                        <div class="signin-or">&nbsp;or use account&nbsp;</div>
+                        <div class="signin-buttons">
+                            <div class="signin-buttons-button">Facebook</div>
+                            <div class="signin-buttons-button">Google</div>
+                        </div>
+                        <div class="signin-last">Don’t have an account?<a id="signIn">Sign up</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Logined -->    
+        <!-- <div class="index-login-popup">
+                <div class="upgradePopupCross">x</div>
+                <div class="per-acc-sidebar">
+                    <div class="per-acc-sidebar-item">
+                        <div class="per-acc-sidebar-container">
+                            <div class="per-acc-sidebar-pretitle">Your plan</div>
+                            <div class="per-acc-sidebar-title changedTitle">Monthly Help</div>
+                            <div class="per-acc-sidebar-date">02.07.2018 - 02.08.2018</div>
+                            <div class="per-acc-sidebar-buttons">
+                                <div class="per-acc-sidebar-buttons-button planChange" id="upgrade">Change Plan</div>
+                                <div class="per-acc-sidebar-buttons-button planUn">Unsubscribe</div>
+                            </div>
+                            <div class="per-acc-sidebar-planchange">
+                                <div class="per-acc-sidebar-planchange-item upgradePopupItem">One Time Help</div>
+                                <div class="per-acc-sidebar-planchange-item upgradePopupItem">Monthly Help</div>
+                                <div class="per-acc-sidebar-planchange-item upgradePopupItem">Corporate Monthly Support</div>
+                            </div>
+                            <div class="per-acc-sidebar-sure">
+                                <div class="per-acc-sidebar-sure-title">Are you sure?</div>
+                                <div class="per-acc-sidebar-sure-button">Yes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Logined -->
+        <div class="header">
+            <div class="header-container">
+                <a tabindex="0" class="header-logo" onclick="return clickHandler()" href="index.html"><span class="header-logo-bold">LINUX</span>Support</a>
+                <div class="header-right">
+                    <a tabindex="0" style="color: #fff; text-decoration: none" href="tel:+38 (096) 45-56-789" class="header-right-phone">+38 (096) 45-56-789</a>
+                    <div class="header-right-lang-wrapper">
+                        <div tabindex="0" class="header-right-lang-wrapper-lang" id="lang">EN</div>
+                        <div class="ru">RU</div>
+                    </div>
+                    <a tabindex="0" style="color: #fff; text-decoration: none" href="tel:+38 (096) 45-56-789" class="header-right-phone-mobile"></a>
+                    <button tabindex="0" class="header-right-button logIn">Login for customers</button>
+                    <a class="header-right-button-mobile logIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="teamviewer">
+            <div class="teamviewer-container">
+                <a class="main-nav tv-nav"><a class="tv-link" onclick="return clickHandler()" href="index.html">Home |</a><a style="cursor: default;" class="main-nav-green"> TeamViewer</a></a>
+                <div class="teamviewer-title">How to provide <br>TeamViewer access?</div>
+            </div>
+        </div>
+        <div class="teamviewer-main">
+            <div class="teamviewer-main-container">
+                <div class="teamviewer-main-instruction">
+                    <div class="imgBg">
+                        <img src="" alt="">
+                        <div class="imgBg-cross">x</div>
+                    </div>
+                    <div class="teamviewer-main-instruction-step">
+                        <div class="teamviewer-main-instruction-step-pretitle">Step 1</div>
+                        <div class="teamviewer-main-instruction-step-container">
+                            <div class="teamviewer-main-instruction-step-title">Open the TeamViewer website and download the program</div>
+                            <div class="teamviewer-main-instruction-step-text">Download the program on the TeamViewer website.</div>
+                            <div class="teamviewer-main-instruction-step-button">Download</div>
+                            <div class="teamviewer-main-instruction-step-text">Select your operating system. If your operating system isn't correctly selected when the website loads, click your system (e.g., Mac) near the top of the page.<br><br>Scroll down and click Download TeamViewer. It's a green button near the middle of the page.Wait for TeamViewer to finish downloading. This should only take a few minutes.</div>
+                            <img class="tv-img" src="images/img-tv-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="teamviewer-main-instruction-step">
+                        <div class="teamviewer-main-instruction-step-pretitle">Step 2</div>
+                        <div class="teamviewer-main-instruction-step-container">
+                            <div class="teamviewer-main-instruction-step-title">Install TeamViewer</div>
+                            <div class="teamviewer-main-instruction-step-text">Double-click the TeamViewer setup file. You'll find this file, which is an EXE for Windows and a DMG for Macs, in your computer's Download folder. The setup window will open.<br><br>Install TeamViewer. Check the "Installation to access this computer remotely" box, check the "Personal / Non-commercial use" box, uncheck the "Show advanced settings" box if necessary, click Accept - finish, and click Yes when prompted.</div>
+                            <iframe class="video" src="https://www.youtube.com/embed/efK1oiLYq0w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="teamviewer-main-instruction-step">
+                        <div class="teamviewer-main-instruction-step-pretitle">Step 3</div>
+                        <div class="teamviewer-main-instruction-step-container">
+                            <div class="teamviewer-main-instruction-step-title">Close the "Unattended setup" wizard if prompted and enable the new user interface</div>
+                            <div class="teamviewer-main-instruction-step-text">Close the "Unattended setup" wizard if prompted. If this is your first time opening TeamViewer, you'll be prompted to navigate through an "Unattended setup" wizard; if so, just click Cancel.<br><br>Enable the new user interface. Click the Try it now button at the top of the TeamViewer window if it's available. This will ensure that your TeamViewer dashboard is up-to-date.</div>
+                        </div>
+                    </div>
+                    <div class="teamviewer-main-instruction-step">
+                        <div class="teamviewer-main-instruction-step-pretitle">Step 4</div>
+                        <div class="teamviewer-main-instruction-step-container">
+                            <div class="teamviewer-main-instruction-step-title">Enter the second computer's ID into TeamViewer on the first computer</div>
+                            <div class="teamviewer-main-instruction-step-text">Enter the second computer's ID into TeamViewer on the first computer. Type the "ID" number into the "Partner ID" text field on the right side of the TeamViewer window on the computer from which you want to connect.</div>
+                            <img class="tv-img" src="images/img-tv-2.png" alt="">
+                            <div class="teamviewer-main-instruction-step-text">Click CONNECT. It's a blue button below the text field. Doing so will prompt your computer to begin attempting to connect to the other computer.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="teamviewer-main-sidebar">
+                    <div class="teamviewer-main-sidebar-head">
+                        <div class="teamviewer-main-sidebar-head-pretitle">Features TeamViewer</div>
+                        <div class="teamviewer-main-sidebar-head-title">Functionality that Makes It Easy to Work Remotely</div>
+                    </div>
+                    <div class="teamviewer-main-sidebar-advantage">
+                        <div class="teamviewer-main-sidebar-advantage-title">Access to files</div>
+                        <div class="teamviewer-main-sidebar-advantage-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </div>
+                    </div>
+                    <div class="teamviewer-main-sidebar-advantage">
+                        <div class="teamviewer-main-sidebar-advantage-title">Use of shared resources</div>
+                        <div class="teamviewer-main-sidebar-advantage-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </div>
+                    </div>
+                    <div class="teamviewer-main-sidebar-advantage">
+                        <div class="teamviewer-main-sidebar-advantage-title">Cross-platform</div>
+                        <div class="teamviewer-main-sidebar-advantage-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:" id="return-to-top">&uarr;</a>
+        <div class="footer">
+            <div class="footer-line"></div>
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="footer-top-title">Get in touch <div class="footer-top-title-bold">Ready to get support?</div></div>
+                    <div class="footer-top-button" id="popupShow">Get support now</div>
+                    <!-- Logined -->
+                    <a href="personal-account.html" style="display: none" tabindex="0" class="footer-top-button upgrade">Upgrade plan</a>
+                    <!-- Logined -->
+                </div>
+                <div class="footer-bottom">
+                    <a tabindex="0" style="color: #fff; text-decoration: none" href="tel:+38 (096) 45-56-789" class="footer-bottom-phone">+38 (096) 45-56-789</a>
+                    <div class="footer-bottom-copyright">© LinuxSupport. All rights reserved</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='script/jquery-3.3.1.min.js'></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

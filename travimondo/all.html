@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/jquery-ui-1.9.2.custom.min.css">
+    <link rel="stylesheet" href="style/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="slick-master/slick/slick.css">
+    <link rel="stylesheet" href="slick-master/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Travimondo</title>
+</head>
+<body style="overflow-x: hidden;">
+    <div class="content content-all">
+        <div class="header-menu">
+            <div class="header-menu-container">
+                <div class="header-menu-head">
+                    <div class="header-menu-head-logo">
+                        <img src="images/logo-menu2.png" alt="">
+                        <div class="header-menu-head-logo-text">TRAVIMONDO</div>
+                        <img class="menu-logo-mobile" src="images/logo.png" alt="">
+                    </div>
+                    <div class="header-menu-head-cross">&times;</div>
+                </div>
+                <div class="header-menu-list">
+                    <div class="header-menu-list-items">
+                        <a href="#" class="header-menu-list-item">Start new trip</a>
+                        <a href="#" class="header-menu-list-item">Articles</a>
+                        <a href="#" class="header-menu-list-item">Profile</a>
+                        <a href="#" class="header-menu-list-item">Favorite articles</a>
+                        <a href="#" class="header-menu-list-item">My trips</a>
+                        <a href="#" class="header-menu-list-item">My reviews</a>
+                        <a href="#" class="header-menu-list-item">Login</a>
+                    </div>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="header-menu-foot">
+                    <a href="#" class="fab fa-google-plus-g"></a>
+                    <a href="#"  class="fab fa-linkedin-in"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                </div>
+            </div>
+            <div class="header-menu-bg"></div>
+        </div>
+        <div class="header">
+            <div class="header-container">
+                <div class="header-menu-open">__<br>___<br>___</div>
+                <div class="header-logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="header-buttons">
+                    <button class="header-buttons-button">login</button>
+                    <button class="header-buttons-button">sign in</button>
+                    <button class="header-buttons-button">Make roadtrip</button>
+                </div>
+            </div>
+            <a href="#" class="corner">
+                <img class="corner-main" src="images/corner.png" alt="">
+                <img class="corner-map" src="images/corner-map.png" alt="">
+                <img class="corner-under" src="images/corner-under.png" alt="">
+                <img class="corner-line" src="images/corner-line.png" alt="">
+            </a>
+        </div>
+        <div class="view-nav">
+            <div class="view-nav-container">
+                <div class="view-nav-line"></div><a href="index.html" class="view-nav-item">Home</a><div class="view-nav-current">Popular articles</div>
+            </div>
+        </div>
+        <div class="articles-title">All trips</div>
+
+        <div class="articles">
+            <div class="articles-container">
+                <div class="articles-search">
+                    <img src="images/search-copy.png" alt="">
+                    <input type="text" placeholder="SEARCH ARTICLES">
+                </div>
+                <div class="public-info-items flex">
+                    <div class="public-info-items-item item-small">
+                        <img src="images/party.png" alt="">
+                        <div class="public-info-items-item-title">
+                            <h3>#Cristopher Robin</h1>
+                            <h2>London - Paris</h2>
+                        </div>
+                        <div class="public-info-items-item-foot">
+                            <div>
+                                <p>27-06-2018</p>
+                                <p>1:55 PM</p>
+                            </div>
+                            <div>
+                                <p class="copy">Copy trip</p>
+                                <a href="#" class="mail"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="public-info-items-item item-tall">
+                        <img src="images/boat-big.png" alt="">
+                        <div class="public-info-items-item-title">
+                                <h3>#Cristopher Robin</h1>
+                                <h2>London - Paris</h2>
+                            </div>
+                            <div class="public-info-items-item-foot">
+                                <div>
+                                    <p>27-06-2018</p>
+                                    <p>1:55 PM</p>
+                                </div>
+                                <div>
+                                    <p class="copy">Copy trip</p>
+                                    <a href="#" class="mail"></a>
+                                    <a href="#" class="fb"></a>
+                                    <a href="#" class="tw"></a>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="public-info-items-item item-xsmall">
+                        <img src="images/nature.png" alt="">
+                        <div class="public-info-items-item-title">
+                            <h3>#Cristopher Robin</h1>
+                            <h2>London - Paris</h2>
+                        </div>
+                        <div class="public-info-items-item-foot">
+                            <div>
+                                <p>27-06-2018</p>
+                                <p>1:55 PM</p>
+                            </div>
+                            <div>
+                                <p class="copy">Copy trip</p>
+                                <a href="#" class="mail"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="public-info-items-item item-xtall mid-small-margin">
+                        <img src="images/boat-big.png" alt="">
+                        <div class="public-info-items-item-title">
+                            <h3>#Cristopher Robin</h1>
+                            <h2>London - Paris</h2>
+                        </div>
+                        <div class="public-info-items-item-foot">
+                            <div>
+                                <p>27-06-2018</p>
+                                <p>1:55 PM</p>
+                            </div>
+                            <div>
+                                <p class="copy">Copy trip</p>
+                                <a href="#" class="mail"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="public-info-items-item item-tall xhalf-margin">
+                        <img src="images/boat-big.png" alt="">
+                        <div class="public-info-items-item-title">
+                            <h3>#Cristopher Robin</h1>
+                            <h2>London - Paris</h2>
+                        </div>
+                        <div class="public-info-items-item-foot">
+                            <div>
+                                <p>27-06-2018</p>
+                                <p>1:55 PM</p>
+                            </div>
+                            <div>
+                                <p class="copy">Copy trip</p>
+                                <a href="#" class="mail"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="public-info-items-item item-small mid-half-margin">
+                        <img src="images/nature.png" alt="">
+                        <div class="public-info-items-item-title">
+                            <h3>#Cristopher Robin</h1>
+                            <h2>London - Paris</h2>
+                        </div>
+                        <div class="public-info-items-item-foot">
+                            <div>
+                                <p>27-06-2018</p>
+                                <p>1:55 PM</p>
+                            </div>
+                            <div>
+                                <p class="copy">Copy trip</p>
+                                <a href="#" class="mail"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="public-info-items-item item-xtall half-margin mid-half-more-more-margin">
+                        <img src="images/boat-big.png" alt="">
+                        <div class="public-info-items-item-title">
+                            <h3>#Cristopher Robin</h1>
+                            <h2>London - Paris</h2>
+                        </div>
+                        <div class="public-info-items-item-foot">
+                            <div>
+                                <p>27-06-2018</p>
+                                <p>1:55 PM</p>
+                            </div>
+                            <div>
+                                <p class="copy">Copy trip</p>
+                                <a href="#" class="mail"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="public-info-items-item item-small small-more-margin">
+                        <img src="images/nature.png" alt="">
+                        <div class="public-info-items-item-title">
+                            <h3>#Cristopher Robin</h1>
+                            <h2>London - Paris</h2>
+                        </div>
+                        <div class="public-info-items-item-foot">
+                            <div>
+                                <p>27-06-2018</p>
+                                <p>1:55 PM</p>
+                            </div>
+                            <div>
+                                <p class="copy">Copy trip</p>
+                                <a href="#" class="mail"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="public-info-items-item item-small mid-bigger-margin">
+                        <img src="images/nature.png" alt="">
+                        <div class="public-info-items-item-title">
+                            <h3>#Cristopher Robin</h1>
+                            <h2>London - Paris</h2>
+                        </div>
+                        <div class="public-info-items-item-foot">
+                            <div>
+                                <p>27-06-2018</p>
+                                <p>1:55 PM</p>
+                            </div>
+                            <div>
+                                <p class="copy">Copy trip</p>
+                                <a href="#" class="mail"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="public-info-items-item item-xsmall mid-small-more-margin">
+                        <img src="images/nature.png" alt="">
+                        <div class="public-info-items-item-title">
+                            <h3>#Cristopher Robin</h1>
+                            <h2>London - Paris</h2>
+                        </div>
+                        <div class="public-info-items-item-foot">
+                            <div>
+                                <p>27-06-2018</p>
+                                <p>1:55 PM</p>
+                            </div>
+                            <div>
+                                <p class="copy">Copy trip</p>
+                                <a href="#" class="mail"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="public-info-items-item item-small xhalf-margin">
+                        <img src="images/nature.png" alt="">
+                        <div class="public-info-items-item-title">
+                            <h3>#Cristopher Robin</h1>
+                            <h2>London - Paris</h2>
+                        </div>
+                        <div class="public-info-items-item-foot">
+                            <div>
+                                <p>27-06-2018</p>
+                                <p>1:55 PM</p>
+                            </div>
+                            <div>
+                                <p class="copy">Copy trip</p>
+                                <a href="#" class="mail"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="public-info-items-item item-tall small-more-margin mid-bigger-margin">
+                        <img src="images/boat-big.png" alt="">
+                        <div class="public-info-items-item-title">
+                            <h3>#Cristopher Robin</h1>
+                            <h2>London - Paris</h2>
+                        </div>
+                        <div class="public-info-items-item-foot">
+                            <div>
+                                <p>27-06-2018</p>
+                                <p>1:55 PM</p>
+                            </div>
+                            <div>
+                                <p class="copy">Copy trip</p>
+                                <a href="#" class="mail"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="public-info-items-item item-xsmall small-margin mid-half-more-more-margin">
+                        <img src="images/nature.png" alt="">
+                        <div class="public-info-items-item-title">
+                            <h3>#Cristopher Robin</h1>
+                            <h2>London - Paris</h2>
+                        </div>
+                        <div class="public-info-items-item-foot">
+                            <div>
+                                <p>27-06-2018</p>
+                                <p>1:55 PM</p>
+                            </div>
+                            <div>
+                                <p class="copy">Copy trip</p>
+                                <a href="#" class="mail"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="public-info-items-item item-xtall xxhalf-margin">
+                        <img src="images/boat-big.png" alt="">
+                        <div class="public-info-items-item-title">
+                            <h3>#Cristopher Robin</h1>
+                            <h2>London - Paris</h2>
+                        </div>
+                        <div class="public-info-items-item-foot">
+                            <div>
+                                <p>27-06-2018</p>
+                                <p>1:55 PM</p>
+                            </div>
+                            <div>
+                                <p class="copy">Copy trip</p>
+                                <a href="#" class="mail"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="public-info-items-item item-tall half-margin mid-half-margin">
+                        <img src="images/boat-big.png" alt="">
+                        <div class="public-info-items-item-title">
+                            <h3>#Cristopher Robin</h1>
+                            <h2>London - Paris</h2>
+                        </div>
+                        <div class="public-info-items-item-foot">
+                            <div>
+                                <p>27-06-2018</p>
+                                <p>1:55 PM</p>
+                            </div>
+                            <div>
+                                <p class="copy">Copy trip</p>
+                                <a href="#" class="mail"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="public-info-items-item item-small mid-bigger-margin">
+                        <img src="images/nature.png" alt="">
+                        <div class="public-info-items-item-title">
+                            <h3>#Cristopher Robin</h1>
+                            <h2>London - Paris</h2>
+                        </div>
+                        <div class="public-info-items-item-foot">
+                            <div>
+                                <p>27-06-2018</p>
+                                <p>1:55 PM</p>
+                            </div>
+                            <div>
+                                <p class="copy">Copy trip</p>
+                                <a href="#" class="mail"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="public-info-items-item item-xtall xxhalf-margin">
+                        <img src="images/boat-big.png" alt="">
+                        <div class="public-info-items-item-title">
+                            <h3>#Cristopher Robin</h1>
+                            <h2>London - Paris</h2>
+                        </div>
+                        <div class="public-info-items-item-foot">
+                            <div>
+                                <p>27-06-2018</p>
+                                <p>1:55 PM</p>
+                            </div>
+                            <div>
+                                <p class="copy">Copy trip</p>
+                                <a href="#" class="mail"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="public-info-items-item item-small small-margin mid-xsmall-more-margin">
+                        <img src="images/nature.png" alt="">
+                        <div class="public-info-items-item-title">
+                            <h3>#Cristopher Robin</h1>
+                            <h2>London - Paris</h2>
+                        </div>
+                        <div class="public-info-items-item-foot">
+                            <div>
+                                <p>27-06-2018</p>
+                                <p>1:55 PM</p>
+                            </div>
+                            <div>
+                                <p class="copy">Copy trip</p>
+                                <a href="#" class="mail"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="public-info-items-item item-small small-margin mid-huge-margin">
+                        <img src="images/nature.png" alt="">
+                        <div class="public-info-items-item-title">
+                            <h3>#Cristopher Robin</h1>
+                            <h2>London - Paris</h2>
+                        </div>
+                        <div class="public-info-items-item-foot">
+                            <div>
+                                <p>27-06-2018</p>
+                                <p>1:55 PM</p>
+                            </div>
+                            <div>
+                                <p class="copy">Copy trip</p>
+                                <a href="#" class="mail"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="public-info-items-item item-xsmall mid-small-more-margin">
+                        <img src="images/nature.png" alt="">
+                        <div class="public-info-items-item-title">
+                            <h3>#Cristopher Robin</h1>
+                            <h2>London - Paris</h2>
+                        </div>
+                        <div class="public-info-items-item-foot">
+                            <div>
+                                <p>27-06-2018</p>
+                                <p>1:55 PM</p>
+                            </div>
+                            <div>
+                                <p class="copy">Copy trip</p>
+                                <a href="#" class="mail"></a>
+                                <a href="#" class="fb"></a>
+                                <a href="#" class="tw"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>             
+                <div class="articles-nav">
+                    <div class="articles-nav-pages">
+                        <a href="#" class="articles-nav-pages-item active">
+                            <h6>01</h6>
+                            <div></div>
+                        </a>
+                        <a href="#" class="articles-nav-pages-item">
+                            <h6>02</h6>
+                            <div></div>
+                        </a>
+                        <a href="#" class="articles-nav-pages-item">
+                            <h6>03</h6>
+                            <div></div>
+                        </a>
+                        <a href="#" class="articles-nav-pages-item">
+                            <h6>04</h6>
+                            <div></div>
+                        </a>  
+                    </div>
+                    <a href="#" class="articles-nav-next">Next</a>
+                </div>
+                <!-- <div class="all-shadow"></div>
+                <div class="all-shadow"></div>
+                <div class="all-shadow"></div> -->
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="foot-container">
+            <div class="foot-block">
+                <h3 class="foot-block-title">Category</h3>
+                <div class="foot-block-items foot-block-items-hidden">
+                    <a href="category.html"><img src="images/icon-masks.png" alt="">Culture and entertainment</a>
+                    <a href="category.html"><img src="images/icon-dinner.png" alt="">Food and drink</a>
+                    <a href="category.html"><img src="images/icon-balloon.png" alt="">For kids</a>
+                    <a href="category.html"><img src="images/icon-house.png" alt="">Live and experience</a>
+                    <a href="category.html"><img src="images/icon-pine.png" alt="">Nature and history</a>
+                    <a href="category.html"><img src="images/icon-shopping.png" alt="">Shopping</a>
+                    <a href="category.html"><img src="images/icon-trophy.png" alt="">Sport and health</a>
+                    <a href="category.html"><img src="images/icon-beach.png" alt="">Sun and buth</a>
+                </div>
+            </div>
+            <div class="foot-block foot-block-countries">
+                <h3 class="foot-block-title">Countries</h3>
+                <div class="foot-block-items foot-block-countries-items foot-hidden foot-block-items-hidden">
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <div class="footViewAll">View all  &#9660;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-main">
+                    <img src="images/logo-footer.png" alt="">
+                    <div class="footer-main-text">
+                        <div>c. TRAVIMONDO</div>
+                        <div>Copywriting 2018 </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-menu">
+                <div class="footer-menu-title">Menu</div>
+                <a href="#" class="footer-menu-item">Home</a>
+                <a href="#" class="footer-menu-item">About us</a>
+                <a href="#" class="footer-menu-item">Contact</a>
+                <a href="#" class="footer-menu-item">Private policy</a>
+            </div>
+            <div class="footer-menu2">
+                <a href="#" class="footer-menu2-item">Terms</a>
+                <a href="#" class="footer-menu2-item">Vision</a>
+                <a href="#" class="footer-menu2-item">FAQ</a>
+            </div>
+            <div class="footer-subscribe">
+                <div class="footer-subscribe-title">Subscribe Newsletter</div>
+                <div class="footer-subscribe-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                <div style="display: flex; align-items: flex-end">
+                <input type="text" placeholder="e-mail">
+                <button class="footer-subscribe-button">SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="footer-social">
+                <div class="footer-social-title">Social media</div>
+                <div class="footer-social-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                <div class="footer-social-icons">
+                    <a href="#" class="fab fa-google-plus-g"></a>
+                    <a href="#"  class="fab fa-linkedin-in"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="slick-master/slick/slick.min.js"></script>
+    <script src="script/functions.js"></script>
+    <script src="script/script.js"></script>
+    <script>
+        
+
+        function stretchImg(){
+            Array.prototype.slice.call(document.querySelectorAll('.public-info-items-item').forEach(function(e){
+            if(e.children[0].offsetHeight < e.offsetHeight ) {
+                e.children[0].classList.add('stretch')
+            } else {
+                e.children[0].classList.remove('stretch')
+            }
+        }))
+        }
+
+        window.addEventListener("resize", stretchImg());
+
+        
+        
+    </script>
+</body>
+</html>

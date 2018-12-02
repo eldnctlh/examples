@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Linux Admin Archive</title>
+    <link rel="stylesheet" href="less/style.css">
+    <link rel="stylesheet" href="less/jquery-ui-1.9.2.custom.min.css">
+    <link rel="stylesheet" href="jquery-nice-select-1.1.0/css/nice-select.css">
+</head>
+<div class="admin-popup-comment-bg">
+    <div class="admin-popup-comment" style="height: 600px;">
+        <div class="admin-popup-close">&times;</div>
+        <div class="admin-popup-comment-title">Comments</div>
+        <div class="admin-popup-comment-list">
+            <div class="admin-popup-comment-list-item"><span class="admin-popup-comment-list-item-author">Manager1:&nbsp</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis cum cupiditate natus nam. Placeat maxime, non molestiae deleniti pariatur libero dolore repellat. Excepturi nostrum dolore libero distinctio eius perspiciatis voluptatem?</div>
+            <div class="admin-popup-comment-list-item"><span class="admin-popup-comment-list-item-author">Manager1:&nbsp</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis cupiditate sint blanditiis ducimus quaerat inventore optio quisquam, nam labore perspiciatis accusamus natus. Velit reiciendis tempore nobis vel quos eum facilis.</div>
+            <div class="admin-popup-comment-list-item"><span class="admin-popup-comment-list-item-author">Manager1:&nbsp</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, veniam. Quasi rem explicabo quas libero! Explicabo, ducimus tempora ex quas, est asperiores reprehenderit eligendi earum doloremque eveniet eum mollitia molestias?</div>
+        </div>
+    </div>
+</div>
+<body class="admin-body other" style="background-color: #f3f5ff">
+    <div class="admin">
+        <div class="sidebar-wrapper">
+            <div class="admin-sidebar">
+                <a href="index.html" class="admin-sidebar-logo"></a>
+                <a style="text-decoration: none" href="admin.html" class="admin-sidebar-item">Orders<div class="admin-sidebar-item-notification">1</div></a>
+                <a style="text-decoration: none" href="admin-archive.html" class="admin-sidebar-item admin-sidebar-active">Archive</a>
+                <a style="text-decoration: none" href="admin-clients.html" class="admin-sidebar-item">Clients</a>
+                <a style="text-decoration: none" href="admin-managers.html" class="admin-sidebar-item">Managers</a>
+                <a style="text-decoration: none" href="admin-blog.html" class="admin-sidebar-item">Blog</a>
+                <a style="text-decoration: none" href="admin-notes.html" class="admin-sidebar-item">Notes</a>
+                <a style="text-decoration: none" href="admin-custom.html" class="admin-sidebar-item">Custom Field</a>
+            </div>
+        </div>
+        <div class="admin-main">
+                <div class="admin-main-head">
+                    <div class="admin-main-head-name">Manager 1
+                        <div class="admin-main-head-name-icon"></div>
+                    </div>
+                </div>
+            <div class="admin-main-item">
+                <div class="admin-main-item-head">Archive</div>
+                <div class="admin-main-item-orders">
+                    <div class="admin-main-item-orders-container">
+                        <div class="admin-main-item-orders-header">
+                            <div class="admin-main-item-orders-header-search-wrapper">
+                                <input type="text" class="admin-main-item-orders-header-search" placeholder="Search order ID / client">
+                                <button tabindex="-1" class="admin-main-item-orders-header-search-button"></button>
+                            </div>
+                            <div class="admin-main-item-orders-header-right">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                    <input type="text" id="datepicker" placeholder="From" class="admin-main-item-orders-header-date">
+                                    <span class="admin-main-item-orders-header-date-between">-</span>
+                                    <input type="text" id="datepicker2" placeholder="To" class="admin-main-item-orders-header-date">
+                                <!-- <div class="select-wrapper"> -->
+                                    <!-- <div class="admin-select-placeholder">Status:</div> -->
+                                    <!-- <select placeholder="sdd" class="admin-main-item-orders-header-select">
+                                        <option value="">All</option>
+                                        <option value="">Not all</option>
+                                        <option value="">Lorem</option>
+                                    </select> -->
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                        <div class="admin-main-item-orders-content">
+                            <div class="admin-main-item-orders-content-header">
+                                <div class="admin-main-item-orders-content-header-item">ID</div>
+                                <div class="admin-main-item-orders-content-header-item">Name</div>
+                                <div class="admin-main-item-orders-content-header-item admin-head-phone">Phone</div>
+                                <div class="admin-main-item-orders-content-header-item admin-history">Type of services</div>
+                                <div class="admin-main-item-orders-content-header-item">Manager</div>
+                                <div class="admin-main-item-orders-content-header-item">Dates of completion</div>
+                                <!-- <div class="admin-main-item-orders-content-header-item admin-comments">Date</div> -->
+                                <div class="admin-main-item-orders-content-header-item admin-mark">Mark</div>
+                            </div>
+                            <div class="admin-main-item-orders-content-item-cont">
+                                <div style="position: relative;" class="admin-main-item-orders-content-item">
+                                    <div class="admin-main-item-orders-content-item-item">#1120</div>
+                                    <div class="admin-main-item-orders-content-item-item">Amanda</div>
+                                    <div class="admin-main-item-orders-content-item-item admin-phone">
+                                        <div class="admin-phone-item">123-456-789</div>
+                                        <img class="admin-phone-item" src="images/icon-whatsapp.png" width="17px" height="17px">
+                                        <img class="admin-phone-item" src="images/icon-viber.png" width="17px" height="17px">
+                                    </div>
+                                    <div class="admin-main-item-orders-content-item-item typeofservice">One Time Help</div>
+                                    <div class="admin-main-item-orders-content-item-item">Manager 1</div>
+                                    <div class="admin-main-item-orders-content-item-item" style="width: 15.27%">17.06 - 25.07.2018</div>
+                                    <div class="admin-main-item-orders-content-item-item admin-item-mark">
+                                        <div class="admin-item-mark-item">4.5</div>
+                                    </div>
+                                    <div class="showHistory" style="position: absolute; top: 29px; right: 10px; cursor: pointer;">History &darr;</div>
+                                </div>
+                                <div class="admin-main-item-orders-content-item-cont-inner">
+                                    <div class="admin-main-item-orders-content-item-cont-inner-title">Additional Information</div>
+                                    <div class="admin-main-item-orders-content-item-cont-inner-item item-hdr">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div>Comments</div>
+                                        <div>Manager</div>
+                                    </div>
+                                    <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div><button class="addComment" style="width: 150px;  height: 30px; font-family: SourceRegular; background-color: transparent;border:1px solid #ccc;cursor:pointer">Watch comments</button></div>
+                                        <div>Manager1</div>
+                                    </div>
+                                    <!-- <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fuga asperiores ratione nobis minus totam blanditiis veritatis vel maxime impedit numquam fugit, iste nesciunt vero molestias neque eveniet. Assumenda, molestiae.</div>
+                                        <div>4<br>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                    </div>
+                                    <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fuga asperiores ratione nobis minus totam blanditiis veritatis vel maxime impedit numquam fugit, iste nesciunt vero molestias neque eveniet. Assumenda, molestiae.</div>
+                                        <div>2<br>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                    </div>
+                                    <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fuga asperiores ratione nobis minus totam blanditiis veritatis vel maxime impedit numquam fugit, iste nesciunt vero molestias neque eveniet. Assumenda, molestiae.</div>
+                                        <div>3<br>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="admin-main-item-orders-content-item-cont">
+                                    <div style="position: relative;" class="admin-main-item-orders-content-item">
+                                        <div class="admin-main-item-orders-content-item-item">#1120</div>
+                                        <div class="admin-main-item-orders-content-item-item">Amanda</div>
+                                        <div class="admin-main-item-orders-content-item-item admin-phone">
+                                            <div class="admin-phone-item">123-456-789</div>
+                                            <img class="admin-phone-item" src="images/icon-whatsapp.png" width="17px" height="17px">
+                                            <img class="admin-phone-item" src="images/icon-viber.png" width="17px" height="17px">
+                                        </div>
+                                        <div class="admin-main-item-orders-content-item-item typeofservice">Monthly Support</div>
+                                        <div class="admin-main-item-orders-content-item-item">Manager 1</div>
+                                        <div class="admin-main-item-orders-content-item-item" style="width: 15.27%">13.06 - 25.07.2018</div>
+                                        <div class="admin-main-item-orders-content-item-item admin-item-mark">
+                                            <div class="admin-item-mark-item">4.5</div>
+                                        </div>
+                                        <div class="showHistory" style="position: absolute; top: 29px; right: 10px; cursor: pointer;">History &darr;</div>
+                                    </div>
+                                    <div class="admin-main-item-orders-content-item-cont-inner">
+                                        <div class="admin-main-item-orders-content-item-cont-inner-title">Additional Information</div>
+                                        <div class="admin-main-item-orders-content-item-cont-inner-item item-hdr">
+                                            <div>Date</div>
+                                            <div style="width: 30%">Trouble</div>
+                                            <div>id</div>
+                                            <div>Comments</div>
+                                            <div>Manager</div>
+                                        </div>
+                                        <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                            <div>23.05.2018</div>
+                                            <div class="nth2">Reinstall Linux</div>
+                                            <div>#1120/1</div>
+                                            <div><button class="addComment" style="width: 150px;  height: 30px; font-family: SourceRegular; background-color: transparent;border:1px solid #ccc;cursor:pointer">Watch comments</button></div>
+                                            <div>Manager1</div>
+                                        </div>
+                                        <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                            <div>23.05.2018</div>
+                                            <div class="nth2">Fix smth</div>
+                                            <div>#1120/2</div>
+                                            <div><button class="addComment" style="width: 150px;  height: 30px; font-family: SourceRegular; background-color: transparent;border:1px solid #ccc;cursor:pointer">Watch comments</button></div>
+                                            <div>Manager1</div>
+                                        </div>
+                                        <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                            <div>23.05.2018</div>
+                                            <div class="nth2">Delete all</div>
+                                            <div>#1120/3</div>
+                                            <div><button class="addComment" style="width: 150px;  height: 30px; font-family: SourceRegular; background-color: transparent;border:1px solid #ccc;cursor:pointer">Watch comments</button></div>
+                                            <div>Manager1</div>
+                                        </div>
+                                        <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                            <div>23.05.2018</div>
+                                            <div class="nth2">Install drivers</div>
+                                            <div>#1120/4</div>
+                                            <div><button class="addComment" style="width: 150px;  height: 30px; font-family: SourceRegular; background-color: transparent;border:1px solid #ccc;cursor:pointer">Watch comments</button></div>
+                                            <div>Manager1</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="admin-main-item-orders-content-item-cont">
+                                        <div style="position: relative;" class="admin-main-item-orders-content-item">
+                                            <div class="admin-main-item-orders-content-item-item">#1120</div>
+                                            <div class="admin-main-item-orders-content-item-item">Amanda</div>
+                                            <div class="admin-main-item-orders-content-item-item admin-phone">
+                                                <div class="admin-phone-item">123-456-789</div>
+                                                <img class="admin-phone-item" src="images/icon-whatsapp.png" width="17px" height="17px">
+                                                <img class="admin-phone-item" src="images/icon-viber.png" width="17px" height="17px">
+                                            </div>
+                                            <div class="admin-main-item-orders-content-item-item typeofservice">Corporate Monthly Support</div>
+                                            <div class="admin-main-item-orders-content-item-item">Manager 1</div>
+                                            <div class="admin-main-item-orders-content-item-item" style="width: 15.27%">1.06 - 25.07.2018</div>
+                                            <div class="admin-main-item-orders-content-item-item admin-item-mark">
+                                                <div class="admin-item-mark-item">4.5</div>
+                                            </div>
+                                            <div class="showHistory" style="position: absolute; top: 29px; right: 10px; cursor: pointer;">History &darr;</div>
+                                        </div>
+                                        <div class="admin-main-item-orders-content-item-cont-inner">
+                                            <div class="admin-main-item-orders-content-item-cont-inner-title">Additional Information</div>
+                                            <div class="admin-main-item-orders-content-item-cont-inner-item item-hdr">
+                                                <div>Date</div>
+                                                <div style="width: 30%">Trouble</div>
+                                                <div>id</div>
+                                                <div>Comments</div>
+                                                <div>Manager</div>
+                                            </div>
+                                            <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                                <div>23.05.2018</div>
+                                                <div class="nth2">Reinstall Linux</div>
+                                                <div>#1120/1</div>
+                                                <div><button class="addComment" style="width: 150px;  height: 30px; font-family: SourceRegular; background-color: transparent;border:1px solid #ccc;cursor:pointer">Watch comments</button></div>
+                                                <div>Manager1</div>
+                                            </div>
+                                            <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                                <div>23.05.2018</div>
+                                                <div class="nth2">Fix smth</div>
+                                                <div>#1120/2</div>
+                                                <div><button class="addComment" style="width: 150px;  height: 30px; font-family: SourceRegular; background-color: transparent;border:1px solid #ccc;cursor:pointer">Watch comments</button></div>
+                                                <div>Manager1</div>
+                                            </div>
+                                            <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                                <div>23.05.2018</div>
+                                                <div class="nth2">Delete all</div>
+                                                <div>#1120/3</div>
+                                                <div><button class="addComment" style="width: 150px;  height: 30px; font-family: SourceRegular; background-color: transparent;border:1px solid #ccc;cursor:pointer">Watch comments</button></div>
+                                                <div>Manager1</div>
+                                            </div>
+                                            <div class="admin-main-item-orders-content-item-cont-inner-item">
+                                                <div>23.05.2018</div>
+                                                <div class="nth2">Install drivers</div>
+                                                <div>#1120/4</div>
+                                                <div><button class="addComment" style="width: 150px;  height: 30px; font-family: SourceRegular; background-color: transparent;border:1px solid #ccc;cursor:pointer">Watch comments</button></div>
+                                                <div>Manager1</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="admin-main-item-orders-slider">
+                            <div class="admin-main-item-orders-slider-item-arrow">&#10094;</div>
+                            <div class="admin-main-item-orders-slider-item">1</div>
+                            <div class="admin-main-item-orders-slider-item admin-slider-active">2</div>
+                            <div class="admin-main-item-orders-slider-item">3</div>
+                            <div class="admin-main-item-orders-slider-item-dots">...</div>
+                            <div class="admin-main-item-orders-slider-item">6</div>
+                            <div class="admin-main-item-orders-slider-item-arrow">&#10095;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
+    <script src="script/admin.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('select').niceSelect();
+        });
+        var arrshowHistory = document.querySelectorAll('.showHistory');
+        var showHistory = Array.prototype.slice.call(arrshowHistory);
+        showHistory.forEach(function(e, i){
+            e.addEventListener('click', function(){
+                document.querySelectorAll('.admin-main-item-orders-content-item-cont-inner')[i].classList.toggle('block');
+            })
+        })
+
+        Array.prototype.slice.call(document.querySelectorAll('.admin-popup-close')).forEach(function(e){
+            e.addEventListener('click', function(){
+                this.parentNode.parentNode.classList.remove('block')
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/jquery-ui-1.9.2.custom.min.css">
+    <link rel="stylesheet" href="style/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <div class="auth">
+        <div class="auth-container">
+            <form action="">
+                <div class="auth-cross">&times;</div>
+                <div class="auth-title">Create account</div>
+                <div class="auth-line"></div>
+                <div class="auth-name">
+                    <div class="auth-name-item">
+                        <label for="">First name</label>
+                        <input required type="text" placeholder="First name">
+                    </div>
+                    <div class="auth-name-item">
+                        <label for="">Last name</label>
+                        <input required type="text" placeholder="Last name">
+                    </div>
+                </div>
+                <div class="auth-em">
+                    <label for="">Email ID</label>
+                    <input required type="email" placeholder="Example@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                </div>
+                <div class="auth-pass">
+                    <div class="auth-pass-item">
+                        <label for="">Password</label>
+                        <input required type="password" placeholder="******">
+                    </div>
+                    <div class="auth-pass-item">
+                        <label for="">Confirm Password</label>
+                        <input required type="password" placeholder="******">
+                    </div>
+                </div>
+                <div class="auth-agree">
+                    <label class="check-container">
+                        <input required type="checkbox" id="check1m">
+                        <span class="checkmark"></span>
+                    </label>
+                    <span>I create a new profile, I accept the <a href="#">terms user </a>agreement</span>
+                </div>
+                <input type="submit" value="SIGN UP">
+            </form>
+            <div class="auth-social">
+                <button class="auth-social-item">Facebook</button>
+                <button class="auth-social-item gg">Google</button>
+            </div>
+            <div class="auth-text">Already have an account travimondo.com You can use it to <span class="toLogIn">log in!</span></div>
+        </div>
+    </div>
+
+    <div class="auth">
+            <div class="auth-container">
+                <form action="">
+                        <div class="auth-cross">&times;</div>
+                    <div class="auth-title">Log in</div>
+                    <div class="auth-line"></div>
+                    <div class="auth-em">
+                        <label for="">Email ID</label>
+                        <input required type="email" placeholder="Example@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                    </div>
+                    <div class="auth-pass">
+                        <div class="auth-pass-item full">
+                            <label for="">Password</label>
+                            <input required type="password" placeholder="******">
+                        </div>
+                    </div>
+                    <div class="auth-error">
+                            *Password do not match
+                        </div>
+                    <div class="auth-agree">
+                        <label class="check-container">
+                            <input type="checkbox" id="check1m">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span>Remember me</span>
+                    </div>
+                    <input type="submit" value="SIGN IN">
+                </form>
+                <div class="auth-social">
+                    <button class="auth-social-item">Facebook</button>
+                    <button class="auth-social-item gg">Google</button>
+                </div>
+                <div class="auth-text">Already have an account travimondo.com You can use it to <span class="toLogIn">REGISTER</span></div>
+            </div>
+    </div>
+    <div class="auth">
+        <div class="auth-container">
+            <form action="">
+                <div class="auth-cross">&times;</div>
+                <div class="auth-title">Password recovery</div>
+                <div class="auth-text">Please enter your registered address below and click Submit. You will recieve an email message width a link to reset your password shortly.</div>
+                <div class="auth-line"></div>
+                <div class="auth-em">
+                    <label for="">Email ID</label>
+                    <input required type="email" placeholder="Example@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                </div>
+                <div class="auth-error">
+                    *Email is not tied to any of the accounts
+                </div>
+                <input type="submit" value="SUBMIT">
+            </form>
+            <div class="auth-text">Remembered passwotd go back to <span class="toLogIn">log in!</span></div>
+        </div>
+    </div>
+    <div class="auth">
+        <div class="auth-container">
+            <form action="">
+                <div class="auth-cross">&times;</div>
+                <div class="auth-title">Password recovery</div>
+                <div class="auth-text">Please enter new password to restore account access.</div>
+                <div class="auth-line"></div>
+                <div class="auth-pass">
+                    <div class="auth-pass-item full">
+                        <label for="">New Password</label>
+                        <input required type="password" placeholder="******">
+                    </div>
+                </div>
+                <div class="auth-pass">
+                    <div class="auth-pass-item full">
+                        <label for="">Confirm Password</label>
+                        <input required type="password" placeholder="******">
+                    </div>
+                </div>
+                <div class="auth-error">
+                    *Password do not match
+                </div>
+                <input type="submit" value="SUBMIT">
+            </form>
+            <div class="auth-text">Remembered passwotd go back to <span class="toLogIn">log in!</span></div>
+        </div>
+    </div>
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/jquery-ui-1.9.2.custom.min.js"></script>
+</body>
+</html>

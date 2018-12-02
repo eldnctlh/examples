@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Linux Admin Clients</title>
+    <link rel="stylesheet" href="less/style.css">
+    <link rel="stylesheet" href="less/jquery-ui-1.9.2.custom.min.css">
+    <link rel="stylesheet" href="jquery-nice-select-1.1.0/css/nice-select.css">
+</head>
+<body class="admin-body other" style="background-color: #f3f5ff">
+    <div class="admin">
+        <div class="sidebar-wrapper">
+            <div class="admin-sidebar">
+                <a href="index.html" class="admin-sidebar-logo"></a>
+                <a style="text-decoration: none" href="admin.html" class="admin-sidebar-item">Orders<div class="admin-sidebar-item-notification">1</div></a>
+                <a style="text-decoration: none" href="admin-archive.html" class="admin-sidebar-item">Archive</a>
+                <a style="text-decoration: none" href="admin-clients.html" class="admin-sidebar-item admin-sidebar-active">Clients</a>
+                <a style="text-decoration: none" href="admin-managers.html" class="admin-sidebar-item">Managers</a>
+                <a style="text-decoration: none" href="admin-blog.html" class="admin-sidebar-item">Blog</a>
+                <a style="text-decoration: none" href="admin-notes.html" class="admin-sidebar-item">Notes</a>
+                <a style="text-decoration: none" href="admin-custom.html" class="admin-sidebar-item">Custom Field</a>
+            </div>
+        </div>
+        <div class="admin-main">
+                <div class="admin-main-head">
+                    <div class="admin-main-head-name">Manager 1
+                        <div class="admin-main-head-name-icon"></div>
+                    </div>
+                </div>
+            <div class="admin-main-item">
+                <div class="admin-main-item-head">Clients</div>
+                <div class="admin-main-item-orders">
+                    <div class="admin-main-item-orders-container">
+                        <div class="admin-main-item-orders-header">
+                            <div class="admin-main-item-orders-header-search-wrapper">
+                                <input type="text" class="admin-main-item-orders-header-search" placeholder="Search order ID / client">
+                                <button tabindex="-1" class="admin-main-item-orders-header-search-button"></button>
+                            </div>
+                            <div class="admin-main-item-orders-header-right">
+                                <input type="text" id="datepicker" placeholder="From" class="admin-main-item-orders-header-date">
+                                <span class="admin-main-item-orders-header-date-between">-</span>
+                                <input type="text" id="datepicker2" placeholder="To" class="admin-main-item-orders-header-date">
+                                <div class="select-wrapper">
+                                    <div class="admin-select-placeholder">Status:</div>
+                                    <select placeholder="sdd" class="admin-main-item-orders-header-select">
+                                        <option value="">All</option>
+                                        <option value="">Not all</option>
+                                        <option value="">Lorem</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="admin-main-item-orders-content">
+                            <div class="admin-main-item-orders-content-header">
+                                <div class="admin-main-item-orders-content-header-item admin-clients-item">ID</div>
+                                <div class="admin-main-item-orders-content-header-item admin-clients-item">Name</div>
+                                <div class="admin-main-item-orders-content-header-item admin-clients-item">Phone</div>
+                            </div>
+                            <div class="admin-main-item-orders-content-item">
+                                <div class="admin-main-item-orders-content-item-item admin-clients-item">#1120</div>
+                                <div class="admin-main-item-orders-content-item-item admin-clients-item">Amanda</div>
+                                <div class="admin-main-item-orders-content-item-item admin-phone admin-clients-item">
+                                    <div class="admin-phone-item">123-456-789</div>
+                                    <img class="admin-phone-item" src="images/icon-whatsapp.png" width="17px" height="17px">
+                                    <img class="admin-phone-item" src="images/icon-viber.png" width="17px" height="17px">
+                                </div>
+                            </div>
+                            <div class="admin-main-item-orders-content-item">
+                                <div class="admin-main-item-orders-content-item-item admin-clients-item">#1119</div>
+                                <div class="admin-main-item-orders-content-item-item admin-clients-item">Ashley</div>
+                                <div class="admin-main-item-orders-content-item-item admin-phone admin-clients-item">
+                                    <div class="admin-phone-item">123-456-789</div>
+                                    <img class="admin-phone-item" src="images/icon-whatsapp.png" width="17px" height="17px">
+                                    <img class="admin-phone-item" src="images/icon-viber.png" width="17px" height="17px">
+                                </div>
+                            </div>
+                            <div class="admin-main-item-orders-content-item">
+                                <div class="admin-main-item-orders-content-item-item admin-clients-item">#1118</div>
+                                <div class="admin-main-item-orders-content-item-item admin-clients-item">Sandra</div>
+                                <div class="admin-main-item-orders-content-item-item admin-phone admin-clients-item">
+                                    <div class="admin-phone-item">123-456-789</div>
+                                    <img class="admin-phone-item" src="images/icon-whatsapp.png" width="17px" height="17px">
+                                    <img class="admin-phone-item" src="images/icon-viber.png" width="17px" height="17px">
+                                </div>
+                            </div>
+                            <div class="admin-main-item-orders-content-item">
+                                <div class="admin-main-item-orders-content-item-item admin-clients-item">#1120</div>
+                                <div class="admin-main-item-orders-content-item-item admin-clients-item">Amanda</div>
+                                <div class="admin-main-item-orders-content-item-item admin-phone admin-clients-item">
+                                    <div class="admin-phone-item">123-456-789</div>
+                                    <img class="admin-phone-item" src="images/icon-whatsapp.png" width="17px" height="17px">
+                                    <img class="admin-phone-item" src="images/icon-viber.png" width="17px" height="17px">
+                                </div>
+                            </div>
+                            <div class="admin-main-item-orders-content-item">
+                                <div class="admin-main-item-orders-content-item-item admin-clients-item">#1119</div>
+                                <div class="admin-main-item-orders-content-item-item admin-clients-item">Ashley</div>
+                                <div class="admin-main-item-orders-content-item-item admin-phone admin-clients-item">
+                                    <div class="admin-phone-item">123-456-789</div>
+                                    <img class="admin-phone-item" src="images/icon-whatsapp.png" width="17px" height="17px">
+                                    <img class="admin-phone-item" src="images/icon-viber.png" width="17px" height="17px">
+                                </div>
+                            </div>
+                            <div class="admin-main-item-orders-content-item">
+                                <div class="admin-main-item-orders-content-item-item admin-clients-item">#1118</div>
+                                <div class="admin-main-item-orders-content-item-item admin-clients-item">Sandra</div>
+                                <div class="admin-main-item-orders-content-item-item admin-phone admin-clients-item">
+                                    <div class="admin-phone-item">123-456-789</div>
+                                    <img class="admin-phone-item" src="images/icon-whatsapp.png" width="17px" height="17px">
+                                    <img class="admin-phone-item" src="images/icon-viber.png" width="17px" height="17px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="admin-main-item-orders-slider">
+                            <div class="admin-main-item-orders-slider-item-arrow">&#10094;</div>
+                            <div class="admin-main-item-orders-slider-item">1</div>
+                            <div class="admin-main-item-orders-slider-item admin-slider-active">2</div>
+                            <div class="admin-main-item-orders-slider-item">3</div>
+                            <div class="admin-main-item-orders-slider-item-dots">...</div>
+                            <div class="admin-main-item-orders-slider-item">6</div>
+                            <div class="admin-main-item-orders-slider-item-arrow">&#10095;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
+    <script src="script/admin.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('select').niceSelect();
+        });
+    </script>
+</body>
+</html>

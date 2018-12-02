@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/jquery-ui-1.9.2.custom.min.css">
+    <link rel="stylesheet" href="style/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="slick-master/slick/slick.css">
+    <link rel="stylesheet" href="slick-master/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/jquery.timepicker.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    
+    <title>Travimondo</title>
+</head>
+<body style="overflow-x: hidden;">
+    <div class="content">
+
+        <div class="header-menu">
+            <div class="header-menu-container">
+                <div class="header-menu-head">
+                    <div class="header-menu-head-logo">
+                        <img src="images/logo-menu2.png" alt="">
+                        <div class="header-menu-head-logo-text">TRAVIMONDO</div>
+                        <img class="menu-logo-mobile" src="images/logo.png" alt="">
+                    </div>
+                    <div class="header-menu-head-cross">&times;</div>
+                </div>
+                <div class="header-menu-list">
+                    <div class="header-menu-list-items">
+                        <div class="header-menu-list-item">Start new trip</div>
+                        <div class="header-menu-list-item">Articles</div>
+                        <div class="header-menu-list-item">Profile</div>
+                        <div class="header-menu-list-item">Favorite articles</div>
+                        <div class="header-menu-list-item">My trips</div>
+                        <div class="header-menu-list-item">My reviews</div>
+                        <div class="header-menu-list-item">Login</div>
+                    </div>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="header-menu-foot">
+                    <a href="#" class="fab fa-google-plus-g"></a>
+                    <a href="#"  class="fab fa-linkedin-in"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                </div>
+            </div>
+            <div class="header-menu-bg"></div>
+        </div>
+        <div class="header">
+            <div class="header-container">
+                <div class="header-menu-open">__<br>___<br>___</div>
+                <div class="header-logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="header-buttons">
+                    <button class="header-buttons-button">Login</button>
+                    <button class="header-buttons-button">Sign in</button>
+                    <button class="header-buttons-button header-button-mobile">Make roadtrip</button>
+                </div>
+                <div class="header-search">
+                    <img src="images/search-s.png" alt="" id="searchOpen">
+                    <div class="header-search-input">
+                        <input type="text" placeholder="Search Travimondo">
+                        <p id="searchClose">&times;</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="view-nav">
+            <div class="view-nav-container">
+                <div class="view-nav-line"></div><a href="index.html" class="view-nav-item">Home</a><div class="view-nav-current">Help</div>
+            </div>
+        </div>
+        <div class="articles-title">How can we help?</div>
+        <!-- <div class="help"> -->
+            <input type="text" class="help-input" placeholder="Type somehing...">
+        <!-- </div> -->
+        
+    <div class="foot">
+        <div class="foot-container">
+            <div class="foot-categories">
+                <div class="foot-categories-title">Category</div>
+                <div class="foot-categories-items">
+                    <div class="foot-categories-items-item"><img src="images/icon-masks.png" alt="">Culture and entertaiment  </div>
+                    <div class="foot-categories-items-item"><img src="images/icon-dinner.png" alt="">Food and drink</div>
+                    <div class="foot-categories-items-item"><img src="images/icon-balloon.png" alt="">For kids</div>
+                    <div class="foot-categories-items-item"><img src="images/icon-house.png" alt="">Live and experience</div>
+                    <div class="foot-categories-items-item"><img src="images/icon-pine.png" alt="">Nature and history</div>
+                    <div class="foot-categories-items-item"><img src="images/icon-shopping.png" alt="">Shopping</div>
+                    <div class="foot-categories-items-item"><img src="images/icon-trophy.png" alt="">Sport and health</div>
+                    <div class="foot-categories-items-item"><img src="images/icon-beach.png" alt="">Sun and buth</div>
+                </div>
+            </div>
+            <div class="foot-countries">
+                <div class="foot-countries-title">Countries</div>
+                <div class="foot-countries-items">
+                    <div class="foot-countries-items-item">Albania</div>
+                    <div class="foot-countries-items-item">Austria</div>
+                    <div class="foot-countries-items-item">Belgium</div>
+                    <div class="foot-countries-items-item">Croatia</div>
+                    <div class="foot-countries-items-item">Albania</div>
+                    <div class="foot-countries-items-item">Austria</div>
+                    <div class="foot-countries-items-item">Belgium</div>
+                    <div class="foot-countries-items-item">Croatioa & Albania</div>
+                    <div class="foot-countries-items-item">Austria</div>
+                    <div class="foot-countries-items-item">Belgium</div>
+                    <div class="foot-countries-items-itemAll" id="viewAll">View All  &#9660;</div>
+                </div>
+                <div class="foot-countries-items countries-hidden">
+                    <div class="foot-countries-items-item">Albania</div>
+                    <div class="foot-countries-items-item">Austria</div>
+                    <div class="foot-countries-items-item">Belgium</div>
+                    <div class="foot-countries-items-item">Croatia</div>
+                    <div class="foot-countries-items-item">Albania</div>
+                    <div class="foot-countries-items-item">Austria</div>
+                    <div class="foot-countries-items-item">Belgium</div>
+                    <div class="foot-countries-items-item">Croatioa & Albania</div>
+                    <div class="foot-countries-items-item">Austria</div>
+                    <div class="foot-countries-items-item">Belgium</div>
+                    <div class="foot-countries-items-item">Croatia</div>          
+                </div>
+                <div class="foot-countries-items countries-hidden">
+                    <div class="foot-countries-items-item">Albania</div>
+                    <div class="foot-countries-items-item">Austria</div>
+                    <div class="foot-countries-items-item">Belgium</div>
+                    <div class="foot-countries-items-item">Croatia</div>
+                    <div class="foot-countries-items-item">Albania</div>
+                    <div class="foot-countries-items-item">Austria</div>
+                    <div class="foot-countries-items-item">Belgium</div>
+                    <div class="foot-countries-items-item">Croatioa & Albania</div>
+                    <div class="foot-countries-items-item">Austria</div>
+                    <div class="foot-countries-items-item">Belgium</div>
+                    <div class="foot-countries-items-item">Croatia</div>          
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-main">
+                    <img src="images/logo-footer.png" alt="">
+                    <img class="img-mobile" src="images/logo-footer-mobile.png" alt="">
+                    <div class="footer-main-text">
+                        <div>c. TRAVIMONDO</div>
+                        <div>Copywriting 2018 </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-menu">
+                <div class="footer-menu-title">Menu</div>
+                <a href="#" class="footer-menu-item menu-item-hide">Home</a>
+                <a href="#" class="footer-menu-item menu-item-hide">About us</a>
+                <a href="#" class="footer-menu-item menu-item-hide">Contact</a>
+                <a href="#" class="footer-menu-item menu-item-hide">Private policy</a>
+                <div class="footer-menu2">
+                    <a href="#" class="footer-menu2-item menu-item-hide">Terms</a>
+                    <a href="#" class="footer-menu2-item menu-item-hide">Vision</a>
+                    <a href="#" class="footer-menu2-item menu-item-hide">FAQ</a>
+                </div>
+            </div>
+            <div class="footer-subscribe">
+                <div class="footer-subscribe-title">Subscribe Newsletter</div>
+                <div class="footer-subscribe-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                <div style="display: flex; align-items: flex-end">
+                <input type="text" placeholder="e-mail">
+                <button class="footer-subscribe-button">SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="footer-social">
+                <div class="footer-social-title">Social media</div>
+                <div class="footer-social-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                <div class="footer-social-icons">
+                    <a href="#" class="fab fa-google-plus-g"></a>
+                    <a href="#"  class="fab fa-linkedin-in"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                </div>
+            </div>
+            <div class="footer-main-text copyright-mobile">
+                <div>c. TRAVIMONDO</div>
+                <div>Copywriting 2018 </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="script/jquery.timepicker.min.js"></script>
+    <script src="slick-master/slick/slick.min.js"></script>
+    <!-- <script src="script/script.js"></script> -->
+
+</body>
+</html>

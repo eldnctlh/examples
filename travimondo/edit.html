@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/jquery-ui-1.9.2.custom.min.css">
+    <link rel="stylesheet" href="style/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="slick-master/slick/slick.css">
+    <link rel="stylesheet" href="slick-master/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Travimondo</title>
+</head>
+<body style="overflow-x: hidden;">
+    <div class="content">
+        <div class="header-menu">
+            <div class="header-menu-container">
+                <div class="header-menu-head">
+                    <div class="header-menu-head-logo">
+                        <img src="images/logo-menu2.png" alt="">
+                        <div class="header-menu-head-logo-text">TRAVIMONDO</div>
+                        <img class="menu-logo-mobile" src="images/logo.png" alt="">
+                    </div>
+                    <div class="header-menu-head-cross">&times;</div>
+                </div>
+                <div class="header-menu-list">
+                    <div class="header-menu-list-items">
+                        <a href="#" class="header-menu-list-item">Start new trip</a>
+                        <a href="#" class="header-menu-list-item">Articles</a>
+                        <a href="#" class="header-menu-list-item">Profile</a>
+                        <a href="#" class="header-menu-list-item">Favorite articles</a>
+                        <a href="#" class="header-menu-list-item">My trips</a>
+                        <a href="#" class="header-menu-list-item">My reviews</a>
+                        <a href="#" class="header-menu-list-item">Login</a>
+                    </div>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="header-menu-foot">
+                    <a href="#" class="fab fa-google-plus-g"></a>
+                    <a href="#"  class="fab fa-linkedin-in"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                </div>
+            </div>
+            <div class="header-menu-bg"></div>
+        </div>
+        <div class="header">
+            <div class="header-container">
+                <div class="header-menu-open">__<br>___<br>___</div>
+                <div class="header-logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="header-buttons">
+                    <button class="header-buttons-button">login</button>
+                    <button class="header-buttons-button">sign in</button>
+                    <button class="header-buttons-button">Make roadtrip</button>
+                </div>
+            </div>
+            <a href="#" class="corner">
+                <img class="corner-main" src="images/corner.png" alt="">
+                <img class="corner-map" src="images/corner-map.png" alt="">
+                <img class="corner-under" src="images/corner-under.png" alt="">
+                <img class="corner-line" src="images/corner-line.png" alt="">
+            </a>
+        </div>
+        <div class="view-nav">
+            <div class="view-nav-container">
+                <div class="view-nav-line"></div><a href="index.html" class="view-nav-item">Home</a><a href="article-listing.html" class="view-nav-item">Popular articles</a><div class="view-nav-current">Ekebergrestauranten</div>
+            </div>
+        </div>
+        <div class="articles-title">Edit accomodation</div>
+        <div class="editacc">
+            <div class="editacc-main">
+                <div class="editacc-main-block">
+                    <h2 class="company-main-profile-block-title">General information</h2>
+                    <div class="editacc-main-block-head">
+                        <h3>Upload Accommodiation Image (upto 5 images)</h3>
+                        <button class="button-orange" id="uploader">UPLOAD IMAGE</button>
+                    </div>
+                    <div class="editacc-main-block-images">
+                        <div class="editacc-main-block-images-item">
+                            <img src="images/woman_.png" alt="">
+                            <button>Delete</button>
+                        </div>
+                        <div class="editacc-main-block-images-item">
+                            <img src="images/woman_.png" alt="">
+                            <button>Delete</button>
+                        </div>
+                        <div class="editacc-main-block-images-item">
+                            <img src="images/woman_.png" alt="">
+                            <button>Delete</button>
+                        </div>
+                        <div class="editacc-main-block-images-item">
+                            <img src="images/woman_.png" alt="">
+                            <button>Delete</button>
+                        </div>
+                    </div>
+                    <div class="editacc-main-block-inputs">
+                        <div class="third">
+                            <label for="accName">Accommodiation Name(English)</label>
+                            <input id="accName" type="text" placeholder="Name">
+                        </div>
+                        <div class="third">
+                            <label for="accNameNor">Accommodiation Name(Norwegian)</label>
+                            <input id="accNameNor" type="text" placeholder="Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="editacc-main-block">
+                    <h2 class="company-main-profile-block-title">Type and Price Accommodiation</h2>
+                    <div class="editacc-main-block-inputs">
+                        <div class="third">
+                            <label for="accType">Accommodiation Type</label>
+                            <select id="accType">
+                                <option value="Rental Home">Rental Home</option>
+                                <option value="Rental Home">Rental Home</option>
+                                <option value="Rental Home">Rental Home</option>
+                            </select>
+                        </div>
+                        <div class="third">
+                            <label for="selSeason">Select Season that you want to display on site</label>
+                            <select id="selSeason">
+                                <option value="Low Season">Low Season</option>
+                                <option value="Low Season">Low Season</option>
+                                <option value="Low Season">Low Season</option>
+                            </select>
+                        </div>
+                        <div class="third">
+                            <label for="Raing">Rating</label>
+                            <select id="Rating">
+                                <option vatlue="5 Star">5 Star</option>
+                                <option value="4 Star">4 Star</option>
+                                <option value="3 Star">3 Star</option>
+                            </select>
+                        </div>
+                        <div class="third">
+                            <label>Low Season Price ( example € 150 - 600 )</label>
+                            <div class="third-item">
+                                <input type="text" value="15">
+                                <input type="text" value="50">
+                            </div>
+                        </div>
+                        <div class="third">
+                            <label>Middle Season Price ( example € 150 - 600 )</label>
+                            <div class="third-item">
+                                <input type="text" value="50">
+                                <input type="text" value="75">
+                            </div>
+                        </div>
+                        <div class="third">
+                            <label>High Season Price ( example € 150 - 600 )</label>
+                            <div class="third-item">
+                                <input type="text" value="75">
+                                <input type="text" value="150">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="editacc-main-block">
+                    <h2 class="company-main-profile-block-title">Addres accommodiation</h2>
+                    <div class="editacc-main-block-inputs">
+                        <div class="third">
+                            <label for="str">Addres</label>
+                            <input type="text" id="str" placeholder="Street">
+                        </div>
+                        <div class="third">
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="City">
+                        </div>
+                        <div class="third">
+                            <label for="country">Country</label>
+                            <input type="text" id="country" placeholder="Country">
+                        </div>
+
+                        <div class="third">
+                            <label for="state">State</label>
+                            <input type="text" id="state" placeholder="State">
+                        </div>
+                        <div class="third">
+                            <label for="postal">Postal Code</label>
+                            <input type="text" id="postal" placeholder="12345">
+                        </div>
+                        <div class="third">
+                            <label for="website">WebSite Link ( Example http://travimondo.com)</label>
+                            <input type="text" id="website" placeholder="Http://">
+                        </div>
+                        <div class="third">
+                            <label for="not">Not Available From</label>
+                            <input type="text" id="not" placeholder="_ _ /_ _ /_ _">
+                        </div>
+                        <div class="third">
+                            <label for="notTo">Not Available To</label>
+                            <input type="text" id="notTo" placeholder="_ _ /_ _ /_ _">
+                        </div>
+                        <div class="third">
+                            <button class="button-orange">Add more fields</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="editacc-main-block">
+                    <h2 class="company-main-profile-block-title">Addres accommodiation</h2>
+                    <div class="editacc-main-block-foot">
+                        <div class="editacc-main-block-foot-left">
+                            <div class="editacc-main-block-foot-left-col">
+                                <h3>Basic Amenities</h3>
+                                <div class="editacc-main-block-foot-left-col-item">
+                                    <label class="check-container">
+                                        <input required type="checkbox" id="air">
+                                        <span class="checkmark"></span>
+                                        <label class="post-label" for="air">Air conditioner</label>
+                                    </label>
+                                </div>
+                                <div class="editacc-main-block-foot-left-col-item">
+                                    <label class="check-container">
+                                        <input required type="checkbox" id="room">
+                                        <span class="checkmark"></span>
+                                        <label class="post-label" for="room">Room cervice</label>
+                                    </label>
+                                </div>
+                                <div class="editacc-main-block-foot-left-col-item">
+                                    <label class="check-container">
+                                        <input required type="checkbox" id="coffe">
+                                        <span class="checkmark"></span>
+                                        <label class="post-label" for="coffe">No coffee shop</label>
+                                    </label>
+                                </div>
+                                <div class="editacc-main-block-foot-left-col-item">
+                                    <label class="check-container">
+                                        <input required type="checkbox" id="gym">
+                                        <span class="checkmark"></span>
+                                        <label class="post-label" for="gym">Gym</label>
+                                    </label>
+                                </div>
+                                <div class="editacc-main-block-foot-left-col-item">
+                                    <label class="check-container">
+                                        <input required type="checkbox" id="rest">
+                                        <span class="checkmark"></span>
+                                        <label class="post-label" for="rest">Restaurant</label>
+                                    </label>
+                                </div>
+                                <div class="editacc-main-block-foot-left-col-item">
+                                    <label class="check-container">
+                                        <input required type="checkbox" id="wifi">
+                                        <span class="checkmark"></span>
+                                        <label class="post-label" for="wifi">Wi-Fi</label>
+                                    </label>
+                                </div>
+                                <div class="editacc-main-block-foot-left-col-item">
+                                    <label class="check-container">
+                                        <input required type="checkbox" id="bar">
+                                        <span class="checkmark"></span>
+                                        <label class="post-label" for="bar">Bar</label>
+                                    </label>
+                                </div>
+                                <div class="editacc-main-block-foot-left-col-item">
+                                    <label class="check-container">
+                                        <input required type="checkbox" id="pool">
+                                        <span class="checkmark"></span>
+                                        <label class="post-label" for="pool">Pool</label>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="editacc-main-block-foot-left-col">
+                                <h3>Other Basic Amenities</h3>
+                                <div class="editacc-main-block-foot-left-col-item">
+                                    <label class="check-container">
+                                        <input required type="checkbox" id="shop">
+                                        <span class="checkmark"></span>
+                                        <label class="post-label" for="shop">Shopping</label>
+                                    </label>
+                                </div>
+                                <div class="editacc-main-block-foot-left-col-item">
+                                    <label class="check-container">
+                                        <input required type="checkbox" id="elevator">
+                                        <span class="checkmark"></span>
+                                        <label class="post-label" for="elevator">Elevators</label>
+                                    </label>
+                                </div>
+                                <div class="editacc-main-block-foot-left-col-item">
+                                    <label class="check-container">
+                                        <input required type="checkbox" id="gift">
+                                        <span class="checkmark"></span>
+                                        <label class="post-label" for="gift">Gift shop</label>
+                                    </label>
+                                </div>
+                                <div class="editacc-main-block-foot-left-col-item">
+                                    <label class="check-container">
+                                        <input required type="checkbox" id="park">
+                                        <span class="checkmark"></span>
+                                        <label class="post-label" for="park">Parking</label>
+                                    </label>
+                                </div>
+                                <div class="editacc-main-block-foot-left-col-item">
+                                    <label class="check-container">
+                                        <input required type="checkbox" id="beauty">
+                                        <span class="checkmark"></span>
+                                        <label class="post-label" for="beauty">Beauty salon</label>
+                                    </label>
+                                </div>
+                                <div class="editacc-main-block-foot-left-col-item">
+                                    <label class="check-container">
+                                        <input required type="checkbox" id="banquet">
+                                        <span class="checkmark"></span>
+                                        <label class="post-label" for="banquet">Banquet facilities</label>
+                                    </label>
+                                </div>
+                                <div class="editacc-main-block-foot-left-col-item">
+                                    <label class="check-container">
+                                        <input required type="checkbox" id="atm">
+                                        <span class="checkmark"></span>
+                                        <label class="post-label" for="atm">ATM/Cash machine </label>
+                                    </label>
+                                </div>
+                                <div class="editacc-main-block-foot-left-col-item">
+                                    <label class="check-container">
+                                        <input required type="checkbox" id="cater">
+                                        <span class="checkmark"></span>
+                                        <label class="post-label" for="cater">Catering service</label>
+                                    </label>
+                                </div>
+                                <div class="editacc-main-block-foot-left-col-item">
+                                    <label class="check-container">
+                                        <input required type="checkbox" id="laundry">
+                                        <span class="checkmark"></span>
+                                        <label class="post-label" for="laundry">Laundry</label>
+                                    </label>
+                                </div>
+                                <div class="editacc-main-block-foot-left-col-item">
+                                    <label class="check-container">
+                                        <input required type="checkbox" id="smoke">
+                                        <span class="checkmark"></span>
+                                        <label class="post-label" for="smoke">Non-Smoking rooms</label>
+                                    </label>
+                                </div>
+                                <div class="editacc-main-block-foot-left-col-item">
+                                    <label class="check-container">
+                                        <input required type="checkbox" id="massage">
+                                        <span class="checkmark"></span>
+                                        <label class="post-label" for="massage">Massage Service</label>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="editacc-main-block-foot-right">
+                            <label for="textarea1">Description (English)</label>
+                            <textarea id="textarea1"></textarea>
+                            <label for="textarea1">Description (Norway)</label>
+                            <textarea id="textarea1"></textarea>
+                            <div class="editacc-main-block-foot-right-buttons">
+                                <button class="button-orange button-orange-fill">SAVE</button>
+                                <button class="button-orange">BACK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="editacc-sidebar">
+            <h2>This information will be visible to the clients so fill out correct info</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        </div>
+    </div>
+        <div class="foot">
+            <div class="foot-container">
+                <div class="foot-block">
+                    <h3 class="foot-block-title">Category</h3>
+                    <div class="foot-block-items foot-block-items-hidden">
+                        <a href="category.html"><img src="images/icon-masks.png" alt="">Culture and entertainment</a>
+                        <a href="category.html"><img src="images/icon-dinner.png" alt="">Food and drink</a>
+                        <a href="category.html"><img src="images/icon-balloon.png" alt="">For kids</a>
+                        <a href="category.html"><img src="images/icon-house.png" alt="">Live and experience</a>
+                        <a href="category.html"><img src="images/icon-pine.png" alt="">Nature and history</a>
+                        <a href="category.html"><img src="images/icon-shopping.png" alt="">Shopping</a>
+                        <a href="category.html"><img src="images/icon-trophy.png" alt="">Sport and health</a>
+                        <a href="category.html"><img src="images/icon-beach.png" alt="">Sun and buth</a>
+                    </div>
+                </div>
+                <div class="foot-block foot-block-countries">
+                    <h3 class="foot-block-title">Countries</h3>
+                    <div class="foot-block-items foot-block-countries-items foot-hidden foot-block-items-hidden">
+                        <a href="category.html">Albania</a>
+                        <a href="category.html">Austria</a>
+                        <a href="category.html">Belgium</a>
+                        <a href="category.html">Croatia</a>
+                        <a href="category.html">Albania</a>
+                        <a href="category.html">Austria</a>
+                        <a href="category.html">Belgium</a>
+                        <a href="category.html">Croatia</a>
+                        <a href="category.html">Albania</a>
+                        <a href="category.html">Austria</a>
+                        <a href="category.html">Albania</a>
+                        <a href="category.html">Austria</a>
+                        <a href="category.html">Belgium</a>
+                        <a href="category.html">Croatia</a>
+                        <a href="category.html">Albania</a>
+                        <a href="category.html">Austria</a>
+                        <a href="category.html">Belgium</a>
+                        <a href="category.html">Croatia</a>
+                        <a href="category.html">Albania</a>
+                        <a href="category.html">Austria</a>
+                        <a href="category.html">Albania</a>
+                        <a href="category.html">Austria</a>
+                        <a href="category.html">Belgium</a>
+                        <a href="category.html">Croatia</a>
+                        <a href="category.html">Albania</a>
+                        <a href="category.html">Austria</a>
+                        <a href="category.html">Belgium</a>
+                        <a href="category.html">Croatia</a>
+                        <a href="category.html">Albania</a>
+                        <a href="category.html">Austria</a>
+                        <a href="category.html">Albania</a>
+                        <a href="category.html">Austria</a>
+                        <a href="category.html">Belgium</a>
+                        <a href="category.html">Croatia</a>
+                        <a href="category.html">Albania</a>
+                        <a href="category.html">Austria</a>
+                        <a href="category.html">Belgium</a>
+                        <a href="category.html">Croatia</a>
+                        <a href="category.html">Albania</a>
+                        <a href="category.html">Austria</a>
+                        <a href="category.html">Albania</a>
+                        <a href="category.html">Austria</a>
+                        <a href="category.html">Belgium</a>
+                        <a href="category.html">Croatia</a>
+                        <a href="category.html">Albania</a>
+                        <a href="category.html">Austria</a>
+                        <a href="category.html">Belgium</a>
+                        <a href="category.html">Croatia</a>
+                        <a href="category.html">Albania</a>
+                        <a href="category.html">Austria</a>
+                        <a href="category.html">Albania</a>
+                        <a href="category.html">Austria</a>
+                        <a href="category.html">Belgium</a>
+                        <a href="category.html">Croatia</a>
+                        <a href="category.html">Albania</a>
+                        <a href="category.html">Austria</a>
+                        <a href="category.html">Belgium</a>
+                        <a href="category.html">Croatia</a>
+                        <a href="category.html">Albania</a>
+                        <a href="category.html">Austria</a>
+                        <div class="footViewAll">View all  &#9660;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-main">
+                    <div class="footer-main">
+                        <img src="images/logo-footer.png" alt="">
+                        <div class="footer-main-text">
+                            <div>c. TRAVIMONDO</div>
+                            <div>Copywriting 2018 </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-menu">
+                    <div class="footer-menu-title">Menu</div>
+                    <a href="#" class="footer-menu-item">Home</a>
+                    <a href="#" class="footer-menu-item">About us</a>
+                    <a href="#" class="footer-menu-item">Contact</a>
+                    <a href="#" class="footer-menu-item">Private policy</a>
+                </div>
+                <div class="footer-menu2">
+                    <a href="#" class="footer-menu2-item">Terms</a>
+                    <a href="#" class="footer-menu2-item">Vision</a>
+                    <a href="#" class="footer-menu2-item">FAQ</a>
+                </div>
+                <div class="footer-subscribe">
+                    <div class="footer-subscribe-title">Subscribe Newsletter</div>
+                    <div class="footer-subscribe-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                    <div style="display: flex; align-items: flex-end">
+                    <input type="text" placeholder="e-mail">
+                    <button class="footer-subscribe-button">SUBSCRIBE</button>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <div class="footer-social-title">Social media</div>
+                    <div class="footer-social-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                    <div class="footer-social-icons">
+                        <a href="#" class="fab fa-google-plus-g"></a>
+                        <a href="#"  class="fab fa-linkedin-in"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-facebook-f"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="slick-master/slick/slick.min.js"></script>
+    <script src="script/functions.js"></script>
+    <script src="script/dropzone.js"></script>
+    <script src="script/script.js"></script>
+    <script>
+        var fixmeTop = $('.editacc-sidebar').offset().top;
+
+        $(window).scroll(function() {                  
+            var currentScroll = $(window).scrollTop(); 
+
+            if (currentScroll >= fixmeTop) {           
+                $('.editacc-sidebar').css({               
+                    position: 'fixed',
+                    top: '0px'
+                    // right: '5.65%'
+                });
+            } else {                              
+                $('.editacc-sidebar').css({                
+                    position: 'absolute',
+                    // right: '0px',
+                    top: '400px'
+                });
+            }
+
+        });
+
+        var myDropzone = new Dropzone("#uploader", { url: "/file/post"});
+        Dropzone.options.uploader = {
+            paramName: "file", // имя переменной, используемой для передачи файлов
+            maxFilesize: 2, // лимит размера файла в МБ
+            parallelUploads: 1, //кол-во параллельных обращений к серверу
+            maxFiles: 1, //макс. число файлов в данном контейнере
+            acceptedFiles: 'image/jpeg',
+            accept: function(file, done) {
+                //произвольная функция проверки загружаемых файлов
+                if (file.type == "image/png") {
+                //сообщение без ошибки, если файл забракован
+                done("I don`t accept PNGs.");
+                }
+                //чтобы файл был принят, нужно вызвать done без параметров
+                else { done(); }
+            }
+        };
+    </script>
+</body>
+</html>

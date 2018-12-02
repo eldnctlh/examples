@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/jquery-ui-1.9.2.custom.min.css">
+    <link rel="stylesheet" href="style/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="slick-master/slick/slick.css">
+    <link rel="stylesheet" href="slick-master/slick/slick-theme.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body style="height: 100%;">
+    <div class="popupBg-create">
+        <div class="create-popup">
+        <div class="create-popup-header">
+            <div class="create-popup-header-item active"><img src="images/gear-option.png" alt=""><img src="images/gear-option-hov.png" alt="">GENERAL</div>
+            <div class="create-popup-header-item"><img src="images/sports-car.png" alt=""><img src="images/sports-car-hov.png" alt="">VEHICLES</div>
+            <div class="create-popup-header-item"><img src="images/shared.png" alt=""><img src="images/shared-hov.png" alt="">SHARING</div>
+        </div>
+        <div class="create-general-wrapper createItem block">
+            <div class="create-popup-general">
+                <div class="create-popup-general-title">About your trip</div>
+                <div class="create-popup-general-img">
+                    <img src="images/road.png" alt="">
+                    <div class="create-popup-general-img-hov"><img src="images/upload.png" alt=""><div>Upload photo</div></div>
+                </div>
+                <div class="create-popup-general-inputs">
+                    <div class="create-popup-general-inputs-input">
+                        <div class="create-popup-general-inputs-input-label">Trip name</div>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="create-popup-general-inputs-input">
+                        <div class="create-popup-general-inputs-input-label">Trip privacy</div>
+                        <select name="" id="">
+                            <option value="">Public</option>
+                            <option value="">Private</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="create-popup-general-label">Description</div>
+                <textarea placeholder="You can write trip details here ..."></textarea>
+            </div>
+            <div class="create-popup-general-footer">
+                <button>DELETE<br> TRIP</button>
+                <button class="closeCreatePopup">SAVE TRIP</button>
+                <button class="toVehicles">NEXT ><br> VEHICLES</button>
+            </div>
+        </div>
+        <div class="create-vehicles-wrapper createItem">
+                <div class="create-popup-vehicles">
+                    <div class="create-popup-vehicles-title">Your vehicles</div>
+                    <div class="create-popup-vehicles-inputs">
+                        <div class="create-popup-vehicles-inputs-input">
+                            <div class="create-popup-vehicles-inputs-input-label">Select a year</div>
+                            <select name="" id="">
+                                <option value="">2018</option>
+                                <option value="">2017</option>
+                                <option value="">2016</option>
+                                <option value="">2015</option>
+                                <option value="">2014</option>
+                                <option value="">2013</option>
+                                <option value="">2012</option>
+                                <option value="">2011</option>
+                                <option value="">2010</option>
+                                <option value="">2009</option>
+                                <option value="">2008</option>
+                                <option value="">2007</option>
+                                <option value="">2006</option>
+                                <option value="">2005</option>
+                                <option value="">2004</option>
+                                <option value="">2003</option>
+                                <option value="">2002</option>
+                                <option value="">2001</option>
+                            </select>
+                        </div>
+                        <div class="create-popup-vehicles-inputs-input">
+                            <div class="create-popup-vehicles-inputs-input-label">Select a mark</div>
+                            <select name="" id="">
+                                <option value="">Mercedes</option>
+                                <option value="">BMW</option>
+                                <option value="">Opel</option>
+                                <option value="">Mitsubishi</option>
+                                <option value="">Volkswagen</option>
+                                <option value="">Mazda</option>
+                                <option value="">Chevrolet</option>
+                            </select>
+                        </div>
+                        <div class="create-popup-vehicles-inputs-input">
+                            <div class="create-popup-vehicles-inputs-input-label">Select a model</div>
+                            <select name="" id="">
+                                <option value="">Model</option>
+                                <option value="">Model</option>
+                                <option value="">Model</option>
+                                <option value="">Model</option>
+                                <option value="">Model</option>
+                                <option value="">Model</option>
+                                <option value="">Model</option>
+                                <option value="">Model</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="create-popup-vehicles-button">ADD A VEHICLE</button>
+                </div>
+                <div class="create-popup-vehicles-select">
+                    <div class="create-popup-vehicles-select-title">Select your car</div>
+                    <div class="create-popup-vehicles-select-label">Select</div>
+                    <select name="" id="">
+                        <option value="">2018 Mitsubishi Outlander VW2</option>
+                        <option value="">2018 Mitsubishi Outlander VW2</option>
+                        <option value="">2018 Mitsubishi Outlander VW2</option>
+                        <option value="">2018 Mitsubishi Outlander VW2</option>
+                        <option value="">2018 Mitsubishi Outlander VW2</option>
+                        <option value="">2018 Mitsubishi Outlander VW2</option>
+                        <option value="">2018 Mitsubishi Outlander VW2</option>
+                        <option value="">2018 Mitsubishi Outlander VW2</option>
+                    </select>
+                </div>
+                <div class="create-popup-vehicles-footer">
+                    <button class="toGeneral">< PREV<br> GENERAL</button>
+                    <button class="closeCreatePopup">DONE</button>
+                    <button class="toSharing">NEXT ><br> SHARING</button>
+                </div>
+            </div>
+            <div class="create-sharing-wrapper createItem">
+                <div class="create-popup-sharing">
+                    <div class="create-popup-sharing-title">Current trip members</div>
+                    <div class="create-popup-sharing-members">
+                        <div class="create-popup-sharing-members-member">
+                            <img src="images/prague.png" alt="">
+                            <div class="create-popup-sharing-members-member-title">Anna German</div>
+                            <div class="create-popup-sharing-members-member-remove">Remove</div>
+                        </div>
+                        <div class="create-popup-sharing-members-member">
+                            <img src="images/pic1.png" alt="">
+                            <div class="create-popup-sharing-members-member-title">Inna White</div>
+                            <div class="create-popup-sharing-members-member-remove">Remove</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="create-popup-sharing-add">
+                    <button class="create-popup-sharing-add-buttonBlue">ADD FACEBOOK FRIENDS</button>
+                    <div class="create-popup-sharing-add-label">Add by e-mail</div>
+                    <input type="text" placeholder="mail">
+                    <button class="create-popup-sharing-add-buttonOrange">INVITE</button>
+                </div>
+                <div class="create-popup-sharing-footer">
+                    <button class="toVehicles">< PREV<br> VEHICLE</button>
+                    <button class="closeCreatePopup">DONE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popupBg">
+        <div class="popup1">
+            <div class="popup1-title">
+                <div class="popup1-title-up">
+                    <div class="popup1-title-up-text">Fast book</div>
+                    <img src="images/next_big.png" alt="">
+                </div>
+                <div class="popup1-title-down">
+                    Holiday in Salina<br>
+                    Fill in your dates to get started
+                </div>
+            </div>
+            <div class="popup1-main">
+                    <div class="popup1-main-close">&times;</div>
+                    <div class="popup1-main-header">
+                        <div class="popup1-main-header-title">FAST BOOK</div>
+                        <div class="popup1-main-header-text">Holiday in Salina</div>
+                    </div>
+                    <div class="popup1-main-container">
+                        <div class="popup1-main-dates">
+                            <div>
+                                <label for="datepicker">Check In</label>
+                                <input type="text" class="datepicker" placeholder="Date" class="main-form-date">
+                            </div>
+                            <div>
+                                <label for="datepicker">Check Out</label>
+                                <input type="text" class="datepicker" placeholder="Date" class="main-form-date">
+                            </div>
+                        </div>
+                        <div class="popup1-main-list">
+                            <div class="popup1-main-list-item">
+                                <img src="images/bookme.png" alt="">
+                                <div class="popup1-main-list-item-price">99$</div>
+                                <a href="#" class="popup1-main-list-item-text">VIEW DEAL</a>
+                            </div>
+                            <div class="popup1-main-list-item">
+                                <img src="images/booking.png" alt="">
+                                <div class="popup1-main-list-item-price">99$</div>
+                                <a href="#" class="popup1-main-list-item-text">VIEW DEAL</a>
+                            </div>
+                            <div class="popup1-main-list-item">
+                                <img src="images/expedia.png" alt="">
+                                <div class="popup1-main-list-item-price">99$</div>
+                                <a href="#" class="popup1-main-list-item-text">VIEW DEAL</a>
+                            </div>
+                            <div class="popup1-main-list-item">
+                                <img src="images/bookme.png" alt="">
+                                <div class="popup1-main-list-item-price">99$</div>
+                                <a href="#" class="popup1-main-list-item-text">VIEW DEAL</a>
+                            </div>
+                            <div class="popup1-main-list-item">
+                                <img src="images/booking.png" alt="">
+                                <div class="popup1-main-list-item-price">99$</div>
+                                <a href="#" class="popup1-main-list-item-text">VIEW DEAL</a>
+                            </div>
+                            <div class="popup1-main-list-item">
+                                <img src="images/expedia.png" alt="">
+                                <div class="popup1-main-list-item-price">99$</div>
+                                <a href="#" class="popup1-main-list-item-text">VIEW DEAL</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+   <div class="menu-wrapper">
+    <div class="menu">
+        <div class="menu-container">
+            <div class="menu-header">
+                <div class="menu-header-container">
+                    <div class="menu-header-logo">Trip</div>
+                    <div class="menu-header-menu">
+                        <div class="menu-header-menu-item">2</div>
+                        <div class="menu-header-menu-item">0h</div>
+                        <div class="menu-header-menu-item">0km</div>
+                        <div class="menu-header-menu-item">0$</div>
+                        <div class="menu-header-menu-item"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-inner">
+                <div class="menu-inner-container">
+                    <div class="menu-inner-main">
+                        <div class="menu-inner-sidebar-wrapper">
+                            <img class="menuArrowUp" src="images/arrow-up.png" alt="" id="menu-sidebar-up">
+                            <div class="menu-inner-sidebar">
+                                <div class="menu-inner-sidebar-items" id="sidebarItems">
+                                        <div class="menu-inner-sidebar-item">
+                                            <img src="images/poi_icon_all_def.png" alt="">
+                                            <img src="images/poi_icon_all_hov_small.png" alt="">
+                                        </div>
+                                        <div class="menu-inner-sidebar-item">
+                                            <img src="images/poi_icon_rental_def.png" alt="" class="bigImg">
+                                            <img src="images/poi_icon_rental_hov_small.png" alt="">
+                                        </div>
+                                        <div class="menu-inner-sidebar-item">
+                                            <img src="images/poi_icon_camping_def.png" alt="">
+                                            <img src="images/poi_icon_camping_hov_small.png" alt="">
+                                        </div>
+                                        <div class="menu-inner-sidebar-item sidebar-active">
+                                            <img src="images/poi_icon_hotel_def.png" alt="">
+                                            <img src="images/poi_icon_hotel_hov_small.png" alt="">
+                                        </div>
+                                        <div class="menu-inner-sidebar-item">
+                                            <img src="images/poi_icon_culture_def.png" alt="">
+                                            <img src="images/poi_icon_culture_hov_small.png" alt="">
+                                        </div>
+                                        <div class="menu-inner-sidebar-item">
+                                            <img src="images/poi_icon_food_def.png" alt="">
+                                            <img src="images/poi_icon_food_hov_small.png" alt="">
+                                        </div>
+                                        <div class="menu-inner-sidebar-item">
+                                            <img src="images/poi_icon_health_def.png" alt="">
+                                            <img src="images/poi_icon_health_hov_small.png" alt="">
+                                        </div>
+                                        <div class="menu-inner-sidebar-item">
+                                            <img src="images/poi_icon_house_def.png" alt="">
+                                            <img src="images/poi_icon_house_hov_small.png" alt="">
+                                        </div>
+                                        <div class="menu-inner-sidebar-item">
+                                            <img src="images/poi_icon_kids_def.png" alt="">
+                                            <img src="images/poi_icon_kids_hov_small.png" alt="">
+                                        </div>
+                                        <div class="menu-inner-sidebar-item">
+                                            <img src="images/poi_icon_nature_def.png" alt="">
+                                            <img src="images/poi_icon_nature_hov_small.png" alt="">
+                                        </div>
+                                        <div class="menu-inner-sidebar-item">
+                                            <img src="images/poi_icon_shopping_def.png" alt="">
+                                            <img src="images/poi_icon_shopping_hov_small.png" alt="">
+                                        </div>
+                                        <div class="menu-inner-sidebar-item">
+                                            <img src="images/poi_icon_sun_def.png" alt="">
+                                            <img src="images/poi_icon_sun_hov_small.png" alt="">
+                                        </div>
+                                </div>
+                            </div>
+                            <img class="menuArrowDown" src="images/arrow-down.png" alt="" id="menu-sidebar-down">
+                        </div>
+                        <div class="menu-inner-line"></div>
+                        <div class="menu-inner-show">
+                            <div class="menu-inner-show-header">
+                                <div class="menu-inner-show-header-up">
+                                    <div class="menu-inner-show-header-up-img">
+                                        <img class="inner-img" src="images/poi_icon_all_hov.png" alt="">
+                                        <img class="inner-img" src="images/poi_icon_rental_hov.png" alt="">
+                                        <img class="inner-img" src="images/poi_icon_camping_hov.png" alt="">
+                                        <img class="inner-img inner-active" src="images/poi_icon_hotel_hov.png" alt="">
+                                        <img class="inner-img" src="images/poi_icon_culture_hov.png" alt="">
+                                        <img class="inner-img" src="images/poi_icon_food_hov.png" alt="">
+                                        <img class="inner-img" src="images/poi_icon_health_hov.png" alt="">
+                                        <img class="inner-img" src="images/poi_icon_house_hov.png" alt="">
+                                        <img class="inner-img" src="images/poi_icon_kids_hov.png" alt="">
+                                        <img class="inner-img" src="images/poi_icon_nature_hov.png" alt="">
+                                        <img class="inner-img" src="images/poi_icon_shopping_hov.png" alt="">
+                                        <img class="inner-img" src="images/poi_icon_sun_hov.png" alt="">
+                                    </div>
+                                    <div class="menu-inner-show-header-up-title">
+                                        <div class="inner-title">All</div>
+                                        <div class="inner-title">Camping</div>
+                                        <div class="inner-title inner-active">Hotel</div>
+                                        <div class="inner-title">Culture</div>
+                                        <div class="inner-title">Food</div>
+                                        <div class="inner-title">Health</div>
+                                        <div class="inner-title">House</div>
+                                        <div class="inner-title">Kids</div>
+                                        <div class="inner-title">Nature</div>
+                                        <div class="inner-title">Rental</div>
+                                        <div class="inner-title">Shopping</div>
+                                        <div class="inner-title">Sun</div>
+                                    </div>
+                                    <div class="menu-inner-show-header-up-close">Don't show</div>
+                                </div>
+                                <!-- <input class="menu-inner-show-header-down" type="range" min="0" max="100" step="1" value="50">  -->                           
+                                <div id="slider-range-min"></div>
+                                <input type="text" id="amount" readonly style="border:0; color:#999796;font-family: 'OpenSans'; margin-top: 10px; font-size: 14px">
+                            </div>
+                            <div class="menu-inner-show-items">
+                                <div class="menu-inner-show-items-item menu-inner-show-items-item-withoutFastBook">
+                                    <a href="#">            
+                                        <img src="images/sport.png" alt="">
+                                    </a>
+                                    <div class="menu-inner-show-items-item-mark">4.5</div>
+                                    <div class="menu-inner-show-items-item-comments">13</div>
+                                    <div class="menu-inner-show-items-item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni in, cum recusandae pariatur fugit a eos necessitatibus consequatur velit dicta impedit ex blanditiis nesciunt exercitationem voluptate molestiae nihil ullam culpa!</div>
+                                    <!-- <button class="menu-inner-show-items-item-button fastBook">FAST BOOK</button> -->
+                                </div>
+                                <div class="menu-inner-show-items-item">
+                                    <img src="images/menu-pic.png" alt="">
+                                    <div class="menu-inner-show-items-item-mark">4.5</div>
+                                    <div class="menu-inner-show-items-item-comments">13</div>
+                                    <div class="menu-inner-show-items-item-title">Name hotel</div>
+                                    <button class="menu-inner-show-items-item-button fastBook">FAST BOOK</button>
+                                </div>
+                                <div class="menu-inner-show-items-item">
+                                    <img src="images/menu-pic.png" alt="">
+                                    <div class="menu-inner-show-items-item-mark">4.5</div>
+                                    <div class="menu-inner-show-items-item-comments">13</div>
+                                    <div class="menu-inner-show-items-item-title">Name hotel</div>
+                                    <button class="menu-inner-show-items-item-button fastBook">FAST BOOK</button>
+                                </div>
+                                <div class="menu-inner-show-items-item">
+                                        <img src="images/menu-pic.png" alt="">
+                                    <div class="menu-inner-show-items-item-mark">4.5</div>
+                                    <div class="menu-inner-show-items-item-comments">13</div>
+                                    <div class="menu-inner-show-items-item-title">Name hotel</div>
+                                    <button class="menu-inner-show-items-item-button fastBook">FAST BOOK</button>
+                                </div>
+                                <div class="menu-inner-show-items-item">
+                                    <img src="images/menu-pic.png" alt="">
+                                    <div class="menu-inner-show-items-item-mark">4.5</div>
+                                    <div class="menu-inner-show-items-item-comments">13</div>
+                                    <div class="menu-inner-show-items-item-title">Name hotel</div>
+                                    <button class="menu-inner-show-items-item-button fastBook">FAST BOOK</button>
+                                </div>
+                                <div class="menu-inner-show-items-item">
+                                    <img src="images/menu-pic.png" alt="">
+                                    <div class="menu-inner-show-items-item-mark">4.5</div>
+                                    <div class="menu-inner-show-items-item-comments">13</div>
+                                    <div class="menu-inner-show-items-item-title">Name hotel</div>
+                                    <button class="menu-inner-show-items-item-button fastBook">FAST BOOK</button>
+                                </div>
+                                <div class="menu-inner-show-items-item">
+                                    <img src="images/menu-pic.png" alt="">
+                                    <div class="menu-inner-show-items-item-mark">4.5</div>
+                                    <div class="menu-inner-show-items-item-comments">13</div>
+                                    <div class="menu-inner-show-items-item-title">Name hotel</div>
+                                    <button class="menu-inner-show-items-item-button fastBook">FAST BOOK</button>
+                                </div>
+                                <div class="menu-inner-show-items-item">
+                                    <img src="images/menu-pic.png" alt="">
+                                    <div class="menu-inner-show-items-item-mark">4.5</div>
+                                    <div class="menu-inner-show-items-item-comments">13</div>
+                                    <div class="menu-inner-show-items-item-title">Name hotel</div>
+                                    <button class="menu-inner-show-items-item-button fastBook">FAST BOOK</button>
+                                </div>
+                                <div class="menu-inner-show-items-item">
+                                    <img src="images/menu-pic.png" alt="">
+                                    <div class="menu-inner-show-items-item-mark">4.5</div>
+                                    <div class="menu-inner-show-items-item-comments">13</div>
+                                    <div class="menu-inner-show-items-item-title">Name hotel</div>
+                                    <button class="menu-inner-show-items-item-button fastBook">FAST BOOK</button>
+                                </div>
+                                <div class="menu-inner-show-items-item">
+                                        <img src="images/menu-pic.png" alt="">
+                                    <div class="menu-inner-show-items-item-mark">4.5</div>
+                                    <div class="menu-inner-show-items-item-comments">13</div>
+                                    <div class="menu-inner-show-items-item-title">Name hotel</div>
+                                    <button class="menu-inner-show-items-item-button fastBook">FAST BOOK</button>
+                                </div>
+                                <div class="menu-inner-show-items-item">
+                                    <img src="images/menu-pic.png" alt="">
+                                    <div class="menu-inner-show-items-item-mark">4.5</div>
+                                    <div class="menu-inner-show-items-item-comments">13</div>
+                                    <div class="menu-inner-show-items-item-title">Name hotel</div>
+                                    <button class="menu-inner-show-items-item-button fastBook">FAST BOOK</button>
+                                </div>
+                                <div class="menu-inner-show-items-item">
+                                    <img src="images/menu-pic.png" alt="">
+                                    <div class="menu-inner-show-items-item-mark">4.5</div>
+                                    <div class="menu-inner-show-items-item-comments">13</div>
+                                    <div class="menu-inner-show-items-item-title">Name hotel</div>
+                                    <button class="menu-inner-show-items-item-button fastBook">FAST BOOK</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-footer">
+                        <div class="menu-footer-up">
+                            <div class="menu-footer-up-left">
+                                <img src="images/txt.png" alt="">
+                                &nbsp;&nbsp;View guide
+                            </div>
+                            <div class="menu-footer-up-right">
+                                <img src="images/printer.png" alt="">
+                                <img src="images/share-symbol.png" alt="">
+                                <img src="images/settings-2.png" alt="" class="openCreatePopup">
+                            </div>
+                        </div>
+                        <div class="menu-footer-slider">
+                            <div id="slider-range-min2"></div>
+                            <input type="text" id="amount2" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+<script src="script/jquery-3.3.1.min.js"></script>
+<script src="script/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="slick-master/slick/slick.min.js"></script>
+<script src="script/jquery.touch.js"></script>
+<!-- <script src="script/script.js"></script> -->
+<script>
+
+// $('#sidebarItems').slick({
+//             dots: true,
+//             mobileFirst: true,
+//             infinite: true,
+//             slidesToShow: 3,
+//             slidesToScroll: 1,
+//             rows: 1,
+//             dots: false,
+//             nextArrow: $('.menu-sidebar-down'),
+//             prevArrow: $('.menu-sidebar-up'),
+//             responsive: [
+
+//             ]
+//         });
+
+    $( ".datepicker" ).each(function() {
+  $( this ).datepicker();
+});
+    $( function() {
+    $( "#slider-range-min" ).slider({
+      range: true,
+      value: 37,
+      min: 1,
+      max: 999,
+      values: [ 75, 300 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range-min" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-range-min" ).slider( "values", 1 ) );
+  } );
+
+
+  $( function() {
+    $( "#slider-range-min2" ).slider({
+      range: "min",
+      value: 37,
+      min: 1,
+      max: 20,
+      slide: function( event, ui ) {
+        $( "#amount2" ).val(ui.value + ' km radius');
+      }
+    });
+    $( "#amount2" ).val($( "#slider-range-min2" ).slider( "value" ) + ' km radius' );
+  } );
+
+
+  var arrinnerImg = document.querySelectorAll('.inner-img');
+  var innerImg = Array.prototype.slice.call(arrinnerImg);
+  var arrinnerTitle = document.querySelectorAll('.inner-title');
+  var innerTitle = Array.prototype.slice.call(arrinnerTitle);
+  var arrsideBarItems = document.querySelectorAll('.menu-inner-sidebar-item');
+  var sideBarItems = Array.prototype.slice.call(arrsideBarItems);
+  function clearSideBarItems() {
+    sideBarItems.forEach(function(e){
+        e.classList.remove('sidebar-active');
+    });
+    innerImg.forEach(function(e){
+        e.classList.remove('inner-active');
+    });
+    innerTitle.forEach(function(e){
+        e.classList.remove('inner-active');
+    })
+  };
+  sideBarItems.forEach(function(e, i){
+      e.addEventListener('click', function(){
+        clearSideBarItems();
+        e.classList.add('sidebar-active');
+        innerImg[i].classList.add('inner-active');
+        innerTitle[i].classList.add('inner-active');
+      })
+  })
+
+    //скрипты для иконок категорий
+
+
+
+    var popupBg = document.querySelector('.popupBg');
+    var arrfastBook = document.querySelectorAll('.fastBook');
+    var fastBook = Array.prototype.slice.call(arrfastBook);
+    fastBook.forEach(function(e){
+        e.addEventListener('click', function(){
+            popupBg.classList.add('block')
+        })
+    })
+    document.querySelector('.popup1-main-close').addEventListener('click', function(){
+        popupBg.classList.remove('block')
+    })
+    window.addEventListener('click', function(e){
+        if(e.target == document.querySelector('.popupBg')) {
+            document.querySelector('.popupBg').classList.remove('block');
+        }
+    })
+    //для попапа с оплатой
+
+
+    var arropenCreatePopup = document.querySelectorAll('.openCreatePopup');
+    var openCreatePopup = Array.prototype.slice.call(arropenCreatePopup);
+    openCreatePopup.forEach(function(e){
+        e.addEventListener('click', function(){
+            document.querySelector('.popupBg-create').classList.add('block');
+        })
+    })
+    window.addEventListener('click', function(e){
+        if(e.target == document.querySelector('.popupBg-create')) {
+            document.querySelector('.popupBg-create').classList.remove('block');
+        }
+    })
+    var arrCreateHeaderItem = document.querySelectorAll('.create-popup-header-item');
+    var arrcreateItem = document.querySelectorAll('.createItem');
+    var createHeaderItem = Array.prototype.slice.call(arrCreateHeaderItem);
+    var createItem = Array.prototype.slice.call(arrcreateItem);
+    function clearCreateItems() {
+        createHeaderItem.forEach(function(e){
+            e.classList.remove('active');
+        })
+        createItem.forEach(function(e){
+            e.classList.remove('block')
+        })
+    }
+    createHeaderItem.forEach(function(e, i){
+        e.addEventListener('click', function(){
+
+            clearCreateItems();
+            e.classList.add('active')
+            createItem[i].classList.add('block');
+        })
+    })
+    Array.prototype.slice.call(document.querySelectorAll('.closeCreatePopup')).forEach(function(e){
+        e.addEventListener('click', function(){
+            document.querySelector('.popupBg-create').classList.remove('block');
+        })
+    });
+    var arrtoVehicles = document.querySelectorAll('.toVehicles');
+    var toVehicles = Array.prototype.slice.call(arrtoVehicles);
+    var arrtoGeneral = document.querySelectorAll('.toGeneral');
+    var toGeneral = Array.prototype.slice.call(arrtoGeneral);
+    var arrtoSharing = document.querySelectorAll('.toSharing');
+    var toSharing = Array.prototype.slice.call(arrtoSharing);
+    toVehicles.forEach(function(e){
+        e.addEventListener('click', function(){
+            clearCreateItems();
+            createItem[1].classList.add('block');
+            createHeaderItem[1].classList.add('active');
+        })
+    });
+    toGeneral.forEach(function(e){
+        e.addEventListener('click', function(){
+            clearCreateItems();
+            createItem[0].classList.add('block');
+            createHeaderItem[0].classList.add('active');
+        })
+    });
+    toSharing.forEach(function(e){
+        e.addEventListener('click', function(){
+            clearCreateItems();
+            createItem[2].classList.add('block');
+            createHeaderItem[2].classList.add('active');
+        })
+    });
+    //для попапа с созданием трипа
+</script>
+</body>
+</html>

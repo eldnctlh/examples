@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Linux Admin Blog</title>
+    <link rel="stylesheet" href="less/style.css">
+    <link rel="stylesheet" href="jodit-3.1.95/build/jodit.min.css">
+</head>
+<body class="admin-body other" style="background-color: #f3f5ff">
+    <div class="admin">
+        <div class="sidebar-wrapper">
+            <div class="admin-sidebar">
+                <a href="index.html" class="admin-sidebar-logo"></a>
+                <a style="text-decoration: none" href="admin.html" class="admin-sidebar-item">Orders<div class="admin-sidebar-item-notification">1</div></a>
+                <a style="text-decoration: none" href="admin-archive.html" class="admin-sidebar-item">Archive</a>
+                <a style="text-decoration: none" href="admin-clients.html" class="admin-sidebar-item">Clients</a>
+                <a style="text-decoration: none" href="admin-managers.html" class="admin-sidebar-item">Managers</a>
+                <a style="text-decoration: none" href="admin-blog.html" class="admin-sidebar-item admin-sidebar-active">Blog</a>
+                <a style="text-decoration: none" href="admin-notes.html" class="admin-sidebar-item">Notes</a>
+                <a style="text-decoration: none" href="admin-custom.html" class="admin-sidebar-item">Custom Field</a>
+            </div>
+        </div>
+        <div class="admin-main">
+                <div class="admin-main-head">
+                    <div class="admin-main-head-name">Manager 1
+                        <div class="admin-main-head-name-icon"></div>
+                    </div>
+                </div>
+            <div class="admin-main-item">
+                <div class="admin-main-item-head">Blog</div>
+                <div class="admin-main-item-orders">
+                    <div class="admin-main-item-orders-container">
+                        <div class="admin-main-item-orders-blog">
+                            <a class="admin-main-item-orders-blog-link" href="blog.html">Watch Page</a>
+                            <div class="admin-main-item-orders-blog-container" style="position: relative;">
+                                <div class="admin-main-item-orders-blog-create-title">Create post</div>
+                                <div class="admin-main-item-orders-blog-create-main-inputs">
+                                    <input type="radio" id="contactChoice1" checked='true'>
+                                    <label for="contactChoice1">EN</label>
+                                    <input type="radio" id="contactChoice2">
+                                    <label for="contactChoice2">RU</label>
+                                </div>
+                                <div id="createImg" class="admin-create-img">
+                                    <div class="admin-main-item-orders-blog-create-label">Post image:</div>
+                                    <!-- <img src="http://placehold.it/500x300/abc" alt="" class="admin-create-img-img"> -->
+                                    <form action="/file-upload" class="dropzone">
+                                        <div class="fallback">
+                                            <input name="file" type="file" multiple />
+                                        </div>
+                                        </form>
+                                </div>
+
+                                <div class="admin-create-tag" style="position: absolute; top: -80px; right: 0;">
+                                    <div class="admin-create-tag-title">Add tags</div>
+                                    <input type="text" id="adminInput">
+                                    <div class="admin-create-tag-item">#How_to <button class="admin-create-tag-item-button">Add</button></div>
+                                    <div class="admin-create-tag-item">#Servers <button class="admin-create-tag-item-button">Add</button></div>
+                                    <div class="admin-create-tag-item">#Operations <button class="admin-create-tag-item-button">Add</button></div>
+                                    <div class="admin-create-tag-item">#LinuxSupport <button class="admin-create-tag-item-button">Add</button></div>
+                                    <div class="admin-create-tag-item">#Linux <button class="admin-create-tag-item-button">Add</button></div>
+                                </div>
+                                <div class="admin-main-item-orders-blog-create" id="create-main-en">
+                                    <div class="admin-main-item-orders-blog-create-main">
+                                            <!-- <div class="admin-main-item-orders-blog-create-title">Create post</div> -->
+  
+                                            <input type="text"  placeholder="Post title" style="margin-top: 20px; margin-bottom: 20px; width: 400px; height: 40px;">
+                                            <input type="text" id="createTitle" placeholder="Post content" class="admin-create-title">
+                                           
+                                            <!-- <input type="text" id="createTag" placeholder="Post tag" class="admin-create-title"> -->
+                                            <!-- <textarea id="createText" class="admin-create-textarea" placeholder="Post text" id="text" cols="30" rows="10"></textarea> -->
+                                            <div style="display: none"  id="createVideo" class="admin-create-video">
+                                                <input type="text" class="admin-create-video-url" placeholder="Video url" onchange="document.querySelector('.admin-create-video-video').src = document.querySelector('.admin-create-video-url').value;">
+                                                <iframe class="admin-create-video-video" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                            </div>
+
+                                    </div>
+                                    <div class="admin-main-item-orders-blog-create-sidebar">
+                                        <button id="addTitle">Add Content</button>
+                                        <!-- <button id="addText">Add Text</button> -->
+                                        <button id="addImage">Add Image</button>
+                                        <button id="addVideo">Add Video</button>
+                                        <!-- <button id="addTag">Add Tag</button> -->
+                                        <button class="recommend">Set as recommended</button>
+                                    </div>
+                                </div>
+                                <div class="admin-main-item-orders-blog-create" id="create-main-ru">
+                                    <div class="admin-main-item-orders-blog-create-main create-ru">
+                                        <!-- <div class="admin-main-item-orders-blog-create-title">Create post(ru)</div> -->
+                                            <input type="text"  placeholder="Post title(ru)" style="margin-top: 20px; margin-bottom: 20px; width: 400px; height: 40px;">
+                                            <input type="text" id="createTitleRu" placeholder="Post content(ru)" class="admin-create-title">
+                                            <!-- <input type="text" id="createTag" placeholder="Post tag" class="admin-create-title"> -->
+                                            <!-- <textarea id="createText" class="admin-create-textarea" placeholder="Post text" id="text" cols="30" rows="10"></textarea> -->
+                                            <div style="display: none"  id="createVideoRu" class="admin-create-video">
+                                                <input type="text" class="admin-create-video-url video-ru" placeholder="Video url" onchange="document.querySelector('.create-video-ru').src = document.querySelector('.video-ru').value;">
+                                                <iframe class="admin-create-video-video create-video-ru" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                            </div>
+                                    </div>
+                                    <div class="admin-main-item-orders-blog-create-sidebar">
+                                        <button id="addTitleRu">Add Content</button>
+                                        <!-- <button id="addText">Add Text</button> -->
+                                        <button id="addImage">Add Image</button>
+                                        <button id="addVideoRu">Add Video</button>
+                                        <!-- <button id="addTag">Add Tag</button> -->
+                                        <button class="recommend">Set as recommended</button>
+                                    </div>
+                                </div>  
+                            </div>
+                            <button class="create-button">Create</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='script/jquery-3.3.1.min.js'></script>
+    <script src="jodit-3.1.95/build/jodit.min.js"></script>
+    <script src="script/dropzone.js"></script>
+    <script src="script/admin.js"></script>
+
+</body>
+</html>

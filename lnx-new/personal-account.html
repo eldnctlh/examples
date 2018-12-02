@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Linux Personal Account</title>
+    <link rel="stylesheet" href="less/style.css">
+</head>
+<body style="opacity:0;transition: opacity .2s;">
+    <div class="other">
+            <div class="popup-bg">
+                <div class="popup">
+                    <div class="popup-close"></div>
+                    <div class="popup-container">
+                            <div class="popup-title">Request help now</div>
+                            <div class="popup-labels">
+                                <div class="head-main-right-text">Name:</div>
+                                <div class="head-main-right-text">Contact Number:</div>
+                            </div>
+                            <form action="" method="POST">
+                                <div class="popup-inputs">
+                                    <input required placeholder='Enter your name' type="text" id="input1" class="head-main-right-input inputp">
+                                    <input required placeholder='Enter a phone number' type="text" id="input2" class="head-main-right-input inputp">
+                                </div>
+                                <div class="head-main-right-icons popup-icons">
+                                    <div tabindex="0" class="head-main-right-icons-icon tl" title="Telegram"></div>
+                                    <div tabindex="0" class="head-main-right-icons-icon wh" title="Whatsapp"></div>
+                                    <div tabindex="0" class="head-main-right-icons-icon vb" title="Viber"></div>
+                                    <div tabindex="0" class="head-main-right-icons-icon sk" title="Skype"></div>
+                                    <div tabindex="0" class="head-main-right-icons-icon em" title="Email"></div>
+                                    <div tabindex="0" class="head-main-right-icons-icon cl" title="Call"></div>
+                                </div>
+                                <div class="popup-plans-title">Choose your plan:</div>
+                                <div class="popup-plans">
+                                    <div tabindex="0" class="popup-plans-plan plan-hover"><div class="popup-plans-plan-text">One Time Help<br />$4.99</div></div>
+                                    <div tabindex="0" class="popup-plans-plan"><div class="popup-plans-plan-text">Monthly Help<br />$19.99</div></div>
+                                    <div tabindex="0" class="popup-plans-plan"><div class="popup-plans-plan-text">Corporate monthly support<br />$99.99</div></div>
+                                </div>
+                                <div class="popup-input-title">Your problem:</div>
+                                <textarea placeholder="Describe your problem here" class="popup-input"></textarea>
+                                <input style="display: block; border: none" type="submit" tabindex="0" class="popup-button" value="Send">
+                            </form>
+                    </div>
+                </div>
+            </div>
+
+        <div class="header">
+            <div class="header-container">
+                <a class="header-logo" onclick="return clickHandler()" href="index.html"><span class="header-logo-bold">LINUX</span>Support</a>
+                <div class="header-right">
+                    <a tabindex="0" style="color: #fff; text-decoration: none" href="tel:+38 (096) 45-56-789" class="header-right-phone">+38 (096) 45-56-789</a>
+                    <div class="header-right-lang-wrapper">
+                        <div tabindex="0" class="header-right-lang-wrapper-lang" id="lang">EN</div>
+                        <div class="ru">RU</div>
+                    </div>
+                    <a tabindex="0" style="color: #fff; text-decoration: none" href="tel:+38 (096) 45-56-789" class="header-right-phone-mobile"></a>
+                    <div class="header-right-user"><a style="text-decoration: none; color: #fff" href="personal-account.html">Amanda</a><div class="header-right-logout"></div></div>
+                    <!-- <div class="header-right-button-mobile"></div> -->
+                </div>
+            </div>
+        </div>
+        <div class="teamviewer personal">
+            <div class="teamviewer-container per-acc-cont">
+                <div class="per-acc-item">
+                    <a class="main-nav tv-nav"><a class="tv-link" onclick="return clickHandler()" href="index.html">Home |</a><a style="text-decoration: none; cursor: default;" class="main-nav-green"> Personal account</a></a>
+                    <div class="teamviewer-title">Hello,<br>Amanda!</div>
+                </div>
+                <div class="per-acc-sidebar">
+                    <div class="per-acc-sidebar-item">
+                        <div class="per-acc-sidebar-container">
+                            <div class="per-acc-sidebar-pretitle">Your plan</div>
+                            <div class="per-acc-sidebar-title changedTitle">Monthly Help</div>
+                            <div class="per-acc-sidebar-date">02.07.2018 - 02.08.2018</div>
+                            <div class="per-acc-sidebar-buttons">
+                                <div class="per-acc-sidebar-buttons-button planChange">Change Plan</div>
+                                <div class="per-acc-sidebar-buttons-button planUn">Unsubscribe</div>
+                            </div>
+                            <div class="per-acc-sidebar-planchange">
+                                <div class="per-acc-sidebar-planchange-item">One Time Help</div>
+                                <div class="per-acc-sidebar-planchange-item">Monthly Help</div>
+                                <div class="per-acc-sidebar-planchange-item">Corporate Monthly Support</div>
+                            </div>
+                            <div class="per-acc-sidebar-sure">
+                                <div class="per-acc-sidebar-sure-title">Are you sure?</div>
+                                <div class="per-acc-sidebar-sure-button">Yes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="per-acc-main">
+            <div class="per-acc-main-container">
+                <div class="per-acc-main-head">
+                    <div class="per-acc-main-head-item">History</div>
+                    <div class="per-acc-main-head-item per-acc-item-active2">Personal information</div>
+                </div>
+                <div class="per-acc-main-information block" id="paInformation">
+                    <div class="per-acc-main-information-label">Name:</div>
+                    <input type="text" class="per-acc-main-information-input pa-name" placeholder="Username" value="Amanda">
+                    <div class="per-acc-main-information-label">Contact Number:</div>
+                    <input type="text" class="per-acc-main-information-input pa-phone" placeholder="+123 456 789" value="+123 456 789">
+                    <div class="head-main-right-icons">
+                        <div tabindex="0" class="head-main-right-icons-icon tl" title="Telegram"></div>
+                        <div tabindex="0" class="head-main-right-icons-icon wh" title="Whatsapp"></div>
+                        <div tabindex="0" class="head-main-right-icons-icon vb" title="Viber"></div>
+                        <div tabindex="0" class="head-main-right-icons-icon sk" title="Skype"></div>
+                        <div tabindex="0" class="head-main-right-icons-icon em" title="Email"></div>
+                        <div tabindex="0" class="head-main-right-icons-icon cl" title="Call"></div>
+                    </div>
+                    <div class="per-acc-main-information-label">Email:</div>
+                    <div class="change-wrapper">
+                        <div class="per-acc-main-information-input pa-email changedForStatic">Your email<div></div>
+                        <div class="per-acc-main-information-buttonchange" id="changeEmail"></div>
+                    </div>
+                    <div class="per-acc-main-information-changeemail">
+                        <div class="per-acc-main-information-label">New email:</div>
+                        <input type="text" class="per-acc-main-information-input pa-email" placeholder="Enter your new email">
+                        <div class="per-acc-main-information-label">Repeat new email:</div>
+                        <input type="text" class="per-acc-main-information-input pa-email" placeholder="Repeat your new email">
+                        <div class="per-acc-main-information-changeemail-button">OK</div>
+                    </div>
+                    <div class="per-acc-main-information-label">Password:</div>
+                    <div class="change-wrapper">
+                        <div class="per-acc-main-information-input pa-password changedForStatic">**********</div>
+                        <div class="per-acc-main-information-buttonchange" id="changePassword"></div>
+                    </div>
+                    <div class="per-acc-main-information-changepass">
+                        <div class="per-acc-main-information-label">Old password:</div>
+                        <input type="password" class="per-acc-main-information-input pa-password" placeholder="Enter your old password">
+                        <div class="per-acc-main-information-label">New password:</div>
+                        <input type="password" class="per-acc-main-information-input pa-password" placeholder="Enter your new password">
+                        <div class="per-acc-main-information-label">Repeat new password:</div>
+                        <input type="password" class="per-acc-main-information-input pa-password" placeholder="Repeat your new password">
+                        <div class="per-acc-main-information-changepass-button">OK</div>
+                    </div>
+                    <button class="per-acc-main-information-button">Save</button>
+                </div>
+                </div>
+                <div class="per-acc-main-history" id="paHistory">
+                    <div class="per-acc-main-history-empty">
+                        Your history is emepty
+                    </div>
+                    <div class="per-acc-main-history-block">
+                        <div class="per-acc-main-history-block-title">Monthly Help</div>
+                        <div class="per-acc-main-history-block-head">
+                            <div class="per-acc-main-history-block-head-item"><span class="pa-head-before">Date of payment: </span>01.06.2018</div>
+                            <div class="per-acc-main-history-block-head-item"><span class="pa-head-before">Date of completion: </span>01.07.2018</div>
+                            <div class="per-acc-main-history-block-head-item"><span class="pa-head-before">Number of served computers: </span>1</div>
+                        </div>
+                        <div class="per-acc-main-history-block-foot">
+                            <div class="per-acc-main-history-block-foot-item">&nbsp;1545278SD50</div>
+                        </div>
+                    </div>
+                    <div class="per-acc-main-history-block">
+                        <div class="per-acc-main-history-block-title">One Time Help</div>
+                        <div class="per-acc-main-history-block-head">
+                            <div class="per-acc-main-history-block-head-item"><span class="pa-head-before">Date of payment: </span>25.02.2018</div>
+                            <div class="per-acc-main-history-block-head-item history-item-number"><span class="pa-head-before">Number of served computers: </span>1</div>
+                        </div>
+                        <div class="per-acc-main-history-block-foot">
+                            <div class="per-acc-main-history-block-foot-item">&nbsp;15452978SD52</div>
+                        </div>
+                    </div>
+                    <div class="per-acc-main-history-block">
+                        <div class="per-acc-main-history-block-title">Corporate Monthly Help</div>
+                        <div class="per-acc-main-history-block-head">
+                            <div class="per-acc-main-history-block-head-item"><span class="pa-head-before">Date of payment: </span>03.04.2018</div>
+                            <div class="per-acc-main-history-block-head-item"><span class="pa-head-before">Date of completion: </span>03.05.2018</div>
+                            <div class="per-acc-main-history-block-head-item"><span class="pa-head-before">Number of served computers: </span>10</div>
+                        </div>
+                        <div class="per-acc-main-history-block-foot">
+                            <div class="per-acc-main-history-block-foot-before">Products: </div>
+                            <div class="per-acc-main-history-block-foot-items">&nbsp;
+                                <div class="per-acc-main-history-block-foot-items-item">15452978SD52</div>
+                                <div class="per-acc-main-history-block-foot-items-item">45672RT5H312</div>
+                                <div class="per-acc-main-history-block-foot-items-item">15452978SD52</div>
+                                <div class="per-acc-main-history-block-foot-items-item">45672RT5H312</div>
+                                <div class="per-acc-main-history-block-foot-items-item">15452978SD52</div>
+                                <div class="per-acc-main-history-block-foot-items-item">45672RT5H312</div>
+                                <div class="per-acc-main-history-block-foot-items-item">15452978SD52</div>
+                                <div class="per-acc-main-history-block-foot-items-item">45672RT5H312</div>
+                                <div class="per-acc-main-history-block-foot-items-item">15452978SD52</div>
+                                <div class="per-acc-main-history-block-foot-items-item">45672RT5H312</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="per-acc-main-history-block">
+                        <div class="per-acc-main-history-block-title">Monthly Help</div>
+                        <div class="per-acc-main-history-block-head">
+                            <div class="per-acc-main-history-block-head-item"><span class="pa-head-before">Date of payment: </span>01.06.2018</div>
+                            <div class="per-acc-main-history-block-head-item"><span class="pa-head-before">Date of completion: </span>01.07.2018</div>
+                            <div class="per-acc-main-history-block-head-item"><span class="pa-head-before">Number of served computers: </span>1</div>
+                        </div>
+                        <div class="per-acc-main-history-block-foot">
+                            <div class="per-acc-main-history-block-foot-item">&nbsp;1545278SD50</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:" id="return-to-top">&uarr;</a>
+        <div class="footer">
+            <div class="footer-line"></div>
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="footer-top-title">Get in touch <div class="footer-top-title-bold">Ready to get support?</div></div>
+
+                    <div style="display: block" id="loginPopupPersonal" tabindex="0" class="footer-top-button upgrade">Upgrade plan</div>
+                    <!-- Logined -->
+                </div>
+                <div class="footer-bottom">
+                    <a tabindex="0" style="color: #fff; text-decoration: none" href="tel:+38 (096) 45-56-789" class="footer-bottom-phone">+38 (096) 45-56-789</a>
+                    <div class="footer-bottom-copyright">© LinuxSupport. All rights reserved</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='script/jquery-3.3.1.min.js'></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

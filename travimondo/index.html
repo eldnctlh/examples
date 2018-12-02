@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/jquery-ui-1.9.2.custom.min.css">
+    <link rel="stylesheet" href="style/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="slick-master/slick/slick.css">
+    <link rel="stylesheet" href="slick-master/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/jquery.timepicker.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Travimondo</title>
+</head>
+<body style="overflow-x: hidden;">
+    <div class="content">
+        <div class="banner-open">
+            <img src="images/banner-arrows-reverse.png" alt="">
+        </div>
+        <div class="banner">
+            <div class="banner-head">
+                <img src="images/banner-arrows.png" alt="" class="banner-close">
+            </div>
+            <div class="banner-main"></div>
+            <div class="banner-foot">
+                <div class="banner-foot-slider">
+                    <div class="banner-foot-slider-item"></div>
+                    <div class="banner-foot-slider-item"></div>
+                    <div class="banner-foot-slider-item"></div>
+                </div>
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-container">
+                <div class="header-menu-head">
+                    <div class="header-menu-head-logo">
+                        <img src="images/logo-menu2.png" alt="">
+                        <div class="header-menu-head-logo-text">TRAVIMONDO</div>
+                        <img class="menu-logo-mobile" src="images/logo.png" alt="">
+                    </div>
+                    <div class="header-menu-head-cross">&times;</div>
+                </div>
+                <div class="header-menu-list">
+                    <div class="header-menu-list-items">
+                        <a href="#" class="header-menu-list-item">Start new trip</a>
+                        <a href="#" class="header-menu-list-item">Articles</a>
+                        <a href="#" class="header-menu-list-item">Profile</a>
+                        <a href="#" class="header-menu-list-item">Favorite articles</a>
+                        <a href="#" class="header-menu-list-item">My trips</a>
+                        <a href="#" class="header-menu-list-item">My reviews</a>
+                        <a href="#" class="header-menu-list-item">Login</a>
+                    </div>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="header-menu-foot">
+                    <a href="#" class="fab fa-google-plus-g"></a>
+                    <a href="#"  class="fab fa-linkedin-in"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                </div>
+            </div>
+            <div class="header-menu-bg"></div>
+        </div>
+        <div class="header">
+            <div class="header-container">
+                <div class="header-menu-open">__<br>___<br>___</div>
+                <div class="header-logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="header-buttons">
+                    <button class="header-buttons-button">Login</button>
+                    <button class="header-buttons-button">Sign in</button>
+                    <button class="header-buttons-button header-button-mobile">Make roadtrip</button>
+                </div>
+                <div class="header-search">
+                    <img src="images/search-s.png" alt="" id="searchOpen">
+                    <div class="header-search-input">
+                        <input type="text" placeholder="Search Travimondo">
+                        <p id="searchClose">&times;</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <a href="#"><img alt="map" src="images/world.png" class="main-background"></a>
+
+            <div class="main-container">
+
+                <div class="main-logo">
+                    <div class="main-logo-img"><img src="images/logo-big.png" alt=""></div>   
+                    TRAVIMONDO</div>
+                <div class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</div>
+                <div class="main-form">
+                    <div class="main-form-head">
+                        <button class="main-form-head-item orange">create trip</button><button class="main-form-head-item">go anywhere</button>
+                    </div>
+                    <div class="main-form-content">
+                        <div class="main-form-left">
+                            <div class="main-form-left-top">
+                                <div class="main-form-left-top-item">
+                                    <span class="input-text">
+                                        <input type="text" placeholder="Starting from...">
+                                    </span>
+                                    <input readonly type="text" placeholder="Date" class="datepicker">
+                                </div>
+                                <div class="main-form-left-top-item">
+                                    <span class="input-text dest">
+                                        <input type="text" placeholder="Destination...">
+                                    </span>
+                                    <input readonly type="text" placeholder="Date" class="datepicker">
+                                </div>
+                            </div>
+                            <div class="main-form-left-top-hidden">
+                                <input type="text" placeholder="GO ANYWHERE">
+                            </div>
+                            <div class="main-form-left-down">
+                                <div class="main-form-left-down-item">
+                                    <img src="images/poi_icon_all_def_big.png" alt="">
+                                    <img src="images/poi_icon_all_hov.png" alt="">
+                                </div>
+                                <div class="main-form-left-down-item">
+                                    <img src="images/poi_icon_culture_def_big.png" alt="">
+                                    <img src="images/poi_icon_culture_hov.png" alt="">
+                                </div>
+                                <div class="main-form-left-down-item">
+                                    <img src="images/poi_icon_food_def_big.png" alt="">  
+                                    <img src="images/poi_icon_food_hov.png" alt="">  
+                                </div>
+                                <div class="main-form-left-down-item">
+                                    <img src="images/poi_icon_health_def_big.png" alt="">
+                                    <img src="images/poi_icon_health_hov.png" alt="">
+                                </div>
+                                <div class="main-form-left-down-item">
+                                    <img src="images/poi_icon_hotel_def_big.png" alt="">
+                                    <img src="images/poi_icon_hotel_hov.png" alt="">
+                                </div>
+                                <div class="main-form-left-down-item">
+                                    <img src="images/poi_icon_house_def_big.png" alt="">
+                                    <img src="images/poi_icon_house_hov.png" alt="">
+                                </div>
+                                <div class="main-form-left-down-item">
+                                    <img src="images/poi_icon_kids_def_big.png" alt="">
+                                    <img src="images/poi_icon_kids_hov.png" alt="">
+                                </div>
+                                <div class="main-form-left-down-item">
+                                    <img src="images/poi_icon_nature_def_big.png" alt="">
+                                    <img src="images/poi_icon_nature_hov.png" alt="">
+                                </div>
+                                <div class="main-form-left-down-item">
+                                    <img src="images/poi_icon_shopping_def_big.png" alt="">
+                                    <img src="images/poi_icon_shopping_hov.png" alt="">
+                                </div>
+                                <div class="main-form-left-down-item">
+                                    <img src="images/poi_icon_sun_def_big.png" alt="">
+                                    <img src="images/poi_icon_sun_hov.png" alt="">
+                                </div>
+                                <div class="main-form-left-down-item">
+                                    <img src="images/poi_icon_camping_def_big.png" alt="">
+                                    <img src="images/poi_icon_camping_hov.png" alt="">
+                                </div>
+                                <div class="main-form-left-down-item">                
+                                    <img src="images/poi_icon_rental_def_big.png" alt="">
+                                    <img src="images/poi_icon_rental_hov.png" alt="">
+                                </div> 
+                            </div>
+                        </div>
+                        <button class="main-form-right">let's go</button>
+                    </div>
+                </div>
+                <div class="main-slider">
+                    <div class="main-slider-item"><img src="images/eat.png" alt=""><div class="main-slider-item-tag">#design #inspirations</div><div class="main-slider-item-title">Eat and drink</div><div class="main-slider-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div>
+                    <div class="main-slider-item"><img src="images/culture.png" alt=""><div class="main-slider-item-tag">#design #inspirations</div><div class="main-slider-item-title">Culture and entertaiment</div><div class="main-slider-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div>
+                    <div class="main-slider-item"><img src="images/sport.png" alt=""><div class="main-slider-item-tag">#design #inspirations</div><div class="main-slider-item-title">Sport and health</div><div class="main-slider-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div>
+                    <div class="main-slider-item"><img src="images/nature.png" alt=""><div class="main-slider-item-tag">#design #inspirations</div><div class="main-slider-item-title">Nature and history</div><div class="main-slider-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div>
+                    <div class="main-slider-item"><img src="images/kids.png" alt=""><div class="main-slider-item-tag">#design #inspirations</div><div class="main-slider-item-title">For kids</div><div class="main-slider-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div>
+                    <div class="main-slider-item"><img src="images/shopping.png" alt=""><div class="main-slider-item-tag">#design #inspirations</div><div class="main-slider-item-title">Shopping</div><div class="main-slider-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div>
+                    <div class="main-slider-item"><img src="images/live.png" alt=""><div class="main-slider-item-tag">#design #inspirations</div><div class="main-slider-item-title">Live and experience</div><div class="main-slider-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div>
+                    <div class="main-slider-item"><img src="images/sun.png" alt=""><div class="main-slider-item-tag">#design #inspirations</div><div class="main-slider-item-title">Sun and bath</div><div class="main-slider-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div>
+                </div>
+            </div>
+            <div class="main-shadow"></div>
+        </div>
+        <div class="discover">
+            <div class="discover-container">
+                <div class="discover-left">
+                    <img src="images/discover.png" alt="">
+                </div>
+                <div class="discover-right">
+                    <div class="discover-title">Discover the world with us</div>
+                    <div class="discover-text">Best Prices Best Value Everything right where you need it</div>
+                    <div class="discover-search">
+                        <div class="discover-search-main">
+                            <div class="discover-search-head">
+                                <div class="discover-search-head-item active">HOTEL</div>
+                                <div class="discover-search-head-item">TOP</div>
+                                <div class="discover-search-head-item">CAR</div>
+                                <div class="discover-search-head-item">CAMPING</div>
+                                <div class="discover-search-head-item">RENTAL HOMES</div>
+                                <div class="discover-search-head-item">FLIGHT</div>
+                                <div class="discover-search-head-item">CARAVAN</div>
+                            </div>
+                            <div class="discover-search-item discover-search-item-start disitemfly2" style="display: none">
+                                <span class="discover-search-item-start-radio">
+                                    <input name="flyAnswer" id="OneWay" type="radio">
+                                    <label for="OneWay">One Way</label>
+                                </span>
+                                <span class="discover-search-item-start-radio">
+                                    <input name="flyAnswer" id="RoundTrip" type="radio">
+                                    <label for="RoundTrip">Round Trip</label>
+                                </span>
+                            </div>
+                            <div class="discover-search-item disitemall">
+                                <div>
+                                    <label class="label" for="search" style="display: block">Destination</label>
+                                    <input type="text" id="search" class="discover-search-city" placeholder="City...">
+                                </div>
+                            <div>
+                                    <label for="date1" style="display: block; margin-left: 25px">Check in</label>
+                                    <input readonly type="text" id="date1" placeholder="Date" class="discover-search-date datepicker">
+                            </div>
+                                <div>
+                                    <label for="date2" style="display: block; margin-left: 25px">Check out</label>
+                                    <input readonly type="text" id="date2" placeholder="Date" class="discover-search-date datepicker">            
+                                </div>             
+                            </div>
+                            <div class="discover-search-item2 disitemhotel">
+                                <div>
+                                    <label for="rooms" style="display: block">Rooms</label>
+                                    <input style="margin-left: 0px" type="number" id="rooms" class="discover-search-number" min="1">
+                                </div>
+                                <div>
+                                    <label for="adults" style="display: block; margin-left: 20px">Adults</label>
+                                    <input type="number" id="adults" class="discover-search-number" min="1">
+                                </div>
+                                <div>
+                                    <label for="children" style="display: block; margin-left: 20px">Children</label>
+                                    <input type="number" id="children" class="discover-search-number" min="0">         
+                                </div>             
+                            </div>
+                            <div class="discover-search-item disitemcar" style="display: none">
+                                <div>
+                                    <label class="label" for="searchcountry" style="display: block">Car Rentals</label>
+                                    <input type="text" id="searchcountry" class="discover-search-city disitemcarinput" placeholder="Country">
+                                </div>
+                                <div>
+                                        <label class="label" for="searchcity" style="display: block; color: transparent">Car Rentals</label>
+                                    <input type="text" id="searchcity" class="discover-search-city disitemcarinput" placeholder="City">
+                                </div>            
+                                <div>
+                                    <label class="label" for="searchloc" style="display: block; color: transparent">Car Rentals</label>
+                                    <input type="text" id="searchloc" class="discover-search-city disitemcarinput" placeholder="Location">
+                                </div>
+                            </div>
+                            <div class="discover-search-item2 disitemcar2" style="display: none">
+                                <div>
+                                    <label for="date3" style="display: block">Pick Up Date</label>
+                                    <input readonly type="text" id="date3" placeholder="Date" style="margin-left: 0px" class="discover-search-date datepicker">     
+                                </div>
+                                <div>
+                                    <label for="time1" style="display: block; margin-left: 25px">Time</label>
+                                    <input id="time1" class="discover-search-date disitemtime timepicker">     
+                                </div>
+                                <div>
+                                    <label for="date4" style="display: block; margin-left: 25px">Drop Off Date</label>
+                                    <input readonly type="text" id="date4" placeholder="Date" class="discover-search-date datepicker" >     
+                                </div>
+                                <div>
+                                    <label for="time2" style="display: block; margin-left: 25px" >Time</label>
+                                    <input id="time2" class="discover-search-date disitemtime timepicker">     
+                                </div> 
+                                <div>
+                                    <label for="age" style="display: block; margin-left: 20px;">Driver's age</label>
+                                    <input type="number" id="age" class="discover-search-number" style="width: 80px" min="18">         
+                                </div>              
+                            </div>
+                            <div class="discover-search-item2 disitemcamp" style="display: none">
+                                <div>
+                                    <label for="camp1" style="display: block">Type</label>
+                                    <!-- <input type="number"> -->
+                                    <select style="margin-left: 0px" id="camp1" class="discover-search-type">
+                                        <option value="">Appartment</option>
+                                        <option value="">Cottage</option>
+                                        <option value="">Tent</option>
+                                        <option value="">Other</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="camp2" style="display: block; margin-left: 20px">Adults</label>
+                                    <input type="number" id="camp2" class="discover-search-number" min="1">
+                                </div>
+                                <div>
+                                    <label for="camp3" style="display: block; margin-left: 20px">Children</label>
+                                    <input type="number" id="camp3" class="discover-search-number" min="0">         
+                                </div>             
+                            </div>
+                            <div class="discover-search-item disitemfly" style="display: none">
+                                <div>
+                                    <label class="label" for="fly" style="display: block">Departure From ( city of airport )</label>
+                                    <input type="text" id="fly" class="discover-search-city" placeholder="City...">
+                                </div>
+                                <div>
+                                    <label class="label" for="fly1" style="display: block">To ( city of airport )</label>
+                                    <input type="text" id="fly1" class="discover-search-city" placeholder="City...">
+                                </div>
+                            </div>
+                            <div class="discover-search-item disitemfly1" style="display: none; margin-top: 20px"> 
+                                <div>
+                                    <label for="fly2" style="display: block; margin-left: 0px">Check in</label>
+                                    <input readonly type="text" id="fly2" placeholder="Date" class="discover-search-date datepicker" style="margin-left: 0px">
+                                </div>
+                                <div>
+                                    <label for="fly3" style="display: block; margin-left: 25px">Check out</label>
+                                    <input readonly type="text" id="fly3" placeholder="Date" class="discover-search-date datepicker">            
+                                </div> 
+                                <div>
+                                    <label for="adults1" style="display: block; margin-left: 20px">Adults</label>
+                                    <input type="number" id="adults1" class="discover-search-number disitemflynumber" min="1">
+                                </div>
+                                <div>
+                                    <label for="children1" style="display: block; margin-left: 20px">Children</label>
+                                    <input type="number" id="children1" class="discover-search-number disitemflynumber" min="0">         
+                                </div> 
+                                <div>
+                                    <label for="rooms1" style="display: block; margin-left: 20px">Infants</label>
+                                    <input style="margin-left: 20px" type="number" id="rooms1" class="discover-search-number disitemflynumber" min="0">
+                                </div>             
+                            </div>
+                        </div>
+                        <button class="discover-search-button">SEARCH HOTELS</button>
+                        <button style="display: none" class="discover-search-button">SEARCH TOP</button>
+                        <button style="display: none" class="discover-search-button">SEARCH CAR</button>
+                        <button style="display: none" class="discover-search-button">SEARCH CAMPING</button>
+                        <button style="display: none" class="discover-search-button">SEARCH RENTAL HOMES</button>
+                        <button style="display: none" class="discover-search-button">SEARCH FLIGHT</button>
+                        <button style="display: none" class="discover-search-button">SEARCH CARAVAN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popular">
+            <div class="popular-container">
+                <div class="popular-left">
+                    <div class="popular-left-title">Popular Articles and Guides</div>
+                    <div class="popular-left-text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero, blandit vel sapien vitae,</div>
+                    <button class="popular-left-button">OPEN GUIDE</button>
+                </div>
+                <div class="popular-right">
+                    <div class="popular-right-slider slider">
+                        <div class="popular-right-slider-item slider-item">
+                            <a href="#"><img src="images/london.png" alt=""></a>
+                            <a href="#" class="popular-right-slider-item-title">See London eye text text txedfasfsfsdfdsffds</a>
+                            <div class="popular-right-slider-item-text">LONDON<br><br>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. dasdasda sdasdasda sdasdasda sdasdasdasdasdasdasdasdas dasdasdasdasdasda sdasdasdasd asdasdasdasdasdasdasdas dasdasda sdasdasdasd asdasdasdasd asdasdas dasdas dasdasd asdasda sdasd asdas</div>
+                            <div class="popular-right-slider-item-foot">
+                                <div class="popular-right-slider-item-foot-item">Add to trip</div>
+                                <div class="popular-right-slider-item-foot-item">Add to favorite</div>
+                            </div>
+                        </div>
+                        <div class="popular-right-slider-item slider-item">
+                            <a href="#"><img src="images/prague.png" alt=""></a>
+                            <a href="#" class="popular-right-slider-item-title">Shopping in Prague</a>
+                            <div class="popular-right-slider-item-text">PRAGUE<br><br>Many people visit Prague to see the awe inspiring spires and breathtaking architecture that embellishes the old city, while others ggggggggg ggggggggg ggggggggdsds dsffffffffr4ew rewasddssd</div>
+                            <div class="popular-right-slider-item-foot">
+                                <div class="popular-right-slider-item-foot-item">Add to trip</div>
+                                <div class="popular-right-slider-item-foot-item">Add to favorite</div>
+                            </div>
+                        </div>
+                        <div class="popular-right-slider-item slider-item">
+                            <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                            <a href="#" class="popular-right-slider-item-title">Copenhagen Serves Up... </a>
+                            <div class="popular-right-slider-item-text">COPENHAGEN<br><br>When travelling with your family to the Algarve region of Portugal, a day spent at the Zoo Marine Algarve is highly recommended.</div>
+                            <div class="popular-right-slider-item-foot">
+                                <div class="popular-right-slider-item-foot-item">Add to trip</div>
+                                <div class="popular-right-slider-item-foot-item">Add to favorite</div>
+                            </div>
+                        </div>
+                        <div class="popular-right-slider-item slider-item">
+                            <a href="#"><img src="images/london.png" alt=""></a>
+                            <a href="#" class="popular-right-slider-item-title">See London eye text text txedfasfsfsdfdsffds</a>
+                            <div class="popular-right-slider-item-text">LONDON<br><br>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. dasdasda sdasdasda sdasdasda sdasdasdasdasdasdasdasdas dasdasdasdasdasda sdasdasdasd asdasdasdasdasdasdasdas dasdasda sdasdasdasd asdasdasdasd asdasdas dasdas dasdasd asdasda sdasd asdas</div>
+                            <div class="popular-right-slider-item-foot">
+                                <div class="popular-right-slider-item-foot-item">Add to trip</div>
+                                <div class="popular-right-slider-item-foot-item">Add to favorite</div>
+                            </div>
+                        </div>
+                        <div class="popular-right-slider-item slider-item">
+                                <a href="#"><img src="images/prague.png" alt=""></a>
+                            <a href="#" class="popular-right-slider-item-title">Shopping in Prague</a>
+                            <div class="popular-right-slider-item-text">PRAGUE<br><br>Many people visit Prague to see the awe inspiring spires and breathtaking architecture that embellishes the old city, while others ggggggggg ggggggggg ggggggggdsds dsffffffffr4ew rewasddssd</div>
+                            <div class="popular-right-slider-item-foot">
+                                <div class="popular-right-slider-item-foot-item">Add to trip</div>
+                                <div class="popular-right-slider-item-foot-item">Add to favorite</div>
+                            </div>
+                        </div>
+                        <div class="popular-right-slider-item slider-item">
+                                <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                            <a href="#" class="popular-right-slider-item-title">Copenhagen Serves Up... </a>
+                            <div class="popular-right-slider-item-text">COPENHAGEN<br><br>When travelling with your family to the Algarve region of Portugal, a day spent at the Zoo Marine Algarve is highly recommended.</div>
+                            <div class="popular-right-slider-item-foot">
+                                <div class="popular-right-slider-item-foot-item">Add to trip</div>
+                                <div class="popular-right-slider-item-foot-item">Add to favorite</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="popular-right-nav">
+                        <div class="popular-right-nav-left">
+                            <div class="sliderNav active"></div>
+                            <div class="sliderNav"></div>
+                            <div class="sliderNav"></div>
+                            <div class="sliderNav"></div>
+                        </div>
+                        <div class="popular-right-nav-right slider-nav-next">Next</div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="places">
+                <div class="places-right">
+                    <div class="places-right-text">
+                        <h1>Places</h1>
+                        <h2>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et.</h2>
+                        <button class="button-orange button-orange-fill">SEE ALL</button>
+                    </div>
+                    <div class="places-right-slider slider1">
+                        <div class="places-right-slider-item">
+                            <a href="#" class="places-right-slider-item-image">
+                                    <img src="images/prague2.png" alt="">
+                                <div class="places-right-slider-item-image-pretitle">Shopping in Prague</div>
+                                <div class="places-right-slider-item-image-title">PRAGUE</div>
+                            </a>
+                            <div class="places-right-slider-item-hidden">
+                                <div class="places-right-slider-item-hidden-pretitle">See London eye</div>
+                                <div class="places-right-slider-item-hidden-title">London</div>
+                                <div class="places-right-slider-item-hidden-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield.</div>
+                                <div class="places-right-slider-item-hidden-buttons">
+                                    <a href="#">Add to trip</a >
+                                    <a href="#" >Add to favorite</a >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="places-right-slider-item">
+                            <a href="#" class="places-right-slider-item-image">
+                                    <img src="images/prague2.png" alt="">
+                                <div class="places-right-slider-item-image-pretitle">Shopping in Prague</div>
+                                <div class="places-right-slider-item-image-title">PRAGUE</div>
+                            </a>
+                            <div class="places-right-slider-item-hidden">
+                                <div class="places-right-slider-item-hidden-pretitle">See London eye</div>
+                                <div class="places-right-slider-item-hidden-title">London</div>
+                                <div class="places-right-slider-item-hidden-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield.</div>
+                                <div class="places-right-slider-item-hidden-buttons">
+                                    <a href="#">Add to trip</a >
+                                    <a href="#" >Add to favorite</a >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="places-right-slider-item">
+                            <a href="#" class="places-right-slider-item-image">
+                                    <img src="images/prague2.png" alt="">
+                                <div class="places-right-slider-item-image-pretitle">Shopping in Prague</div>
+                                <div class="places-right-slider-item-image-title">PRAGUE</div>
+                            </a>
+                            <div class="places-right-slider-item-hidden">
+                                <div class="places-right-slider-item-hidden-pretitle">See London eye</div>
+                                <div class="places-right-slider-item-hidden-title">London</div>
+                                <div class="places-right-slider-item-hidden-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield.</div>
+                                <div class="places-right-slider-item-hidden-buttons">
+                                    <a href="#">Add to trip</a >
+                                    <a href="#" >Add to favorite</a >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="places-right-slider-item">
+                            <a href="#" class="places-right-slider-item-image">
+                                    <img src="images/prague2.png" alt="">
+                                <div class="places-right-slider-item-image-pretitle">Shopping in Prague</div>
+                                <div class="places-right-slider-item-image-title">PRAGUE</div>
+                            </a>
+                            <div class="places-right-slider-item-hidden">
+                                <div class="places-right-slider-item-hidden-pretitle">See London eye</div>
+                                <div class="places-right-slider-item-hidden-title">London</div>
+                                <div class="places-right-slider-item-hidden-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield.</div>
+                                <div class="places-right-slider-item-hidden-buttons">
+                                    <a href="#">Add to trip</a >
+                                    <a href="#" >Add to favorite</a >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="places-right-slider-item">
+                            <a href="#" class="places-right-slider-item-image">
+                                    <img src="images/prague2.png" alt="">
+                                <div class="places-right-slider-item-image-pretitle">Shopping in Prague</div>
+                                <div class="places-right-slider-item-image-title">PRAGUE</div>
+                            </a>
+                            <div class="places-right-slider-item-hidden">
+                                <div class="places-right-slider-item-hidden-pretitle">See London eye</div>
+                                <div class="places-right-slider-item-hidden-title">London</div>
+                                <div class="places-right-slider-item-hidden-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield.</div>
+                                <div class="places-right-slider-item-hidden-buttons">
+                                    <a href="#">Add to trip</a >
+                                    <a href="#" >Add to favorite</a >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="places-right-slider-item">
+                            <a href="#" class="places-right-slider-item-image">
+                                    <img src="images/prague2.png" alt="">
+                                <div class="places-right-slider-item-image-pretitle">Shopping in Prague</div>
+                                <div class="places-right-slider-item-image-title">PRAGUE</div>
+                            </a>
+                            <div class="places-right-slider-item-hidden">
+                                <div class="places-right-slider-item-hidden-pretitle">See London eye</div>
+                                <div class="places-right-slider-item-hidden-title">London</div>
+                                <div class="places-right-slider-item-hidden-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield.</div>
+                                <div class="places-right-slider-item-hidden-buttons">
+                                    <a href="#">Add to trip</a >
+                                    <a href="#" >Add to favorite</a >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="places-right-slider-nav">
+                        <div class="places-right-slider-nav-items">
+  
+                        </div>
+                        <div class="places-right-slider-nav-next">Next</div>
+                    </div>
+                </div>
+            <div class="places-container">
+               <div class="places-container-text">
+                   <h1>Regions</h1>
+                   <h2>Moldova</h2>
+                   <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et.<button>+ ADD TO TRIP</button></p>
+                   <button class="button-orange button-orange-fill">See all</button>
+               </div>
+                <img class="places-img" src="images/night-village.jpg" alt="">
+            </div>
+
+        </div>
+        <!-- <div class="latest">
+            <div class="latest-container">
+                <div class="latest-left">
+                    <div class="latest-left-title">Latest trips</div>
+                    <div class="latest-left-text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.Phasellus enim libero, blandit vel sapien vitae,</div>
+                    <button class="latest-left-button">SEE ALL</button>
+                </div>
+                <div class="latest-right">
+                    <div class="latest-right-slider slider2">
+                        <div class="slider-item2">
+                            <div class="latest-right-slider-item">
+                                <img src="images/car.png" alt="">
+                                <div class="latest-right-slider-item-titles">
+                                    <div class="latest-right-slider-item-tag">#Tamara Zoriy</div>
+                                    <a href="#" class="latest-right-slider-item-title">Lviv - Odessa</a>
+                                </div>
+                                <div class="latest-right-slider-item-foot">
+                                    <div class="latest-right-slider-item-foot-left"> 
+                                        <div class="latest-right-slider-item-foot-item">27-06-2018</div>
+                                        <div class="latest-right-slider-item-foot-item">1:55 PM</div></div>
+                                    <div class="latest-right-slider-item-foot-right">
+                                        <a href="#" class="latest-right-slider-item-foot-item backup">Copy trip</a>
+                                        <a href="#" class="latest-right-slider-item-foot-item mail"></a>
+                                        <a href="#" class="latest-right-slider-item-foot-item facebook"></a>
+                                        <a href="#" class="latest-right-slider-item-foot-item twitter"></a>
+                                    </div>
+                                </div>
+                                <div class="latest-right-slider-item-shadow"></div>
+                            </div>
+                            <div class="latest-right-slider-item">
+                                <img src="images/girl-hat.png" alt="">
+                                <div class="latest-right-slider-item-titles">
+                                    <div class="latest-right-slider-item-tag">#Tamara Zoriy</div>
+                                    <a href="#" class="latest-right-slider-item-title">Lviv - Odessa</a>
+                                </div>
+                                <div class="latest-right-slider-item-foot">
+                                    <div class="latest-right-slider-item-foot-left"> 
+                                        <div class="latest-right-slider-item-foot-item">27-06-2018</div>
+                                        <div class="latest-right-slider-item-foot-item">1:55 PM</div></div>
+                                    <div class="latest-right-slider-item-foot-right">
+                                        <a href="#" class="latest-right-slider-item-foot-item backup">Copy trip</a>
+                                        <a href="#" class="latest-right-slider-item-foot-item mail"></a>
+                                        <a href="#" class="latest-right-slider-item-foot-item facebook"></a>
+                                        <a href="#" class="latest-right-slider-item-foot-item twitter"></a>
+                                    </div>
+                                </div>
+                                <div class="latest-right-slider-item-shadow"></div>
+                            </div>
+                            <div class="latest-right-slider-item">
+                                <img src="images/boat2.png" alt="">
+                                <div class="latest-right-slider-item-titles small-img">
+                                    <div class="latest-right-slider-item-tag">#Tamara Zoriy</div>
+                                    <a href="#" class="latest-right-slider-item-title">Lviv - Odessa</a>
+                                </div>
+                                <div class="latest-right-slider-item-foot">
+                                    <div class="latest-right-slider-item-foot-left"> 
+                                        <div class="latest-right-slider-item-foot-item">27-06-2018</div>
+                                        <div class="latest-right-slider-item-foot-item">1:55 PM</div></div>
+                                    <div class="latest-right-slider-item-foot-right">
+                                        <a href="#" class="latest-right-slider-item-foot-item backup">Copy trip</a>
+                                        <a href="#" class="latest-right-slider-item-foot-item mail"></a>
+                                        <a href="#" class="latest-right-slider-item-foot-item facebook"></a>
+                                        <a href="#" class="latest-right-slider-item-foot-item twitter"></a>
+                                    </div>
+                                </div>
+                                <div class="latest-right-slider-item-shadow"></div>
+                            </div>
+                            <div class="latest-right-slider-item">
+                                <img src="images/car2.png" alt="">
+                                <div class="latest-right-slider-item-titles small-img">
+                                    <div class="latest-right-slider-item-tag">#Tamara Zoriy</div>
+                                    <a href="#" class="latest-right-slider-item-title">Lviv - Odessa</a>
+                                </div>
+                                <div class="latest-right-slider-item-foot">
+                                    <div class="latest-right-slider-item-foot-left"> 
+                                        <div class="latest-right-slider-item-foot-item">27-06-2018</div>
+                                        <div class="latest-right-slider-item-foot-item">1:55 PM</div></div>
+                                    <div class="latest-right-slider-item-foot-right">
+                                        <a href="#" class="latest-right-slider-item-foot-item backup">Copy trip</a>
+                                        <a href="#" class="latest-right-slider-item-foot-item mail"></a>
+                                        <a href="#" class="latest-right-slider-item-foot-item facebook"></a>
+                                        <a href="#" class="latest-right-slider-item-foot-item twitter"></a>
+                                    </div>
+                                </div>
+                                <div class="latest-right-slider-item-shadow"></div>
+                            </div>
+                        </div>
+                        <div class="slider-item2">
+                                <div class="latest-right-slider-item">
+                                    <img src="images/car.png" alt="">
+                                    <div class="latest-right-slider-item-titles">
+                                        <div class="latest-right-slider-item-tag">#Tamara Zoriy</div>
+                                        <a href="#" class="latest-right-slider-item-title">Lviv - Odessa2</a>
+                                    </div>
+                                    <div class="latest-right-slider-item-foot">
+                                        <div class="latest-right-slider-item-foot-left"> 
+                                            <div class="latest-right-slider-item-foot-item">27-06-2018</div>
+                                            <div class="latest-right-slider-item-foot-item">1:55 PM</div></div>
+                                        <div class="latest-right-slider-item-foot-right">
+                                            <a href="#" class="latest-right-slider-item-foot-item backup">Copy trip</a>
+                                            <a href="#" class="latest-right-slider-item-foot-item mail"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item facebook"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item twitter"></a>
+                                        </div>
+                                    </div>
+                                    <div class="latest-right-slider-item-shadow"></div>
+                                </div>
+                                <div class="latest-right-slider-item">
+                                    <img src="images/girl-hat.png" alt="">
+                                    <div class="latest-right-slider-item-titles">
+                                        <div class="latest-right-slider-item-tag">#Tamara Zoriy</div>
+                                        <a href="#" class="latest-right-slider-item-title">Lviv - Odessa</a>
+                                    </div>
+                                    <div class="latest-right-slider-item-foot">
+                                        <div class="latest-right-slider-item-foot-left"> 
+                                            <div class="latest-right-slider-item-foot-item">27-06-2018</div>
+                                            <div class="latest-right-slider-item-foot-item">1:55 PM</div></div>
+                                        <div class="latest-right-slider-item-foot-right">
+                                            <a href="#" class="latest-right-slider-item-foot-item backup">Copy trip</a>
+                                            <a href="#" class="latest-right-slider-item-foot-item mail"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item facebook"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item twitter"></a>
+                                        </div>
+                                    </div>
+                                    <div class="latest-right-slider-item-shadow"></div>
+                                </div>
+                                <div class="latest-right-slider-item">
+                                    <img src="images/boat2.png" alt="">
+                                    <div class="latest-right-slider-item-titles small-img">
+                                        <div class="latest-right-slider-item-tag">#Tamara Zoriy</div>
+                                        <a href="#" class="latest-right-slider-item-title">Lviv - Odessa</a>
+                                    </div>
+                                    <div class="latest-right-slider-item-foot">
+                                        <div class="latest-right-slider-item-foot-left"> 
+                                            <div class="latest-right-slider-item-foot-item">27-06-2018</div>
+                                            <div class="latest-right-slider-item-foot-item">1:55 PM</div></div>
+                                        <div class="latest-right-slider-item-foot-right">
+                                            <a href="#" class="latest-right-slider-item-foot-item backup">Copy trip</a>
+                                            <a href="#" class="latest-right-slider-item-foot-item mail"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item facebook"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item twitter"></a>
+                                        </div>
+                                    </div>
+                                    <div class="latest-right-slider-item-shadow"></div>
+                                </div>
+                                <div class="latest-right-slider-item">
+                                    <img src="images/car2.png" alt="">
+                                    <div class="latest-right-slider-item-titles small-img">
+                                        <div class="latest-right-slider-item-tag">#Tamara Zoriy</div>
+                                        <a href="#" class="latest-right-slider-item-title">Lviv - Odessa</a>
+                                    </div>
+                                    <div class="latest-right-slider-item-foot">
+                                        <div class="latest-right-slider-item-foot-left"> 
+                                            <div class="latest-right-slider-item-foot-item">27-06-2018</div>
+                                            <div class="latest-right-slider-item-foot-item">1:55 PM</div></div>
+                                        <div class="latest-right-slider-item-foot-right">
+                                            <a href="#" class="latest-right-slider-item-foot-item backup">Copy trip</a>
+                                            <a href="#" class="latest-right-slider-item-foot-item mail"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item facebook"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item twitter"></a>
+                                        </div>
+                                    </div>
+                                    <div class="latest-right-slider-item-shadow"></div>
+                                </div>
+                        </div>
+                        <div class="slider-item2">
+                                <div class="latest-right-slider-item">
+                                    <img src="images/car.png" alt="">
+                                    <div class="latest-right-slider-item-titles">
+                                        <div class="latest-right-slider-item-tag">#Tamara Zoriy</div>
+                                        <a href="#" class="latest-right-slider-item-title">Lviv - Odessa3</a>
+                                    </div>
+                                    <div class="latest-right-slider-item-foot">
+                                        <div class="latest-right-slider-item-foot-left"> 
+                                            <div class="latest-right-slider-item-foot-item">27-06-2018</div>
+                                            <div class="latest-right-slider-item-foot-item">1:55 PM</div></div>
+                                        <div class="latest-right-slider-item-foot-right">
+                                            <a href="#" class="latest-right-slider-item-foot-item backup">Copy trip</a>
+                                            <a href="#" class="latest-right-slider-item-foot-item mail"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item facebook"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item twitter"></a>
+                                        </div>
+                                    </div>
+                                    <div class="latest-right-slider-item-shadow"></div>
+                                </div>
+                                <div class="latest-right-slider-item">
+                                    <img src="images/girl-hat.png" alt="">
+                                    <div class="latest-right-slider-item-titles">
+                                        <div class="latest-right-slider-item-tag">#Tamara Zoriy</div>
+                                        <a href="#" class="latest-right-slider-item-title">Lviv - Odessa</a>
+                                    </div>
+                                    <div class="latest-right-slider-item-foot">
+                                        <div class="latest-right-slider-item-foot-left"> 
+                                            <div class="latest-right-slider-item-foot-item">27-06-2018</div>
+                                            <div class="latest-right-slider-item-foot-item">1:55 PM</div></div>
+                                        <div class="latest-right-slider-item-foot-right">
+                                            <a href="#" class="latest-right-slider-item-foot-item backup">Copy trip</a>
+                                            <a href="#" class="latest-right-slider-item-foot-item mail"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item facebook"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item twitter"></a>
+                                        </div>
+                                    </div>
+                                    <div class="latest-right-slider-item-shadow"></div>
+                                </div>
+                                <div class="latest-right-slider-item">
+                                    <img src="images/boat2.png" alt="">
+                                    <div class="latest-right-slider-item-titles small-img">
+                                        <div class="latest-right-slider-item-tag">#Tamara Zoriy</div>
+                                        <a href="#" class="latest-right-slider-item-title">Lviv - Odessa</a>
+                                    </div>
+                                    <div class="latest-right-slider-item-foot">
+                                        <div class="latest-right-slider-item-foot-left"> 
+                                            <div class="latest-right-slider-item-foot-item">27-06-2018</div>
+                                            <div class="latest-right-slider-item-foot-item">1:55 PM</div></div>
+                                        <div class="latest-right-slider-item-foot-right">
+                                            <a href="#" class="latest-right-slider-item-foot-item backup">Copy trip</a>
+                                            <a href="#" class="latest-right-slider-item-foot-item mail"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item facebook"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item twitter"></a>
+                                        </div>
+                                    </div>
+                                    <div class="latest-right-slider-item-shadow"></div>
+                                </div>
+                                <div class="latest-right-slider-item">
+                                    <img src="images/car2.png" alt="">
+                                    <div class="latest-right-slider-item-titles small-img">
+                                        <div class="latest-right-slider-item-tag">#Tamara Zoriy</div>
+                                        <a href="#" class="latest-right-slider-item-title">Lviv - Odessa</a>
+                                    </div>
+                                    <div class="latest-right-slider-item-foot">
+                                        <div class="latest-right-slider-item-foot-left"> 
+                                            <div class="latest-right-slider-item-foot-item">27-06-2018</div>
+                                            <div class="latest-right-slider-item-foot-item">1:55 PM</div></div>
+                                        <div class="latest-right-slider-item-foot-right">
+                                            <a href="#" class="latest-right-slider-item-foot-item backup">Copy trip</a>
+                                            <a href="#" class="latest-right-slider-item-foot-item mail"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item facebook"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item twitter"></a>
+                                        </div>
+                                    </div>
+                                    <div class="latest-right-slider-item-shadow"></div>
+                                </div>
+                        </div>                     
+                        <div class="slider-item2">
+                                <div class="latest-right-slider-item">
+                                    <img src="images/car.png" alt="">
+                                    <div class="latest-right-slider-item-titles">
+                                        <div class="latest-right-slider-item-tag">#Tamara Zoriy</div>
+                                        <a href="#" class="latest-right-slider-item-title">Lviv - Odessa4</a>
+                                    </div>
+                                    <div class="latest-right-slider-item-foot">
+                                        <div class="latest-right-slider-item-foot-left"> 
+                                            <div class="latest-right-slider-item-foot-item">27-06-2018</div>
+                                            <div class="latest-right-slider-item-foot-item">1:55 PM</div></div>
+                                        <div class="latest-right-slider-item-foot-right">
+                                            <a href="#" class="latest-right-slider-item-foot-item backup">Copy trip</a>
+                                            <a href="#" class="latest-right-slider-item-foot-item mail"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item facebook"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item twitter"></a>
+                                        </div>
+                                    </div>
+                                    <div class="latest-right-slider-item-shadow"></div>
+                                </div>
+                                <div class="latest-right-slider-item">
+                                    <img src="images/girl-hat.png" alt="">
+                                    <div class="latest-right-slider-item-titles">
+                                        <div class="latest-right-slider-item-tag">#Tamara Zoriys</div>
+                                        <a href="#" class="latest-right-slider-item-title">Lviv - Odessa</a>
+                                    </div>
+                                    <div class="latest-right-slider-item-foot">
+                                        <div class="latest-right-slider-item-foot-left"> 
+                                            <div class="latest-right-slider-item-foot-item">27-06-2018</div>
+                                            <div class="latest-right-slider-item-foot-item">1:55 PM</div></div>
+                                        <div class="latest-right-slider-item-foot-right">
+                                            <a href="#" class="latest-right-slider-item-foot-item backup">Copy trip</a>
+                                            <a href="#" class="latest-right-slider-item-foot-item mail"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item facebook"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item twitter"></a>
+                                        </div>
+                                    </div>
+                                    <div class="latest-right-slider-item-shadow"></div>
+                                </div>
+                                <div class="latest-right-slider-item">
+                                    <img src="images/boat2.png" alt="">
+                                    <div class="latest-right-slider-item-titles small-img">
+                                        <div class="latest-right-slider-item-tag">#Tamara Zoriy</div>
+                                        <a href="#" class="latest-right-slider-item-title">Lviv - Odessa</a>
+                                    </div>
+                                    <div class="latest-right-slider-item-foot">
+                                        <div class="latest-right-slider-item-foot-left"> 
+                                            <div class="latest-right-slider-item-foot-item">27-06-2018</div>
+                                            <div class="latest-right-slider-item-foot-item">1:55 PM</div></div>
+                                        <div class="latest-right-slider-item-foot-right">
+                                            <a href="#" class="latest-right-slider-item-foot-item backup">Copy trip</a>
+                                            <a href="#" class="latest-right-slider-item-foot-item mail"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item facebook"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item twitter"></a>
+                                        </div>
+                                    </div>
+                                    <div class="latest-right-slider-item-shadow"></div>
+                                </div>
+                                <div class="latest-right-slider-item">
+                                    <img src="images/car2.png" alt="">
+                                    <div class="latest-right-slider-item-titles small-img">
+                                        <div class="latest-right-slider-item-tag">#Tamara Zoriy</div>
+                                        <a href="#" class="latest-right-slider-item-title">Lviv - Odessa</a>
+                                    </div>
+                                    <div class="latest-right-slider-item-foot">
+                                        <div class="latest-right-slider-item-foot-left"> 
+                                            <div class="latest-right-slider-item-foot-item">27-06-2018</div>
+                                            <div class="latest-right-slider-item-foot-item">1:55 PM</div></div>
+                                        <div class="latest-right-slider-item-foot-right">
+                                            <a href="#" class="latest-right-slider-item-foot-item backup">Copy trip</a>
+                                            <a href="#" class="latest-right-slider-item-foot-item mail"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item facebook"></a>
+                                            <a href="#" class="latest-right-slider-item-foot-item twitter"></a>
+                                        </div>
+                                    </div>
+                                    <div class="latest-right-slider-item-shadow"></div>
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="latest-right">
+                    Тут будет блок который дима уже сделал
+                </div>
+            </div>
+        </div> -->
+        <div class="latest">
+            <div class="latest-container">
+                <div class="latest-left">
+                    <div class="latest-left-title">Latest trips</div>
+                    <div class="latest-left-text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.Phasellus enim libero, blandit vel sapien vitae,</div>
+                    <a href="#" class="latest-left-button">SEE ALL</a>
+                </div>
+                <div class="latest-right">
+                    <div class="latest-right-slider">
+                        <div class="latest-slider-frame-cell">
+                            <div class="latest-right-slider-item-titles">
+                                <div class="latest-right-slider-item-tag">#Tamara Zoriy</div>
+                                <a href="#" class="latest-right-slider-item-title">Lviv - Odessa</a>
+                            </div>
+                            <div class="latest-right-slider-item-foot">
+                                <div class="latest-right-slider-item-foot-left"> 
+                                    <div class="latest-right-slider-item-foot-item">27-06-2018</div>
+                                    <div class="latest-right-slider-item-foot-item">1:55 PM</div>
+                                </div>
+                                <div class="latest-right-slider-item-foot-right">
+                                    <a href="#" class="latest-right-slider-item-foot-item backup copy-trip">Copy trip</a>
+                                    <a href="#" class="latest-right-slider-item-foot-item share_trip linkedin"></a>
+                                    <a href="#" class="latest-right-slider-item-foot-item share_trip facebook"></a>
+                                    <a href="#" class="latest-right-slider-item-foot-item share_trip twitter"></a>
+                                </div>
+                            </div>
+                            <div class="latest-right-slider-item-shadow"></div>
+                        </div>
+                        <div class="latest-slider-frame">
+                            <div class="latest-slider-frame-cell frame-cells">
+                                <div class="latest-right-slider-item-titles">
+                                    <div class="latest-right-slider-item-tag">#Tamara Zoriy</div>
+                                    <a href="#" class="latest-right-slider-item-title">Lviv - Odessa</a>
+                                </div>
+                                <div class="latest-right-slider-item-foot">
+                                    <div class="latest-right-slider-item-foot-left"> 
+                                        <div class="latest-right-slider-item-foot-item">27-06-2018</div>
+                                        <div class="latest-right-slider-item-foot-item">1:55 PM</div>
+                                    </div>
+                                    <div class="latest-right-slider-item-foot-right">
+                                        <a href="#" class="latest-right-slider-item-foot-item backup copy-trip">Copy trip</a>
+                                        <a href="#" class="latest-right-slider-item-foot-item share_trip linkedin"></a>
+                                        <a href="#" class="latest-right-slider-item-foot-item share_trip facebook"></a>
+                                        <a href="#" class="latest-right-slider-item-foot-item share_trip twitter"></a>
+                                    </div>
+                                </div>
+                                <div class="latest-right-slider-item-shadow"></div>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="latest-right-nav">
+                        <div class="latest-right-nav-left">
+                        </div>
+                        <div class="latest-right-nav-right">Next</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top">
+            <div class="top-container">
+                <div class="top-left">
+                    <div class="slider3">
+                        <div class="top-slider-item">
+                            <a href="#" class="top-left-item">
+                                <div class="top-left-item-left">
+                                    <img src="images/nature-sun.png" alt="">
+                                </div>
+                                <div class="top-left-item-right">
+                                    <div class="top-left-item-right-pretitle"><span class="top-orange">01</span><span class="top-grey">Hondersfossen camping</span></div>
+                                    <div class="top-left-item-right-title">NORWAY</div>
+                                    <div class="top-left-item-right-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...</div>
+                                </div>
+                            </a>
+                            </div>
+                        <div class="top-slider-item">
+                            <a href="#" class="top-left-item">
+                                <div class="top-left-item-left">
+                                    <img src="images/nature-foot.png" alt="">
+                                </div>
+                                <div class="top-left-item-right">
+                                    <div class="top-left-item-right-pretitle"><span class="top-orange">02</span><span class="top-grey">Dafto Resort</span></div>
+                                    <div class="top-left-item-right-title">SWEDEN</div>
+                                    <div class="top-left-item-right-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="top-slider-item">
+                            <a href="#" class="top-left-item">
+                                <div class="top-left-item-left">
+                                    <img src="images/nature-camp.png" alt="">
+                                </div>
+                                <div class="top-left-item-right">
+                                    <div class="top-left-item-right-pretitle"><span class="top-orange">03</span><span class="top-grey">Bristrand Camping</span></div>
+                                    <div class="top-left-item-right-title">ENGLAND</div>
+                                    <div class="top-left-item-right-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...</div>
+                                </div>
+                            </a>   
+                        </div>     
+                        <div class="top-slider-item">
+                            <a href="#" class="top-left-item">
+                                <div class="top-left-item-left">
+                                    <img src="images/nature-sun.png" alt="">
+                                </div>
+                                <div class="top-left-item-right">
+                                    <div class="top-left-item-right-pretitle"><span class="top-orange">01</span><span class="top-grey">Hondersfossen camping</span></div>
+                                    <div class="top-left-item-right-title">NORWAY</div>
+                                    <div class="top-left-item-right-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="top-slider-item">
+                            <a href="#" class="top-left-item">
+                                <div class="top-left-item-left">
+                                    <img src="images/nature-foot.png" alt="">
+                                </div>
+                                <div class="top-left-item-right">
+                                    <div class="top-left-item-right-pretitle"><span class="top-orange">02</span><span class="top-grey">Dafto Resort</span></div>
+                                    <div class="top-left-item-right-title">SWEDEN</div>
+                                    <div class="top-left-item-right-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="top-slider-item">
+                            <a href="#" class="top-left-item">
+                                <div class="top-left-item-left">
+                                    <img src="images/nature-camp.png" alt="">
+                                </div>
+                                <div class="top-left-item-right">
+                                    <div class="top-left-item-right-pretitle"><span class="top-orange">03</span><span class="top-grey">Bristrand Camping</span></div>
+                                    <div class="top-left-item-right-title">ENGLAND</div>
+                                    <div class="top-left-item-right-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...</div>
+                                </div>
+                            </a>   
+                        </div>                  
+                    </div>
+                    <!-- <div class="top-left-nav">
+                        <div class="top-left-nav-left">
+                            <div class="sliderNav3 active"></div>
+                            <div class="sliderNav3"></div>
+                            <div class="sliderNav3"></div>
+                            <div class="sliderNav3"></div>
+                        </div>
+                        <div class="top-left-nav-right slider-nav-next3">Next</div>
+                    </div> -->
+                </div>
+                <div class="top-right">
+                    <div class="top-right-mobile">
+                        <div class="top-right-title">Top 6 Destinations</div>
+                        <div class="top-right-text">Best Prices Best Value Everything right where you need it</div>
+                    </div>
+                    <button class="top-right-button">SEE ALL</button>
+                    <div class="top-right-tags-title">Popular tags</div>
+                    <div class="top-right-tags">
+                        <div class="top-right-tags-tag">NORWAY</div>
+                        <div class="top-right-tags-tag">CAMPING</div>
+                        <div class="top-right-tags-tag">CAMPSITE</div>
+                        <div class="top-right-tags-tag">LOREM IPSUM</div>
+                        <div class="top-right-tags-tag">FLOWER</div>
+                        <div class="top-right-tags-tag">LOVE</div>
+                        <div class="top-right-tags-tag">ENGLAND</div>
+                        <div class="top-right-tags-tag">LVIV</div>
+                        <div class="top-right-tags-tag">TELEMARK</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="foot-container">
+            <div class="foot-block">
+                <h3 class="foot-block-title">Category</h3>
+                <div class="foot-block-items foot-block-items-hidden">
+                    <a href="category.html"><img src="images/icon-masks.png" alt="">Culture and entertainment</a>
+                    <a href="category.html"><img src="images/icon-dinner.png" alt="">Food and drink</a>
+                    <a href="category.html"><img src="images/icon-balloon.png" alt="">For kids</a>
+                    <a href="category.html"><img src="images/icon-house.png" alt="">Live and experience</a>
+                    <a href="category.html"><img src="images/icon-pine.png" alt="">Nature and history</a>
+                    <a href="category.html"><img src="images/icon-shopping.png" alt="">Shopping</a>
+                    <a href="category.html"><img src="images/icon-trophy.png" alt="">Sport and health</a>
+                    <a href="category.html"><img src="images/icon-beach.png" alt="">Sun and buth</a>
+                </div>
+            </div>
+            <div class="foot-block foot-block-countries">
+                <h3 class="foot-block-title">Countries</h3>
+                <div class="foot-block-items foot-block-countries-items foot-hidden foot-block-items-hidden">
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <div class="footViewAll">View all  &#9660;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-main">
+                    <img src="images/logo-footer.png" alt="">
+                    <img class="img-mobile" src="images/logo-footer-mobile.png" alt="">
+                    <div class="footer-main-text">
+                        <div>c. TRAVIMONDO</div>
+                        <div>Copywriting 2018 </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-menu">
+                <div class="footer-menu-title">Menu</div>
+                <a href="#" class="footer-menu-item menu-item-hide">Home</a>
+                <a href="#" class="footer-menu-item menu-item-hide">About us</a>
+                <a href="#" class="footer-menu-item menu-item-hide">Contact</a>
+                <a href="#" class="footer-menu-item menu-item-hide">Private policy</a>
+                <div class="footer-menu2">
+                    <a href="#" class="footer-menu2-item menu-item-hide">Terms</a>
+                    <a href="#" class="footer-menu2-item menu-item-hide">Vision</a>
+                    <a href="#" class="footer-menu2-item menu-item-hide">FAQ</a>
+                </div>
+            </div>
+            <div class="footer-subscribe">
+                <div class="footer-subscribe-title">Subscribe Newsletter</div>
+                <div class="footer-subscribe-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                <div style="display: flex; align-items: flex-end">
+                <input type="text" placeholder="e-mail">
+                <button class="footer-subscribe-button">SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="footer-social">
+                <div class="footer-social-title">Social media</div>
+                <div class="footer-social-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                <div class="footer-social-icons">
+                    <a href="#" class="fab fa-google-plus-g"></a>
+                    <a href="#"  class="fab fa-linkedin-in"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                </div>
+            </div>
+            <div class="footer-main-text copyright-mobile">
+                <div>c. TRAVIMONDO</div>
+                <div>Copywriting 2018 </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="script/jquery.timepicker.min.js"></script>
+    <script src="slick-master/slick/slick.min.js"></script>
+    <script src="script/functions.js"></script>
+    <script src="script/script.js"></script>
+    <script>
+        document.querySelector('#searchOpen').addEventListener('click', function(){
+            this.parentNode.parentNode.classList.add('search-active');
+            document.querySelector('#searchClose').addEventListener('click', function(){
+                this.parentNode.parentNode.parentNode.classList.remove('search-active');
+            })
+        })
+
+        document.querySelector('.footer-menu-title').addEventListener('click', function(){
+            for(i= 0; i < document.querySelectorAll('.footer-menu-item').length; i++) {
+                document.querySelectorAll('.footer-menu-item')[i].classList.toggle('menu-item-hide')
+            }
+            for(i= 0; i < document.querySelectorAll('.footer-menu2-item').length; i++) {
+                document.querySelectorAll('.footer-menu2-item')[i].classList.toggle('menu-item-hide')
+            }
+        })
+
+
+        $('.slider').slick({
+            dots: true,
+            mobileFirst: true,
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            // appendDots : $('.popular-right-nav-left'),
+            responsive: [
+                {
+                breakpoint: 319,
+                settings: {
+                    slidesToShow: 1,
+                }
+                },
+                {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 2,
+                }
+                },
+                {
+                breakpoint: 1920,
+                settings: {
+                    slidesToShow: 3,
+                }
+                }
+            ]
+        });
+    
+        $('.slider1').slick({
+            dots: true,
+            mobileFirst: true,
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            appendDots: $('.places-right-slider-nav-items'),
+            nextArrow: $('.places-right-slider-nav-next'),
+            // appendDots : $('.popular-right-nav-left'),
+            responsive: [
+                // {
+                // breakpoint: 100,
+                // settings: {
+                //     slidesToShow: 1,
+                //     appendDots: '.places-nav-mobile',
+                // }
+                // },
+                // {
+                // breakpoint: 700,
+                // settings: {
+                //     slidesToShow: 2,
+                //     appendDots: '.places-nav-mobile',
+                // }
+                // },
+                {
+                breakpoint: 319,
+                settings: {
+                    slidesToShow: 1,
+                }
+                },
+                {
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 2,
+                }
+                },
+                {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 3,
+                }
+                },
+                {
+                breakpoint: 1660,
+                settings: {
+                    slidesToShow: 4,
+                }
+                }
+            ]
+        });
+
+        
+        $('.slider3').slick({
+            dots: true,
+            mobileFirst: true,
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            rows: 3,
+            // appendDots : $('.popular-right-nav-left'),
+            responsive: [
+                {
+                breakpoint: 319,
+                settings: {
+                    slidesToShow: 1,
+                    rows: 1
+                }
+                },
+                {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                }
+                },
+                {
+                breakpoint: 1920,
+                settings: {
+                    slidesToShow: 1,
+                }
+                }
+            ]
+        });
+    
+        $('.main-form-left-down').slick({
+            dots: true,
+            mobileFirst: true,
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            rows: 1,
+            dots: false,
+            responsive: [
+                {
+                breakpoint: 319,
+                settings: {
+                    slidesToShow: 3,
+                }
+                },
+                {
+                breakpoint: 768,
+                settings: 'unslick'
+                },
+                {
+                breakpoint: 1920,
+                settings: 'unslick'
+                }
+            ]
+        });
+
+        $("input[type='number']").on('change', function () {
+            if( $(this).val() < 0 ) {
+                $(this).val(0);
+            }
+        });
+
+        $( ".datepicker" ).each(function() {
+            $( this ).datepicker();
+            });
+
+        $('.timepicker').each(function(){
+            $( this ).timepicker({
+                // timeFormat: 'h:mm p',
+                // interval: 60,
+                // minTime: '10',
+                // maxTime: '10:00pm',
+                defaultTime: '12:00am',
+                // startTime: '10:00',
+                // dynamic: false,
+                // dropdown: true,
+                // scrollbar: true
+            });
+        })
+
+
+        Array.prototype.slice.call(document.querySelectorAll('.slider-item1')).forEach(function(e){
+            e.addEventListener('mouseenter',function(){
+                Array.prototype.slice.call(document.querySelectorAll('.slick-dots')).forEach(function(e){
+                    e.style.display = 'none';
+                    // e.style.zIndex = '-100';
+                })
+            })
+            e.addEventListener('mouseleave',function(){
+                Array.prototype.slice.call(document.querySelectorAll('.slick-dots')).forEach(function(e){
+                    e.style.display = 'flex';
+                })
+            })
+        })
+        
+    </script>
+</body>
+</html>

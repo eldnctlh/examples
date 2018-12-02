@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/jquery-ui-1.9.2.custom.min.css">
+    <link rel="stylesheet" href="style/jquery-ui.theme2.min.css">
+    <link rel="stylesheet" href="slick-master/slick/slick.css">
+    <link rel="stylesheet" href="slick-master/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+<div class="search-wrapper">
+    <div class="search">
+        <div class="search-container">
+            <div class="search-header">
+                <div class="search-header-container">
+                    <img src="images/search.png" alt="">
+                    <input type="text" placeholder="SEARCH TRAVIMONDO" id="searchInput">
+                    <div class="search-header-close">&times;</div>
+                </div>
+            </div>
+            <div class="search-inner">
+                <div class="search-inner-popular">
+                    <div class="search-inner-popular-title">Popular categories</div>
+                    <div class="search-inner-popular-slider">
+                        <img src="images/arrow-left.png" alt="" id="searchNavPrev">
+                        <div class="obertka">
+                            <div class="search-inner-popular-slider-items">
+                                <img src="images/poi_icon_all_hov.png" alt="">
+                                <img src="images/poi_icon_camping_hov.png" alt="">
+                                <img src="images/poi_icon_culture_hov.png" alt="">
+                                <img src="images/poi_icon_food_hov.png" alt="">
+                                <img src="images/poi_icon_health_hov.png" alt="">
+                                <img src="images/poi_icon_hotel_hov.png" alt="">
+                                <img src="images/poi_icon_house_hov.png" alt="">
+                                <img src="images/poi_icon_kids_hov.png" alt="">
+                                <img src="images/poi_icon_nature_hov.png" alt="">
+                                <img src="images/poi_icon_rental_hov.png" alt="">
+                                <img src="images/poi_icon_shopping_hov.png" alt="">
+                                <img src="images/poi_icon_sun_hov.png" alt="">
+                            </div>
+                        </div>
+                        <img src="images/arrow-right.png" alt="" id="searchNavNext">
+                    </div>
+                </div>
+                <div class="search-inner-result">
+                    <div class="search-inner-result-title">Quick start</div>
+                    <div class="search-inner-result-items">
+                        <div class="search-inner-result-items-item">
+                            <img src="images/search-car.png" alt="">
+                            <a href="#" class="search-inner-result-items-item-title">Start a trip to Miami, Florida, United States</a>
+                        </div>
+                        <div class="search-inner-result-items-item">
+                            <img src="images/search-star.png" alt="">
+                            <a href="#" class="search-inner-result-items-item-title">Explore Popular Places near <span class="searchValue"></span> text text text text</a>
+                        </div>
+                        <div class="search-inner-result-items-item">
+                            <img src="images/search-map.png" alt="">
+                            <a href="#" class="search-inner-result-items-item-title">Search the Map for <span class="searchValue"></span></a>
+                        </div>
+                    </div>
+                    <a href="#" class="search-inner-result-all">View all</a>   
+                </div>
+                <div class="search-inner-item">
+                    <div class="search-inner-item-title">Popular near you</div>
+                    <div class="search-inner-item-link">
+                        <img src="images/pic1.png" alt="">
+                        <span>Seaside Resort text text text text text text text text text text text text</span>
+                        <span>-425km</span>
+                    </div>
+                    <div class="search-inner-item-link">
+                        <img src="images/pic2.png" alt="">
+                        <span>Sofia  text text text text text text text text text text text text</span>
+                        <span>-445km</span>
+                    </div>
+                    <div class="search-inner-item-link">
+                        <img src="images/pic3.png" alt="">
+                        <span>Sunny Beach  text text text text text text text text text text text text</span>
+                        <span>-25km</span>
+                    </div>
+                    <a href="#" class="search-inner-item-all">View all</a>                 
+                </div>
+                <div class="search-inner-item">
+                    <div class="search-inner-item-title">Featured Articles</div>
+                    <div class="search-inner-item-link">
+                        <img src="images/pic4.png" alt="">
+                        <span>Holiday Park</span>
+                    </div>
+                    <div class="search-inner-item-link">
+                        <img src="images/pic5.png" alt="">
+                        <span>Lappland</span>
+                    </div>
+                    <div class="search-inner-item-link">
+                        <img src="images/pic6.png" alt="">
+                        <span>Universum</span>
+                    </div>
+                    <a href="#" class="search-inner-item-all">View all</a>                    
+                </div>
+                <div class="search-inner-item">
+                    <div class="search-inner-item-title">Popular accomodations</div>
+                    <div class="search-inner-item-link">
+                        <img src="images/pic1.png" alt="">
+                        <span>Odessa Resort and Spa  text text text text text text text text text text text text</span>
+                        <span>-425km</span>
+                    </div>
+                    <div class="search-inner-item-link">
+                        <img src="images/pic2.png" alt="">
+                        <span>M1 club hotel text text text text text text text text text text text text</span>
+                        <span>-25km</span>
+                    </div>
+                    <div class="search-inner-item-link">
+                        <img src="images/pic3.png" alt="">
+                        <span>Marlin Resort and Spa  text text text text text text text text text text text text</span>
+                        <span>-455km</span>
+                    </div>
+                    <a href="#" class="search-inner-item-all">View all</a>                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script/jquery-3.3.1.min.js"></script>
+<script src="script/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="slick-master/slick/slick.min.js"></script>
+<!-- <script src="script/script.js"></script> -->
+<script>
+
+
+//   var searchSlider = document.querySelector('.search-inner-popular-slider-items');
+//   var searchSliderPrev = document.querySelector('#searchNavPrev');
+//   var searchSliderNext = document.querySelector('#searchNavNext');
+//   var searchItems = searchSlider.children;
+//   var margin = 58;
+//   var currentMargin = 58;
+//   searchSliderNext.addEventListener('click', function(){
+//     searchSlider.style.marginLeft = -margin + 'px';
+//     margin += currentMargin;
+//     if((parseInt(searchSlider.style.marginLeft, 10) *-1) >= ((searchItems.length - 5) * currentMargin)) {
+//         // searchSlider.style.marginLeft = ((searchItems.length - 5)* currentMargin *-1) +'px';
+//         margin = 0;
+//     }
+//   });
+//   searchSliderPrev.addEventListener('click', function(){
+//       currentMargin = 58;
+//       searchSlider.style.marginLeft = (parseInt(searchSlider.style.marginLeft, 10) + currentMargin) + 'px';
+//       if((parseInt(searchSlider.style.marginLeft, 10)) >= ((searchItems.length - 12) * currentMargin)) {
+//         searchSlider.style.marginLeft = '0px';
+//     }
+//   })
+  
+  
+    var arrsearchValue = document.querySelectorAll('.searchValue');
+    var searchValue = Array.prototype.slice.call(arrsearchValue);
+    var searchInput = document.querySelector('#searchInput');
+    searchInput.oninput = function() {
+        searchValue.forEach(function(e, i){
+            e.innerHTML = '"'+ searchInput.value +'"' ;
+        })
+        if(searchInput.value.length >= 1) {
+            document.querySelector('.search-inner-result').classList.add('block');
+            document.querySelector('.search-inner-popular').classList.add('none');
+        } else {
+            document.querySelector('.search-inner-result').classList.remove('block');
+            document.querySelector('.search-inner-popular').classList.remove('none');
+        }
+    }
+
+    $('.search-inner-popular-slider-items').slick({
+        infinite: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    // dots: true,
+    nextArrow: $('#searchNavNext'),
+    prevArrow: $('#searchNavPrev'),
+    mobileFirst: true,
+    });
+</script>
+</body>
+</html>

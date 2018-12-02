@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/jquery-ui-1.9.2.custom.min.css">
+    <link rel="stylesheet" href="style/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Travimondo</title>
+</head>
+<body style="overflow-x: hidden;">
+    <div class="content">
+        <div class="header-menu">
+            <div class="header-menu-container">
+                <div class="header-menu-head">
+                    <div class="header-menu-head-logo">
+                        <img src="images/logo-menu2.png" alt="">
+                        <div class="header-menu-head-logo-text">TRAVIMONDO</div>
+                        <img class="menu-logo-mobile" src="images/logo.png" alt="">
+                    </div>
+                    <div class="header-menu-head-cross">&times;</div>
+                </div>
+                <div class="header-menu-list">
+                    <div class="header-menu-list-items">
+                        <a href="#" class="header-menu-list-item">Start new trip</a>
+                        <a href="#" class="header-menu-list-item">Articles</a>
+                        <a href="#" class="header-menu-list-item">Profile</a>
+                        <a href="#" class="header-menu-list-item">Favorite articles</a>
+                        <a href="#" class="header-menu-list-item">My trips</a>
+                        <a href="#" class="header-menu-list-item">My reviews</a>
+                        <a href="#" class="header-menu-list-item">Login</a>
+                    </div>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="header-menu-foot">
+                    <a href="#" class="fab fa-google-plus-g"></a>
+                    <a href="#"  class="fab fa-linkedin-in"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                </div>
+            </div>
+            <div class="header-menu-bg"></div>
+        </div>
+        <div class="header">
+            <div class="header-container">
+                <div class="header-menu-open">__<br>___<br>___</div>
+                <div class="header-logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="header-buttons">
+                    <button class="header-buttons-button">login</button>
+                    <button class="header-buttons-button">sign in</button>
+                    <button class="header-buttons-button">Make roadtrip</button>
+                </div>
+            </div>
+            <a href="#" class="corner">
+                <img class="corner-main" src="images/corner.png" alt="">
+                <img class="corner-map" src="images/corner-map.png" alt="">
+                <img class="corner-under" src="images/corner-under.png" alt="">
+                <img class="corner-line" src="images/corner-line.png" alt="">
+            </a>
+        </div>
+        <div class="view-nav">
+            <div class="view-nav-container">
+                <div class="view-nav-line"></div><a href="index.html" class="view-nav-item">Home</a><div class="view-nav-current">Popular articles</div>
+            </div>
+        </div>
+        <div class="articles-title">Accomodations</div>
+        <!-- <div class="articles">
+            <div class="articles-container">
+                <div class="articles-search filter-search">
+                    <img src="images/search-copy.png" alt="">
+                    <input type="text" placeholder="SEARCH ARTICLES">
+                </div>
+            </div>
+        </div> -->
+        <div class="filter-search-panel">
+            <div class="filter-search-panel-blocks">
+            <div class="filter-search-panel-block filter-search-panel-block-mid">
+                <label for="filterDest">Destination</label>
+                <select id="filterDest">
+                    <option value="City">City</option>
+                    <option value="City">City</option>
+                    <option value="City">City</option>
+                </select>
+            </div>
+            <div class="filter-search-panel-block filter-search-panel-block-s filter-search-panel-block-mid">
+                <label for="filterRooms">Rooms</label>
+                <input type="number" id="filterRooms">
+            </div>
+            <div class="filter-search-panel-block filter-search-panel-block-mid">
+                <label for="filterAreas">Areas</label>
+                <select id="filterAreas">
+                    <option value="All Areas">All Areas</option>
+                    <option value="All Areas">All Areas</option>
+                    <option value="All Areas">All Areas</option>
+                </select>
+            </div>
+            <div class="filter-search-panel-block">
+                <label for="CheckIn">Check In</label>
+                <input type="text" class="datepicker" id="CheckIn">
+            </div>
+            <div class="filter-search-panel-block">
+                <label for="CheckOut">Check Out</label>
+                <input type="text" class="datepicker" id="CheckOut">
+            </div>
+            <div class="filter-search-panel-block filter-search-panel-block-s">
+                <label for="filterAdults">Adults</label>
+                <input type="number" id="filterAdults">
+            </div>
+            <div class="filter-search-panel-block filter-search-panel-block-s">
+                <label for="filterChildren">Children</label>
+                <input type="number" id="filterChildren">
+            </div>
+            </div>
+            <button class="button-orange button-orange-fill">Search Hotels</button>
+        </div>
+        <div class="filter">
+            <div class="filter-sidebar-mobile">
+                <h2>Filter</h2>
+                <div></div>
+            </div>
+            <div class="filter-sidebar">
+                <div class="filter-sidebar-head">
+                    <h1>Filter</h1>
+                    <p class="clearAll">Clear all</p>
+                </div>
+                <div class="filter-sidebar-block">
+                    <div class="filter-sidebar-block-head">
+                        <div class="filter-sidebar-block-hide"></div>
+                        <h2>Category</h2>
+                    </div>
+                    <div class="filter-sidebar-block-inner">
+                        <div class="filter-sidebar-block-category">
+                            <!-- <input type="checkbox" id="category-hotels">
+                            <label for="category-hotels">Hotels</label> -->
+                            <label class="check-container">
+                                <input required type="checkbox" id="check1m">
+                                <span class="checkmark"></span>
+                                <label class="post-label" for="check1m">Hotels</label>
+                            </label>
+                        </div>
+                        <div class="filter-sidebar-block-category">
+                            <label class="check-container">
+                                <input required type="checkbox" id="check2m">
+                                <span class="checkmark"></span>
+                                <label class="post-label" for="check2m">Camping</label>
+                            </label>
+                        </div>
+                        <div class="filter-sidebar-block-category">
+                            <label class="check-container">
+                                <input required type="checkbox" id="check3m">
+                                <span class="checkmark"></span>
+                                <label class="post-label" for="check3m">Rentals</label>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-sidebar-block">
+                    <div class="filter-sidebar-block-head">
+                        <div class="filter-sidebar-block-hide"></div>
+                        <h2>Price</h2>
+                    </div>
+                    <div class="filter-sidebar-block-inner">
+                        <div class="filter-sidebar-block-range">
+                            <div id="slider-range-min"></div>
+                            <div class="filter-sidebar-block-range-inputs">
+                                <input type="text" id="amount-min">
+                                <input type="text" id="amount-max">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-sidebar-block">
+                    <div class="filter-sidebar-block-head">
+                        <div class="filter-sidebar-block-hide"></div>
+                        <h2>Star Rating</h2>
+                    </div>
+                    <div class="filter-sidebar-block-inner">
+                        <div class="filter-sidebar-block-rating">
+                            <div class="filter-sidebar-block-rating-item">
+                                <h3>1</h3>
+                                <p>(123)</p>
+                            </div>
+                            <div class="filter-sidebar-block-rating-item">
+                                <h3>2</h3>
+                                <p>(22)</p>
+                            </div>
+                            <div class="filter-sidebar-block-rating-item">
+                                <h3>3</h3>
+                                <p>(343)</p>
+                            </div>
+                            <div class="filter-sidebar-block-rating-item">
+                                <h3>4</h3>
+                                <p>(53)</p>
+                            </div>
+                            <div class="filter-sidebar-block-rating-item">
+                                <h3>5</h3>
+                                <p>(21)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-sidebar-block">
+                    <div class="filter-sidebar-block-head">
+                        <div class="filter-sidebar-block-hide"></div>
+                        <h2>Location</h2>
+                    </div>
+                    <div class="filter-sidebar-block-inner">
+                        <div class="filter-sidebar-block-select">
+                            <select id="select-country">
+                                <option value="England">England<p>(53)</p></option>
+                                <option value="Ukraine">Ukraine<p>(53)</p></option>
+                                <option value="Norway">Norway<p>(53)</p></option>
+                                <option value="Spain">Spain<p>(53)</p></option>
+                                <option value="Italy">Italy<p>(53)</p></option>
+                                <option value="France">France<p>(53)</p></option>
+                            </select>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-sidebar-block last-block">
+                    <div class="filter-sidebar-block-head">
+                        <div class="filter-sidebar-block-hide"></div>
+                        <h2>Key Features</h2>
+                    </div>
+                    <div class="filter-sidebar-block-inner">
+                        <div class="filter-sidebar-block-feature">
+                            <!-- <input type="checkbox" id="category-independent">
+                            <label for="category-independent" class="independent">Independent</label> -->
+                            <label class="check-container">
+                                <input required type="checkbox" id="feature-independent">
+                                <span class="checkmark"></span>
+                                <label for="feature-independent" class="independent">Independent</label>
+                            </label>
+                            <p>(153)</p>
+                        </div>
+                        <div class="filter-sidebar-block-feature">
+                            <!-- <input type="checkbox" id="category-independent">
+                            <label for="category-independent" class="wifi">WIFI</label> -->
+                            <label class="check-container">
+                                <input required type="checkbox" id="feature-wifi">
+                                <span class="checkmark"></span>
+                                <label for="feature-wifi" class="wifi">WIFI</label>
+                            </label>
+                            <p>(13)</p>
+                        </div>
+                        <div class="filter-sidebar-block-feature">
+                            <!-- <input type="checkbox" id="category-independent">
+                            <label for="category-independent" class="credit">Credit Cards Accepted</label> -->
+                            <label class="check-container">
+                                <input required type="checkbox" id="feature-credit">
+                                <span class="checkmark"></span>
+                                <label for="feature-credit" class="credit">Credit Cards Accepted</label>
+                            </label>
+                            <p>(22)</p>
+                        </div>
+                        <div class="filter-sidebar-block-feature">
+                            <!-- <input type="checkbox" id="category-independent">
+                            <label for="category-independent" class="reasonable">Reasonable</label> -->
+                            <label class="check-container">
+                                <input required type="checkbox" id="feature-reason">
+                                <span class="checkmark"></span>
+                                <label for="feature-reason" class="reasonable">Reasonable</label>
+                            </label>
+                            <p>(0)</p>
+                        </div>
+                        <div class="filter-sidebar-block-feature">
+                            <!-- <input type="checkbox" id="category-independent">
+                            <label for="category-independent" class="rest">Restaurant</label> -->
+                            <label class="check-container">
+                                <input required type="checkbox" id="feature-rest">
+                                <span class="checkmark"></span>
+                                <label for="feature-rest" class="rest">Restaurant</label>
+                            </label>
+                            <p>(5)</p>
+                        </div>
+                        <div class="filter-sidebar-block-feature">
+                            <!-- <input type="checkbox" id="category-independent">
+                            <label for="category-independent" class="bar">Bar</label> -->
+                            <label class="check-container">
+                                <input required type="checkbox" id="feature-bar">
+                                <span class="checkmark"></span>
+                                <label for="feature-bar" class="bar">Bar</label>
+                            </label>
+                            <p>(1)</p>
+                        </div>
+                        <div class="filter-sidebar-block-feature">
+                            <!-- <input type="checkbox" id="category-independent">
+                            <label for="category-independent" class="laundry">Laundry</label> -->
+                            <label class="check-container">
+                                <input required type="checkbox" id="feature-laundry">
+                                <span class="checkmark"></span>
+                                <label for="feature-laundry" class="laundry">Laundry</label>
+                            </label>
+                            <p>(153)</p>
+                        </div>
+                        <div class="filter-sidebar-block-feature">
+                            <!-- <input type="checkbox" id="category-independent">
+                            <label for="category-independent" class="parking">Parking</label> -->
+                            <label class="check-container">
+                                <input required type="checkbox" id="feature-parking">
+                                <span class="checkmark"></span>
+                                <label for="feature-parking" class="parking">Parking</label>
+                            </label>
+                            <p>(122)</p>
+                        </div>
+                        <div class="filter-sidebar-block-feature">
+                            <!-- <input type="checkbox" id="category-independent">
+                            <label for="category-independent" class="none-smoke">None-smoking rooms</label> -->
+                            <label class="check-container">
+                                <input required type="checkbox" id="feature-none">
+                                <span class="checkmark"></span>
+                                <label for="feature-none" class="none-smoke">None-smoking rooms</label>
+                            </label>
+                            <p>(14)</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="button-orange button-orange-fill">APPLY FILTER</button>
+            </div>
+            <div class="filter-main">
+                <div class="filter-main-item">
+                    <img src="images/view-img.png">
+                    <div class="filter-main-item-content">
+                        <a href="#">Hallingal Holiday Park</a>
+                        <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                        <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                        <div class="filter-main-item-content-icons">
+                            <div class="filter-main-item-content-icons-wifi"></div>
+                            <div class="filter-main-item-content-icons-credit"></div>
+                            <div class="filter-main-item-content-icons-dollar"></div>
+                        </div>
+                    </div>
+                    <div class="filter-main-item-tools">
+                        <div class="filter-main-item-tools-mark">
+                            <div class="fas fa-star"></div>
+                            <div class="fas fa-star"></div>
+                            <div class="fas fa-star"></div>
+                            <div class="far fa-star"></div>
+                            <div class="far fa-star"></div>
+                        </div>
+                        <p>€50 - 350</p>
+                        <div class="filter-main-item-tools-buttons">
+                            <button class="button-orange button-orange-fill">ADD TO TRIP</button>
+                            <button class="button-orange">BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-main-item">
+                    <img src="images/view-img1.png">
+                    <div class="filter-main-item-content">
+                        <a href="#">Hallingal Holiday Park</a>
+                        <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                        <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                        <div class="filter-main-item-content-icons">
+                            <div class="filter-main-item-content-icons-wifi"></div>
+                            <div class="filter-main-item-content-icons-credit"></div>
+                            <div class="filter-main-item-content-icons-dollar"></div>
+                        </div>
+                    </div>
+                    <div class="filter-main-item-tools">
+                        <div class="filter-main-item-tools-mark">
+                            <div class="fas fa-star"></div>
+                            <div class="fas fa-star"></div>
+                            <div class="fas fa-star"></div>
+                            <div class="far fa-star"></div>
+                            <div class="far fa-star"></div>
+                        </div>
+                        <p>€20 - 150</p>
+                        <div class="filter-main-item-tools-buttons">
+                            <button class="button-orange button-orange-fill">ADD TO TRIP</button>
+                            <button class="button-orange">BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-main-item">
+                    <img src="images/view-img2.png">
+                    <div class="filter-main-item-content">
+                        <a href="#">Hallingal Holiday Park</a>
+                        <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                        <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                        <div class="filter-main-item-content-icons">
+                            <div class="filter-main-item-content-icons-wifi"></div>
+                            <div class="filter-main-item-content-icons-credit"></div>
+                            <div class="filter-main-item-content-icons-dollar"></div>
+                        </div>
+                    </div>
+                    <div class="filter-main-item-tools">
+                        <div class="filter-main-item-tools-mark">
+                            <div class="fas fa-star"></div>
+                            <div class="fas fa-star"></div>
+                            <div class="fas fa-star"></div>
+                            <div class="far fa-star"></div>
+                            <div class="far fa-star"></div>
+                        </div>
+                        <p>€50 - 250</p>
+                        <div class="filter-main-item-tools-buttons">
+                            <button class="button-orange button-orange-fill">ADD TO TRIP</button>
+                            <button class="button-orange">BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-main-item">
+                    <img src="images/view-img.png">
+                    <div class="filter-main-item-content">
+                            <a href="#">Hallingal Holiday Park</a>
+                        <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                        <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                        <div class="filter-main-item-content-icons">
+                            <div class="filter-main-item-content-icons-wifi"></div>
+                            <div class="filter-main-item-content-icons-credit"></div>
+                            <div class="filter-main-item-content-icons-dollar"></div>
+                        </div>
+                    </div>
+                    <div class="filter-main-item-tools">
+                        <div class="filter-main-item-tools-mark">
+                            <div class="fas fa-star"></div>
+                            <div class="fas fa-star"></div>
+                            <div class="fas fa-star"></div>
+                            <div class="far fa-star"></div>
+                            <div class="far fa-star"></div>
+                        </div>
+                        <p>€50 - 350</p>
+                        <div class="filter-main-item-tools-buttons">
+                            <button class="button-orange button-orange-fill">ADD TO TRIP</button>
+                            <button class="button-orange">BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-main-item">
+                    <img src="images/view-img1.png">
+                    <div class="filter-main-item-content">
+                        <a href="#">Hallingal Holiday Park</a>
+                        <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                        <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                        <div class="filter-main-item-content-icons">
+                            <div class="filter-main-item-content-icons-wifi"></div>
+                            <div class="filter-main-item-content-icons-credit"></div>
+                            <div class="filter-main-item-content-icons-dollar"></div>
+                        </div>
+                    </div>
+                    <div class="filter-main-item-tools">
+                        <div class="filter-main-item-tools-mark">
+                            <div class="fas fa-star"></div>
+                            <div class="fas fa-star"></div>
+                            <div class="fas fa-star"></div>
+                            <div class="far fa-star"></div>
+                            <div class="far fa-star"></div>
+                        </div>
+                        <p>€20 - 150</p>
+                        <div class="filter-main-item-tools-buttons">
+                            <button class="button-orange button-orange-fill">ADD TO TRIP</button>
+                            <button class="button-orange">BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-main-item">
+                    <img src="images/view-img2.png">
+                    <div class="filter-main-item-content">
+                        <a href="#">Hallingal Holiday Park</a>
+                        <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                        <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                        <div class="filter-main-item-content-icons">
+                            <div class="filter-main-item-content-icons-wifi"></div>
+                            <div class="filter-main-item-content-icons-credit"></div>
+                            <div class="filter-main-item-content-icons-dollar"></div>
+                        </div>
+                    </div>
+                    <div class="filter-main-item-tools">
+                        <div class="filter-main-item-tools-mark">
+                            <div class="fas fa-star"></div>
+                            <div class="fas fa-star"></div>
+                            <div class="fas fa-star"></div>
+                            <div class="far fa-star"></div>
+                            <div class="far fa-star"></div>
+                        </div>
+                        <p>€50 - 250</p>
+                        <div class="filter-main-item-tools-buttons">
+                            <button class="button-orange button-orange-fill">ADD TO TRIP</button>
+                            <button class="button-orange">BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-main-item">
+                    <img src="images/view-img.png">
+                    <div class="filter-main-item-content">
+                        <a href="#">Hallingal Holiday Park</a>
+                        <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                        <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                        <div class="filter-main-item-content-icons">
+                            <div class="filter-main-item-content-icons-wifi"></div>
+                            <div class="filter-main-item-content-icons-credit"></div>
+                            <div class="filter-main-item-content-icons-dollar"></div>
+                        </div>
+                    </div>
+                    <div class="filter-main-item-tools">
+                        <div class="filter-main-item-tools-mark">
+                            <div class="fas fa-star"></div>
+                            <div class="fas fa-star"></div>
+                            <div class="fas fa-star"></div>
+                            <div class="far fa-star"></div>
+                            <div class="far fa-star"></div>
+                        </div>
+                        <p>€50 - 350</p>
+                        <div class="filter-main-item-tools-buttons">
+                            <button class="button-orange button-orange-fill">ADD TO TRIP</button>
+                            <button class="button-orange">BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-main-item">
+                    <img src="images/view-img1.png">
+                    <div class="filter-main-item-content">
+                        <a href="#">Hallingal Holiday Park</a>
+                        <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                        <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                        <div class="filter-main-item-content-icons">
+                            <div class="filter-main-item-content-icons-wifi"></div>
+                            <div class="filter-main-item-content-icons-credit"></div>
+                            <div class="filter-main-item-content-icons-dollar"></div>
+                        </div>
+                    </div>
+                    <div class="filter-main-item-tools">
+                        <div class="filter-main-item-tools-mark">
+                            <div class="fas fa-star"></div>
+                            <div class="fas fa-star"></div>
+                            <div class="fas fa-star"></div>
+                            <div class="far fa-star"></div>
+                            <div class="far fa-star"></div>
+                        </div>
+                        <p>€20 - 150</p>
+                        <div class="filter-main-item-tools-buttons">
+                            <button class="button-orange button-orange-fill">ADD TO TRIP</button>
+                            <button class="button-orange">BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="articles-nav">
+                    <div class="articles-nav-pages">
+                        <a href="#" class="articles-nav-pages-item active">
+                            <h6>01</h6>
+                            <div></div>
+                        </a>
+                        <a href="#" class="articles-nav-pages-item">
+                            <h6>02</h6>
+                            <div></div>
+                        </a>
+                        <a href="#" class="articles-nav-pages-item">
+                            <h6>03</h6>
+                            <div></div>
+                        </a>
+                        <a href="#" class="articles-nav-pages-item">
+                            <h6>04</h6>
+                            <div></div>
+                        </a>  
+                    </div>
+                    <a href="#" class="articles-nav-next">Next</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="foot">
+        <div class="foot-container">
+            <div class="foot-block">
+                <h3 class="foot-block-title">Category</h3>
+                <div class="foot-block-items foot-block-items-hidden">
+                    <a href="category.html"><img src="images/icon-masks.png" alt="">Culture and entertainment</a>
+                    <a href="category.html"><img src="images/icon-dinner.png" alt="">Food and drink</a>
+                    <a href="category.html"><img src="images/icon-balloon.png" alt="">For kids</a>
+                    <a href="category.html"><img src="images/icon-house.png" alt="">Live and experience</a>
+                    <a href="category.html"><img src="images/icon-pine.png" alt="">Nature and history</a>
+                    <a href="category.html"><img src="images/icon-shopping.png" alt="">Shopping</a>
+                    <a href="category.html"><img src="images/icon-trophy.png" alt="">Sport and health</a>
+                    <a href="category.html"><img src="images/icon-beach.png" alt="">Sun and buth</a>
+                </div>
+            </div>
+            <div class="foot-block foot-block-countries">
+                <h3 class="foot-block-title">Countries</h3>
+                <div class="foot-block-items foot-block-countries-items foot-hidden foot-block-items-hidden">
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <div class="footViewAll">View all  &#9660;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-main">
+                    <img src="images/logo-footer.png" alt="">
+                    <div class="footer-main-text">
+                        <div>c. TRAVIMONDO</div>
+                        <div>Copywriting 2018 </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-menu">
+                <div class="footer-menu-title">Menu</div>
+                <a href="#" class="footer-menu-item">Home</a>
+                <a href="#" class="footer-menu-item">About us</a>
+                <a href="#" class="footer-menu-item">Contact</a>
+                <a href="#" class="footer-menu-item">Private policy</a>
+            </div>
+            <div class="footer-menu2">
+                <a href="#" class="footer-menu2-item">Terms</a>
+                <a href="#" class="footer-menu2-item">Vision</a>
+                <a href="#" class="footer-menu2-item">FAQ</a>
+            </div>
+            <div class="footer-subscribe">
+                <div class="footer-subscribe-title">Subscribe Newsletter</div>
+                <div class="footer-subscribe-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                <div style="display: flex; align-items: flex-end">
+                <input type="text" placeholder="e-mail">
+                <button class="footer-subscribe-button">SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="footer-social">
+                <div class="footer-social-title">Social media</div>
+                <div class="footer-social-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                <div class="footer-social-icons">
+                    <a href="#" class="fab fa-google-plus-g"></a>
+                    <a href="#"  class="fab fa-linkedin-in"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script/jquery.touch.js"></script>
+    <!-- <script src="script/functions.js"></script> -->
+    <script src="script/script.js"></script>
+    <script>
+        //    $( function() {
+        //     $( "#slider-range-min" ).slider({
+        //     range: true,
+        //     value: 37,
+        //     min: 1,
+        //     max: 999,
+        //     values: [ 75, 300 ],
+        //     slide: function( event, ui ) {
+        //         $( "#amount-min" ).val( ui.values[ 0 ] + "$");
+        //         $( "#amount-max" ).val( ui.values[ 1 ] + "$");
+        //     }
+        //     });
+        //     $( "#amount-min" ).val($( "#slider-range-min" ).slider( "values", 0 ) +
+        //     "$" );
+        //     $( "#amount-max" ).val($( "#slider-range-min" ).slider( "values", 1 ) +
+        //     "$");
+        // } );
+
+            document.querySelector('.filter-sidebar-mobile').addEventListener('click', function(){
+                this.classList.toggle('filter-sidebar-mobile-active');
+                document.querySelector('.filter-sidebar').classList.toggle('none')
+            })
+        $(function() {
+            $("#slider-range-min").slider({
+                range: true,
+                min: 0,
+                max: 500,
+                values: [75, 300],
+                slide: function(event, ui) {
+                $("#amount-min").val(ui.values[0]);
+                $("#amount-max").val(ui.values[1]);
+                }
+            });
+            $("#amount-min").val($("#slider-range-min").slider("values", 0));
+            $("#amount-max").val($("#slider-range-min").slider("values", 1));
+            $("#amount-min").change(function() {
+                $("#slider-range-min").slider("values", 0, $(this).val());
+            });
+            $("#amount-max").change(function() {
+                $("#slider-range-min").slider("values", 1, $(this).val());
+            })
+        });
+
+        ;
+            if($(window).width() >= 960) {
+                Array.prototype.slice.call(document.querySelectorAll('.filter-sidebar-block-rating-item')).forEach(function(e){
+                    e.addEventListener('click', function(){
+                        e.classList.toggle('ratingActive')
+                    })
+                });
+            } else {
+                $('.filter-sidebar-block-rating-item').each(function(){
+                    $(this).on('touchstart', function(){
+                        $(this).toggleClass('ratingActive')
+                    })
+                })
+            }
+ 
+        var arrblockHead = document.querySelectorAll('.filter-sidebar-block-head');
+        var blockHead = Array.prototype.slice.call(arrblockHead);
+        blockHead.forEach(function(e, i){
+            e.addEventListener('click', function(){
+                document.querySelectorAll('.filter-sidebar-block-inner')[i].classList.toggle('block');
+                document.querySelectorAll('.filter-sidebar-block-hide')[i].classList.toggle('hide-open');
+            })
+        })
+
+        document.querySelector('.clearAll').addEventListener('click', function(){
+            Array.prototype.slice.call(document.querySelectorAll('.filter-sidebar-block-rating-item')).forEach(function(e){
+                e.classList.remove('ratingActive')
+            })
+            $('.filter-sidebar input:checked').each(function(e){
+                $(this).attr('checked', false);
+                
+            })
+        })
+    </script>
+</body>
+</html>

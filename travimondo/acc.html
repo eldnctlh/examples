@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/jquery-ui-1.9.2.custom.min.css">
+    <link rel="stylesheet" href="style/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/main.css">
+    
+    <title>Travimondo</title>
+</head>
+<body style="overflow-x: hidden;">
+    <div class="content">
+        <div class="header-menu">
+            <div class="header-menu-container">
+                <div class="header-menu-head">
+                    <div class="header-menu-head-logo">
+                        <img src="images/logo-menu2.png" alt="">
+                        <div class="header-menu-head-logo-text">TRAVIMONDO</div>
+                        <img class="menu-logo-mobile" src="images/logo.png" alt="">
+                    </div>
+                    <div class="header-menu-head-cross">&times;</div>
+                </div>
+                <div class="header-menu-list">
+                    <div class="header-menu-list-items">
+                        <a href="#" class="header-menu-list-item">Start new trip</a>
+                        <a href="#" class="header-menu-list-item">Articles</a>
+                        <a href="#" class="header-menu-list-item">Profile</a>
+                        <a href="#" class="header-menu-list-item">Favorite articles</a>
+                        <a href="#" class="header-menu-list-item">My trips</a>
+                        <a href="#" class="header-menu-list-item">My reviews</a>
+                        <a href="#" class="header-menu-list-item">Login</a>
+                    </div>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="header-menu-foot">
+                    <a href="#" class="fab fa-google-plus-g"></a>
+                    <a href="#"  class="fab fa-linkedin-in"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                </div>
+            </div>
+            <div class="header-menu-bg"></div>
+        </div>
+        <div class="header">
+            <div class="header-container">
+                <div class="header-menu-open">__<br>___<br>___</div>
+                <div class="header-logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="header-buttons">
+                    <button class="header-buttons-button">login</button>
+                    <button class="header-buttons-button">sign in</button>
+                    <button class="header-buttons-button">Make roadtrip</button>
+                </div>
+            </div>
+            <a href="#" class="corner">
+                <img class="corner-main" src="images/corner.png" alt="">
+                <img class="corner-map" src="images/corner-map.png" alt="">
+                <img class="corner-under" src="images/corner-under.png" alt="">
+                <img class="corner-line" src="images/corner-line.png" alt="">
+            </a>
+        </div>
+        <div class="view-nav">
+            <div class="view-nav-container">
+                <div class="view-nav-line"></div><a href="index.html" class="view-nav-item">Home</a><div class="view-nav-current">Popular articles</div>
+            </div>
+        </div>
+        <div class="articles-title">User account</div>
+        <div class="company">
+            <div class="company-container">
+                <ul class="company-sidebar company-sidebar-user">
+                    <li class="company-sidebar-item active"><div class="fas fa-user"></div>Profile</li>
+                    <li class="company-sidebar-item"><div class="fas fa-map-marker-alt"></div>My trips</li>
+                    <li class="company-sidebar-item"><div class="fas fa-star"></div>Favorites</li>
+                    <li class="company-sidebar-item"><div class="fas fa-car"></div>Vehicles</li>
+                    <li class="company-sidebar-item"><div class="fas fa-key"></div>Booking</li>
+                    <li class="company-sidebar-item"><div class="fas fa-comment"></div>Review</li>
+                </ul>
+                <div class="company-main block">
+                    <h1 class="company-main-title">Profile</h1>
+                    <div class="company-main-profile-block no-border">
+                        <h2 class="company-main-profile-block-title">General information</h2>
+                        <div class="company-main-profile-block-items">
+                            <div class="company-main-profile-block-item logo-company">
+                                <div>
+                                    <h3 class="company-main-profile-block-item-title">General photo:</h3>
+                                    <img src="images/shopping.png" alt="">
+                                </div>
+                                <div>
+                                    <button class="company-main-profile-block-item-button edit">edit</button>
+                                    <button class="company-main-profile-block-item-button delete">delete</button>
+                                </div>
+                            </div>
+                            <div class="company-main-profile-block-item header-company">
+                                <div>
+                                    <h3 class="company-main-profile-block-item-title">Header photo:</h3>
+                                    <img class="header-img" src="images/streets.png" alt="">
+                                </div>
+                                <div>
+                                    <button class="company-main-profile-block-item-button edit">edit</button>
+                                    <button class="company-main-profile-block-item-button delete">delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company-main-profile-block">
+                        <div class="company-main-profile-block-items">
+                            <div class="company-main-profile-block-item inputs-company-full">
+                                <div class="company-main-profile-block-item-inputs third">
+                                    <div class="input">
+                                        <label for="first-name">First name</label>
+                                        <input type="text" id="first-name" placeholder="First Name">
+                                    </div>
+                                    <div class="input full-margin">
+                                        <label for="phone">Phone</label>
+                                        <input type="text" id="phone" placeholder="xx-xx-xxx">
+                                    </div>
+                                </div>
+                                <div class="company-main-profile-block-item-inputs third">
+                                    <div class="input">
+                                        <label for="last-name">Last name</label>
+                                        <input type="text" id="last-name" placeholder="Last Name">
+                                    </div>
+                                    <div class="input full-margin">
+                                        <label for="emailid">Email ID</label>
+                                        <input type="text" id="emailid" placeholder="Example@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="company-main-profile-block-item-inputs third">
+                                    <div class="input">
+                                        <label for="user-name">User name</label>
+                                        <input type="text" id="user-name" placeholder="User name">
+                                    </div>
+                                    <button class="button-orange">change e-mail</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company-main-profile-block">
+                        <h2 class="company-main-profile-block-title">About you</h2>
+                        <div class="company-main-profile-block-items">
+                            <div class="company-main-profile-block-item inputs-company-full">
+                                <div class="company-main-profile-block-item-inputs third">
+                                    <div class="input">
+                                        <label for="country">Country</label>
+                                        <select id="country">
+                                            <option value="USA">USA</option>
+                                            <option value="Ukraine">Ukraine</option>
+                                            <option value="Norway">Norway</option>
+                                            <option value="England">England</option>
+                                            <option value="Mongola">Mongola</option>
+                                        </select>
+                                    </div>
+                                    <div class="input full-margin">
+                                        <label for="description">Description</label>
+                                        <textarea type="text" id="description" placeholder="Description"></textarea>
+                                    </div>
+                                </div>
+                                <div class="company-main-profile-block-item-inputs third">
+                                    <div class="input">
+                                        <label for="state">State</label>
+                                        <select id="state">
+                                            <option value="State1">State1</option>
+                                            <option value="State2">State2</option>
+                                            <option value="State3">State3</option>
+                                            <option value="State4">State4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="company-main-profile-block-item-inputs third">
+                                    <div class="input">
+                                        <label for="city">City</label>
+                                        <select id="city">
+                                            <option value="New-york">New-york</option>
+                                            <option value="Kyiv">Kyiv</option>
+                                            <option value="Oslo">Oslo</option>
+                                            <option value="London">London</option>
+                                        </select>
+                                    </div>
+                                    <div class="input full-margin">
+                                        <label for="currency">Currency</label>
+                                        <select id="currency">
+                                            <option value="dollar">Dollar USA $</option>
+                                            <option value="dollar">Dollar USA $</option>
+                                            <option value="dollar">Dollar USA $</option>
+                                            <option value="dollar">Dollar USA $</option>
+                                        </select>
+                                    </div>
+                                    <div class="input full-margin">
+                                        <label for="units">Units</label>
+                                        <select id="units">
+                                            <option value="mites">mites</option>
+                                            <option value="mites">mites</option>
+                                            <option value="mites">mites</option>
+                                            <option value="mites">mites</option>
+                                        </select>
+                                        <button class="button-orange">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="company-main-profile-block">
+                        <h2 class="company-main-profile-block-title">Social account</h2>
+                        <label>Link for your social account:</label>
+                        <div class="company-main-profile-block-items block">
+                            <div class="company-main-profile-block-item inputs-company-full margin">
+                                <div class="company-main-profile-block-item-social">
+                                    <div class="company-main-profile-block-item-social-item">
+                                        <a class="pint" href="#"><div class="fab fa-pinterest-p pint"></div>Pinterest</a>
+                                        <div class="company-main-profile-block-item-social-item-close">
+                                            <img src="images/multiply.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="company-main-profile-block-item-social-item">
+                                        <a class="fb" href="#"><div class="fab fa-facebook-f fb"></div>Facebook</a>
+                                        <div class="company-main-profile-block-item-social-item-close">
+                                            <img src="images/multiply.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="company-main-profile-block-item-social-item">
+                                        <a class="tw" href="#"><div class="fab fa-twitter tw"></div>Twitter</a>
+                                        <div class="company-main-profile-block-item-social-item-close">
+                                            <img src="images/multiply.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="button-orange button-big showAddLink">Add Account</button>
+                            </div>
+                        </div>
+                        <div class="company-main-profile-block-items addLink none">
+                            <div class="company-main-profile-block-item inputs-company-full margin">
+                                <div class="company-main-profile-block-item-inputs third">
+                                    <div class="input">
+                                        <select>
+                                            <option value="linkedin">LinkedIn</option>
+                                            <option value="telegram">Telegram</option>
+                                            <option value="instagram">Instagram</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="company-main-profile-block-item-inputs third">
+                                    <div class="input">
+                                        <input type="text" placeholder="Link...">
+                                    </div>
+                                </div>
+                                <button class="button-orange third fixed-button-acc" style="border-color: #fff">add link</button>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="company-main-profile-block">
+                        <div class="company-main-profile-block-items block">
+                            <h2 class="company-main-profile-block-title">Change password</h2>
+                            <div class="company-main-profile-block-item inputs-company-full margin">
+                                <div class="company-main-profile-block-item-inputs third">
+                                    <div class="input">
+                                        <label for="curr">Current password</label>
+                                        <input type="password" id="curr" placeholder="******">
+                                    </div>
+                                </div>
+                                <div class="company-main-profile-block-item-inputs third">
+                                    <div class="input">
+                                        <label for="change">Change password</label>
+                                        <input type="password" id="change" placeholder="******">
+                                    </div>
+                                </div>
+                                <div class="company-main-profile-block-item-inputs third">
+                                    <div class="input">
+                                        <label for="conf">Confirm password</label>
+                                        <input type="password" id="conf" placeholder="******">
+                                    </div>
+                                    <button class="button-orange">Save</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div> 
+                    <div class="company-main-profile-block">
+                        <div class="company-main-profile-block-items block">
+                            <h2 class="company-main-profile-block-title">Subscribe to newsletter</h2>
+                            <div class="company-main-profile-block-item inputs-company-full margin" style="justify-content: flex-start">
+                                <label class="check-container">
+                                    <input required type="checkbox" id="news">
+                                    <span class="checkmark"></span>
+                                    <label for="news">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</label>
+                                </label>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="company-main">
+                    <h1 class="company-main-title">My trips</h1>
+                    <div class="company-main-nav" style="margin-bottom: 50px">
+                        <div></div>
+                        <div class="company-main-nav-search">
+                            <img src="images/search-copy.png" alt="">
+                            <input type="text" placeholder="SEARCH ARTICLES">
+                        </div>  
+                    </div>
+                    <div class="public-info-items">
+                        <div class="public-info-items-item item-tall">
+                            <img src="images/boat-big.png" alt="">
+                            <div class="public-info-items-item-title">
+                                <h3>#Cristopher Robin</h1>
+                                <h2>London - Paris</h2>
+                            </div>
+                            <div class="public-info-items-item-foot">
+                                <div>
+                                    <p>27-06-2018</p>
+                                    <p>1:55 PM</p>
+                                </div>
+                                <div>
+                                    <p class="copy">Copy trip</p>
+                                    <a href="#" class="mail"></a>
+                                    <a href="#" class="fb"></a>
+                                    <a href="#" class="tw"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="public-info-items-item item-big">
+                            <img src="images/london-bridge.png" alt="">
+                            <div class="public-info-items-item-title">
+                                <h3>#Cristopher Robin</h1>
+                                <h2>London - Paris</h2>
+                            </div>
+                            <div class="public-info-items-item-foot">
+                                <div>
+                                    <p>27-06-2018</p>
+                                    <p>1:55 PM</p>
+                                </div>
+                                <div>
+                                    <p class="copy">Copy trip</p>
+                                    <a href="#" class="mail"></a>
+                                    <a href="#" class="fb"></a>
+                                    <a href="#" class="tw"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="public-info-items-item item-small">
+                            <img src="images/nature.png" alt="">
+                            <div class="public-info-items-item-title">
+                                <h3>#Cristopher Robin</h1>
+                                <h2>London - Paris</h2>
+                            </div>
+                            <div class="public-info-items-item-foot">
+                                <div>
+                                    <p>27-06-2018</p>
+                                    <p>1:55 PM</p>
+                                </div>
+                                <div>
+                                    <p class="copy">Copy trip</p>
+                                    <a href="#" class="mail"></a>
+                                    <a href="#" class="fb"></a>
+                                    <a href="#" class="tw"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="public-info-items-item item-tall half-margin">
+                            <img src="images/boat-big.png" alt="">
+                            <div class="public-info-items-item-title">
+                                <h3>#Cristopher Robin</h1>
+                                <h2>London - Paris</h2>
+                            </div>
+                            <div class="public-info-items-item-foot">
+                                <div>
+                                    <p>27-06-2018</p>
+                                    <p>1:55 PM</p>
+                                </div>
+                                <div>
+                                    <p class="copy">Copy trip</p>
+                                    <a href="#" class="mail"></a>
+                                    <a href="#" class="fb"></a>
+                                    <a href="#" class="tw"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="public-info-items-item item-xsmall half-margin">
+                            <img src="images/nature.png" alt="">
+                            <div class="public-info-items-item-title">
+                                <h3>#Cristopher Robin</h1>
+                                <h2>London - Paris</h2>
+                            </div>
+                            <div class="public-info-items-item-foot">
+                                <div>
+                                    <p>27-06-2018</p>
+                                    <p>1:55 PM</p>
+                                </div>
+                                <div>
+                                    <p class="copy">Copy trip</p>
+                                    <a href="#" class="mail"></a>
+                                    <a href="#" class="fb"></a>
+                                    <a href="#" class="tw"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="public-info-items-item item-xsmall">
+                            <img src="images/nature.png" alt="">
+                            <div class="public-info-items-item-title">
+                                <h3>#Cristopher Robin</h1>
+                                <h2>London - Paris</h2>
+                            </div>
+                            <div class="public-info-items-item-foot">
+                                <div>
+                                    <p>27-06-2018</p>
+                                    <p>1:55 PM</p>
+                                </div>
+                                <div>
+                                    <p class="copy">Copy trip</p>
+                                    <a href="#" class="mail"></a>
+                                    <a href="#" class="fb"></a>
+                                    <a href="#" class="tw"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="public-info-items-item item-xsmall small-margin">
+                            <img src="images/nature.png" alt="">
+                            <div class="public-info-items-item-title">
+                                <h3>#Cristopher Robin</h1>
+                                <h2>London - Paris</h2>
+                            </div>
+                            <div class="public-info-items-item-foot">
+                                <div>
+                                    <p>27-06-2018</p>
+                                    <p>1:55 PM</p>
+                                </div>
+                                <div>
+                                    <p class="copy">Copy trip</p>
+                                    <a href="#" class="mail"></a>
+                                    <a href="#" class="fb"></a>
+                                    <a href="#" class="tw"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="public-info-items-item item-tall half-more-margin">
+                            <img src="images/boat-big.png" alt="">
+                            <div class="public-info-items-item-title">
+                                <h3>#Cristopher Robin</h1>
+                                <h2>London - Paris</h2>
+                            </div>
+                            <div class="public-info-items-item-foot">
+                                <div>
+                                    <p>27-06-2018</p>
+                                    <p>1:55 PM</p>
+                                </div>
+                                <div>
+                                    <p class="copy">Copy trip</p>
+                                    <a href="#" class="mail"></a>
+                                    <a href="#" class="fb"></a>
+                                    <a href="#" class="tw"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="public-info-items-item item-tall">
+                            <img src="images/boat-big.png" alt="">
+                            <div class="public-info-items-item-title">
+                                <h3>#Cristopher Robin</h1>
+                                <h2>London - Paris</h2>
+                            </div>
+                            <div class="public-info-items-item-foot">
+                                <div>
+                                    <p>27-06-2018</p>
+                                    <p>1:55 PM</p>
+                                </div>
+                                <div>
+                                    <p class="copy">Copy trip</p>
+                                    <a href="#" class="mail"></a>
+                                    <a href="#" class="fb"></a>
+                                    <a href="#" class="tw"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="public-info-items-item item-big small-margin">
+                            <img src="images/london-bridge.png" alt="">
+                            <div class="public-info-items-item-title">
+                                <h3>#Cristopher Robin</h1>
+                                <h2>London - Paris</h2>
+                            </div>
+                            <div class="public-info-items-item-foot">
+                                <div>
+                                    <p>27-06-2018</p>
+                                    <p>1:55 PM</p>
+                                </div>
+                                <div>
+                                    <p class="copy">Copy trip</p>
+                                    <a href="#" class="mail"></a>
+                                    <a href="#" class="fb"></a>
+                                    <a href="#" class="tw"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="public-info-items-item emptyy"></div>
+                        <div class="public-info-items-item item-xsmall half-more-margin">
+                            <img src="images/nature.png" alt="">
+                            <div class="public-info-items-item-title">
+                                <h3>#Cristopher Robin</h1>
+                                <h2>London - Paris</h2>
+                            </div>
+                            <div class="public-info-items-item-foot">
+                                <div>
+                                    <p>27-06-2018</p>
+                                    <p>1:55 PM</p>
+                                </div>
+                                <div>
+                                    <p class="copy">Copy trip</p>
+                                    <a href="#" class="mail"></a>
+                                    <a href="#" class="fb"></a>
+                                    <a href="#" class="tw"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="public-info-items-item item-xsmall half-more-margin">
+                            <img src="images/nature.png" alt="">
+                            <div class="public-info-items-item-title">
+                                <h3>#Cristopher Robin</h1>
+                                <h2>London - Paris</h2>
+                            </div>
+                            <div class="public-info-items-item-foot">
+                                <div>
+                                    <p>27-06-2018</p>
+                                    <p>1:55 PM</p>
+                                </div>
+                                <div>
+                                    <p class="copy">Copy trip</p>
+                                    <a href="#" class="mail"></a>
+                                    <a href="#" class="fb"></a>
+                                    <a href="#" class="tw"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles-nav">
+                        <div class="articles-nav-pages">
+                            <a href="#" class="articles-nav-pages-item active">
+                                <h6>01</h6>
+                                <div></div>
+                            </a>
+                            <a href="#" class="articles-nav-pages-item">
+                                <h6>02</h6>
+                                <div></div>
+                            </a>
+                            <a href="#" class="articles-nav-pages-item">
+                                <h6>03</h6>
+                                <div></div>
+                            </a>
+                            <a href="#" class="articles-nav-pages-item">
+                                <h6>04</h6>
+                                <div></div>
+                            </a>  
+                        </div>
+                        <a href="#" class="articles-nav-next">Next</a>
+                    </div>
+                </div>
+                <div class="company-main">
+                    <h1 class="company-main-title">Favorite</h1>
+                    <div class="company-main-nav">
+                        <div class="company-main-nav-titles">
+                            <p class="company-main-nav-titles-item active">Articles</p>
+                            <p class="company-main-nav-titles-item">Places</p>
+                            <p class="company-main-nav-titles-item">Regions</p>
+                        </div>
+                        <div class="company-main-nav-search">
+                            <img src="images/search-copy.png" alt="">
+                            <input type="text" placeholder="SEARCH ARTICLES">
+                        </div>  
+                    </div>
+                    <div class="favoriteToChange block">
+                        <div class="articles-items">
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/london.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/prague.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>  
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/london.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/prague.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>  
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div> 
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/london.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/prague.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>  
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div> 
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/london.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/prague.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>  
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="articles-nav">
+                            <div class="articles-nav-pages">
+                                <a href="#" class="articles-nav-pages-item active">
+                                    <h6>01</h6>
+                                    <div></div>
+                                </a>
+                                <a href="#" class="articles-nav-pages-item">
+                                    <h6>02</h6>
+                                    <div></div>
+                                </a>
+                                <a href="#" class="articles-nav-pages-item">
+                                    <h6>03</h6>
+                                    <div></div>
+                                </a>
+                                <a href="#" class="articles-nav-pages-item">
+                                    <h6>04</h6>
+                                    <div></div>
+                                </a>  
+                            </div>
+                            <a href="#" class="articles-nav-next">Next</a>
+                        </div>
+                    </div>
+                    <div class="favoriteToChange">
+                        <div class="articles-items">
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/london.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye2</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/prague.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>  
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/london.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/prague.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>  
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div> 
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/london.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/prague.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>  
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div> 
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/london.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/prague.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>  
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="articles-nav">
+                            <div class="articles-nav-pages">
+                                <a href="#" class="articles-nav-pages-item active">
+                                    <h6>01</h6>
+                                    <div></div>
+                                </a>
+                                <a href="#" class="articles-nav-pages-item">
+                                    <h6>02</h6>
+                                    <div></div>
+                                </a>
+                                <a href="#" class="articles-nav-pages-item">
+                                    <h6>03</h6>
+                                    <div></div>
+                                </a>
+                                <a href="#" class="articles-nav-pages-item">
+                                    <h6>04</h6>
+                                    <div></div>
+                                </a>  
+                            </div>
+                            <a href="#" class="articles-nav-next">Next</a>
+                        </div>
+                    </div>
+                    <div class="favoriteToChange">
+                        <div class="articles-items">
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/london.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye3</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/prague.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>  
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/london.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/prague.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>  
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div> 
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/london.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/prague.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>  
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div> 
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/london.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/prague.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>  
+                            <div class="articles-items-item">
+                                <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                                <a href="#" class="articles-items-item-pretitle">See London eye</a>
+                                <div class="articles-items-item-title">LONDON</div>
+                                <div class="articles-items-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="articles-items-item-buttons">
+                                    <div class="articles-items-item-buttons-button">Add to trip</div>
+                                    <div class="articles-items-item-buttons-button remove">Remove</div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="articles-nav">
+                            <div class="articles-nav-pages">
+                                <a href="#" class="articles-nav-pages-item active">
+                                    <h6>01</h6>
+                                    <div></div>
+                                </a>
+                                <a href="#" class="articles-nav-pages-item">
+                                    <h6>02</h6>
+                                    <div></div>
+                                </a>
+                                <a href="#" class="articles-nav-pages-item">
+                                    <h6>03</h6>
+                                    <div></div>
+                                </a>
+                                <a href="#" class="articles-nav-pages-item">
+                                    <h6>04</h6>
+                                    <div></div>
+                                </a>  
+                            </div>
+                            <a href="#" class="articles-nav-next">Next</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="company-main">
+                    <h1 class="company-main-title">Vehicles</h1>
+                    <div class="company-main-profile-block">
+                        <h2 class="company-main-profile-block-title">Add vehicles</h2>
+                        <div class="company-main-profile-block-items">
+                            <div class="company-main-profile-block-item inputs-company-full">
+                                <div class="company-main-profile-block-item-inputs fifth">
+                                    <div class="input">
+                                        <label for="car-year">Select Year</label>
+                                       <select id="car-year">
+                                           <option value="2018">2018</option>
+                                           <option value="2017">2017</option>
+                                           <option value="2016">2016</option>
+                                           <option value="2015">2015</option>
+                                       </select>
+                                    </div>
+                                </div>
+                                <div class="company-main-profile-block-item-inputs fifth">
+                                    <div class="input">
+                                        <label for="car-model">Select Mark</label>
+                                        <select id="car-model">
+                                            <option value="Model">Model</option>
+                                            <option value="Model">Model</option>
+                                            <option value="Model">Model</option>
+                                            <option value="Model">Model</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="company-main-profile-block-item-inputs third">
+                                    <div class="input">
+                                        <label for="user-name">User name</label>
+                                        <input type="text" id="user-name" placeholder="User name">
+                                    </div>
+                                </div>
+                                <div class="company-main-profile-block-item-inputs third">
+                                    <div class="input">
+                                        <button class="button-orange half-margin">Add a vehicles</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="company-main-profile-block">
+                        <h2 class="company-main-profile-block-title">Your vehicles</h2>
+                        <div class="company-main-profile-block-items">
+                            <div class="company-main-profile-block-item inputs-company-full">
+                                <div class="company-main-profile-block-item-inputs half-more">
+                                    <div class="input input-flex">
+                                        <input type="text" value="2018 Mitsubishi Outlander" readonly>
+                                        <p>delete</p>
+                                    </div>
+                                    <div class="input input-flex">
+                                        <input type="text" value="2018 Mitsubishi Outlander" readonly>
+                                        <p>delete</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="company-main">
+                    <h1 class="company-main-title">Booking requests</h1>
+                    <div class="company-main-nav" style="margin-bottom: 50px">
+                        <div></div>
+                        <div class="company-main-nav-search">
+                            <img src="images/search-copy.png" alt="">
+                            <input type="text" placeholder="SEARCH BOOKING">
+                        </div>  
+                    </div>
+                    <div class="company-main-listing product-listing block">
+                        <div class="filter-main-item company-main-item">
+                            <img src="images/view-img.png">
+                            <div class="filter-main-item-content">
+                                <a href="#">Hallingal Holiday Park1</a>
+                                <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                                <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                                <div class="filter-main-item-content-icons">
+                                    <div class="filter-main-item-content-icons-wifi"></div>
+                                    <div class="filter-main-item-content-icons-credit"></div>
+                                    <div class="filter-main-item-content-icons-dollar"></div>
+                                </div>
+                            </div>
+                            <div class="filter-main-item-tools">
+                                <div class="filter-main-item-tools-mark">
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                </div>
+                                <p>€50</p>
+                                <h4>30 Sep 2020</h6>
+                                <div class="filter-main-item-tools-buttons">
+                                    <p class="filter-main-item-tools-buttons-active">Archived</p>
+                                    <!-- <p class="filter-main-item-tools-buttons-pend">Pending</p> -->
+                                    <!-- <p class="filter-main-item-tools-buttons-arch">Archived</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-main-item company-main-item">
+                            <img src="images/view-img1.png">
+                            <div class="filter-main-item-content">
+                                <a href="#">Hallingal Holiday Park</a>
+                                <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                                <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                                <div class="filter-main-item-content-icons">
+                                    <div class="filter-main-item-content-icons-wifi"></div>
+                                    <div class="filter-main-item-content-icons-credit"></div>
+                                    <div class="filter-main-item-content-icons-dollar"></div>
+                                </div>
+                            </div>
+                            <div class="filter-main-item-tools">
+                                <div class="filter-main-item-tools-mark">
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                </div>
+                                <p>€50</p>
+                                <h4>30 Sep 2020</h6>
+                                <div class="filter-main-item-tools-buttons">
+                                    <!-- <p class="filter-main-item-tools-buttons-active">Active</p> -->
+                                    <p class="filter-main-item-tools-buttons-pend">Confirmed</p>
+                                    <!-- <p class="filter-main-item-tools-buttons-arch">Archived</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-main-item company-main-item">
+                            <img src="images/view-img2.png">
+                            <div class="filter-main-item-content">
+                                <a href="#">Hallingal Holiday Park</a>
+                                <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                                <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                                <div class="filter-main-item-content-icons">
+                                    <div class="filter-main-item-content-icons-wifi"></div>
+                                    <div class="filter-main-item-content-icons-credit"></div>
+                                    <div class="filter-main-item-content-icons-dollar"></div>
+                                </div>
+                            </div>
+                            <div class="filter-main-item-tools">
+                                <div class="filter-main-item-tools-mark">
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                </div>
+                                <p>€50</p>
+                                <h4>30 Sep 2020</h6>
+                                <div class="filter-main-item-tools-buttons">
+                                    <!-- <p class="filter-main-item-tools-buttons-active">Active</p> -->
+                                    <!-- <p class="filter-main-item-tools-buttons-pend">Pending</p> -->
+                                    <p class="filter-main-item-tools-buttons-arch">Archived</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-main-item company-main-item">
+                            <img src="images/view-img.png">
+                            <div class="filter-main-item-content">
+                                <a href="#">Hallingal Holiday Park</a>
+                                <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                                <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                                <div class="filter-main-item-content-icons">
+                                    <div class="filter-main-item-content-icons-wifi"></div>
+                                    <div class="filter-main-item-content-icons-credit"></div>
+                                    <div class="filter-main-item-content-icons-dollar"></div>
+                                </div>
+                            </div>
+                            <div class="filter-main-item-tools">
+                                <div class="filter-main-item-tools-mark">
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                </div>
+                                <p>€50</p>
+                                <h4>30 Sep 2020</h6>
+                                <div class="filter-main-item-tools-buttons">
+                                    <p class="filter-main-item-tools-buttons-active">Active</p>
+                                    <!-- <p class="filter-main-item-tools-buttons-pend">Pending</p> -->
+                                    <!-- <p class="filter-main-item-tools-buttons-arch">Archived</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-main-item company-main-item">
+                            <img src="images/view-img1.png">
+                            <div class="filter-main-item-content">
+                                <a href="#">Hallingal Holiday Park</a>
+                                <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                                <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                                <div class="filter-main-item-content-icons">
+                                    <div class="filter-main-item-content-icons-wifi"></div>
+                                    <div class="filter-main-item-content-icons-credit"></div>
+                                    <div class="filter-main-item-content-icons-dollar"></div>
+                                </div>
+                            </div>
+                            <div class="filter-main-item-tools">
+                                <div class="filter-main-item-tools-mark">
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                </div>
+                                <p>€50</p>
+                                <h4>30 Sep 2020</h6>
+                                <div class="filter-main-item-tools-buttons">
+                                    <!-- <p class="filter-main-item-tools-buttons-active">Active</p> -->
+                                    <p class="filter-main-item-tools-buttons-pend">Confirmed</p>
+                                    <!-- <p class="filter-main-item-tools-buttons-arch">Archived</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles-nav">
+                            <div class="articles-nav-pages">
+                                <a href="#" class="articles-nav-pages-item active">
+                                    <h6>01</h6>
+                                    <div></div>
+                                </a>
+                                <a href="#" class="articles-nav-pages-item">
+                                    <h6>02</h6>
+                                    <div></div>
+                                </a>
+                                <a href="#" class="articles-nav-pages-item">
+                                    <h6>03</h6>
+                                    <div></div>
+                                </a>
+                                <a href="#" class="articles-nav-pages-item">
+                                    <h6>04</h6>
+                                    <div></div>
+                                </a>  
+                            </div>
+                            <a href="#" class="articles-nav-next">Next</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="company-main">
+                    <div class="company-main-head">
+                        <h1 class="company-main-title">Request</h1>
+                        <div>
+                            <label for="sort">Sort by:</label>
+                            <select id="sort">
+                                <option value="New">New</option>
+                                <option value="Old">Old</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="company-main-request">
+                        <div class="company-main-request-main">
+                            <div class="company-main-request-main-left">
+                                <img src="images/hotel-pic.png" alt="">
+                                <div class="company-main-request-main-left-text">
+                                    <h3>Hallingdal Holiday Park</h3>
+                                    <h4>Myrovegen 15 Ål Buskerud 3570</h4>
+                                    <p>Accomodiation / $$$</p>
+                                </div>
+                            </div>
+                            <div class="company-main-request-main-center company-main-request-main-center-user">
+                               <p class="comment">Nice hotel! 5 star hotel we really enjoyed our stay the food is nice and staff doing great job and the hotel facilities are very good... animation and entertainment in the hotel is classy and quiet we like to thank Mina Wagdy for sorting out our reservation</p>
+                            </div>
+                            <div class="company-main-request-main-right company-main-request-main-right-user">
+                                <button class="company-main-request-main-right-button-delete">delete</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company-main-request">
+                        <div class="company-main-request-main">
+                            <div class="company-main-request-main-left">
+                                <img src="images/hotel-pic.png" alt="">
+                                <div class="company-main-request-main-left-text">
+                                    <h3>Hallingdal Holiday Park</h3>
+                                    <h4>Myrovegen 15 Ål Buskerud 3570</h4>
+                                    <p>Accomodiation / $$$</p>
+                                </div>
+                            </div>
+                            <div class="company-main-request-main-center company-main-request-main-center-user">
+                               <p class="comment">Nice hotel! 5 star hotel we really enjoyed our stay the food is nice and staff doing great job and the hotel facilities are very good... animation and entertainment in the hotel is classy and quiet we like to thank Mina Wagdy for sorting out our reservation</p>
+                            </div>
+                            <div class="company-main-request-main-right company-main-request-main-right-user">
+                                <button class="company-main-request-main-right-button-delete">delete</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company-main-request">
+                        <div class="company-main-request-main">
+                            <div class="company-main-request-main-left">
+                                <img src="images/hotel-pic.png" alt="">
+                                <div class="company-main-request-main-left-text">
+                                    <h3>Hallingdal Holiday Park</h3>
+                                    <h4>Myrovegen 15 Ål Buskerud 3570</h4>
+                                    <p>Accomodiation / $$$</p>
+                                </div>
+                            </div>
+                            <div class="company-main-request-main-center company-main-request-main-center-user">
+                               <p class="comment">Nice hotel! 5 star hotel we really enjoyed our stay the food is nice and staff doing great job and the hotel facilities are very good... animation and entertainment in the hotel is classy and quiet we like to thank Mina Wagdy for sorting out our reservation</p>
+                            </div>
+                            <div class="company-main-request-main-right company-main-request-main-right-user">
+                                <button class="company-main-request-main-right-button-delete">delete</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company-main-request">
+                        <div class="company-main-request-main">
+                            <div class="company-main-request-main-left">
+                                <img src="images/hotel-pic.png" alt="">
+                                <div class="company-main-request-main-left-text">
+                                    <h3>Hallingdal Holiday Park</h3>
+                                    <h4>Myrovegen 15 Ål Buskerud 3570</h4>
+                                    <p>Accomodiation / $$$</p>
+                                </div>
+                            </div>
+                            <div class="company-main-request-main-center company-main-request-main-center-user">
+                               <p class="comment">Nice hotel! 5 star hotel we really enjoyed our stay the food is nice and staff doing great job and the hotel facilities are very good... animation and entertainment in the hotel is classy and quiet we like to thank Mina Wagdy for sorting out our reservation</p>
+                            </div>
+                            <div class="company-main-request-main-right company-main-request-main-right-user">
+                                <button class="company-main-request-main-right-button-delete">delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="foot-container">
+            <div class="foot-block">
+                <h3 class="foot-block-title">Category</h3>
+                <div class="foot-block-items foot-block-items-hidden">
+                    <a href="category.html"><img src="images/icon-masks.png" alt="">Culture and entertainment</a>
+                    <a href="category.html"><img src="images/icon-dinner.png" alt="">Food and drink</a>
+                    <a href="category.html"><img src="images/icon-balloon.png" alt="">For kids</a>
+                    <a href="category.html"><img src="images/icon-house.png" alt="">Live and experience</a>
+                    <a href="category.html"><img src="images/icon-pine.png" alt="">Nature and history</a>
+                    <a href="category.html"><img src="images/icon-shopping.png" alt="">Shopping</a>
+                    <a href="category.html"><img src="images/icon-trophy.png" alt="">Sport and health</a>
+                    <a href="category.html"><img src="images/icon-beach.png" alt="">Sun and buth</a>
+                </div>
+            </div>
+            <div class="foot-block foot-block-countries">
+                <h3 class="foot-block-title">Countries</h3>
+                <div class="foot-block-items foot-block-countries-items foot-hidden foot-block-items-hidden">
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <div class="footViewAll">View all  &#9660;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-main">
+                    <img src="images/logo-footer.png" alt="">
+                    <div class="footer-main-text">
+                        <div>c. TRAVIMONDO</div>
+                        <div>Copywriting 2018 </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-menu">
+                <div class="footer-menu-title">Menu</div>
+                <a href="#" class="footer-menu-item">Home</a>
+                <a href="#" class="footer-menu-item">About us</a>
+                <a href="#" class="footer-menu-item">Contact</a>
+                <a href="#" class="footer-menu-item">Private policy</a>
+            </div>
+            <div class="footer-menu2">
+                <a href="#" class="footer-menu2-item">Terms</a>
+                <a href="#" class="footer-menu2-item">Vision</a>
+                <a href="#" class="footer-menu2-item">FAQ</a>
+            </div>
+            <div class="footer-subscribe">
+                <div class="footer-subscribe-title">Subscribe Newsletter</div>
+                <div class="footer-subscribe-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                <div style="display: flex; align-items: flex-end">
+                <input type="text" placeholder="e-mail">
+                <button class="footer-subscribe-button">SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="footer-social">
+                <div class="footer-social-title">Social media</div>
+                <div class="footer-social-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                <div class="footer-social-icons">
+                    <a href="#" class="fab fa-google-plus-g"></a>
+                    <a href="#"  class="fab fa-linkedin-in"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script/functions.js"></script>
+    <script src="script/script.js"></script>
+    <script>
+
+        Array.prototype.slice.call(document.querySelectorAll('.company-sidebar-item')).forEach(function(e, i){
+            e.addEventListener('click', function(){
+                clearClasses('.company-main', 'block');
+                document.querySelectorAll('.company-main')[i].classList.add('block');
+            })
+        })
+        
+        // Array.prototype.slice.call(document.querySelectorAll('.company-main-nav-titles-item')).forEach(function(e, i){
+        //     e.addEventListener('click', function(){
+        //         clearClasses('.product-listing', 'block');
+        //         document.querySelectorAll('.product-listing')[i].classList.add('block');
+        //     })
+        // })
+  
+        switcher('.company-sidebar-item', 'active');
+
+        switcher('.company-main-nav-titles-item', 'active', '.favoriteToChange', 'block');
+
+        // Array.prototype.slice.call(document.querySelectorAll('.company-main-request-main-right-button')).forEach(function(e, i){
+        //     e.addEventListener('click', function(){
+        //         document.querySelectorAll('.company-main-request-hidden')[i].classList.toggle('flex');
+        //     })
+        // })
+        document.querySelector('.showAddLink').addEventListener('click', function(){
+            document.querySelector('.addLink').classList.remove('none')
+        })
+    </script>
+</body>
+</html>

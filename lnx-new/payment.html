@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Linux Payment</title>
+    <link rel="stylesheet" href="less/style.css">
+</head>
+<body style="opacity:0;transition: opacity .2s;">
+    <div class="other">
+            <div class="popup-bg">
+                <div class="popup">
+                    <div class="popup-close"></div>
+                    <div class="popup-container">
+                            <div class="popup-title">Request help now</div>
+                            <div class="popup-labels">
+                                <div class="head-main-right-text">Name:</div>
+                                <div class="head-main-right-text">Contact Number:</div>
+                            </div>
+                            <form action="" method="POST">
+                                <div class="popup-inputs">
+                                    <input required placeholder='Enter your name' type="text" id="input1" class="head-main-right-input inputp">
+                                    <input required placeholder='Enter a phone number' type="text" id="input2" class="head-main-right-input inputp">
+                                </div>
+                                <div class="head-main-right-icons popup-icons">
+                                    <div tabindex="0" class="head-main-right-icons-icon tl" title="Telegram"></div>
+                                    <div tabindex="0" class="head-main-right-icons-icon wh" title="Whatsapp"></div>
+                                    <div tabindex="0" class="head-main-right-icons-icon vb" title="Viber"></div>
+                                    <div tabindex="0" class="head-main-right-icons-icon sk" title="Skype"></div>
+                                    <div tabindex="0" class="head-main-right-icons-icon em" title="Email"></div>
+                                    <div tabindex="0" class="head-main-right-icons-icon cl" title="Call"></div>
+                                </div>
+                                <div class="popup-plans-title">Choose your plan:</div>
+                                <div class="popup-plans">
+                                    <div tabindex="0" class="popup-plans-plan"><div class="popup-plans-plan-text">One Time Help<br />$4.99</div></div>
+                                    <div tabindex="0" class="popup-plans-plan"><div class="popup-plans-plan-text">Monthly Help<br />$19.99</div></div>
+                                    <div tabindex="0" class="popup-plans-plan"><div class="popup-plans-plan-text">Corporate monthly support<br />$99.99</div></div>
+                                </div>
+                                <div class="popup-input-title">Your problem:</div>
+                                <textarea placeholder="Describe your problem here" class="popup-input"></textarea>
+                                <input style="display: block; border: none" type="submit" tabindex="0" class="popup-button" value="Send">
+                            </form>
+                    </div>
+                </div>
+            </div>
+        <div class="signin-bg" id="signInBg">
+            <div class="signin">
+                <div class="signin-close" id="signInClose"></div>
+                <div class="signin-container">
+                    <div class="signin-title">Sign up</div>
+                    <form action="" method="POST">
+                        <div class="signin-label">Name:</div>
+                        <input required type="text" class="signin-input" placeholder="Enter your name">
+                        <div class="signin-label">Email:</div>
+                        <input required type="text" class="signin-input at" placeholder="Enter your email">
+                        <div class="signin-label">Password:</div>
+                        <input required type="password" class="signin-input locked" placeholder="Enter your password">
+                        <div class="signin-label">Repeat password:</div>
+                        <input required type="password" class="signin-input locked" placeholder="Repeat your password">
+                        <input style="display: block; border: none" type="submit" tabindex="0" class="signin-button" value="Sign Up">
+                    </form>
+                    <div class="signin-or">&nbsp;or use account&nbsp;</div>
+                    <div class="signin-buttons">
+                        <div class="signin-buttons-button">Facebook</div>
+                        <div class="signin-buttons-button">Google</div>
+                    </div>
+                    <div class="signin-last">Do you have an account?<a class="logIn">Log in</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="signin-bg" id="logInBg">
+            <div class="signin">
+                <div class="signin-close" id="logInClose"></div>
+                <div class="signin-container">
+                    <div class="signin-title">Log in</div>
+                    <form action="" method="POST">
+                        <div class="signin-label">Email:</div>
+                        <input required type="text" class="signin-input at" placeholder="Enter your email">
+                        <div class="signin-label">Password:</div>
+                        <input required type="password" class="signin-input locked" placeholder="Enter your password">
+                        <div class="signin-forgot">Forgot your password?</div>
+                        <input type="submit" style="display: block; border: none" class="signin-button" value="Log In">
+                    </form>
+                    <div class="signin-or">&nbsp;or use account&nbsp;</div>
+                    <div class="signin-buttons">
+                        <div class="signin-buttons-button">Facebook</div>
+                        <div class="signin-buttons-button">Google</div>
+                    </div>
+                    <div class="signin-last">Don’t have an account?<a id="signIn">Sign up</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="th-bg">
+            <div class="th">
+                <div class="th-close"></div>
+                <div class="th-container">
+                    <div class="th-title">Thank You!</div>
+                    <div class="th-text">Please check your email for further instructions on how complete your account setup</div>
+                    <div class="th-button">OK</div>
+                </div>
+            </div>
+        </div>
+        <!-- Logined -->    
+        <!-- <div class="index-login-popup">
+                <div class="upgradePopupCross">x</div>
+                <div class="per-acc-sidebar">
+                    <div class="per-acc-sidebar-item">
+                        <div class="per-acc-sidebar-container">
+                            <div class="per-acc-sidebar-pretitle">Your plan</div>
+                            <div class="per-acc-sidebar-title changedTitle">Monthly Help</div>
+                            <div class="per-acc-sidebar-date">02.07.2018 - 02.08.2018</div>
+                            <div class="per-acc-sidebar-buttons">
+                                <div class="per-acc-sidebar-buttons-button planChange" id="upgrade">Change Plan</div>
+                                <div class="per-acc-sidebar-buttons-button planUn">Unsubscribe</div>
+                            </div>
+                            <div class="per-acc-sidebar-planchange">
+                                <div class="per-acc-sidebar-planchange-item upgradePopupItem plan-hover">One Time Help</div>
+                                <div class="per-acc-sidebar-planchange-item upgradePopupItem">Monthly Help</div>
+                                <div class="per-acc-sidebar-planchange-item upgradePopupItem">Corporate Monthly Support</div>
+                            </div>
+                            <div class="per-acc-sidebar-sure">
+                                <div class="per-acc-sidebar-sure-title">Are you sure?</div>
+                                <div class="per-acc-sidebar-sure-button">Yes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Logined -->
+        <div class="header">
+            <div class="header-container">
+                <a class="header-logo" onclick="return clickHandler()" href="index.html"><span class="header-logo-bold">LINUX</span>Support</a>
+                <div class="header-right">
+                    <a tabindex="0" style="color: #fff; text-decoration: none" href="tel:+38 (096) 45-56-789" class="header-right-phone">+38 (096) 45-56-789</a>
+                    <div class="header-right-lang-wrapper">
+                        <div tabindex="0" class="header-right-lang-wrapper-lang" id="lang">EN</div>
+                        <div class="ru">RU</div>
+                    </div>
+                    <a tabindex="0" style="color: #fff; text-decoration: none" href="tel:+38 (096) 45-56-789" class="header-right-phone-mobile"></a>
+                    <div tabindex="0" class="header-right-user"><a style="text-decoration: none; color: #fff" href="personal-account.html">Amanda</a><div class="header-right-logout"></div></div>
+                    <!-- <div class="header-right-button-mobile"></div> -->
+                </div>
+            </div>
+        </div>
+        <div class="teamviewer payment">
+            <div class="teamviewer-container">
+                <a class="main-nav tv-nav"><a class="tv-link" onclick="return clickHandler()" href="index.html">Home |</a><a style="cursor: default;" class="main-nav-green"> Payment</a></a>
+                <div class="teamviewer-title">Payment<br>LinuxSupport</div>
+            </div>
+        </div> 
+        <div class="payment-main">
+            <div class="payment-main-container">
+                <div class="payment-main-pay">
+                    <div class="payment-main-pay-title">Payment Method</div>
+                    <form id="form" action="" method="POST" onsubmit=" thanksScript();return false;">
+                        <div class="payment-main-pay-label">Name:</div>
+                    <input required type="text" placeholder="Enter your name" class="payment-main-pay-input pay-name">
+                    <div class="payment-main-pay-label">Contact Number:</div>
+                    <input required type="text" placeholder="Enter your phone number" class="payment-main-pay-input pay-phone">
+                    <div class="head-main-right-icons">
+                        <div tabindex="0" class="head-main-right-icons-icon tl" title="Telegram"></div>
+                        <div tabindex="0" class="head-main-right-icons-icon wh" title="Whatsapp"></div>
+                        <div tabindex="0" class="head-main-right-icons-icon vb" title="Viber"></div>
+                        <div tabindex="0" class="head-main-right-icons-icon sk" title="Skype"></div>
+                        <div tabindex="0" class="head-main-right-icons-icon em" title="Email"></div>
+                        <div tabindex="0" class="head-main-right-icons-icon cl" title="Call"></div>
+                    </div>
+                    <div class="payment-main-pay-label">Payment:</div>
+                    <select class="payment-main-pay-input pay-select">
+                        <option value="Stripe">Stripe</option>
+                        <option value="Stripe">Stripe</option>
+                        <option value="Stripe">Stripe</option>
+                    </select>
+                    <!-- <div class="payment-main-pay-label">Number Card:</div>
+                    <input required type="tel" placeholder="Enter your card number" class="payment-main-pay-input" pattern="\d*" minlength="13"  maxlength="19" id="cardNumber"> -->
+                    <!-- <div class="payment-main-pay-inputs"> -->
+                        <!-- <div class="payment-main-pay-inputs-col">
+                            <div class="payment-main-pay-label">Expiry Date:</div>
+                            <div class="payment-main-pay-inputs-col-col">
+                                <input required type="text" class="payment-main-pay-input col-input"  maxlength="2" pattern="\d*">
+                                <div class="col-line">/</div> 
+                                <input required type="text" class="payment-main-pay-input col-input"  maxlength="2" pattern="\d*">  
+                            </div>
+                        </div> -->
+                        <!-- <div class="payment-main-pay-inputs-col2">
+                            <div class="payment-main-pay-label">CVC:</div>
+                            <input required type="text" class="payment-main-pay-input" maxlength="3" pattern="\d*">
+                        </div> -->
+                    <!-- </div> -->
+                    <input type="submit" style="border: none; display: block" class="payment-main-pay-button" value="Pay">
+                    </form>
+                </div>
+                <div class="payment-main-sidebar">
+                    <div class="payment-main-sidebar-head">Payment information</div>
+                    <div class="payment-main-sidebar-title">Receive help with unlimited issues listed with your request</div>
+                    <div class="payment-main-sidebar-columns">
+                        <div class="payment-main-sidebar-columns-col">
+                            <div class="payment-main-sidebar-columns-col-item">Plan</div>
+                            <div class="payment-main-sidebar-columns-col-item">Number of served computers</div>
+                            <div class="payment-main-sidebar-columns-col-item">Price</div>
+                        </div>
+                        <div class="payment-main-sidebar-columns-col2">
+                            <div class="payment-main-sidebar-columns-col2-item">One Time Help</div>
+                            <div class="payment-main-sidebar-columns-col2-item">1 computer</div>
+                            <div class="payment-main-sidebar-columns-col2-item">$4.99</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <a href="javascript:" id="return-to-top">&uarr;</a>
+        <div class="footer">
+            <div class="footer-line"></div>
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="footer-top-title">Get in touch <div class="footer-top-title-bold">Ready to get support?</div></div>
+                    <div style="display: none;" class="footer-top-button" id="popupShow">Get support now</div>
+                    <!-- Logined -->
+                    <a href="personal-account.html" style="display: block" tabindex="0" class="footer-top-button upgrade">Upgrade plan</a>
+                    <!-- Logined -->
+                </div>
+                <div class="footer-bottom">
+                    <a tabindex="0" style="color: #fff; text-decoration: none" href="tel:+38 (096) 45-56-789" class="footer-bottom-phone">+38 (096) 45-56-789</a>
+                    <div class="footer-bottom-copyright">© LinuxSupport. All rights reserved</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='script/jquery-3.3.1.min.js'></script>
+    <script src="script/script.js"></script>
+    <script>
+        // var expDate = $("#expDate");
+        // expDate.on("change keyup paste", function () {
+        //     if(expDate.val().length === 2) {
+        //         expDate.val(expDate.val() + '/');
+        //     } else if(expDate.val().length >= 6) {
+        //         var arr = expDate.val().split('');
+        //         expDate.val().split('').pop;
+        //         var popped = arr.pop();
+        //         expDate.val(arr.join(''));
+        //     }
+        // });
+
+
+
+
+        // var cardNumber = document.querySelector('#cardNumber');
+        // cardNumber.oninput = function() {
+        //     if(cardNumber.value.length === 4 || cardNumber.value.length === 9 || cardNumber.value.length === 14) {
+        //         cardNumber.value += '-'
+        //     }
+        // };
+    </script>
+</body>
+</html>

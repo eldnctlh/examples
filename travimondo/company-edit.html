@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/jquery-ui-1.9.2.custom.min.css">
+    <link rel="stylesheet" href="style/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Travimondo</title>
+</head>
+<body style="overflow-x: hidden;">
+    <div class="content">
+        <div class="company-popup-bg">
+            <div class="company-popup">
+                <i class="closePopup">&times;</i>
+                <img src="images/baker.png" alt="">
+                <h2>Hallingal Holiday Park</h2>
+                <h3>Myrovegen 15 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laboriosam cum molestiae praesentium. A quas optio, ipsa quisquam cumque asperiores quaerat placeat harum, exercitationem sed, doloribus accusamus nisi modi quos.</h3>
+                <h4>Accomodiation / $$$</h4>
+                <p>Status: <span>New</span></p>
+                <label for="popupCheck">Check in / out</label>
+                <input id="popupCheck" type="text" value="10 Sep 20 - 30 Sep 20">
+                <label for="popupRooms">Rooms</label>
+                <input id="popupRooms" type="text" value="2 rooms">
+                <div class="company-popup-inputs">
+                    <div class="item">
+                        <label for="Adults">Adults</label>
+                        <input id="Adults" type="text" value="1">
+                    </div>
+                    <div class="item">
+                        <label for="Children">Children</label>
+                        <input id="Children" type="text" value="1">
+                    </div>
+                </div>
+                <div class="company-popup-foot">
+                    <h5>Anna White</h5>
+                    <ul>
+                        <li class="dest">1446 Drøbak</li>
+                        <li class="phone">+47 22 46 31 00</li>
+                        <li class="mail">post@travimondo.com</li>
+                    </ul>
+                    <div class="company-popup-foot-buttons">
+                        <button class="button-orange button-orange-fill">DECLINE</button>
+                        <button class="button-orange">ACCEPT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-container">
+                <div class="header-menu-head">
+                    <div class="header-menu-head-logo">
+                        <img src="images/logo-menu2.png" alt="">
+                        <div class="header-menu-head-logo-text">TRAVIMONDO</div>
+                        <img class="menu-logo-mobile" src="images/logo.png" alt="">
+                    </div>
+                    <div class="header-menu-head-cross">&times;</div>
+                </div>
+                <div class="header-menu-list">
+                    <div class="header-menu-list-items">
+                        <a href="#" class="header-menu-list-item">Start new trip</a>
+                        <a href="#" class="header-menu-list-item">Articles</a>
+                        <a href="#" class="header-menu-list-item">Profile</a>
+                        <a href="#" class="header-menu-list-item">Favorite articles</a>
+                        <a href="#" class="header-menu-list-item">My trips</a>
+                        <a href="#" class="header-menu-list-item">My reviews</a>
+                        <a href="#" class="header-menu-list-item">Login</a>
+                    </div>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="header-menu-foot">
+                    <a href="#" class="fab fa-google-plus-g"></a>
+                    <a href="#"  class="fab fa-linkedin-in"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                </div>
+            </div>
+            <div class="header-menu-bg"></div>
+        </div>
+        <div class="header">
+            <div class="header-container">
+                <div class="header-menu-open">__<br>___<br>___</div>
+                <div class="header-logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="header-buttons">
+                    <button class="header-buttons-button">login</button>
+                    <button class="header-buttons-button">sign in</button>
+                    <button class="header-buttons-button">Make roadtrip</button>
+                </div>
+            </div>
+            <a href="#" class="corner">
+                <img class="corner-main" src="images/corner.png" alt="">
+                <img class="corner-map" src="images/corner-map.png" alt="">
+                <img class="corner-under" src="images/corner-under.png" alt="">
+                <img class="corner-line" src="images/corner-line.png" alt="">
+            </a>
+        </div>
+        <div class="view-nav">
+            <div class="view-nav-container">
+                <div class="view-nav-line"></div><a href="index.html" class="view-nav-item">Home</a><div class="view-nav-current">Popular articles</div>
+            </div>
+        </div>
+        <div class="articles-title">Company account</div>
+        <div class="company">
+            <div class="company-container">
+                <ul class="company-sidebar">
+                    <li class="company-sidebar-item active"><div class="fas fa-user"></div>Profile</li>
+                    <li class="company-sidebar-item"><div class="fas fa-comment"></div>My listing</li>
+                    <li class="company-sidebar-item"><div class="fas fa-star"></div>Request</li>
+                    <li class="company-sidebar-item"><div class="fas fa-map-marker-alt"></div>My product</li>
+                </ul>
+                <div class="company-main block">
+                    <div class="company-main-header">
+                        <h1 class="company-main-title">Profile</h1>
+                        <!-- <button class="button-orange" id="companyProfileEdit">EDIT PROFILE</button> -->
+                    </div>
+                    <div class="company-main-profile-block">
+                        <h2 class="company-main-profile-block-title">General information</h2>
+                        <div class="company-main-profile-block-items">
+                            <div class="company-main-profile-block-item logo-company">
+                                <div>
+                                    <h3 class="company-main-profile-block-item-title">Logo company:</h3>
+                                    <img src="images/shopping.png" alt="">
+                                </div>
+                                <div>
+                                    <button class="company-main-profile-block-item-button edit">edit</button>
+                                    <button class="company-main-profile-block-item-button delete">delete</button>
+                                </div>
+                            </div>
+                            <div class="company-main-profile-block-item inputs-company">
+                                <div class="company-main-profile-block-item-inputs">
+                                    <div class="input">
+                                        <label for="company-name">Company name</label>
+                                        <input type="text" value="First name" id="company-name">
+                                    </div>
+                                    <div class="input full-margin">
+                                        <label for="email">Email ID</label>
+                                        <input type="text" id="email" value="Example@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="company-main-profile-block-item-inputs">
+                                    <div class="half">
+                                        <label for="phone">Phone</label>
+                                        <input type="text" value="xxx-xxx-xxx" id="phone">
+                                    </div>
+                                    <div class="half">
+                                        <label for="fax" class="fax">Fax number</label>
+                                        <input type="text" id="fax" value="xxx-xxx-xxx">
+                                    </div>
+                                    <div class="full-margin">
+                                        <label for="tax">Tax#</label>
+                                        <input type="text" id="tax" value="tax#">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company-main-profile-block">
+                        <h2 class="company-main-profile-block-title">Address</h2>
+                        <div class="company-main-profile-block-items">
+                            <div class="company-main-profile-block-item inputs-company-full">
+                                <div class="company-main-profile-block-item-inputs third">
+                                    <div class="input">
+                                        <label for="country">Country</label>
+                                        <select id="country">
+                                            <option value="USA">USA</option>
+                                            <option value="Ukraine">Ukraine</option>
+                                            <option value="Norway">Norway</option>
+                                            <option value="England">England</option>
+                                            <option value="Mongola">Mongola</option>
+                                        </select>
+                                    </div>
+                                    <div class="input full-margin">
+                                        <label for="zip">Zip</label>
+                                        <input type="text" id="zip" value="Description">
+                                    </div>
+                                </div>
+                                <div class="company-main-profile-block-item-inputs third">
+                                    <div class="input">
+                                        <label for="city">City</label>
+                                        <select id="city">
+                                            <option value="New-york">New-york</option>
+                                            <option value="Kyiv">Kyiv</option>
+                                            <option value="Oslo">Oslo</option>
+                                            <option value="London">London</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="company-main-profile-block-item-inputs third">
+                                    <div class="input">
+                                        <label for="street">Street</label>
+                                        <input type="text" id="street" value="Street">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company-main-profile-block">
+                        <h2 class="company-main-profile-block-title">Contact person</h2>
+                        <div class="company-main-profile-block-items">
+                            <div class="company-main-profile-block-item inputs-company-full">
+                                <div class="company-main-profile-block-item-inputs third">
+                                    <div class="input">
+                                        <label for="first-name">First name</label>
+                                        <input type="text" id="first-name" value="First Name">
+                                    </div>
+                                    <div class="input full-margin">
+                                        <label for="emailid">Email ID</label>
+                                        <input type="text" id="emailid" value="Example@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="company-main-profile-block-item-inputs third">
+                                    <div class="input">
+                                        <label for="last-name">Last name</label>
+                                        <input type="text" id="last-name" value="Last Name">
+                                    </div>
+                                    <!-- <button class="button-orange">Change contact person</button> -->
+                                </div>
+                                <div class="company-main-profile-block-item-inputs third">
+                                    <div class="input">
+                                            <label for="contact-person">Contact person phone</label>
+                                            <input type="text" id="contact-person" value="xxx-xxx-xxx">
+                                    </div>
+                                    <!-- <button class="button-orange none profile-button-mobile">Change contact person</button> -->
+                                </div>
+                            </div>
+                        </div>
+                        <button class="button-orange company-main-profile-block-save">Save changes</button>
+                    </div>
+                </div>
+                <div class="company-main">
+                    <h1 class="company-main-title">My listing</h1>
+                    <div class="company-main-nav nav-one-item">
+                        <div class="company-main-nav-search">
+                            <img src="images/search-copy.png" alt="">
+                            <input type="text" placeholder="SEARCH ARTICLES">
+                        </div>  
+                    </div>
+                    <div class="company-main-listing">
+                        <div class="filter-main-item company-main-item">
+                            <!-- <div class="company-main-item-edit"></div> -->
+                            <img src="images/view-img.png">
+                            <div class="filter-main-item-content">
+                                <a href="#">Hallingal Holiday Park</a>
+                                <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                                <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                                <div class="filter-main-item-content-icons">
+                                    <div class="filter-main-item-content-icons-wifi"></div>
+                                    <div class="filter-main-item-content-icons-credit"></div>
+                                    <div class="filter-main-item-content-icons-dollar"></div>
+                                </div>
+                            </div>
+                            <div class="filter-main-item-tools">
+                                <div class="filter-main-item-tools-mark">
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                </div>
+                                <p>€50</p>
+                                <h4>30 Sep 2020</h6>
+                                <div class="filter-main-item-tools-buttons">
+                                    <p class="filter-main-item-tools-buttons-active">Active</p>
+                                    <!-- <p class="filter-main-item-tools-buttons-pend">Pending</p> -->
+                                    <!-- <p class="filter-main-item-tools-buttons-arch">Archived</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-main-item company-main-item">
+                            <!-- <div class="company-main-item-edit"></div> -->
+                            <img src="images/view-img1.png">
+                            <div class="filter-main-item-content">
+                                <a href="#">Hallingal Holiday Park</a>
+                                <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                                <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                                <div class="filter-main-item-content-icons">
+                                    <div class="filter-main-item-content-icons-wifi"></div>
+                                    <div class="filter-main-item-content-icons-credit"></div>
+                                    <div class="filter-main-item-content-icons-dollar"></div>
+                                </div>
+                            </div>
+                            <div class="filter-main-item-tools">
+                                <div class="filter-main-item-tools-mark">
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                </div>
+                                <p>€50</p>
+                                <h4>30 Sep 2020</h6>
+                                <div class="filter-main-item-tools-buttons">
+                                    <!-- <p class="filter-main-item-tools-buttons-active">Active</p> -->
+                                    <p class="filter-main-item-tools-buttons-pend">Pending</p>
+                                    <!-- <p class="filter-main-item-tools-buttons-arch">Archived</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-main-item company-main-item">
+                            <!-- <div class="company-main-item-edit"></div> -->
+                            <img src="images/view-img2.png">
+                            <div class="filter-main-item-content">
+                                <a href="#">Hallingal Holiday Park</a>
+                                <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                                <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                                <div class="filter-main-item-content-icons">
+                                    <div class="filter-main-item-content-icons-wifi"></div>
+                                    <div class="filter-main-item-content-icons-credit"></div>
+                                    <div class="filter-main-item-content-icons-dollar"></div>
+                                </div>
+                            </div>
+                            <div class="filter-main-item-tools">
+                                <div class="filter-main-item-tools-mark">
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                </div>
+                                <p>€50</p>
+                                <h4>30 Sep 2020</h6>
+                                <div class="filter-main-item-tools-buttons">
+                                    <!-- <p class="filter-main-item-tools-buttons-active">Active</p> -->
+                                    <!-- <p class="filter-main-item-tools-buttons-pend">Pending</p> -->
+                                    <p class="filter-main-item-tools-buttons-arch">Archived</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-main-item company-main-item">
+                            <!-- <div class="company-main-item-edit"></div> -->
+                            <img src="images/view-img.png">
+                            <div class="filter-main-item-content">
+                                <a href="#">Hallingal Holiday Park</a>
+                                <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                                <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                                <div class="filter-main-item-content-icons">
+                                    <div class="filter-main-item-content-icons-wifi"></div>
+                                    <div class="filter-main-item-content-icons-credit"></div>
+                                    <div class="filter-main-item-content-icons-dollar"></div>
+                                </div>
+                            </div>
+                            <div class="filter-main-item-tools">
+                                <div class="filter-main-item-tools-mark">
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                </div>
+                                <p>€50</p>
+                                <h4>30 Sep 2020</h6>
+                                <div class="filter-main-item-tools-buttons">
+                                    <p class="filter-main-item-tools-buttons-active">Active</p>
+                                    <!-- <p class="filter-main-item-tools-buttons-pend">Pending</p> -->
+                                    <!-- <p class="filter-main-item-tools-buttons-arch">Archived</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-main-item company-main-item">
+                            <!-- <div class="company-main-item-edit"></div> -->
+                            <img src="images/view-img1.png">
+                            <div class="filter-main-item-content">
+                                <a href="#">Hallingal Holiday Park</a>
+                                <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                                <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                                <div class="filter-main-item-content-icons">
+                                    <div class="filter-main-item-content-icons-wifi"></div>
+                                    <div class="filter-main-item-content-icons-credit"></div>
+                                    <div class="filter-main-item-content-icons-dollar"></div>
+                                </div>
+                            </div>
+                            <div class="filter-main-item-tools">
+                                <div class="filter-main-item-tools-mark">
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                </div>
+                                <p>€50</p>
+                                <h4>30 Sep 2020</h6>
+                                <div class="filter-main-item-tools-buttons">
+                                    <!-- <p class="filter-main-item-tools-buttons-active">Active</p> -->
+                                    <p class="filter-main-item-tools-buttons-pend">Pending</p>
+                                    <!-- <p class="filter-main-item-tools-buttons-arch">Archived</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles-nav">
+                            <div class="articles-nav-pages">
+                                <a href="#" class="articles-nav-pages-item active">
+                                    <h6>01</h6>
+                                    <div></div>
+                                </a>
+                                <a href="#" class="articles-nav-pages-item">
+                                    <h6>02</h6>
+                                    <div></div>
+                                </a>
+                                <a href="#" class="articles-nav-pages-item">
+                                    <h6>03</h6>
+                                    <div></div>
+                                </a>
+                                <a href="#" class="articles-nav-pages-item">
+                                    <h6>04</h6>
+                                    <div></div>
+                                </a>  
+                            </div>
+                            <a href="#" class="articles-nav-next">Next</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="company-main">
+                    <div class="company-main-head">
+                        <h1 class="company-main-title">Request</h1>
+                        <div>
+                            <label for="sort">Sort by:</label>
+                            <select id="sort">
+                                <option value="New">New</option>
+                                <option value="Old">Old</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="company-main-request">
+                        <div class="company-main-request-main">
+                            <div class="company-main-request-main-left">
+                                <img src="images/hotel-pic.png" alt="">
+                                <div class="company-main-request-main-left-text">
+                                    <h3>Hallingdal Holiday Park</h3>
+                                    <h4>Myrovegen 15 Ål Buskerud 3570</h4>
+                                    <p>Accomodiation / $$$</p>
+                                </div>
+                            </div>
+                            <div class="company-main-request-main-center">
+                                <div class="company-main-request-main-center-status">
+                                    <p>Status:</p>
+                                    <p class="green">New</p>
+                                </div>
+                                <div class="company-main-request-main-center-check">
+                                    <label for="">Check in/out</label>
+                                    <input type="text" placeholder="10 Sep 20 - 30 Sep 20" readonly>
+                                </div>
+                                <div class="company-main-request-main-center-count">
+                                    <label for="">Rooms</label>
+                                    <input type="text" placeholder="2" readonly>
+                                </div>
+                                <div class="company-main-request-main-center-count">
+                                    <label for="">Adults</label>
+                                    <input type="text" placeholder="1" readonly>
+                                </div>
+                                <div class="company-main-request-main-center-count">
+                                    <label for="">Children</label>
+                                    <input type="text" placeholder="1" readonly>
+                                </div>
+                            </div>
+                            <div class="company-main-request-main-right">
+                                <button class="company-main-request-main-right-button">View more</button>
+                                <button class="company-main-request-main-right-button-mobile">View more</button>
+                            </div>
+                        </div>
+                        <div class="company-main-request-hidden">
+                            <div class="company-main-request-hidden-left">
+                                <img src="images/shopping.png" alt="">
+                                <div class="company-main-request-hidden-left-text">
+                                    <h2>Anna White</h2>
+                                    <div class="company-main-request-hidden-left-text-items">
+                                        <p class="dest">1446 Drøbak</p>
+                                        <p class="phone">47 22 46 31 00</p>
+                                        <p class="mail">post@travimondo.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-main-request-hidden-right">
+                                <button class="button-orange">Decline</button>
+                                <button class="button-orange button-orange-fill">accept</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company-main-request">
+                        <div class="company-main-request-main">
+                            <div class="company-main-request-main-left">
+                                <img src="images/hotel-pic.png" alt="">
+                                <div class="company-main-request-main-left-text">
+                                    <h3>Hallingdal Holiday Park</h3>
+                                    <h4>Myrovegen 15 Ål Buskerud 3570</h4>
+                                    <p>Accomodiation / $$$</p>
+                                </div>
+                            </div>
+                            <div class="company-main-request-main-center">
+                                <div class="company-main-request-main-center-status">
+                                    <p>Status:</p>
+                                    <p class="green">Accepted</p>
+                                </div>
+                                <div class="company-main-request-main-center-check">
+                                    <label for="">Check in/out</label>
+                                    <input type="text" placeholder="10 Sep 20 - 30 Sep 20" readonly>
+                                </div>
+                                <div class="company-main-request-main-center-count">
+                                    <label for="">Rooms</label>
+                                    <input type="text" placeholder="2" readonly>
+                                </div>
+                                <div class="company-main-request-main-center-count">
+                                    <label for="">Adults</label>
+                                    <input type="text" placeholder="1" readonly>
+                                </div>
+                                <div class="company-main-request-main-center-count">
+                                    <label for="">Children</label>
+                                    <input type="text" placeholder="1" readonly>
+                                </div>
+                            </div>
+                            <div class="company-main-request-main-right">
+                                <button class="company-main-request-main-right-button">View more</button>
+                                <button class="company-main-request-main-right-button-mobile">View more</button>
+                            </div>
+                        </div>
+                        <div class="company-main-request-hidden">
+                            <div class="company-main-request-hidden-left">
+                                <img src="images/shopping.png" alt="">
+                                <div class="company-main-request-hidden-left-text">
+                                    <h2>Anna White</h2>
+                                    <div class="company-main-request-hidden-left-text-items">
+                                        <p class="dest">1446 Drøbak</p>
+                                        <p class="phone">47 22 46 31 00</p>
+                                        <p class="mail">post@travimondo.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-main-request-hidden-right">
+                                <button class="button-orange">Decline</button>
+                                <button class="button-orange button-orange-fill">accept</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company-main-request">
+                        <div class="company-main-request-main">
+                            <div class="company-main-request-main-left">
+                                <img src="images/hotel-pic.png" alt="">
+                                <div class="company-main-request-main-left-text">
+                                    <h3>Hallingdal Holiday Park</h3>
+                                    <h4>Myrovegen 15 Ål Buskerud 3570</h4>
+                                    <p>Accomodiation / $$$</p>
+                                </div>
+                            </div>
+                            <div class="company-main-request-main-center">
+                                <div class="company-main-request-main-center-status">
+                                    <p>Status:</p>
+                                    <p class="red">Declined</p>
+                                </div>
+                                <div class="company-main-request-main-center-check">
+                                    <label for="">Check in/out</label>
+                                    <input type="text" placeholder="10 Sep 20 - 30 Sep 20" readonly>
+                                </div>
+                                <div class="company-main-request-main-center-count">
+                                    <label for="">Rooms</label>
+                                    <input type="text" placeholder="2" readonly>
+                                </div>
+                                <div class="company-main-request-main-center-count">
+                                    <label for="">Adults</label>
+                                    <input type="text" placeholder="1" readonly>
+                                </div>
+                                <div class="company-main-request-main-center-count">
+                                    <label for="">Children</label>
+                                    <input type="text" placeholder="1" readonly>
+                                </div>
+                            </div>
+                            <div class="company-main-request-main-right">
+                                <button class="company-main-request-main-right-button">View more</button>
+                                <button class="company-main-request-main-right-button-mobile">View more</button>
+                            </div>
+                        </div>
+                        <div class="company-main-request-hidden">
+                            <div class="company-main-request-hidden-left">
+                                <img src="images/shopping.png" alt="">
+                                <div class="company-main-request-hidden-left-text">
+                                    <h2>Anna White</h2>
+                                    <div class="company-main-request-hidden-left-text-items">
+                                        <p class="dest">1446 Drøbak</p>
+                                        <p class="phone">47 22 46 31 00</p>
+                                        <p class="mail">post@travimondo.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-main-request-hidden-right">
+                                <button class="button-orange">Decline</button>
+                                <button class="button-orange button-orange-fill">accept</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company-main-request">
+                        <div class="company-main-request-main">
+                            <div class="company-main-request-main-left">
+                                <img src="images/hotel-pic.png" alt="">
+                                <div class="company-main-request-main-left-text">
+                                    <h3>Hallingdal Holiday Park</h3>
+                                    <h4>Myrovegen 15 Ål Buskerud 3570</h4>
+                                    <p>Accomodiation / $$$</p>
+                                </div>
+                            </div>
+                            <div class="company-main-request-main-center">
+                                <div class="company-main-request-main-center-status">
+                                    <p>Status:</p>
+                                    <p class="grey">Archived</p>
+                                </div>
+                                <div class="company-main-request-main-center-check">
+                                    <label for="">Check in/out</label>
+                                    <input type="text" placeholder="10 Sep 20 - 30 Sep 20" readonly>
+                                </div>
+                                <div class="company-main-request-main-center-count">
+                                    <label for="">Rooms</label>
+                                    <input type="text" placeholder="2" readonly>
+                                </div>
+                                <div class="company-main-request-main-center-count">
+                                    <label for="">Adults</label>
+                                    <input type="text" placeholder="1" readonly>
+                                </div>
+                                <div class="company-main-request-main-center-count">
+                                    <label for="">Children</label>
+                                    <input type="text" placeholder="1" readonly>
+                                </div>
+                            </div>
+                            <div class="company-main-request-main-right">
+                                <button class="company-main-request-main-right-button">View more</button>
+                                <button class="company-main-request-main-right-button-mobile">View more</button>
+                            </div>
+                        </div>
+                        <div class="company-main-request-hidden">
+                            <div class="company-main-request-hidden-left">
+                                <img src="images/shopping.png" alt="">
+                                <div class="company-main-request-hidden-left-text">
+                                    <h2>Anna White</h2>
+                                    <div class="company-main-request-hidden-left-text-items">
+                                        <p class="dest">1446 Drøbak</p>
+                                        <p class="phone">47 22 46 31 00</p>
+                                        <p class="mail">post@travimondo.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-main-request-hidden-right">
+                                <button class="button-orange">Decline</button>
+                                <button class="button-orange button-orange-fill">accept</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company-main-request">
+                        <div class="company-main-request-main">
+                            <div class="company-main-request-main-left">
+                                <img src="images/hotel-pic.png" alt="">
+                                <div class="company-main-request-main-left-text">
+                                    <h3>Hallingdal Holiday Park</h3>
+                                    <h4>Myrovegen 15 Ål Buskerud 3570</h4>
+                                    <p>Accomodiation / $$$</p>
+                                </div>
+                            </div>
+                            <div class="company-main-request-main-center">
+                                <div class="company-main-request-main-center-status">
+                                    <p>Status:</p>
+                                    <p class="green">New</p>
+                                </div>
+                                <div class="company-main-request-main-center-check">
+                                    <label for="">Check in/out</label>
+                                    <input type="text" placeholder="10 Sep 20 - 30 Sep 20" readonly>
+                                </div>
+                                <div class="company-main-request-main-center-count">
+                                    <label for="">Rooms</label>
+                                    <input type="text" placeholder="2" readonly>
+                                </div>
+                                <div class="company-main-request-main-center-count">
+                                    <label for="">Adults</label>
+                                    <input type="text" placeholder="1" readonly>
+                                </div>
+                                <div class="company-main-request-main-center-count">
+                                    <label for="">Children</label>
+                                    <input type="text" placeholder="1" readonly>
+                                </div>
+                            </div>
+                            <div class="company-main-request-main-right">
+                                <button class="company-main-request-main-right-button">View more</button>
+                                <button class="company-main-request-main-right-button-mobile">View more</button>
+                            </div>
+                        </div>
+                        <div class="company-main-request-hidden">
+                            <div class="company-main-request-hidden-left">
+                                <img src="images/shopping.png" alt="">
+                                <div class="company-main-request-hidden-left-text">
+                                    <h2>Anna White</h2>
+                                    <div class="company-main-request-hidden-left-text-items">
+                                        <p class="dest">1446 Drøbak</p>
+                                        <p class="phone">47 22 46 31 00</p>
+                                        <p class="mail">post@travimondo.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-main-request-hidden-right">
+                                <button class="button-orange">Decline</button>
+                                <button class="button-orange button-orange-fill">accept</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="company-main">
+                    <h1 class="company-main-title">My product</h1>
+                    <div class="company-main-nav">
+                        <div class="company-main-nav-titles">
+                            <p class="company-main-nav-titles-item active">Presentation pages</p>
+                            <p class="company-main-nav-titles-item">Banners</p>
+                            <p class="company-main-nav-titles-item">Listings</p>
+                        </div>
+                        <div class="company-main-nav-search">
+                            <img src="images/search-copy.png" alt="">
+                            <input type="text" placeholder="SEARCH ARTICLES">
+                        </div>  
+                    </div>
+                    <div class="company-main-listing product-listing block">
+                        <div class="filter-main-item company-main-item">
+                            <!-- <div class="company-main-item-edit"></div> -->
+                            <img src="images/view-img.png">
+                            <div class="filter-main-item-content">
+                                <a href="#">Hallingal Holiday Park1</a>
+                                <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                                <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                                <div class="filter-main-item-content-icons">
+                                    <div class="filter-main-item-content-icons-wifi"></div>
+                                    <div class="filter-main-item-content-icons-credit"></div>
+                                    <div class="filter-main-item-content-icons-dollar"></div>
+                                </div>
+                            </div>
+                            <div class="filter-main-item-tools">
+                                <div class="filter-main-item-tools-mark">
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                </div>
+                                <p>€50</p>
+                                <h4>30 Sep 2020</h6>
+                                <div class="filter-main-item-tools-buttons">
+                                    <p class="filter-main-item-tools-buttons-active">Active</p>
+                                    <!-- <p class="filter-main-item-tools-buttons-pend">Pending</p> -->
+                                    <!-- <p class="filter-main-item-tools-buttons-arch">Archived</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-main-item company-main-item">
+                            <!-- <div class="company-main-item-edit"></div> -->
+                            <img src="images/view-img1.png">
+                            <div class="filter-main-item-content">
+                                <a href="#">Hallingal Holiday Park</a>
+                                <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                                <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                                <div class="filter-main-item-content-icons">
+                                    <div class="filter-main-item-content-icons-wifi"></div>
+                                    <div class="filter-main-item-content-icons-credit"></div>
+                                    <div class="filter-main-item-content-icons-dollar"></div>
+                                </div>
+                            </div>
+                            <div class="filter-main-item-tools">
+                                <div class="filter-main-item-tools-mark">
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                </div>
+                                <p>€50</p>
+                                <h4>30 Sep 2020</h6>
+                                <div class="filter-main-item-tools-buttons">
+                                    <!-- <p class="filter-main-item-tools-buttons-active">Active</p> -->
+                                    <p class="filter-main-item-tools-buttons-pend">Pending</p>
+                                    <!-- <p class="filter-main-item-tools-buttons-arch">Archived</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-main-item company-main-item">
+                            <!-- <div class="company-main-item-edit"></div> -->
+                            <img src="images/view-img2.png">
+                            <div class="filter-main-item-content">
+                                <a href="#">Hallingal Holiday Park</a>
+                                <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                                <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                                <div class="filter-main-item-content-icons">
+                                    <div class="filter-main-item-content-icons-wifi"></div>
+                                    <div class="filter-main-item-content-icons-credit"></div>
+                                    <div class="filter-main-item-content-icons-dollar"></div>
+                                </div>
+                            </div>
+                            <div class="filter-main-item-tools">
+                                <div class="filter-main-item-tools-mark">
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                </div>
+                                <p>€50</p>
+                                <h4>30 Sep 2020</h6>
+                                <div class="filter-main-item-tools-buttons">
+                                    <!-- <p class="filter-main-item-tools-buttons-active">Active</p> -->
+                                    <!-- <p class="filter-main-item-tools-buttons-pend">Pending</p> -->
+                                    <p class="filter-main-item-tools-buttons-arch">Archived</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-main-item company-main-item">
+                            <!-- <div class="company-main-item-edit"></div> -->
+                            <img src="images/view-img.png">
+                            <div class="filter-main-item-content">
+                                <a href="#">Hallingal Holiday Park</a>
+                                <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                                <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                                <div class="filter-main-item-content-icons">
+                                    <div class="filter-main-item-content-icons-wifi"></div>
+                                    <div class="filter-main-item-content-icons-credit"></div>
+                                    <div class="filter-main-item-content-icons-dollar"></div>
+                                </div>
+                            </div>
+                            <div class="filter-main-item-tools">
+                                <div class="filter-main-item-tools-mark">
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                </div>
+                                <p>€50</p>
+                                <h4>30 Sep 2020</h6>
+                                <div class="filter-main-item-tools-buttons">
+                                    <p class="filter-main-item-tools-buttons-active">Active</p>
+                                    <!-- <p class="filter-main-item-tools-buttons-pend">Pending</p> -->
+                                    <!-- <p class="filter-main-item-tools-buttons-arch">Archived</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-main-item company-main-item">
+                            <!-- <div class="company-main-item-edit"></div> -->
+                            <img src="images/view-img1.png">
+                            <div class="filter-main-item-content">
+                                <a href="#">Hallingal Holiday Park</a>
+                                <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                                <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                                <div class="filter-main-item-content-icons">
+                                    <div class="filter-main-item-content-icons-wifi"></div>
+                                    <div class="filter-main-item-content-icons-credit"></div>
+                                    <div class="filter-main-item-content-icons-dollar"></div>
+                                </div>
+                            </div>
+                            <div class="filter-main-item-tools">
+                                <div class="filter-main-item-tools-mark">
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                </div>
+                                <p>€50</p>
+                                <h4>30 Sep 2020</h6>
+                                <div class="filter-main-item-tools-buttons">
+                                    <!-- <p class="filter-main-item-tools-buttons-active">Active</p> -->
+                                    <p class="filter-main-item-tools-buttons-pend">Pending</p>
+                                    <!-- <p class="filter-main-item-tools-buttons-arch">Archived</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles-nav">
+                            <div class="articles-nav-pages">
+                                <a href="#" class="articles-nav-pages-item active">
+                                    <h6>01</h6>
+                                    <div></div>
+                                </a>
+                                <a href="#" class="articles-nav-pages-item">
+                                    <h6>02</h6>
+                                    <div></div>
+                                </a>
+                                <a href="#" class="articles-nav-pages-item">
+                                    <h6>03</h6>
+                                    <div></div>
+                                </a>
+                                <a href="#" class="articles-nav-pages-item">
+                                    <h6>04</h6>
+                                    <div></div>
+                                </a>  
+                            </div>
+                            <a href="#" class="articles-nav-next">Next</a>
+                        </div>
+                    </div>
+                    <div class="company-main-listing product-listing">
+                        <div class="company-main-banner">
+                            <!-- <div class="company-main-banner-edit"></div> -->
+                            <img src="images/banner.png" alt="">
+                            <div class="company-main-banner-name">
+                                <h2>Banner Name</h2>
+                                <p>1920 x 1080</p>
+                            </div>
+                            <div class="company-main-banner-info">
+                                <div class="company-main-banner-info-item">
+                                    <label for="expire">Expires on</label>
+                                    <input readonly type="text" id="expire" placeholder="10 Sep 2020">
+                                </div>
+                                <div class="company-main-banner-info-item action">
+                                    <label for="action">Action</label>
+                                    <select id="action">
+                                        <option value="Show">Show</option>
+                                        <option value="Hide">Hide</option>
+                                    </select>
+                                </div>
+                                <div class="company-main-banner-info-status">
+                                    <p>Status:</p>
+                                    <p class="green">Published</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company-main-banner">
+                            <!-- <div class="company-main-banner-edit"></div> -->
+                            <img src="images/banner.png" alt="">
+                            <div class="company-main-banner-name">
+                                <h2>Banner Name</h2>
+                                <p>1920 x 1080</p>
+                            </div>
+                            <div class="company-main-banner-info">
+                                <div class="company-main-banner-info-item">
+                                    <label for="expire">Expires on</label>
+                                    <input readonly type="text" id="expire" placeholder="10 Sep 2020">
+                                </div>
+                                <div class="company-main-banner-info-item action">
+                                    <label for="action">Action</label>
+                                    <select id="action">
+                                        <option value="Show">Show</option>
+                                        <option value="Hide">Hide</option>
+                                    </select>
+                                </div>
+                                <div class="company-main-banner-info-status">
+                                    <p>Status:</p>
+                                    <p class="green">Published</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company-main-banner">
+                            <!-- <div class="company-main-banner-edit"></div> -->
+                            <img src="images/banner.png" alt="">
+                            <div class="company-main-banner-name">
+                                <h2>Banner Name</h2>
+                                <p>1920 x 1080</p>
+                            </div>
+                            <div class="company-main-banner-info">
+                                <div class="company-main-banner-info-item">
+                                    <label for="expire">Expires on</label>
+                                    <input readonly type="text" id="expire" placeholder="10 Sep 2020">
+                                </div>
+                                <div class="company-main-banner-info-item action">
+                                    <label for="action">Action</label>
+                                    <select id="action">
+                                        <option value="Show">Show</option>
+                                        <option value="Hide">Hide</option>
+                                    </select>
+                                </div>
+                                <div class="company-main-banner-info-status">
+                                    <p>Status:</p>
+                                    <p class="green">Published</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company-main-listing product-listing">
+                        <div class="filter-main-item company-main-item">
+                            <!-- <div class="company-main-item-edit"></div> -->
+                            <img src="images/view-img.png">
+                            <div class="filter-main-item-content">
+                                <a href="#">Hallingal Holiday Park</a>
+                                <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                                <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                                <div class="filter-main-item-content-icons">
+                                    <div class="filter-main-item-content-icons-wifi"></div>
+                                    <div class="filter-main-item-content-icons-credit"></div>
+                                    <div class="filter-main-item-content-icons-dollar"></div>
+                                </div>
+                            </div>
+                            <div class="filter-main-item-tools">
+                                <div class="filter-main-item-tools-mark">
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                </div>
+                                <p>€50</p>
+                                <h4>30 Sep 2020</h6>
+                                <div class="filter-main-item-tools-buttons">
+                                    <p class="filter-main-item-tools-buttons-active">Active</p>
+                                    <!-- <p class="filter-main-item-tools-buttons-pend">Pending</p> -->
+                                    <!-- <p class="filter-main-item-tools-buttons-arch">Archived</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-main-item company-main-item">
+                            <!-- <div class="company-main-item-edit"></div> -->
+                            <img src="images/view-img1.png">
+                            <div class="filter-main-item-content">
+                                <a href="#">Hallingal Holiday Park</a>
+                                <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                                <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                                <div class="filter-main-item-content-icons">
+                                    <div class="filter-main-item-content-icons-wifi"></div>
+                                    <div class="filter-main-item-content-icons-credit"></div>
+                                    <div class="filter-main-item-content-icons-dollar"></div>
+                                </div>
+                            </div>
+                            <div class="filter-main-item-tools">
+                                <div class="filter-main-item-tools-mark">
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                </div>
+                                <p>€50</p>
+                                <h4>30 Sep 2020</h6>
+                                <div class="filter-main-item-tools-buttons">
+                                    <!-- <p class="filter-main-item-tools-buttons-active">Active</p> -->
+                                    <p class="filter-main-item-tools-buttons-pend">Pending</p>
+                                    <!-- <p class="filter-main-item-tools-buttons-arch">Archived</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-main-item company-main-item">
+                            <!-- <div class="company-main-item-edit"></div> -->
+                            <img src="images/view-img2.png">
+                            <div class="filter-main-item-content">
+                                <a href="#">Hallingal Holiday Park</a>
+                                <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                                <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                                <div class="filter-main-item-content-icons">
+                                    <div class="filter-main-item-content-icons-wifi"></div>
+                                    <div class="filter-main-item-content-icons-credit"></div>
+                                    <div class="filter-main-item-content-icons-dollar"></div>
+                                </div>
+                            </div>
+                            <div class="filter-main-item-tools">
+                                <div class="filter-main-item-tools-mark">
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                </div>
+                                <p>€50</p>
+                                <h4>30 Sep 2020</h6>
+                                <div class="filter-main-item-tools-buttons">
+                                    <!-- <p class="filter-main-item-tools-buttons-active">Active</p> -->
+                                    <!-- <p class="filter-main-item-tools-buttons-pend">Pending</p> -->
+                                    <p class="filter-main-item-tools-buttons-arch">Archived</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-main-item company-main-item">
+                            <!-- <div class="company-main-item-edit"></div> -->
+                            <img src="images/view-img.png">
+                            <div class="filter-main-item-content">
+                                <a href="#">Hallingal Holiday Park</a>
+                                <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                                <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                                <div class="filter-main-item-content-icons">
+                                    <div class="filter-main-item-content-icons-wifi"></div>
+                                    <div class="filter-main-item-content-icons-credit"></div>
+                                    <div class="filter-main-item-content-icons-dollar"></div>
+                                </div>
+                            </div>
+                            <div class="filter-main-item-tools">
+                                <div class="filter-main-item-tools-mark">
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                </div>
+                                <p>€50</p>
+                                <h4>30 Sep 2020</h6>
+                                <div class="filter-main-item-tools-buttons">
+                                    <p class="filter-main-item-tools-buttons-active">Active</p>
+                                    <!-- <p class="filter-main-item-tools-buttons-pend">Pending</p> -->
+                                    <!-- <p class="filter-main-item-tools-buttons-arch">Archived</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-main-item company-main-item">
+                            <!-- <div class="company-main-item-edit"></div> -->
+                            <img src="images/view-img1.png">
+                            <div class="filter-main-item-content">
+                                <a href="#">Hallingal Holiday Park</a>
+                                <h3>Myrovegen 15 Ål Buskerud 3570 Norway</h3>
+                                <p>At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceive designed by Marks Barfield...Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</p>
+                                <div class="filter-main-item-content-icons">
+                                    <div class="filter-main-item-content-icons-wifi"></div>
+                                    <div class="filter-main-item-content-icons-credit"></div>
+                                    <div class="filter-main-item-content-icons-dollar"></div>
+                                </div>
+                            </div>
+                            <div class="filter-main-item-tools">
+                                <div class="filter-main-item-tools-mark">
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="fas fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                </div>
+                                <p>€50</p>
+                                <h4>30 Sep 2020</h6>
+                                <div class="filter-main-item-tools-buttons">
+                                    <!-- <p class="filter-main-item-tools-buttons-active">Active</p> -->
+                                    <p class="filter-main-item-tools-buttons-pend">Pending</p>
+                                    <!-- <p class="filter-main-item-tools-buttons-arch">Archived</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles-nav">
+                            <div class="articles-nav-pages">
+                                <a href="#" class="articles-nav-pages-item active">
+                                    <h6>01</h6>
+                                    <div></div>
+                                </a>
+                                <a href="#" class="articles-nav-pages-item">
+                                    <h6>02</h6>
+                                    <div></div>
+                                </a>
+                                <a href="#" class="articles-nav-pages-item">
+                                    <h6>03</h6>
+                                    <div></div>
+                                </a>
+                                <a href="#" class="articles-nav-pages-item">
+                                    <h6>04</h6>
+                                    <div></div>
+                                </a>  
+                            </div>
+                            <a href="#" class="articles-nav-next">Next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="foot-container">
+            <div class="foot-block">
+                <h3 class="foot-block-title">Category</h3>
+                <div class="foot-block-items foot-block-items-hidden">
+                    <a href="category.html"><img src="images/icon-masks.png" alt="">Culture and entertainment</a>
+                    <a href="category.html"><img src="images/icon-dinner.png" alt="">Food and drink</a>
+                    <a href="category.html"><img src="images/icon-balloon.png" alt="">For kids</a>
+                    <a href="category.html"><img src="images/icon-house.png" alt="">Live and experience</a>
+                    <a href="category.html"><img src="images/icon-pine.png" alt="">Nature and history</a>
+                    <a href="category.html"><img src="images/icon-shopping.png" alt="">Shopping</a>
+                    <a href="category.html"><img src="images/icon-trophy.png" alt="">Sport and health</a>
+                    <a href="category.html"><img src="images/icon-beach.png" alt="">Sun and buth</a>
+                </div>
+            </div>
+            <div class="foot-block foot-block-countries">
+                <h3 class="foot-block-title">Countries</h3>
+                <div class="foot-block-items foot-block-countries-items foot-hidden foot-block-items-hidden">
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <div class="footViewAll">View all  &#9660;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-main">
+                    <img src="images/logo-footer.png" alt="">
+                    <div class="footer-main-text">
+                        <div>c. TRAVIMONDO</div>
+                        <div>Copywriting 2018 </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-menu">
+                <div class="footer-menu-title">Menu</div>
+                <a href="#" class="footer-menu-item">Home</a>
+                <a href="#" class="footer-menu-item">About us</a>
+                <a href="#" class="footer-menu-item">Contact</a>
+                <a href="#" class="footer-menu-item">Private policy</a>
+            </div>
+            <div class="footer-menu2">
+                <a href="#" class="footer-menu2-item">Terms</a>
+                <a href="#" class="footer-menu2-item">Vision</a>
+                <a href="#" class="footer-menu2-item">FAQ</a>
+            </div>
+            <div class="footer-subscribe">
+                <div class="footer-subscribe-title">Subscribe Newsletter</div>
+                <div class="footer-subscribe-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                <div style="display: flex; align-items: flex-end">
+                <input type="text" placeholder="e-mail">
+                <button class="footer-subscribe-button">SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="footer-social">
+                <div class="footer-social-title">Social media</div>
+                <div class="footer-social-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                <div class="footer-social-icons">
+                    <a href="#" class="fab fa-google-plus-g"></a>
+                    <a href="#"  class="fab fa-linkedin-in"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script/functions.js"></script>
+    <script src="script/script.js"></script>
+    <script>
+
+        Array.prototype.slice.call(document.querySelectorAll('.company-sidebar-item')).forEach(function(e, i){
+            e.addEventListener('click', function(){
+                clearClasses('.company-main', 'block');
+                document.querySelectorAll('.company-main')[i].classList.add('block');
+            })
+        })
+        
+        Array.prototype.slice.call(document.querySelectorAll('.company-main-nav-titles-item')).forEach(function(e, i){
+            e.addEventListener('click', function(){
+                clearClasses('.product-listing', 'block');
+                document.querySelectorAll('.product-listing')[i].classList.add('block');
+            })
+        })
+  
+        switcher('.company-sidebar-item', 'active');
+
+        switcher('.company-main-nav-titles-item', 'active');
+
+        Array.prototype.slice.call(document.querySelectorAll('.company-main-request-main-right-button')).forEach(function(e, i){
+            e.addEventListener('click', function(){
+                document.querySelectorAll('.company-main-request-hidden')[i].classList.toggle('flex');
+            })
+        })
+
+
+        Array.prototype.slice.call(document.querySelectorAll('.company-main-request-main-right-button-mobile')).forEach(function(e){
+            e.addEventListener('click', function(){
+                document.querySelector('.company-popup-bg').classList.add('block');
+                document.body.classList.add('overflowHidden');
+                document.querySelector('.closePopup').addEventListener('click', function(){
+                    document.querySelector('.company-popup-bg').classList.remove('block')
+                    document.body.classList.remove('overflowHidden');
+                })
+            })
+        })
+
+        // document.querySelector('#companyProfileEdit').addEventListener('click', function(){
+        //     $('.company-main-profile-block input').each(function(e){
+        //         $(this).attr('readonly', false);
+        //         $(this).addClass('inputEdit')
+        //     })
+        //     document.querySelector('.company-main-profile-block-save').classList.add('block')
+        //     document.querySelector('.company-main-profile-block-save').classList.add('visible')
+        // })
+        // document.querySelector('.company-main-profile-block-save').addEventListener('click', function(){
+        //     this.classList.remove('block');
+        //     this.classList.remove('visible');
+        //     $('.company-main-profile-block input').each(function(e){
+        //         $(this).attr('readonly', true);
+        //         $(this).removeClass('inputEdit')
+        //     })
+        // })
+    </script>
+</body>
+</html>

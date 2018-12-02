@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Linux Admin Notes</title>
+    <link rel="stylesheet" href="less/style.css">
+    <link rel="stylesheet" href="jodit-3.1.95/build/jodit.min.css">
+    <link rel="stylesheet" href="less/jquery-ui-1.9.2.custom.min.css">
+    <link rel="stylesheet" href="jquery-nice-select-1.1.0/css/nice-select.css">
+</head>
+<body class="admin-body other" style="background-color: #f3f5ff">
+    <div class="admin">
+        <div class="sidebar-wrapper">
+            <div class="admin-sidebar">
+                <a href="index.html" class="admin-sidebar-logo"></a>
+                <a style="text-decoration: none" href="admin.html" class="admin-sidebar-item">Orders<div class="admin-sidebar-item-notification">1</div></a>
+                <a style="text-decoration: none" href="admin-archive.html" class="admin-sidebar-item">Archive</a>
+                <a style="text-decoration: none" href="admin-clients.html" class="admin-sidebar-item">Clients</a>
+                <a style="text-decoration: none" href="admin-managers.html" class="admin-sidebar-item">Managers</a>
+                <a style="text-decoration: none" href="admin-blog.html" class="admin-sidebar-item">Blog</a>
+                <a style="text-decoration: none" href="admin-notes.html" class="admin-sidebar-item admin-sidebar-active">Notes</a>
+                <a style="text-decoration: none" href="admin-custom.html" class="admin-sidebar-item">Custom Field</a>
+            </div>
+        </div>
+        <div class="admin-main">
+                <div class="admin-main-head">
+                    <div class="admin-main-head-name">Manager 1
+                        <div class="admin-main-head-name-icon"></div>
+                    </div>
+                </div>
+            <div class="admin-main-item">
+                <div class="admin-main-item-head">Notes</div>
+                <div class="admin-main-item-orders">
+                    <div class="admin-main-item-orders-container">
+                        <div class="admin-main-item-orders-blog">
+                            <!-- <a class="admin-main-item-orders-blog-link" href="blog.html">Watch Page</a> -->
+                            <div class="admin-main-item-orders-blog-container">
+                                <div class="admin-main-item-orders-blog-edit">
+                                    <div class="admin-main-item-orders-blog-edit-left">
+                                        <div class="admin-main-item-orders-blog-edit-left-title">Edit notes</div>
+                                        <!-- <a style="color: black; margin-top: 10px; display: block;" href="linux-blog-create.html" class="admin-main-item-orders-blog-edit-left-title">or create new post</a> -->
+                                        <div class="admin-main-item-orders-blog-edit-left-nav">
+                                            <input type="text" placeholder="by title">
+                                            <input type="text" placeholder="by tag">
+                                            <button>Search</button>
+                                        </div>
+                                        <ul class="admin-main-item-orders-blog-edit-left-posts">
+                                            <li><a href="index.html">Frequently asked questions</a><span>#tag</span><button class="admin-blog-scroll">edit</button></li>
+                                            <li><a href="index.html">The Knowledge Base</a><span>#tag</span><button class="admin-blog-scroll">edit</button></li>
+                                            <li><a href="index.html">Testimonials</a><span>#tag</span><button class="admin-blog-scroll">edit</button></li>
+                                            <li><a href="index.html">Cost of Linux Support Services</a><span>#tag</span><button class="admin-blog-scroll">edit</button></li>
+                                            <li><a href="index.html">Our advantages</a><span>#tag</span><button class="admin-blog-scroll">edit</button></li>
+                                            <li><a href="index.html">How it Works?</a><span>#tag</span><button class="admin-blog-scroll">edit</button></li>
+                                            <li><a href="index.html">Frequently asked questions</a><span>#tag</span><button class="admin-blog-scroll">edit</button></li>
+                                            <li><a href="index.html">The Knowledge Base</a><span>#tag</span><button class="admin-blog-scroll">edit</button></li>
+                                            <li><a href="index.html">Our advantages</a><span>#tag</span><button class="admin-blog-scroll">edit</button></li>
+                                            <li><a href="index.html">Cost of Linux Support Services</a><span>#tag</span><button class="admin-blog-scroll">edit</button></li>
+                                        </ul> 
+                                        <div class="admin-main-item-orders-blog-edit-left-edit" style="display: none">
+                                            <div contenteditable="true" class="admin-main-item-orders-blog-edit-left-edit-title"><div class="icon-edit"></div><div class="editableContent">Frequently Asked Questions</div></div>
+                                            <!-- <div class="admin-main-item-orders-blog-edit-left-edit-img">
+                                                <input id="file-input" type="file" name="name" style="display: none;" />
+                                                <div class="icon-src">change</div>
+                                                <div class="icon-edit"></div>
+                                                <img id="edit-img" src="images/img-post.png" alt="" class="editableContent">
+                                            </div> -->
+                                            <div contenteditable="true" class="admin-main-item-orders-blog-edit-left-edit-text"><div class="icon-edit"></div><div class="editableContent">Which Linux distributions do you support?<br>Our standard support contracts cover the following Linux distributions: Debian, Red Hat, CentOS, Ubuntu, Scientific Linux. Generally we only support the current release(s) of those distributions, however, if you have specific version requirements or you would like to discuss support of another distribution, please do contact us.</div></div>
+                                            <div contenteditable="true" class="admin-main-item-orders-blog-edit-left-edit-text"><div class="icon-edit"></div><div class="editableContent">How do I get into safe mode?<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam voluptatum nemo, similique, laboriosam earum minus excepturi aliquam placeat consectetur a sapiente culpa nihil quidem, nulla illo omnis ex architecto voluptatem.</div></div>
+                                            <div contenteditable="true" class="admin-main-item-orders-blog-edit-left-edit-tag"><div class="icon-edit"></div><div class="editableContent">#Linux #LinuxSupport #Operations   #Systems #Servers #How_to</div></div>
+                                        </div>
+                                    </div>
+                                    <div class="admin-main-item-orders-blog-edit-right">
+                                        <div class="admin-main-item-orders-blog-edit-right-title">Most popular</div>
+                                        <div class="admin-main-item-orders-blog-edit-right-post">
+                                            <img src="images/img-blog1.png" alt="">
+                                            <div class="admin-main-item-orders-blog-edit-right-post-title">How to connect to a remote desktop from Linux</div>
+                                        </div>
+                                        <div class="admin-main-item-orders-blog-edit-right-post">
+                                            <img src="images/img-blog1.png" alt="">
+                                            <div class="admin-main-item-orders-blog-edit-right-post-title">How to connect to a remote desktop from Linux</div>
+                                        </div>
+                                        <div class="admin-main-item-orders-blog-edit-right-post">
+                                            <img src="images/img-blog1.png" alt="">
+                                            <div class="admin-main-item-orders-blog-edit-right-post-title">How to connect to a remote desktop from Linux</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='script/jquery-3.3.1.min.js'></script>
+    <script src="jodit-3.1.95/build/jodit.min.js"></script>
+    <script src="jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
+    <script src="script/admin.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('select').niceSelect();
+        });
+    </script>
+
+</body>
+</html>

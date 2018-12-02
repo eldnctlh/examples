@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/jquery-ui-1.9.2.custom.min.css">
+    <link rel="stylesheet" href="style/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="slick-master/slick/slick.css">
+    <link rel="stylesheet" href="slick-master/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Travimondo</title>
+</head>
+<body style="overflow-x: hidden;">
+    <div class="content">
+        <div class="header-menu">
+            <div class="header-menu-container">
+                <div class="header-menu-head">
+                    <div class="header-menu-head-logo">
+                        <img src="images/logo-menu2.png" alt="">
+                        <div class="header-menu-head-logo-text">TRAVIMONDO</div>
+                        <img class="menu-logo-mobile" src="images/logo.png" alt="">
+                    </div>
+                    <div class="header-menu-head-cross">&times;</div>
+                </div>
+                <div class="header-menu-list">
+                    <div class="header-menu-list-items">
+                        <a href="#" class="header-menu-list-item">Start new trip</a>
+                        <a href="#" class="header-menu-list-item">Articles</a>
+                        <a href="#" class="header-menu-list-item">Profile</a>
+                        <a href="#" class="header-menu-list-item">Favorite articles</a>
+                        <a href="#" class="header-menu-list-item">My trips</a>
+                        <a href="#" class="header-menu-list-item">My reviews</a>
+                        <a href="#" class="header-menu-list-item">Login</a>
+                    </div>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="header-menu-foot">
+                    <a href="#" class="fab fa-google-plus-g"></a>
+                    <a href="#"  class="fab fa-linkedin-in"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                </div>
+            </div>
+            <div class="header-menu-bg"></div>
+        </div>
+        <div class="header">
+            <div class="header-container">
+                <div class="header-menu-open">__<br>___<br>___</div>
+                <div class="header-logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="header-buttons">
+                    <button class="header-buttons-button">login</button>
+                    <button class="header-buttons-button">sign in</button>
+                    <button class="header-buttons-button">Make roadtrip</button>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="link-map">
+        </a>
+        <div class="view-nav">
+            <div class="view-nav-container">
+                <div class="view-nav-line"></div><a href="index.html" class="view-nav-item">Home</a><a href="article-listing.html" class="view-nav-item">Popular articles</a><div class="view-nav-current">Ekebergrestauranten</div>
+            </div>
+        </div>
+        <div class="view-main">
+            <div class="view-main-edit">EDIT PHOTO</div>
+            <div class="view-main-head">
+                <div class="view-main-head-item dest">2</div>
+                <div class="view-main-head-item time">0h</div>
+                <div class="view-main-head-item road">0km</div>
+                <div class="view-main-head-item gas">0$</div>
+            </div>
+            <div class="view-main-title">
+                <div class="view-main-title-content">Everything awesome to see and do along I-75</div>
+                <div class="view-main-title-edit"></div>
+                <div class="view-main-title-save">&#10003;</div>
+            </div>
+            <div class="view-main-foot">
+                <div class="view-main-foot-left">
+                    <button class="take">TAKE THIS TRIP</button>
+                    <a href="print.html"><button class="print">PRINT TRIP</button></a>
+                </div>
+                <div class="view-main-foot-center">
+                    <div class="view-main-foot-center-share">SHARE</div>
+                    <div class="view-main-foot-center-name"><span>Created by yanamirza</span> <span class="line">-</span> <span>August 28th 2018</span></div>
+                    <div class="view-main-foot-center-empty"></div>
+                </div>
+                <div class="view-main-foot-right">
+                    <button class="settings">TRIP SETTINGS</button>
+                    <button class="delete">DELETE TRIP</button>
+                </div>
+            </div>
+        </div>
+        <div class="view-info">
+            <div class="view-info-container">
+                <div class="view-info-main">
+                    <div class="view-info-main-title">Everything awesome to see and do along I-75</div>
+                    <div class="view-info-main-text">
+                        <div class="view-info-main-text-line"></div>
+                        <div class="view-info-main-text-text">
+                            <div class="view-info-main-text-edit"></div>
+                            <div class="view-text-origin">
+                                <textarea placeholder="Add an introduction..." id="textToEdit"></textarea>
+                                <div class="view-text-origin-save">&#10003;</div>
+                            </div>
+                            <div id="editedText">I-75 is a perfect sample of America. It starts right at the Canadian border in Sault Ste. Marie, then winding down to Detroit, and into the heart of the Midwest down through Pure Michigan, and Ohio. From there, it makes its way through Kentucky and Tennessee, stopping near and in cities like Lexington, Knoxville, and Chattanooga, before entering Georgia. I-75 is a main route to Atlanta, and from Atlanta, it continues into Florida. As you cruise the route past Tampa, take some time to enjoy the brief East-West stretch through the Everglades that's known as Alligator Alley before ending just north of Miami. Whether you're looking for the fastest route from the Midwest to Florida, or you happen to be enjoying the ride between some of America's coolest cities, I-75 is loaded with plenty to see and do along the way.</div>
+                        </div>
+                    </div>
+                    <div class="view-info-main-items">
+                        <div class="view-info-main-items-item">
+                            <div class="view-info-main-items-item-head">
+                                <img src="images/destination-bright.png" alt="">
+                                <div class="view-info-main-items-item-head-number">01</div>
+                                <div class="view-info-main-items-item-head-line"></div>
+                            </div>
+                            <div class="view-info-main-items-item-content">
+                                <div class="view-info-main-items-item-content-img">
+                                    <img src="images/view-img.png" alt="">
+                                    <div class="view-info-main-items-item-content-img-edit"></div>
+                                </div>
+                                <div class="view-info-main-items-item-content-main">
+                                    <div class="view-info-main-items-item-content-main-title">West Pier Drive-In</div>
+                                    <div class="view-info-main-items-item-content-main-dest">849 W Pier Dr, Sault Ste. Marie, MI, US</div>
+                                    <div class="view-info-main-items-item-content-main-text">
+                                        <div class="view-info-main-items-item-content-main-text-save">&#10003;</div>
+                                        <div class="view-info-main-items-item-content-main-text-edit"></div>
+                                        <textarea class="view-info-main-items-item-content-main-text-edited"></textarea>
+                                        <div class="view-info-main-items-item-content-main-text-toedit">Start off your trip by fueling up at the West Pier Drive-In. This old-school eatery serves up mouthwatering burgers, sides like fries, onion rings, mushrooms, and cheese sticks fresh out of the fryer, and rich milkshakes, all at an insanely cheap price point. It's nothing fancy, but it's just right.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-info-main-items-item">
+                            <div class="view-info-main-items-item-head">
+                                <img src="images/pin-view.png" alt="">
+                                <div class="view-info-main-items-item-head-number">02</div>
+                                <div class="view-info-main-items-item-head-line"></div>
+                            </div>
+                            <div class="view-info-main-items-item-content">
+                                <div class="view-info-main-items-item-content-img">
+                                    <img src="images/view-img1.png" alt="">
+                                    <div class="view-info-main-items-item-content-img-edit"></div>
+                                </div>
+                                <div class="view-info-main-items-item-content-main">
+                                    <div class="view-info-main-items-item-content-main-title">Castle Rock</div>
+                                    <div class="view-info-main-items-item-content-main-dest">Castle Rock Rd, MI, US</div>
+                                    <div class="view-info-main-items-item-content-main-text">
+                                        <div class="view-info-main-items-item-content-main-text-save">&#10003;</div>
+                                        <div class="view-info-main-items-item-content-main-text-edit"></div>
+                                        <textarea class="view-info-main-items-item-content-main-text-edited"></textarea>
+                                        <div class="view-info-main-items-item-content-main-text-toedit">Start off your trip by fueling up at the West Pier Drive-In. This old-school eatery serves up mouthwatering burgers, sides like fries, onion rings, mushrooms, and cheese sticks fresh out of the fryer, and rich milkshakes, all at an insanely cheap price point. It's nothing fancy, but it's just right.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-info-main-items-item">
+                            <div class="view-info-main-items-item-head">
+                                <img src="images/finish-view.png" alt="">
+                                <div class="view-info-main-items-item-head-number">03</div>
+                                <div class="view-info-main-items-item-head-line"></div>
+                            </div>
+                            <div class="view-info-main-items-item-content">
+                                <div class="view-info-main-items-item-content-img">
+                                    <img src="images/view-img2.png" alt="">
+                                    <div class="view-info-main-items-item-content-img-edit"></div>
+                                </div>
+                                <div class="view-info-main-items-item-content-main">
+                                    <div class="view-info-main-items-item-content-main-title">City Of Opa-Locka Municipal Complex</div>
+                                    <div class="view-info-main-items-item-content-main-dest">780 Fisherman St, Opa-locka, FL, US</div>
+                                    <div class="view-info-main-items-item-content-main-text">
+                                        <div class="view-info-main-items-item-content-main-text-save">&#10003;</div>
+                                        <div class="view-info-main-items-item-content-main-text-edit"></div>
+                                        <textarea class="view-info-main-items-item-content-main-text-edited"></textarea>
+                                        <div class="view-info-main-items-item-content-main-text-toedit">Start off your trip by fueling up at the West Pier Drive-In. This old-school eatery serves up mouthwatering burgers, sides like fries, onion rings, mushrooms, and cheese sticks fresh out of the fryer, and rich milkshakes, all at an insanely cheap price point. It's nothing fancy, but it's just right.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-info-main-foot">
+                        <div class="view-info-main-foot-line"></div>
+                        <div class="view-info-main-foot-text">
+                            <div class="view-info-main-foot-text-edit"></div>
+                            <div class="view-text-origin2">
+                                <textarea placeholder="Add an introduction..." id="textToEdit2"></textarea>
+                                <div class="view-text-origin2-save2">&#10003;</div>
+                            </div>
+                            <div id="editedText2">After all that driving, treat yourself with a detour just a few miles inland to So-Cal's wine country. A few beautiful vineyards in the surrounding area to tour include Harmony Cellars, L'Aventure Winery, Wild Horse Winery, and Halter Ranch Vineyard.<br><br>The best time of year to visit: Big Sur is actually beautiful to visit all year-round. However, the high season for tourists is generally April through October. This is when the weather is at its best. Most facilities are open during this time and the weather is gorgeous for beach walking and trail hiking. There are rain showers that can come on quite abruptly, but then they dissipate into a pretty mist. Off peak season is November through March. There's not as much fog during this time, which makes driving easier. Less visitors makes lodging much more affordable, however some businesses are closed in off-season or have shorter off-season hours. If you're looking to visit purely for the scenic vistas, then December is one of the clearest months for photographing the region.</div>  
+                        </div>
+    <!-- 
+                        <div class="view-info-main-text-text">
+                            <div class="view-info-main-foot-text-edit"></div>
+                            <div class="view-text-origin">
+                                <textarea placeholder="Add an introduction..." id="textToEdit"></textarea>
+                                <div class="view-text-origin-save">&#10003;</div>
+                            </div>
+                            <div id="editedText">I-75 is a perfect sample of America. It starts right at the Canadian border in Sault Ste. Marie, then winding down to Detroit, and into the heart of the Midwest down through Pure Michigan, and Ohio. From there, it makes its way through Kentucky and Tennessee, stopping near and in cities like Lexington, Knoxville, and Chattanooga, before entering Georgia. I-75 is a main route to Atlanta, and from Atlanta, it continues into Florida. As you cruise the route past Tampa, take some time to enjoy the brief East-West stretch through the Everglades that's known as Alligator Alley before ending just north of Miami. Whether you're looking for the fastest route from the Midwest to Florida, or you happen to be enjoying the ride between some of America's coolest cities, I-75 is loaded with plenty to see and do along the way.</div>
+                        </div> -->
+
+
+                    </div>
+                </div>
+                <div class="view-info-sidebar">
+                    <div class="view-info-sidebar-block">
+                        <div id="view-map"></div>
+                        <div class="view-info-sidebar-title">From the Canadian border to the edge of Miami</div>
+                        <div class="view-info-sidebar-list">
+                            <div class="view-info-sidebar-list-item"><span>01:</span> West Pier Drive In</div>
+                            <div class="view-info-sidebar-list-item"><span>02:</span> Casle Rock</div>
+                            <div class="view-info-sidebar-list-item"><span>03:</span> City of Opa-Locka Municipal</div>
+                        </div>
+                        <a href="#" class="view-info-sidebar-look">Look on the map</a>
+                    </div>
+                    <div class="view-info-sidebar-block">
+                        <div class="view-info-sidebar-title">Popular tags</div>
+                        <div class="view-info-sidebar-tags tags-hidden">
+                            <div class="view-info-sidebar-tags-tag">NORWAY</div>
+                            <div class="view-info-sidebar-tags-tag">CAMPING</div>
+                            <div class="view-info-sidebar-tags-tag">LOREM IPSUM</div>
+                            <div class="view-info-sidebar-tags-tag">FLOWER</div>
+                            <div class="view-info-sidebar-tags-tag">ENGLAND</div>
+                            <div class="view-info-sidebar-tags-tag">NORWAY</div>
+                            <div class="view-info-sidebar-tags-tag">CAMPING</div>
+                            <div class="view-info-sidebar-tags-tag">LOREM IPSUM</div>
+                            <div class="view-info-sidebar-tags-tag">FLOWER</div>
+                            <div class="view-info-sidebar-tags-tag">ENGLAND</div>
+                        </div>
+                        <p class="view-info-sidebar-all">View all</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nearby">
+            <div class="nearby-container">
+                <div class="nearby-title">Nearby</div>
+                <div class="nearby-change">
+                    <div class="nearby-change-item">Hotels</div>
+                    <div class="nearby-change-item">Camping</div>
+                    <div class="nearby-change-item item-active">Rentals</div>
+                </div>
+                <div class="toSwitch">
+                    <div class="nearby-slider-items slider1">                     
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye1</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                            </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/boat.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                            </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/prague.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                            </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                                <a href="#"><img src="images/paris.png" alt=""></a>
+                                <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                                <div class="nearby-slider-item-title">LONDON</div>
+                                <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="nearby-slider-item-buttons">
+                                    <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                    <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                                </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                            </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/boat.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                            </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/prague.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                            </div>
+                        </div>      
+                    </div>
+                    <div class="nearby-nav">
+                        <button>VIEW MORE</button>
+                        <div class="nearby-nav-buttons nav1">
+                        </div>
+                        <div class="nearby-nav-next slider-nav-next next1">Next</div>
+                    </div>
+                </div>
+                <div class="toSwitch">
+                    <div class="nearby-slider-items slider1_2">                     
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye2</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                            </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/boat.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                            </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/prague.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                            </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                                <a href="#"><img src="images/paris.png" alt=""></a>
+                                <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                                <div class="nearby-slider-item-title">LONDON</div>
+                                <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="nearby-slider-item-buttons">
+                                    <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                    <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                                </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                            </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/boat.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                            </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/prague.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                            </div>
+                        </div>      
+                    </div>
+                    <div class="nearby-nav">
+                        <button>VIEW MORE</button>
+                        <div class="nearby-nav-buttons nav1_2">
+                        </div>
+                        <div class="nearby-nav-next slider-nav-next next1_2">Next</div>
+                    </div>
+                </div>
+                <div class="toSwitch toSwitch-active">
+                    <div class="nearby-slider-items slider1_3">                     
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye3</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                            </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/boat.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                            </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/prague.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                            </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                                <a href="#"><img src="images/paris.png" alt=""></a>
+                                <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                                <div class="nearby-slider-item-title">LONDON</div>
+                                <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="nearby-slider-item-buttons">
+                                    
+                                    <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                    <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                                </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                            </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/boat.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                            </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/prague.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                            </div>
+                        </div>      
+                    </div>
+                    <div class="nearby-nav">
+                        <button>VIEW MORE</button>
+                        <div class="nearby-nav-buttons nav1_3">
+                        </div>
+                        <div class="nearby-nav-next slider-nav-next next1_3">Next</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nearby">
+            <div class="nearby-container">
+                <div class="nearby-title">Popular articles</div>
+                <div class="nearby-slider-items slider2 flex">                     
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                                
+                            </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/boat.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                                
+                            </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/prague.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                                
+                            </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                                <a href="#"><img src="images/paris.png" alt=""></a>
+                                <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                                <div class="nearby-slider-item-title">LONDON</div>
+                                <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                                <div class="nearby-slider-item-buttons">
+                                    <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                                    
+                                </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/copenhagen.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                                
+                            </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/boat.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                                
+                            </div>
+                        </div>
+                        <div class="nearby-slider-item slider-item">
+                            <a href="#"><img src="images/prague.png" alt=""></a>
+                            <a href="#" class="nearby-slider-item-pretitle">See London eye</a>
+                            <div class="nearby-slider-item-title">LONDON</div>
+                            <div class="nearby-slider-item-text">At 135m, Coca-Cola London Eye is the world’s largest cantilevered observation wheel. It was conceived and designed by Marks Barfield. Architects and was launched in 2000. It has won over 85 awards for national and international tourism, outstanding architectural quality and engineering achievement. In fact, it has become the UK’s most popular paid for visitor attraction.</div>
+                            <div class="nearby-slider-item-buttons">
+                                <a href="#" class="nearby-slider-item-button">Add to trip</a>
+                                <a href="#"  class="nearby-slider-item-button">Add to favorite</a>
+                                
+                            </div>
+                        </div>      
+                </div>
+                <div class="nearby-nav">
+                    <button>VIEW MORE</button>
+                    <div class="nearby-nav-buttons nav2">
+                    </div>
+                    <div class="nearby-nav-next slider-nav-next next2">Next</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="foot-container">
+            <div class="foot-block">
+                <h3 class="foot-block-title">Category</h3>
+                <div class="foot-block-items foot-block-items-hidden">
+                    <a href="category.html"><img src="images/icon-masks.png" alt="">Culture and entertainment</a>
+                    <a href="category.html"><img src="images/icon-dinner.png" alt="">Food and drink</a>
+                    <a href="category.html"><img src="images/icon-balloon.png" alt="">For kids</a>
+                    <a href="category.html"><img src="images/icon-house.png" alt="">Live and experience</a>
+                    <a href="category.html"><img src="images/icon-pine.png" alt="">Nature and history</a>
+                    <a href="category.html"><img src="images/icon-shopping.png" alt="">Shopping</a>
+                    <a href="category.html"><img src="images/icon-trophy.png" alt="">Sport and health</a>
+                    <a href="category.html"><img src="images/icon-beach.png" alt="">Sun and buth</a>
+                </div>
+            </div>
+            <div class="foot-block foot-block-countries">
+                <h3 class="foot-block-title">Countries</h3>
+                <div class="foot-block-items foot-block-countries-items foot-hidden foot-block-items-hidden">
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <div class="footViewAll">View all  &#9660;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-main">
+                    <img src="images/logo-footer.png" alt="">
+                    <div class="footer-main-text">
+                        <div>c. TRAVIMONDO</div>
+                        <div>Copywriting 2018 </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-menu">
+                <div class="footer-menu-title">Menu</div>
+                <a href="#" class="footer-menu-item">Home</a>
+                <a href="#" class="footer-menu-item">About us</a>
+                <a href="#" class="footer-menu-item">Contact</a>
+                <a href="#" class="footer-menu-item">Private policy</a>
+            </div>
+            <div class="footer-menu2">
+                <a href="#" class="footer-menu2-item">Terms</a>
+                <a href="#" class="footer-menu2-item">Vision</a>
+                <a href="#" class="footer-menu2-item">FAQ</a>
+            </div>
+            <div class="footer-subscribe">
+                <div class="footer-subscribe-title">Subscribe Newsletter</div>
+                <div class="footer-subscribe-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                <div style="display: flex; align-items: flex-end">
+                <input type="text" placeholder="e-mail">
+                <button class="footer-subscribe-button">SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="footer-social">
+                <div class="footer-social-title">Social media</div>
+                <div class="footer-social-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                <div class="footer-social-icons">
+                    <a href="#" class="fab fa-google-plus-g"></a>
+                    <a href="#"  class="fab fa-linkedin-in"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="slick-master/slick/slick.min.js"></script>
+    <script src="script/functions.js"></script>
+    <script src="script/script.js"></script>
+    <script>
+
+        document.querySelector('.view-main-title-edit').addEventListener('click', function(){
+            document.querySelector('.view-main-title-content').contentEditable = 'true';
+            document.querySelector('.view-main-title-content').classList.add('textEditedHov');
+            document.querySelector('.view-main-title-save').classList.add('block');
+            document.querySelector('.view-main-title-save').addEventListener('click', function(){
+                document.querySelector('.view-main-title-content').contentEditable = 'false';
+                document.querySelector('.view-main-title-content').classList.remove('textEditedHov');
+                document.querySelector('.view-main-title-save').classList.remove('block');
+                if(document.querySelector('.view-main-title-content').innerHTML === '') {
+                    document.querySelector('.view-main-title-content').innerHTML = 'Type title here...';
+                }
+                document.querySelector('.view-info-main-title').innerHTML = document.querySelector('.view-main-title-content').innerHTML;
+
+            })
+        })
+        
+        switcher('.nearby-change-item', 'item-active', '.toSwitch', 'toSwitch-active');
+
+        $('.slider1').slick({
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: true,
+            appendDots: '.nav1',
+            nextArrow: $('.next1'),
+            mobileFirst: true,
+            responsive: [
+                    {
+                        breakpoint: 319,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 839,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 1279,
+                        settings: {
+                            slidesToShow: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 1700,
+                        settings: {
+                            slidesToShow: 4,
+                        }
+                    },
+
+                ]
+        });
+        
+        $('.slider1_2').slick({
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: true,
+            appendDots: '.nav1_2',
+            nextArrow: $('.next1_2'),
+            mobileFirst: true,
+            responsive: [
+                    {
+                        breakpoint: 319,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 839,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 1279,
+                        settings: {
+                            slidesToShow: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 1700,
+                        settings: {
+                            slidesToShow: 4,
+                        }
+                    },
+
+                ]
+        });
+        
+        $('.slider1_3').slick({
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: true,
+            appendDots: '.nav1_3',
+            nextArrow: $('.next1_3'),
+            mobileFirst: true,
+            responsive: [
+                    {
+                        breakpoint: 319,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 839,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 1279,
+                        settings: {
+                            slidesToShow: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 1700,
+                        settings: {
+                            slidesToShow: 4,
+                        }
+                    },
+
+                ]
+        });
+        
+        $('.slider2').slick({
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: true,
+            appendDots: '.nav2',
+            nextArrow: $('.next2'),
+            mobileFirst: true,
+            responsive: [
+                    {
+                        breakpoint: 319,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 839,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 1279,
+                        settings: {
+                            slidesToShow: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 1700,
+                        settings: {
+                            slidesToShow: 4,
+                        }
+                    },
+
+                ]
+        });
+        
+        document.querySelector('.view-info-sidebar-all').addEventListener('click', function(){
+            document.querySelector('.view-info-sidebar-tags').classList.toggle('tags-hidden')
+        })
+
+        document.querySelector('.view-info-main-text-edit').addEventListener('click', function(){
+          document.querySelector('.view-text-origin').classList.add('block');
+          document.querySelector('#textToEdit').value = document.querySelector('#editedText').innerHTML;
+          document.querySelector('#editedText').classList.add('none');
+
+          document.querySelector('.view-text-origin-save').addEventListener('click', function(){
+            if(document.querySelector('#textToEdit').value ==='') {
+              document.querySelector('#textToEdit').value = 'Add an introduction...'
+            }
+              document.querySelector('#editedText').innerHTML = document.querySelector('#textToEdit').value;
+              document.querySelector('.view-text-origin').classList.remove('block');
+              document.querySelector('#editedText').classList.remove('none');
+          })
+      })
+
+        document.querySelector('.view-info-main-foot-text-edit').addEventListener('click', function(){
+        document.querySelector('.view-text-origin2').classList.add('block');
+        document.querySelector('#textToEdit2').value = document.querySelector('#editedText').innerHTML;
+        document.querySelector('#editedText2').classList.add('none');
+
+        document.querySelector('.view-text-origin2-save2').addEventListener('click', function(){
+          if(document.querySelector('#textToEdit2').value ==='') {
+            document.querySelector('#textToEdit2').value ='Add an introduction...'
+          }
+            document.querySelector('#editedText2').innerHTML = document.querySelector('#textToEdit2').value;
+            document.querySelector('.view-text-origin2').classList.remove('block');
+            document.querySelector('#editedText2').classList.remove('none');
+        })
+      })
+      
+        var arrtextEdit = document.querySelectorAll('.view-info-main-items-item-content-main-text-edit');
+        var textEdit = Array.prototype.slice.call(arrtextEdit);
+        var arrtextEdited = document.querySelectorAll('.view-info-main-items-item-content-main-text');
+        var textEdited = Array.prototype.slice.call(arrtextEdited);
+        textEdit.forEach(function(e, i){
+            e.addEventListener('click', function(){
+                document.querySelectorAll('.view-info-main-items-item-content-main-text-edited')[i].classList.add('block');
+                document.querySelectorAll('.view-info-main-items-item-content-main-text-toedit')[i].classList.add('none');
+                document.querySelectorAll('.view-info-main-items-item-content-main-text-save')[i].classList.add('block');
+                document.querySelectorAll('.view-info-main-items-item-content-main-text-edited')[i].value = document.querySelectorAll('.view-info-main-items-item-content-main-text-toedit')[i].innerHTML;
+
+                document.querySelectorAll('.view-info-main-items-item-content-main-text-save')[i].addEventListener('click', function(){
+                    if(document.querySelectorAll('.view-info-main-items-item-content-main-text-edited')[i].value === '') {
+                    document.querySelectorAll('.view-info-main-items-item-content-main-text-edited')[i].value = 'Add your description here...'
+                    }
+                    document.querySelectorAll('.view-info-main-items-item-content-main-text-toedit')[i].innerHTML = document.querySelectorAll('.view-info-main-items-item-content-main-text-edited')[i].value;
+                    document.querySelectorAll('.view-info-main-items-item-content-main-text-edited')[i].classList.remove('block');
+                    document.querySelectorAll('.view-info-main-items-item-content-main-text-toedit')[i].classList.remove('none');
+                    document.querySelectorAll('.view-info-main-items-item-content-main-text-save')[i].classList.remove('block');
+                })
+            })
+        })
+
+
+        function initMap() {
+            var position = new google.maps.LatLng(40.730610,-73.935242);
+            var map = new google.maps.Map(document.getElementById('view-map'), {
+            center: position,
+            zoom: 12
+            });
+            var marker = new google.maps.Marker({
+                position: position,
+                title:"790 7th Avenue at 51st Street, New York City, NY 10019",
+                icon: 'images/marker.png'
+            });
+            marker.setMap(map);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQm-iPM-oZCaSdnJJXp9fWuhZviOGB0kA&callback=initMap"
+    async defer></script>
+</body>
+</html>

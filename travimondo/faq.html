@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/jquery-ui-1.9.2.custom.min.css">
+    <link rel="stylesheet" href="style/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="slick-master/slick/slick.css">
+    <link rel="stylesheet" href="slick-master/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/jquery.timepicker.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Travimondo</title>
+</head>
+<body style="overflow-x: hidden;">
+    <div class="content">
+
+        <div class="header-menu">
+            <div class="header-menu-container">
+                <div class="header-menu-head">
+                    <div class="header-menu-head-logo">
+                        <img src="images/logo-menu2.png" alt="">
+                        <div class="header-menu-head-logo-text">TRAVIMONDO</div>
+                        <img class="menu-logo-mobile" src="images/logo.png" alt="">
+                    </div>
+                    <div class="header-menu-head-cross">&times;</div>
+                </div>
+                <div class="header-menu-list">
+                    <div class="header-menu-list-items">
+                        <a href="#" class="header-menu-list-item">Start new trip</a>
+                        <a href="#" class="header-menu-list-item">Articles</a>
+                        <a href="#" class="header-menu-list-item">Profile</a>
+                        <a href="#" class="header-menu-list-item">Favorite articles</a>
+                        <a href="#" class="header-menu-list-item">My trips</a>
+                        <a href="#" class="header-menu-list-item">My reviews</a>
+                        <a href="#" class="header-menu-list-item">Login</a>
+                    </div>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="header-menu-foot">
+                    <a href="#" class="fab fa-google-plus-g"></a>
+                    <a href="#"  class="fab fa-linkedin-in"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                </div>
+            </div>
+            <div class="header-menu-bg"></div>
+        </div>
+        <div class="header">
+            <div class="header-container">
+                <div class="header-menu-open">__<br>___<br>___</div>
+                <div class="header-logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="header-buttons">
+                    <button class="header-buttons-button">Login</button>
+                    <button class="header-buttons-button">Sign in</button>
+                    <button class="header-buttons-button header-button-mobile">Make roadtrip</button>
+                </div>
+                <!-- <a href="#" class="corner">
+                    <img class="corner-main" src="images/corner.png" alt="">
+                    <img class="corner-map" src="images/corner-map.png" alt="">
+                    <img class="corner-under" src="images/corner-under.png" alt="">
+                    <img class="corner-line" src="images/corner-line.png" alt="">
+                </a> -->
+                <div class="header-search">
+                    <img src="images/search-s.png" alt="" id="searchOpen">
+                    <div class="header-search-input">
+                        <input type="text" placeholder="Search Travimondo">
+                        <p id="searchClose">&times;</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="view-nav">
+            <div class="view-nav-container">
+                <div class="view-nav-line"></div><a href="index.html" class="view-nav-item">Home</a><div class="view-nav-current">FAQ</div>
+            </div>
+        </div>
+        <div class="faq">
+            <h1 class="faq-title">Have to create a trip?</h1>
+            <div class="faq-text">
+                <ul>
+                    <ul>
+                        <h3>1.0 Terms and Conditions for Travimondo.com</h3>
+                        <li>1.1 Mondo Media AS (AS) is a provider of a website with the address travimondo.no (Site). The website is an Internet portal containing travel information throughout the world as a tourist destination. The website also contains bulletin boards and other services where others outside MMs control, can help with expression of opinions / statements and information. The website includes information about products and / or services from third parties and can provide access to information and services from third parties (Third Party Content). Your use of the Site is subject to acceptance of the terms and conditions set forth below.</li>
+                        <li> 1.2 Terms and Conditions for use of the Site. Here are the terms and conditions governing the use of this site. Read this information carefully before accessing or using the Website. By accessing or using the Website you agree that you are subject to the terms and conditions below. If you do not want to be subject to these terms and conditions, you may not access or use the Site. MM may at any time update these Terms and Conditions. Since the terms and conditions applicable to your use of the Site and are binding on you, you should visit this page periodically to stay informed about the terms and conditions.</li>
+                        <li> 1.3 You agree that you will review the agreement periodically to keep you informed of any changes. Continue to visit and use the site shall be deemed as evidence that you have accepted the revised agreement. You also agree that there is MM's responsibility to make yourself aware of any changes made to these terms and conditions. You further agree that it is solely your responsibility to make sure to read through these terms and conditions regularly.</li>
+                    </ul>
+                     <ul style="margin-top: -35px">
+                        <h3>2.0 Your use of the Website</h3>
+                        <li>2.1 You acknowledge that MM , except for information , products or services expressly identified as published by MM , in no way operate, control or endorse for information, products or services on the Internet , although there may be links to this Website.</li>
+                        <li>2.2 MM gives no guarantee that this Site will be uninterrupted or error free or those defects in the service will be corrected.</li>
+                        <li>2.3 You agree that MM can neither give nor provide any guarantee that files available for downloading through the Site or any other site that MM can be linked to, are free of viruses, worms, Trojan horses or other contaminating or malicious code. You are responsible for implementing sufficient procedures and control measures to avoid losses caused by such viruses, infections etc</li>
+                    </ul>
+                    <ul>
+                        <h3>3.0 Copyright, Licenses and Submissions ideas</h3>
+                        <li>3.1 Copyright © 2015 Mondo Media AS. MM has either copyright in the underlying HTML, text, audio clips, video clips and other content that is made available to you through this website, or the right to use such content. MM allows people to view the material on this site and, to the extent necessary to lawfully access and use the services available on this site for personal purposes, to electronically copy, archive and to print in hard copy, portions of this website. You may not in any way copy, reproduce, republish, upload, post, transmit, modify, resell or distribute material on the Site, including text, graphics, code and / or software without the prior written permission from MM.</li>
+                        <li>3.2 Limited License. MM grants you a limited license to display on your computer, print, download and use all publicly available information on this site for lawful purposes. Other content such as logos, photographs, charts and the like made available to you on this site solely for non-commercial, personal use and provided that: You do not modify any such content, and you on all copies of such content include showing MMs announcement copyright and this limited license. Nothing in this paragraph shall be construed as an assignment of copyright, trademarks or other intellectual property MM or other person who has the copyright or intellectual property rights to content on this site.</li>
+                        <li>3.3 Under no circumstances are you permitted to publish, retransmit, distribute again or in any other way reproduce the content of the Site in any format to any third party.</li>
+                        <li>3.4 You may store, submit materials to any public areas of the Site, including message boards and mailing lists (Integral material). You give your consent for MM should have a non-exclusive, royalty-free, worldwide and perpetual license to sublicense, reproduce, distribute, transmit, prepare derivative works of and use public all material and other information on all ways and through all existing and future media.</li>
+                        <li>3.5 You also grant MM the right to use your name in connection with the Submitted Materials and other information as well as in connection with thereto related advertising, marketing and promotional material. You agree that you do not have the right to bring a claim against the Company for any alleged or actual infringement or misappropriation of any proprietary right in your communications with travimondo.no.</li>
+                    </ul>
+                    <ul>
+                        <h3>4.0 Trademarks</h3>
+                        <li>4.1 MM, travimondo.no and all other product names, company names, trademarks, logos, etc. Mentioned are the properties of their respective owners. All such content is protected by intellectual property laws and copyright in Norway and other countries' jurisdictions. Unauthorized use of the content may violate applicable copyright, trademark, copyright or other laws.
+                            Although we will make reasonable efforts to ensure that the information on the Website of MM is accurate, we cannot guarantee its accuracy.
+                            The information on this site may contain inaccuracies or typographical errors. Information may be changed or updated without notice. This site does not constitute an offer or a contract. Prices and availability of information is subject to change without notice.
+                            Any communication or material you post or transmit to MM via the Internet is, and will be treated as non-confidential and non-proprietary. By submitting personal information to MM, including, but not limited to, name, address (es), phone / -numre, e-mail (s), identification number / -numre, gives you IN and its affiliates express permission to use such information for any lawful purpose.
+                            By transmitting or posting any communication or material to this site, you consent to the MM and its affiliates may use such communication material for any purpose, including reproduction, transmission, publication, broadcast and posting. MM and its affiliates have no responsibility to respond to messages posted on this site.
+                            Furthermore, it is strictly forbidden to publish or transmit any unlawful, threatening, libelous, defamatory, obscene, pornographic or profane material or any material that could constitute or encourage conduct that would be considered a criminal offense or a violation of applicable laws.
+                            You agree that MM and any third party mentioned on this site cannot be held liable to you for any loss or damage, including direct, indirect, special or consequential damages or loss of data or profits, although MM or any third party has been aware of the possibility of such damages or losses.</li>
+                    </ul>
+                    <ul>
+                        <h3>5.0 General Limitation of Liability</h3>
+                        <li>5.1 MM provides the Site "as is" ( as is ) and makes no warranty in connection with any other sites that you access through the Site or linked to the Site . When you visit a site outside the Site, you should be aware that this site is independent from the Site and that MM has no control over the content on this site. Moreover, does not imply a link to such sites on the Website that MM endorse or assume liability for the content or use of such websites.</li>
+                    </ul>
+                    <ul>
+                        <h3>6.0 Indemnity</h3>
+                        <li> 6.1 You agree to indemnify and hold harmless the Site, its officers, directors, employees, agents, licensors, suppliers and any third party information providers to the Service from and against all losses, expenses, damages and costs, including legal costs: - (i) arising out of breach of these terms and conditions (including negligent or wrongful conduct) by you or any other person who visits the Site and its services; (ii) arising as a result of downloading files from the Site or through links that we have laid out; and (iii) arising out of the decisions you take, either directly or indirectly based on the information, opinions or other materials on the Site or generated from the Site and its services.
+                            You alone are responsible for evaluating the accuracy, completeness and usefulness of all opinions, services, merchandise and other information provided through the Site and its services or on the Internet generally.</li>
+                    </ul>
+                    <ul>
+                        <h3>7.0 Jurisdiction and disputes</h3>
+                        <li> 7.1 This Agreement is governed by and shall be construed exclusively in accordance with Norwegian law.</li>
+                        <li>7.2 You agree that any legal action between MM and you in connection with this Agreement or the parties' obligations under. Agreement shall be subject to the exclusive jurisdiction of the competent court in Norway.</li>
+                        <li>7.3 If the MM fail to apply or enforce any right or provision of this Agreement shall not constitute a waiver of the agreement in its entirety.</li>
+                        <li>7.4 If part of our terms and conditions unenforceable (including any provision in which we exclude our liability to you), shall not affect the validity of any other part of these Terms and Conditions.</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="foot-container">
+            <div class="foot-block">
+                <h3 class="foot-block-title">Category</h3>
+                <div class="foot-block-items foot-block-items-hidden">
+                    <a href="category.html"><img src="images/icon-masks.png" alt="">Culture and entertainment</a>
+                    <a href="category.html"><img src="images/icon-dinner.png" alt="">Food and drink</a>
+                    <a href="category.html"><img src="images/icon-balloon.png" alt="">For kids</a>
+                    <a href="category.html"><img src="images/icon-house.png" alt="">Live and experience</a>
+                    <a href="category.html"><img src="images/icon-pine.png" alt="">Nature and history</a>
+                    <a href="category.html"><img src="images/icon-shopping.png" alt="">Shopping</a>
+                    <a href="category.html"><img src="images/icon-trophy.png" alt="">Sport and health</a>
+                    <a href="category.html"><img src="images/icon-beach.png" alt="">Sun and buth</a>
+                </div>
+            </div>
+            <div class="foot-block foot-block-countries">
+                <h3 class="foot-block-title">Countries</h3>
+                <div class="foot-block-items foot-block-countries-items foot-hidden foot-block-items-hidden">
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <a href="category.html">Belgium</a>
+                    <a href="category.html">Croatia</a>
+                    <a href="category.html">Albania</a>
+                    <a href="category.html">Austria</a>
+                    <div class="footViewAll">View all  &#9660;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-main">
+                    <img src="images/logo-footer.png" alt="">
+                    <img class="img-mobile" src="images/logo-footer-mobile.png" alt="">
+                    <div class="footer-main-text">
+                        <div>c. TRAVIMONDO</div>
+                        <div>Copywriting 2018 </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-menu">
+                <div class="footer-menu-title">Menu</div>
+                <a href="#" class="footer-menu-item menu-item-hide">Home</a>
+                <a href="#" class="footer-menu-item menu-item-hide">About us</a>
+                <a href="#" class="footer-menu-item menu-item-hide">Contact</a>
+                <a href="#" class="footer-menu-item menu-item-hide">Private policy</a>
+                <div class="footer-menu2">
+                    <a href="#" class="footer-menu2-item menu-item-hide">Terms</a>
+                    <a href="#" class="footer-menu2-item menu-item-hide">Vision</a>
+                    <a href="#" class="footer-menu2-item menu-item-hide">FAQ</a>
+                </div>
+            </div>
+            <div class="footer-subscribe">
+                <div class="footer-subscribe-title">Subscribe Newsletter</div>
+                <div class="footer-subscribe-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                <div style="display: flex; align-items: flex-end">
+                <input type="text" placeholder="e-mail">
+                <button class="footer-subscribe-button">SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="footer-social">
+                <div class="footer-social-title">Social media</div>
+                <div class="footer-social-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                <div class="footer-social-icons">
+                    <a href="#" class="fab fa-google-plus-g"></a>
+                    <a href="#"  class="fab fa-linkedin-in"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                </div>
+            </div>
+            <div class="footer-main-text copyright-mobile">
+                <div>c. TRAVIMONDO</div>
+                <div>Copywriting 2018 </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="script/jquery.timepicker.min.js"></script>
+    <script src="slick-master/slick/slick.min.js"></script>
+    <script src="script/script.js"></script>
+
+</body>
+</html>
